@@ -360,3 +360,20 @@ Asimismo, la falta de visibilidad en tiempo real de la ruta y del kilometraje ac
 En esta sección se presentan los principales artefactos obtenidos a partir del análisis de la información recolectada durante las entrevistas y el estudio de los segmentos objetivo de **TechnoLoad**. El proceso de Needfinding permite identificar las necesidades, comportamientos, objetivos y dificultades de los usuarios, sirviendo como base para la elaboración de los User Personas, User Task Matrix, User Journey Maps y Empathy Maps.
 
 A partir de las características objetivas y subjetivas identificadas en los dos segmentos clave (Empresas de alquiler de maquinaria pesada y Empresas de transporte y logística), se construyeron los artefactos correspondientes a cada arquetipo utilizando la herramienta UXPressia, asegurando una representación precisa del flujo de trabajo actual (*As-Is*) y del valor proyectado con la implementación de **TechnoLoad**.
+#### 2.3.1. User Personas
+#### 2.3.2. User Task Matrix
+#### 2.3.3. User Journey Mapping
+#### 2.3.4. Empathy Mapping
+#### 2.3.5. Big Picture Event Storming
+### 2.4. Ubiquitous Language
+### 3.1. User Stories
+### 3.2. Impact Mapping
+### 3.3. Product Backlog
+### 5.1. Software Configuration Management
+#### 5.1.1. Software Development Environment Configuration
+#### 5.1.2. Source Code Management
+#### 5.1.3. Source Code Style Guide & Conventions
+#### 5.1.4. Software Deployment Configuration
+### 5.2. Landing Page, Services & Applications Implementation
+### 5.3. Validation Interviews
+### 5.4. Video About-the-Product
