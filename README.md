@@ -297,26 +297,26 @@ Para afrontar las fortalezas y debilidades identificadas en nuestros competidore
 
 Para la recolección de requerimientos se diseñaron guías de entrevista breves y estructuradas de 8 preguntas clave por segmento objetivo. Estas combinan datos demográficos/tecnológicos para el perfilamiento de arquetipos (User Personas) con preguntas profundas sobre la problemática operativa y de negocio.
 
-#### **Segmento 1: Propietarios y administradores de empresas de alquiler de maquinaria**
+#### **Segmento 1: Propietarios y administradores de empresas de alquiler de maquinaria pesada**
 
 1. ¿Cuál es su nombre, edad, cargo, dispositivos y aplicaciones que utiliza a diario para administrar su negocio? *(Complementaria)*
-2. ¿Qué marcas o proveedores prefiere y qué fuentes consulta antes de tomar decisiones operativas? *(Complementaria)*
-3. ¿Cómo gestiona actualmente el inventario, la disponibilidad y los mantenimientos preventivos de su flota? *(Principal)*
-4. ¿Qué sucede cuando una máquina sufre una avería inesperada en obra y cómo gestiona las pérdidas económicas o penalizaciones? *(Principal)*
-5. ¿Cómo realiza la conciliación de horómetros de uso y el control de facturación del servicio de alquiler? *(Principal)*
-6. ¿Cuáles son sus principales objetivos o prioridades dentro de su trabajo diario? *(Complementaria)*
-7. ¿Qué situaciones relacionadas con el alquiler o gestión de maquinaria le generan mayor frustración? *(Complementaria)*
-8. ¿Qué aplicaciones, páginas web o herramientas digitales utiliza con mayor frecuencia para trabajar y comunicarse? *(Complementaria)*
+2. ¿Qué marcas de maquinaria prefiere en su flota y qué fuentes o indicadores consulta antes de tomar decisiones de inversión u operatividad? *(Complementaria)*
+3. ¿Cómo gestiona actualmente el inventario, la disponibilidad en obra y la programación de mantenimientos preventivos de su maquinaria pesada? *(Principal)*
+4. ¿Qué sucede cuando un equipo sufre una avería inesperada en plena obra y cómo gestiona los costos por inoperatividad y las penalizaciones contractuales? *(Principal)*
+5. ¿Cómo realiza el seguimiento y la conciliación de horómetros de uso trabajados para el cobro del servicio de alquiler a sus clientes? *(Principal)*
+6. ¿Cuáles son sus principales objetivos o prioridades dentro de su trabajo diario al mando de la flota? *(Complementaria)*
+7. ¿Qué situaciones relacionadas con el control de horómetros, averías o gestión de clientes le generan mayor frustración? *(Complementaria)*
+8. ¿Qué aplicaciones, páginas web o herramientas digitales utiliza con mayor frecuencia para trabajar y comunicarse con el personal de campo? *(Complementaria)*
 
 ---
 
-#### **Segmento 2: Coordinadores logísticos y responsables de transporte de carga**
+#### **Segmento 2: Coordinadores logísticos y responsables de flotas de transporte de carga**
 
-1. ¿Cuál es su nombre, edad, cargo, nivel educativo y qué dispositivos/navegadores utiliza habitualmente en su trabajo? *(Complementaria)*
-2. ¿A través de qué canales o fuentes del sector coordina la contratación o asignación de servicios de transporte? *(Complementaria)*
-3. ¿Qué dificultades encuentra respecto a la visibilidad en tiempo real de la flota y la disponibilidad de unidades para despachos? *(Principal)*
-4. ¿Ha experimentado retrasos en entrega o paradas de ruta por fallas mecánicas no planificadas? ¿Cómo afectó sus costos operativos? *(Principal)*
-5. ¿Cómo valida la asignación de rutas y qué funcionalidades exige en una plataforma digital para optimizar el transporte de carga? *(Principal)*
-6. ¿Cuáles son sus principales objetivos o prioridades dentro de su trabajo diario? *(Complementaria)*
-7. ¿Qué situaciones relacionadas con la logística, asignación de fletes y mantenimiento le generan mayor frustración? *(Complementaria)*
-8. ¿Qué aplicaciones, páginas web o herramientas digitales utiliza con mayor frecuencia para trabajar y comunicarse? *(Complementaria)*
+1. ¿Cuál es su nombre, edad, cargo, nivel educativo y qué dispositivos o navegadores utiliza habitualmente en su centro de control? *(Complementaria)*
+2. ¿A través de qué canales o herramientas del sector gestiona la programación de fletes y la comunicación con los conductores? *(Complementaria)*
+3. ¿Cómo monitorea en tiempo real la disponibilidad de sus camiones y la eficiencia en la asignación de rutas de transporte de carga? *(Principal)*
+4. ¿Ha experimentado tiempos muertos o retrasos en las entregas por paradas no planificadas o fallas mecánicas en ruta? ¿Cómo afectó esto a sus costos operativos? *(Principal)*
+5. ¿De qué manera valida los límites de kilometraje/mantenimiento de sus unidades y qué exige en una plataforma digital para optimizar el despacho de cargas? *(Principal)*
+6. ¿Cuáles son sus principales objetivos y métricas de éxito (KPIs) dentro de su trabajo diario de coordinación logística? *(Complementaria)*
+7. ¿Qué situaciones relacionadas con la desorganización de rutas, retrasos o falta de visibilidad de las unidades le generan mayor frustración? *(Complementaria)*
+8. ¿Qué aplicaciones, páginas web o herramientas de software utiliza con mayor frecuencia para el seguimiento y reporte de sus operaciones? *(Complementaria)*
