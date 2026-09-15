@@ -216,6 +216,8 @@ Los segmentos objetivo principales son los siguientes:
 | **Empresas de transporte y logística de carga** | **Coordinador logístico** | Responsable de organizar los servicios de transporte y coordinar la asignación de vehículos. | Conocer qué unidades están disponibles, en operación o en mantenimiento para organizar los despachos. |
 | **Empresas de transporte y logística de carga** | **Administrador de flota** | Responsable de supervisar los vehículos pertenecientes a la empresa. | Controlar el kilometraje, el estado operativo y los mantenimientos de cada vehículo. |
 
+### 2.1 Competidores
+
 ### 2.1.1. Competitive Analysis Landscape
 
 | *Competitive Analysis Landscape* | *Descripción* |
@@ -291,3 +293,30 @@ Para afrontar las fortalezas y debilidades identificadas en nuestros competidore
 *Táctica:* Iniciar con empresas de alquiler de maquinaria pesada y empresas de transporte y logística de carga, y posteriormente incorporar nuevas funcionalidades y segmentos de acuerdo con las necesidades identificadas en el mercado.
 
 ### 2.2. Entrevistas
+### 2.2.1 Diseño de entrevistas
+
+Para la recolección de requerimientos se diseñaron guías de entrevista breves y estructuradas de 8 preguntas clave por segmento objetivo. Estas combinan datos demográficos/tecnológicos para el perfilamiento de arquetipos (User Personas) con preguntas profundas sobre la problemática operativa y de negocio.
+
+#### **Segmento 1: Propietarios y administradores de empresas de alquiler de maquinaria**
+
+1. ¿Cuál es su nombre, edad, cargo, dispositivos y aplicaciones que utiliza a diario para administrar su negocio? *(Complementaria)*
+2. ¿Qué marcas o proveedores prefiere y qué fuentes consulta antes de tomar decisiones operativas? *(Complementaria)*
+3. ¿Cómo gestiona actualmente el inventario, la disponibilidad y los mantenimientos preventivos de su flota? *(Principal)*
+4. ¿Qué sucede cuando una máquina sufre una avería inesperada en obra y cómo gestiona las pérdidas económicas o penalizaciones? *(Principal)*
+5. ¿Cómo realiza la conciliación de horómetros de uso y el control de facturación del servicio de alquiler? *(Principal)*
+6. ¿Cuáles son sus principales objetivos o prioridades dentro de su trabajo diario? *(Complementaria)*
+7. ¿Qué situaciones relacionadas con el alquiler o gestión de maquinaria le generan mayor frustración? *(Complementaria)*
+8. ¿Qué aplicaciones, páginas web o herramientas digitales utiliza con mayor frecuencia para trabajar y comunicarse? *(Complementaria)*
+
+---
+
+#### **Segmento 2: Coordinadores logísticos y responsables de transporte de carga**
+
+1. ¿Cuál es su nombre, edad, cargo, nivel educativo y qué dispositivos/navegadores utiliza habitualmente en su trabajo? *(Complementaria)*
+2. ¿A través de qué canales o fuentes del sector coordina la contratación o asignación de servicios de transporte? *(Complementaria)*
+3. ¿Qué dificultades encuentra respecto a la visibilidad en tiempo real de la flota y la disponibilidad de unidades para despachos? *(Principal)*
+4. ¿Ha experimentado retrasos en entrega o paradas de ruta por fallas mecánicas no planificadas? ¿Cómo afectó sus costos operativos? *(Principal)*
+5. ¿Cómo valida la asignación de rutas y qué funcionalidades exige en una plataforma digital para optimizar el transporte de carga? *(Principal)*
+6. ¿Cuáles son sus principales objetivos o prioridades dentro de su trabajo diario? *(Complementaria)*
+7. ¿Qué situaciones relacionadas con la logística, asignación de fletes y mantenimiento le generan mayor frustración? *(Complementaria)*
+8. ¿Qué aplicaciones, páginas web o herramientas digitales utiliza con mayor frecuencia para trabajar y comunicarse? *(Complementaria)*
