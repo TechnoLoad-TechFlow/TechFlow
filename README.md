@@ -399,6 +399,21 @@ La matriz evidencia que ambos perfiles requieren conocer constantemente la dispo
 (POR EL MOMENTO QUE QUEDE ASÍ)
 
 #### 2.3.3. User Journey Mapping
+
+Se elaboraron dos User Journey Maps en su estado actual (*As-Is*), uno para cada User Persona. Estos diagramas representan el proceso realizado actualmente por los usuarios antes de utilizar TechnoLoad y permiten identificar puntos de fricción y oportunidades de mejora.
+
+##### User Journey Map – Administrador de Flota de Maquinaria Pesada
+
+El journey representa el proceso que sigue el administrador desde la revisión del estado de la maquinaria hasta la coordinación y registro de un mantenimiento.
+
+(AQUI VA)
+
+##### User Journey Map – Coordinador Logístico
+
+El journey representa el proceso que sigue el coordinador desde que recibe una solicitud de transporte hasta que asigna una unidad y realiza seguimiento al servicio.
+
+(AQUI VA)
+
 #### 2.3.4. Empathy Mapping
 #### 2.3.5. Big Picture Event Storming
 ### 2.4. Ubiquitous Language
