@@ -563,7 +563,26 @@ Los principales puntos de fricción se relacionan con la necesidad de consultar 
 
 #### 2.3.4. Empathy Mapping
 
-Los Empathy Maps permiten profundizar en las necesidades, comportamientos, preocupaciones y expectativas de los User Personas identificados. Su elaboración toma como referencia los patrones obtenidos durante las entrevistas realizadas a representantes de cada segmento objetivo.
+A continuación se presentan los Empathy Mapping de los segmentos objetivos de MaquiControl.
+
+### Segmento 1: Propietarios y administradores de pequeñas empresas de alquiler de maquinaria
+
+El siguiente Empathy Map representa a Luis Herrera, User Persona del Segmento 1. El artefacto sintetiza los principales comportamientos, necesidades, frustraciones, pensamientos y expectativas identificados a partir de las entrevistas realizadas a usuarios pertenecientes a este segmento.
+
+![Empathy Map - Luis Herrera](assets/empathy-map-luis-herrera.png)
+
+#### Segmento 2: Contratistas independientes y responsables de obras de construcción
+
+![Empathy Map - Harold Angello](https://drive.google.com/uc?export=view&id=1xUHDVfrey9nS7Pa2JBtn1eJHNfApmlNr)
+
+| Cuadrante | Descripción y Hallazgos Clave |
+| :--- | :--- |
+| **¿Qué piensa y siente?** | Piensa en cómo coordinar la logística de sus 2 a 3 obras simultáneas sin paradas. Siente frustración por la doble reserva de equipos y ansiedad por no retrasar los plazos acordados con los clientes. |
+| **¿Qué ve?** | Ve paradas de obra por averías mecánicas imprevistas, falta de transparencia en las tarifas finales y reportes diarios de horas recibidos por WhatsApp. |
+| **¿Qué escucha?** | Escucha recomendaciones de proveedores en grupos de WhatsApp de ingenieros, promesas incumplidas de stock por parte de alquiladores y reclamos por retrasos en obra. |
+| **¿Qué dice y hace?** | Exige visibilidad de todos sus equipos en un solo lugar centralizado. Cotiza proveedores por Google o WhatsApp y transcribe reportes de horas a hojas de Excel en su laptop. |
+| **Ganancias (Gains)** | Disponibilidad garantizada en tiempo real, cumplimiento estricto de los plazos de entrega y supervisión centralizada multi-obra de alquileres y costos. |
+| **Dolores (Pains)** | Doble reserva de maquinaria por proveedores poco éticos, paradas de obra por fallas mecánicas y dispersión de datos entre múltiples chats de WhatsApp y hojas de cálculo. |
 
 ##### Empathy Map - Administrador de Flota de Maquinaria Pesada
 
