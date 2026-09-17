@@ -375,11 +375,133 @@ En esta sección se presentan los principales artefactos obtenidos a partir del 
 
 A partir de las características objetivas y subjetivas identificadas en los dos segmentos clave (Empresas de alquiler de maquinaria pesada y Empresas de transporte y logística), se construyeron los artefactos correspondientes a cada arquetipo utilizando la herramienta UXPressia, asegurando una representación precisa del flujo de trabajo actual (*As-Is*) y del valor proyectado con la implementación de **TechnoLoad**.
 #### 2.3.1. User Personas
+
+A partir del análisis de las entrevistas se identificaron dos arquetipos principales que representan a los segmentos objetivo de TechnoLoad.
+
+El primer User Persona representa al administrador de flota de una empresa de alquiler de maquinaria pesada, responsable de supervisar la disponibilidad, los horómetros y el mantenimiento de los equipos.
+
+El segundo User Persona representa al coordinador logístico de una empresa de transporte de carga, responsable de organizar unidades, rutas y despachos, además de supervisar la disponibilidad de los vehículos.
+
+A continuación se presentan las fichas elaboradas en UXPressia.
+
+##### User Persona - Administrador de Flota de Maquinaria Pesada
+
+(AQUI VA LA IMAGEN DEL USER PERSONA DEL SEGMENTO 1)
+
+##### User Persona - Coordinador Logístico
+
+(AQUI VA LA IMAGEN DEL USER PERSONA DEL SEGMENTO 2)
+
 #### 2.3.2. User Task Matrix
+
+La siguiente matriz compara la frecuencia e importancia de las principales tareas realizadas actualmente por los dos User Personas identificados. Las tareas consideradas corresponden a actividades que los usuarios realizan independientemente de la existencia de TechnoLoad.
+
+| Tarea | Administrador de maquinaria - Frecuencia | Administrador de maquinaria - Importancia | Coordinador logístico - Frecuencia | Coordinador logístico - Importancia |
+|---|---|---|---|---|
+| Revisar disponibilidad de unidades | High | High | High | High |
+| Registrar horas de uso o kilometraje | High | High | High | High |
+| Coordinar mantenimiento de unidades | Medium | High | Medium | High |
+| Revisar historial de mantenimiento | Medium | High | Medium | Medium |
+| Coordinar asignación de unidades | Medium | Medium | High | High |
+| Coordinar rutas y despachos | Low | Low | High | High |
+| Revisar costos operativos | Medium | High | Media | High |
+| Comunicar incidencias operativas | High | High | High | High |
+
+La matriz evidencia que ambos perfiles requieren conocer constantemente la disponibilidad y condición de los activos que administran. Sin embargo, el administrador de maquinaria concentra mayor esfuerzo en el seguimiento de horómetros, mantenimiento y disponibilidad de equipos, mientras que el coordinador logístico prioriza la asignación de vehículos, organización de rutas y coordinación de despachos.
+
+Estas diferencias permiten identificar necesidades particulares para cada segmento y sirven como base para definir posteriormente las funcionalidades de TechnoLoad.
+
 #### 2.3.3. User Journey Mapping
+
+Se elaboraron dos User Journey Maps en su estado actual (*As-Is*), uno para cada User Persona identificado. Estos diagramas representan los procesos que realizan actualmente los usuarios antes de utilizar TechnoLoad, permitiendo identificar dificultades, puntos de contacto y oportunidades de mejora.
+
+##### User Journey Map - Administrador de Flota de Maquinaria Pesada
+
+El journey representa el proceso que sigue actualmente el administrador de flota para supervisar una maquinaria, verificar sus horas de funcionamiento, identificar la necesidad de mantenimiento y coordinar la intervención correspondiente.
+
+De manera general, el proceso actual considera las siguientes etapas:
+
+**Revisar la flota → Verificar horómetros → Identificar necesidad de mantenimiento → Coordinar mantenimiento → Registrar la intervención**
+
+Durante este proceso pueden presentarse dificultades relacionadas con registros manuales, información desactualizada, falta de alertas preventivas y poca visibilidad del estado real de los equipos.
+
+(AQUI VA LA IMAGEN DEL USER JOURNEY DEL SEGMENTO 1)
+
+##### User Journey Map - Coordinador Logístico
+
+El journey representa el proceso que sigue actualmente el coordinador logístico desde que recibe una solicitud de transporte hasta que logra asignar una unidad y coordinar el servicio.
+
+De manera general, el proceso actual considera las siguientes etapas:
+
+**Recibir solicitud de transporte → Consultar disponibilidad → Seleccionar unidad → Asignar vehículo → Coordinar ruta → Realizar seguimiento del servicio**
+
+Los principales puntos de fricción se relacionan con la necesidad de consultar diferentes medios para conocer la disponibilidad de las unidades, la comunicación mediante llamadas o mensajería y la falta de información centralizada para tomar decisiones rápidamente.
+
+(AQUI VA LA IMAGEN DEL USER JOURNEY DEL SEGMENTO 2)
+
 #### 2.3.4. Empathy Mapping
+
+Los Empathy Maps permiten profundizar en las necesidades, comportamientos, preocupaciones y expectativas de los User Personas identificados. Su elaboración toma como referencia los patrones obtenidos durante las entrevistas realizadas a representantes de cada segmento objetivo.
+
+##### Empathy Map - Administrador de Flota de Maquinaria Pesada
+
+El administrador de flota necesita mantener la maquinaria disponible para las operaciones y reducir las fallas inesperadas que puedan generar pérdidas económicas o retrasos.
+
+Entre sus principales preocupaciones se encuentran el control de las horas de funcionamiento, el cumplimiento de los mantenimientos preventivos, la disponibilidad de los equipos y la reducción de los costos derivados de fallas mecánicas.
+
+Este perfil busca contar con información confiable que le permita tomar decisiones oportunas y reducir la dependencia de registros manuales o información dispersa.
+
+(AQUI VA LA IMAGEN DEL EMPATHY MAP DEL SEGMENTO 1)
+
+##### Empathy Map - Coordinador Logístico
+
+El coordinador logístico necesita organizar los servicios de transporte de manera eficiente, asignando vehículos disponibles y evitando retrasos en los despachos.
+
+Entre sus principales preocupaciones se encuentran los tiempos muertos, la falta de información actualizada sobre las unidades, los retrasos ocasionados por fallas mecánicas y la dificultad para coordinar simultáneamente vehículos, conductores y rutas.
+
+Este perfil busca acceder rápidamente a información que le permita conocer qué unidades se encuentran disponibles y tomar decisiones con mayor rapidez.
+
+(AQUI VA LA IMAGEN DEL EMPATHY MAP DEL SEGMENTO 2)
+
 #### 2.3.5. Big Picture Event Storming
+
+El Big Picture Event Storming permite visualizar de manera general los principales procesos del negocio de TechnoLoad, identificando actores, comandos, eventos del dominio, políticas y puntos críticos. En este proyecto se representan los flujos relacionados con la gestión de activos, el mantenimiento preventivo y la coordinación de transporte y logística, con el objetivo de comprender cómo se relacionan las principales actividades del dominio.
+
+(AQUI VA LA IMAGEN DEL EVENT STORMING)
+
 ### 2.4. Ubiquitous Language
+
+En esta sección se presenta el Ubiquitous Language de TechnoLoad, compuesto por términos propios del dominio de gestión de flotas, mantenimiento de maquinaria pesada y transporte de carga. El objetivo es mantener un lenguaje común y sin ambigüedades entre los integrantes del equipo y los stakeholders involucrados en el proyecto.
+
+Los términos se presentan en inglés debido a que serán utilizados de manera consistente durante el modelado del dominio y el desarrollo posterior de la solución.
+
+| Term | Definition |
+|---|---|
+| **Fleet** | Conjunto de vehículos o maquinaria pertenecientes a una empresa y administrados como parte de sus operaciones. |
+| **Heavy Machinery** | Maquinaria pesada utilizada principalmente en actividades de construcción, minería u operaciones industriales. |
+| **Vehicle** | Unidad de transporte utilizada para trasladar carga entre diferentes ubicaciones. |
+| **Asset** | Recurso perteneciente a una empresa que puede corresponder a una maquinaria pesada o un vehículo de transporte. |
+| **Fleet Manager** | Persona responsable de supervisar el estado, disponibilidad, uso y mantenimiento de los activos de una flota. |
+| **Logistics Coordinator** | Persona responsable de organizar la asignación de vehículos, rutas y despachos dentro de una operación logística. |
+| **Horometer** | Dispositivo o registro utilizado para medir las horas acumuladas de funcionamiento de una maquinaria. |
+| **Mileage** | Cantidad de kilómetros acumulados recorridos por un vehículo. |
+| **Preventive Maintenance** | Mantenimiento planificado que se realiza antes de que ocurra una falla con el objetivo de conservar el activo en condiciones adecuadas de operación. |
+| **Corrective Maintenance** | Mantenimiento realizado después de detectar una falla o avería en un activo. |
+| **Maintenance Alert** | Aviso generado cuando una maquinaria o vehículo se aproxima al límite establecido para realizar un mantenimiento. |
+| **Maintenance Schedule** | Planificación de las fechas o condiciones bajo las cuales deben realizarse los mantenimientos de un activo. |
+| **Maintenance Record** | Registro histórico que almacena información sobre los mantenimientos realizados a una maquinaria o vehículo. |
+| **Fleet Availability** | Condición que permite identificar qué activos se encuentran disponibles para realizar una operación. |
+| **Available** | Estado de un activo que se encuentra operativo y disponible para ser asignado. |
+| **In Operation** | Estado de un activo que actualmente se encuentra ejecutando una operación o servicio. |
+| **In Maintenance** | Estado de un activo que temporalmente no se encuentra disponible debido a actividades de mantenimiento. |
+| **Transport Request** | Solicitud que requiere la asignación de una unidad para realizar un servicio de transporte de carga. |
+| **Dispatch** | Proceso mediante el cual una unidad es seleccionada, asignada y enviada para realizar un servicio. |
+| **Route** | Recorrido definido que debe seguir un vehículo para realizar un servicio de transporte. |
+| **Downtime** | Periodo durante el cual una maquinaria o vehículo no se encuentra disponible para operar. |
+| **Operational Cost** | Costo asociado a la utilización, mantenimiento y operación de una maquinaria o vehículo. |
+| **Fleet Status** | Información que representa la condición operativa actual de un activo perteneciente a la flota. |
+| **Usage Reading** | Registro de las horas de funcionamiento o kilometraje acumulado de un activo. |
+
 # Capítulo III: Requirements Specification
 
 Este capítulo formaliza los hallazgos del análisis en historias de usuario, criterios de aceptación, relaciones de impacto y backlog priorizado. Los requisitos funcionales cubren activos, lecturas, mantenimiento, alertas, disponibilidad y asignación; los no funcionales establecen seguridad, rendimiento, accesibilidad, internacionalización, trazabilidad y mantenibilidad.
@@ -443,6 +565,7 @@ Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [
 
 
 ### 3.2. Impact Mapping
+
 ### 3.3. Product Backlog
 
 | Orden | ID | Epic | Título | Story Points |
