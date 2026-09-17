@@ -619,7 +619,40 @@ Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [
 
 # Capítulo IV: Product Design
 
-# Capítulo IV: Product Design
+## 4.1. Style Guidelines
+
+Esta sección define las decisiones visuales y de interacción que mantienen una experiencia coherente en TechnoLoad. El sistema de diseño se orienta a operaciones de flota: debe permitir identificar el estado de un activo, detectar una excepción y ejecutar una acción sin ambigüedad, tanto desde escritorio como desde un dispositivo móvil.
+
+### 4.1.1. General Style Guidelines
+
+El UI Kit emplea **Inter** como tipografía principal por su legibilidad en tablas, indicadores y formularios. La escala tipográfica usa 12, 14, 16, 20, 24, 32 y 40 px; el cuerpo base es 16 px (1 rem) y los títulos usan peso 600 o 700. Los textos mantienen contraste suficiente y no dependen exclusivamente del color para transmitir estado.
+
+| Token | Valor | Uso en TechnoLoad |
+|---|---:|---|
+| Primary | `#0F3D5E` | navegación, encabezados y confianza operativa |
+| Action | `#1976D2` | botones primarios, enlaces y foco |
+| Accent | `#FF8F00` | CTA, alertas de atención y priorización |
+| Success | `#2E7D32` | activo disponible y confirmaciones |
+| Error | `#C62828` | validación, fallos y acciones bloqueadas |
+| Neutral 50–900 | `#F6F8FB`–`#17324D` | superficies, bordes y jerarquía de texto |
+
+La escala de espaciado se compone de 4, 8, 12, 16, 24, 32 y 48 px. Las tarjetas usan radio de 12 px, una sombra tenue y separación interna mínima de 16 px. El color de estado siempre se acompaña con una etiqueta, icono o texto descriptivo.
+
+| Elemento Figma | Equivalente PrimeVue | Estados documentados |
+|---|---|---|
+| Primary / secondary button | `pv-button` | default, hover, focus, disabled, loading |
+| Campo de formulario | `pv-input-text` | default, focus, error, disabled |
+| Tarjeta de activo | `pv-card` | default, hover, loading |
+| Tabla operativa | `pv-data-table` | loading, empty, selected, error |
+| Estado de activo | `pv-tag` | disponible, mantenimiento, crítico |
+| Confirmación y error | `pv-toast` | success, warn, error, info |
+| Carga de contenido | `pv-skeleton` | tarjeta, fila y detalle |
+
+### 4.1.2. Web Style Guidelines
+
+La grilla de escritorio utiliza 12 columnas, margen lateral de 80 px y gutters de 24 px a partir de 1440 px. En tablet (768 px) emplea margen de 32 px y gutters de 16 px; en móvil (375 px) emplea una sola columna y margen de 16 px. PrimeFlex organiza el AppShell mediante topbar, área de navegación lateral y contenedor principal; el sidebar se transforma en `pv-drawer` en pantallas reducidas.
+
+Los breakpoints priorizan contenido antes que decoración: los KPIs se apilan, las tablas habilitan desplazamiento horizontal y las acciones secundarias pasan al menú contextual. Todo control interactivo es alcanzable con teclado, muestra foco visible y ofrece etiquetas accesibles.
 
 ## 4.2. Information Architecture
 
@@ -669,13 +702,13 @@ La Landing Page aplica Primary `#0F3D5E`, Secondary `#FF8F00` e Inter para comun
 
 El wireframe de baja fidelidad define Navbar, Hero de dos columnas, beneficios, módulos, proceso, CTA y Footer. Las estructuras se validan antes de aplicar estilo visual y responden a desktop y móvil.
 
-![wireframeDesktop](../assets/landing-wireframes.svg)
+![Wireframe de la landing page de TechnoLoad](assets/landing-wireframes.svg)
 
 ### 4.3.2. Landing Page Mock-ups
 
 El mock-up de alta fidelidad aplica la jerarquía Inter, superficies blancas, cards con bordes suaves y CTAs contrastantes. El copy principal, “Controla tu flota antes de que una parada detenga tu operación”, se acompaña de “Solicitar una demostración” y “Conocer los módulos”. Las variantes de componentes contemplan hover, foco, deshabilitado y carga.
 
-![Mockup-Desktop1440](../assets/landing-mockup.svg)
+![Mock-up de la landing page de TechnoLoad](assets/landing-mockup.svg)
 
 ## 4.4. Web Applications UX/UI Design
 
@@ -685,32 +718,31 @@ El Dashboard y la Web App se diseñan a partir de los User Personas y User Stori
 
 Los wireframes B/F especifican Dashboard con KPIs y actividad; listado de Activos con búsqueda, filtros y tabla; Detalle con historial; formulario Registrar Lectura; Mantenimientos con prioridad y programación; y Operaciones con drawer de asignación.
 
-![Web-Application-Wireframe](../assets/web-app-wireframes.svg)
+![Wireframes de la aplicación TechnoLoad](assets/web-app-wireframes.svg)
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
 El wireflow visualiza la conexión Dashboard → Activos → Detalle → Registrar lectura → confirmación, además de los recorridos de mantenimiento y asignación. Las conexiones previenen pantallas aisladas y documentan retorno, cancelación y éxito.
 
-![Web-Application-Wireflow](assets/web_applications_wireflows.png)
+![Wireflow de la aplicación TechnoLoad](assets/web-app-wireflow.svg)
 
 ### 4.4.3. Web Applications Mock-ups
 
 Las interfaces H/F se implementan en Vue 3 y PrimeVue mediante Auto-layout y componentes reutilizables. La carga utiliza Skeleton; la ausencia de datos presenta un estado vacío con CTA; el éxito usa Toast y actualización local; el error es recuperable y conserva los campos ingresados.
 
-![Web-Application-Mock-Ups](assets/webapplicationsmockups.png)
+![Estados visuales de la aplicación TechnoLoad](assets/web-app-mockups.svg)
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
 Los diagramas representan tres procesos core: Registrar Lectura valida el valor antes de persistirlo y actualizar historial; Programar Mantenimiento crea una orden con activo, tipo, fecha y prioridad; Asignar Unidad filtra activos disponibles, solicita confirmación y actualiza la operación.
 
-![Web-Application-UserFlowDiagrams](assets/web_applications_user_flows.png)
+![Flujos de usuario de TechnoLoad](assets/web-app-user-flows.svg)
 
 ## 4.5. Web Applications Prototyping
 
 El prototipo simula navegación, modales y drawers. Los triggers On Click y On Hover se vinculan con Smart Animate, Dissolve y overlays para demostrar continuidad, feedback de validación y cambios de estado antes de la implementación final.
 
-![Web Application Prototype](assets/web-application-prototype.png)
-**Video:** [TechnoLoad Web Application Prototype](https://upcedupe-my.sharepoint.com/...)
+![Mapa de interacciones del prototipo TechnoLoad](assets/web-app-prototype.svg)
 
 ## 4.6. Domain-Driven Software Architecture
 
@@ -720,31 +752,213 @@ La arquitectura orientada al dominio separa el conocimiento de negocio mediante 
 
 El **Fleet Management Bounded Context** concentra inventario, estado y lecturas de activos. **Maintenance Management** gestiona programación, prioridades y órdenes. **Operations Management** controla asignaciones y horas operativas. **Identity & Access Management** resuelve cuentas, roles y autenticación; **Profiles Management** conserva organización y preferencias de usuario. Los comandos producen eventos, los agregados protegen reglas y los read models satisfacen las consultas de interfaz.
 
-![Fleet Management Design-Level Event Storming](assets/design-level-event-storming-fleet-management.png)
-![Maintenance Management Design-Level Event Storming](assets/design-level-event-storming-maintenance-management.png)
-![Operations Management Design-Level Event Storming](assets/design-level-event-storming-operations-management.png)
-![Identity and Access Management Design-Level Event Storming](assets/design-level-event-storming-identity-access-management.png)
-![Profiles Management Design-Level Event Storming](assets/design-level-event-storming-profiles-management.png)
+| Bounded Context | Commands | Aggregate | Value Objects | Domain Events | Read Model |
+|---|---|---|---|---|---|
+| Fleet / Asset | RegisterAsset, UpdateAssetStatus, RecordReading | Asset | AssetCode, AssetStatus, MeterReading | AssetRegistered, AssetStatusChanged, ReadingRecorded | AssetList, AssetDetail |
+| Maintenance | ScheduleMaintenance, StartMaintenance, CompleteMaintenance | MaintenanceOrder | Priority, MaintenanceType, ScheduledDate | MaintenanceScheduled, MaintenanceStarted, MaintenanceCompleted | MaintenanceBoard |
+| Operations | AssignUnit, CloseOperation | Operation | AssignmentPeriod, OperationStatus | UnitAssigned, OperationClosed | AvailabilityBoard |
 
 ### 4.6.2. Software Architecture Context Diagram
 
 El C4 Nivel 1 ubica a TechnoLoad como sistema central. El Administrador de Flota registra y controla mantenimiento; el Coordinador consulta disponibilidad y asigna unidades; las APIs externas entregan telemetría y notificaciones.
 
-![TechnoLoad Software Architecture Context Diagram](../assets/architecture-overview.svg)
+![Diagrama de contexto de TechnoLoad](assets/architecture-overview.svg)
+
+```plantuml
+@startuml
+!include <C4/C4_Context>
+Person(admin, "Administrador de flota", "Gestiona activos y mantenimiento")
+Person(coordinator, "Coordinador operativo", "Consulta disponibilidad y asigna unidades")
+System(technoload, "TechnoLoad", "Gestión de activos, mantenimiento y operaciones")
+System_Ext(telematics, "Plataforma telemática", "Entrega lecturas y ubicación")
+System_Ext(notifications, "Servicio de notificaciones", "Envía alertas operativas")
+Rel(admin, technoload, "Administra")
+Rel(coordinator, technoload, "Consulta y asigna")
+Rel(telematics, technoload, "Publica telemetría", "HTTPS/JSON")
+Rel(technoload, notifications, "Solicita alertas", "HTTPS/JSON")
+@enduml
+```
 
 ### 4.6.3. Software Architecture Container Diagram
 
 El C4 Nivel 2 separa la SPA Vue 3/PrimeVue/Vite, el REST API Gateway, los servicios de dominio y PostgreSQL. Axios transporta JSON por HTTPS y el Gateway concentra autenticación, control de acceso y enrutamiento.
 
-![TechnoLoad Software Architecture Container Diagram](../assets/architecture-overview.svg)
+![Diagrama de contenedores de TechnoLoad](assets/architecture-overview.svg)
+
+```plantuml
+@startuml
+!include <C4/C4_Container>
+Person(user, "Usuario operativo")
+System_Boundary(technoload, "TechnoLoad") {
+  Container(spa, "SPA", "Vue 3, Vite, PrimeVue", "Interfaz responsive y i18n")
+  Container(gateway, "API Gateway", "REST", "Autenticación, autorización y enrutamiento")
+  Container(fleet, "Fleet Service", "Servicio de dominio", "Activos, lecturas y estado")
+  Container(maintenance, "Maintenance Service", "Servicio de dominio", "Órdenes y programación")
+  ContainerDb(db, "Base de datos", "PostgreSQL", "Datos transaccionales")
+}
+System_Ext(telematics, "Telemática externa")
+Rel(user, spa, "Usa", "HTTPS")
+Rel(spa, gateway, "Consume API", "Axios / JSON")
+Rel(gateway, fleet, "Enruta")
+Rel(gateway, maintenance, "Enruta")
+Rel(fleet, db, "Lee y escribe", "SQL")
+Rel(maintenance, db, "Lee y escribe", "SQL")
+Rel(telematics, gateway, "Envía lecturas", "HTTPS")
+@enduml
+```
 
 ### 4.6.4. Software Architecture Components Diagrams
 
 Cada contexto se descompone en cuatro capas: Interfaces presenta componentes Vue/PrimeVue; Application coordina stores y casos de uso; Domain contiene agregados, entidades y objetos de valor; Infrastructure adapta API, persistencia y assemblers. Las dependencias apuntan hacia Domain y Shared Kernel.
 
-![API Application Component Diagram](assets/c4-api-application-component-diagram.png)
-![Fleet Management Component Diagram](assets/c4-fleet-management-component-diagram.png)
-![Maintenance Management Component Diagram](assets/c4-maintenance-management-component-diagram.png)
-![Operations Management Component Diagram](assets/c4-operations-management-component-diagram.png)
-![Identity and Access Management Component Diagram](assets/c4-identity-access-management-component-diagram.png)
-![Profiles Management Component Diagram](assets/c4-profiles-management-component-diagram.png)
+```mermaid
+flowchart LR
+  UI[Presentation\nVue components + PrimeVue] --> APP[Application\nreactive fleet store]
+  APP --> DOM[Domain\nAsset + MaintenanceOrder + Value Objects]
+  APP --> INF[Infrastructure\nAxios client + Assemblers]
+  INF --> API[REST API]
+  UI --> SHARED[Shared Kernel\ni18n, layout, validation]
+```
+
+## 4.7. Software Object-Oriented Design
+
+### 4.7.1. Class Diagrams
+
+El diseño orientado a objetos mantiene el modelo de dominio aislado de DTOs y componentes. `Asset` y `MaintenanceOrder` son entidades inmutables; `Url` y `DateTime` encapsulan validación y representación. Los assemblers transforman los contratos de API en objetos de dominio y el store coordina el estado visible sin filtrar detalles de infraestructura a la interfaz.
+
+```plantuml
+@startuml
+class Asset {
+  - #id: String
+  - #name: String
+  - #status: String
+  - #imageUrl: Url
+  + get id(): String
+  + get name(): String
+  + get status(): String
+}
+class MaintenanceOrder {
+  - #id: String
+  - #assetId: String
+  - #scheduledAt: DateTime
+  - #priority: String
+}
+class Url { + get value(): String }
+class DateTime { + get value(): Date }
+class AssetAssembler { + toDomain(dto): Asset }
+class MaintenanceOrderAssembler { + toDomain(dto): MaintenanceOrder }
+class FleetStore { + state: Object + loadAssets(): Promise }
+class AssetList
+class AssetItem
+class AssetSummary
+Asset --> Url
+MaintenanceOrder --> DateTime
+AssetAssembler ..> Asset
+MaintenanceOrderAssembler ..> MaintenanceOrder
+FleetStore ..> AssetAssembler
+FleetStore ..> MaintenanceOrderAssembler
+AssetList --> FleetStore
+AssetList --> AssetItem
+AssetItem --> AssetSummary
+@enduml
+```
+
+## 4.8. Database Design
+
+### 4.8.1. Database Diagrams
+
+El modelo relacional conserva la trazabilidad entre los activos, sus lecturas, las órdenes de mantenimiento y las asignaciones operativas. Las relaciones garantizan que una orden o lectura pertenezca a un activo existente y que el historial pueda consultarse sin modificar datos pasados.
+
+```mermaid
+erDiagram
+  ASSET ||--o{ METER_READING : records
+  ASSET ||--o{ MAINTENANCE_ORDER : receives
+  ASSET ||--o{ UNIT_ASSIGNMENT : is_assigned
+  OPERATION ||--o{ UNIT_ASSIGNMENT : groups
+  ASSET {
+    uuid id PK
+    varchar code UK
+    varchar name
+    varchar status
+  }
+  METER_READING {
+    uuid id PK
+    uuid asset_id FK
+    numeric value
+    timestamptz recorded_at
+  }
+  MAINTENANCE_ORDER {
+    uuid id PK
+    uuid asset_id FK
+    varchar priority
+    varchar status
+    timestamptz scheduled_at
+  }
+  OPERATION {
+    uuid id PK
+    varchar name
+    varchar status
+  }
+  UNIT_ASSIGNMENT {
+    uuid id PK
+    uuid operation_id FK
+    uuid asset_id FK
+    timestamptz assigned_at
+  }
+```
+
+### 4.8.2. Script DDL
+
+```sql
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+
+CREATE TABLE asset (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  code VARCHAR(40) NOT NULL UNIQUE,
+  name VARCHAR(160) NOT NULL,
+  status VARCHAR(30) NOT NULL CHECK (status IN ('AVAILABLE', 'IN_MAINTENANCE', 'ASSIGNED', 'INACTIVE')),
+  image_url TEXT,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE TABLE meter_reading (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
+  value NUMERIC(14,2) NOT NULL CHECK (value >= 0),
+  unit VARCHAR(12) NOT NULL CHECK (unit IN ('KM', 'HOURS')),
+  recorded_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE TABLE maintenance_order (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
+  maintenance_type VARCHAR(60) NOT NULL,
+  priority VARCHAR(20) NOT NULL CHECK (priority IN ('LOW', 'MEDIUM', 'HIGH', 'CRITICAL')),
+  status VARCHAR(25) NOT NULL CHECK (status IN ('SCHEDULED', 'IN_PROGRESS', 'COMPLETED', 'CANCELLED')),
+  scheduled_at TIMESTAMPTZ NOT NULL,
+  completed_at TIMESTAMPTZ,
+  CHECK (completed_at IS NULL OR completed_at >= scheduled_at)
+);
+
+CREATE TABLE operation (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  name VARCHAR(160) NOT NULL,
+  status VARCHAR(25) NOT NULL CHECK (status IN ('PLANNED', 'ACTIVE', 'CLOSED')),
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE TABLE unit_assignment (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  operation_id UUID NOT NULL REFERENCES operation(id) ON DELETE RESTRICT,
+  asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
+  assigned_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  released_at TIMESTAMPTZ,
+  CHECK (released_at IS NULL OR released_at >= assigned_at)
+);
+
+CREATE INDEX idx_meter_reading_asset_recorded_at ON meter_reading(asset_id, recorded_at DESC);
+CREATE INDEX idx_maintenance_order_asset_status ON maintenance_order(asset_id, status);
+CREATE INDEX idx_unit_assignment_operation ON unit_assignment(operation_id);
+CREATE INDEX idx_asset_status ON asset(status);
+```
