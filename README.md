@@ -501,11 +501,18 @@ A continuación se presentan las fichas elaboradas en UXPressia.
 
 ##### User Persona - Administrador de Flota de Maquinaria Pesada
 
-(AQUI VA LA IMAGEN DEL USER PERSONA DEL SEGMENTO 1)
+##### Luis Herrera
+
+Luis Herrera representa al administrador de una pequeña empresa dedicada al alquiler de maquinaria. Su perfil refleja las principales características, necesidades, objetivos y frustraciones identificadas en las entrevistas realizadas al segmento.
+
+![User Persona - Luis Herrera](assets/user-persona-luis-herrera.png)
 
 ##### User Persona - Coordinador Logístico
+##### Harold Angello
 
-(AQUI VA LA IMAGEN DEL USER PERSONA DEL SEGMENTO 2)
+Harold Angello representa al contratista responsable de pequeñas obras que necesita asegurar maquinaria disponible y mantener el control operativo de sus proyectos.
+
+![User Persona - Harold Angello](https://drive.google.com/uc?export=view&id=1upOL-SUfHb9zqnYesjOgERQdI3wfDt0F)
 
 #### 2.3.2. User Task Matrix
 
