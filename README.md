@@ -221,10 +221,31 @@ Como grupo, nos comprometeremos a resolver este desafío mediante una colaboraci
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-* "Si ofrecemos a los usuarios un acceso conveniente y flexible a la gestión de flotas en línea, permitiendo el control de mantenimientos preventivos y asignación de rutas, entonces aumentará la probabilidad de que las empresas se comprometan a largo plazo con la plataforma, lo que resultará en una mayor retención de clientes."
-* "Si proporcionamos un sistema de alertas de mantenimiento preventivo configurables por horómetro y kilometraje, entonces aumentará la satisfacción del usuario y se reducirán las paradas no programadas en obra, lo que contribuirá al crecimiento del negocio a través de recomendaciones positivas en el sector."
-* "Si garantizamos la seguridad y confidencialidad de los datos operativos y de telemetría de las flotas de nuestros clientes, entonces aumentará la confianza y la lealtad de los usuarios hacia la plataforma, lo que resultará en una menor tasa de cancelación de suscripciones."
-* "Si desarrollamos una interfaz de usuario intuitiva y fácil de usar en TechnoLoad, que permita a los administradores visualizar el estado de sus equipos en un dashboard claro, entonces aumentará la frecuencia de uso y la precisión en los registros de datos, lo que conducirá a una mejor adopción del sistema y al crecimiento del negocio."
+Siguiendo el template exigido por el enunciado, cada Hypothesis Statement se redacta en inglés a partir de una Feature Assumption, indicando el business outcome que se busca lograr, las personas involucradas, el beneficio esperado y la funcionalidad o solución que lo habilita.
+
+* **Hypothesis 1**
+  We believe we will achieve *higher long-term platform retention among fleet operators*
+  If *heavy machinery fleet managers and logistics coordinators*
+  Attain *convenient, flexible online access to preventive maintenance control and route assignment*
+  With *a centralized SaaS fleet management platform*.
+
+* **Hypothesis 2**
+  We believe we will achieve *a reduction in unplanned equipment downtime and increased customer satisfaction*
+  If *fleet managers*
+  Attain *configurable preventive maintenance alerts based on horometer and mileage readings*
+  With *an automated maintenance alerting module*.
+
+* **Hypothesis 3**
+  We believe we will achieve *greater user trust and a lower subscription cancellation rate*
+  If *fleet managers and logistics coordinators*
+  Attain *confidence that their operational and telemetry data is secure and confidential*
+  With *data security and privacy safeguards built into the platform*.
+
+* **Hypothesis 4**
+  We believe we will achieve *higher usage frequency, more accurate data entry, and better system adoption*
+  If *fleet administrators*
+  Attain *a clear, intuitive dashboard that shows the status of their equipment at a glance*
+  With *an intuitive, easy-to-use TechnoLoad user interface*.
 
 #### 1.2.2.4. Lean UX Canvas
 
