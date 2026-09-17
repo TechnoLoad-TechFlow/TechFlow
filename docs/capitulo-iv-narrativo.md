@@ -48,15 +48,13 @@ La Landing Page aplica Primary `#0F3D5E`, Secondary `#FF8F00` e Inter para comun
 
 El wireframe de baja fidelidad define Navbar, Hero de dos columnas, beneficios, módulos, proceso, CTA y Footer. Las estructuras se validan antes de aplicar estilo visual y responden a desktop y móvil.
 
-![wireframeDesktop](assets/Wireframe-Desktop1440.png)
-![wireframeMobile](assets/Wireframe-Mobile390.png)
+![wireframeDesktop](../assets/landing-wireframes.svg)
 
 ### 4.3.2. Landing Page Mock-ups
 
 El mock-up de alta fidelidad aplica la jerarquía Inter, superficies blancas, cards con bordes suaves y CTAs contrastantes. El copy principal, “Controla tu flota antes de que una parada detenga tu operación”, se acompaña de “Solicitar una demostración” y “Conocer los módulos”. Las variantes de componentes contemplan hover, foco, deshabilitado y carga.
 
-![Mockup-Desktop1440](assets/Mockup-Desktop1440.png)
-![Mockup-Mobile390](assets/Mockup-Mobile390.png)
+![Mockup-Desktop1440](../assets/landing-mockup.svg)
 
 ## 4.4. Web Applications UX/UI Design
 
@@ -66,7 +64,7 @@ El Dashboard y la Web App se diseñan a partir de los User Personas y User Stori
 
 Los wireframes B/F especifican Dashboard con KPIs y actividad; listado de Activos con búsqueda, filtros y tabla; Detalle con historial; formulario Registrar Lectura; Mantenimientos con prioridad y programación; y Operaciones con drawer de asignación.
 
-![Web-Application-Wireframe](assets/web_applications_wireframes.png)
+![Web-Application-Wireframe](../assets/web-app-wireframes.svg)
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
@@ -111,13 +109,13 @@ El **Fleet Management Bounded Context** concentra inventario, estado y lecturas 
 
 El C4 Nivel 1 ubica a TechnoLoad como sistema central. El Administrador de Flota registra y controla mantenimiento; el Coordinador consulta disponibilidad y asigna unidades; las APIs externas entregan telemetría y notificaciones.
 
-![TechnoLoad Software Architecture Context Diagram](assets/c4-context-diagram.png)
+![TechnoLoad Software Architecture Context Diagram](../assets/architecture-overview.svg)
 
 ### 4.6.3. Software Architecture Container Diagram
 
 El C4 Nivel 2 separa la SPA Vue 3/PrimeVue/Vite, el REST API Gateway, los servicios de dominio y PostgreSQL. Axios transporta JSON por HTTPS y el Gateway concentra autenticación, control de acceso y enrutamiento.
 
-![TechnoLoad Software Architecture Container Diagram](assets/c4-container-diagram.png)
+![TechnoLoad Software Architecture Container Diagram](../assets/architecture-overview.svg)
 
 ### 4.6.4. Software Architecture Components Diagrams
 
@@ -129,4 +127,3 @@ Cada contexto se descompone en cuatro capas: Interfaces presenta componentes Vue
 ![Operations Management Component Diagram](assets/c4-operations-management-component-diagram.png)
 ![Identity and Access Management Component Diagram](assets/c4-identity-access-management-component-diagram.png)
 ![Profiles Management Component Diagram](assets/c4-profiles-management-component-diagram.png)
-
