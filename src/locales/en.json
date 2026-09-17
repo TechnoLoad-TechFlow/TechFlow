@@ -1,0 +1,9 @@
+{
+  "app": { "name": "TechnoLoad", "tagline": "Smart fleet management" },
+  "nav": { "dashboard": "Dashboard", "assets": "Assets", "maintenance": "Maintenance", "operations": "Operations", "sources": "Sources" },
+  "action": { "create": "Create", "save": "Save", "cancel": "Cancel", "close": "Close", "retry": "Retry", "changeLanguage": "Change language" },
+  "status": { "available": "Available", "inMaintenance": "In maintenance", "inOperation": "In operation", "outOfService": "Out of service" },
+  "feedback": { "unavailableTitle": "Content unavailable", "unavailableMessage": "The requested information could not be loaded.", "unexpectedError": "An unexpected error occurred." },
+  "footer": { "copyright": "All rights reserved.", "privacy": "Privacy", "support": "Support" },
+  "fleet": { "assetsTitle": "Assets", "assetsSubtitle": "Review the operational status of your fleet.", "assetDetails": "Asset details", "assetCode": "Code", "assetName": "Name", "assetStatus": "Status", "noAssets": "There are no assets to display." }
+}
