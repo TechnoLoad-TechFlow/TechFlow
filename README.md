@@ -428,6 +428,24 @@ Los Empathy Maps permiten profundizar en los comportamientos, preocupaciones, ne
 
 #### 2.3.5. Big Picture Event Storming
 ### 2.4. Ubiquitous Language
+
+| Term | Definition |
+|---|---|
+| Fleet | Conjunto de vehículos o maquinaria administrados por una empresa. |
+| Heavy Machinery | Equipo pesado utilizado principalmente en actividades de construcción, minería u operaciones industriales. |
+| Vehicle | Unidad de transporte utilizada para trasladar carga. |
+| Asset | Recurso perteneciente a una empresa que puede corresponder a maquinaria o vehículo. |
+| Horometer | Dispositivo o registro utilizado para medir las horas acumuladas de operación de una maquinaria. |
+| Mileage | Distancia acumulada recorrida por un vehículo. |
+| Preventive Maintenance | Mantenimiento programado antes de la aparición de una falla. |
+| Maintenance Alert | Aviso generado cuando un activo se aproxima a su límite definido para mantenimiento. |
+| Maintenance Record | Registro histórico de una intervención realizada a un activo. |
+| Fleet Availability | Estado que indica qué activos se encuentran disponibles para una operación. |
+| Transport Request | Solicitud que requiere la asignación de una unidad para transportar carga. |
+| Dispatch | Proceso mediante el cual una unidad es asignada y enviada para realizar un servicio. |
+| Route | Recorrido establecido para realizar un servicio de transporte. |
+| Downtime | Periodo durante el cual un activo no se encuentra operativo. |
+
 ### 3.1. User Stories
 ### 3.2. Impact Mapping
 ### 3.3. Product Backlog
