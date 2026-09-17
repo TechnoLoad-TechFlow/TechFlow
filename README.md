@@ -380,6 +380,24 @@ A continuación se presentan las fichas elaboradas en UXPressia.
 (AQUI VA)
 
 #### 2.3.2. User Task Matrix
+
+La siguiente matriz compara la frecuencia e importancia de las principales tareas realizadas actualmente por los dos User Personas identificados.
+
+| Tarea | Administrador de maquinaria - Frecuencia | Administrador de maquinaria - Importancia | Coordinador logístico - Frecuencia | Coordinador logístico - Importancia |
+|---|---|---|---|---|
+| Revisar disponibilidad de unidades | Alta | Alta | Alta | Alta |
+| Registrar horas o kilometraje | Alta | Alta | Alta | Alta |
+| Coordinar mantenimiento | Media | Alta | Media | Alta |
+| Revisar historial de mantenimiento | Media | Alta | Media | Media |
+| Coordinar asignación de unidades | Media | Media | Alta | Alta |
+| Coordinar rutas y despachos | Baja | Baja | Alta | Alta |
+| Revisar costos operativos | Media | Alta | Media | Alta |
+| Comunicar incidencias operativas | Alta | Alta | Alta | Alta |
+
+La matriz evidencia que ambos perfiles requieren conocer constantemente la disponibilidad y condición de sus activos. Sin embargo, el administrador de maquinaria concentra mayor esfuerzo en mantenimiento y horómetros, mientras que el coordinador logístico prioriza la asignación de unidades, rutas y despachos.
+
+(POR EL MOMENTO QUE QUEDE ASÍ)
+
 #### 2.3.3. User Journey Mapping
 #### 2.3.4. Empathy Mapping
 #### 2.3.5. Big Picture Event Storming
