@@ -163,7 +163,11 @@ TechnoLoad es una completa plataforma web desarrollada por nuestra startup, dise
 * **Monitoreo Telemetrado de Flota:** TechnoLoad ofrece un dashboard interactivo donde los usuarios pueden visualizar el estado operativo (Disponible, En Tránsito, En Mantenimiento) de cada activo de la empresa.
 * **Seguimiento de Rendimiento y Costos:** TechnoLoad permite realizar un seguimiento continuo del desempeño de la flota mediante informes detallados, monitoreando métricas clave como costos de mantenimiento, horas de uso y rentabilidad por unidad.
 
-### 1.2.1. Objetivos, justificación y alcance
+### 1.2.1. Antecedentes y problemática
+
+Esta sección presenta los objetivos, la justificación y el alcance del proyecto, junto con el análisis de antecedentes y problemática aplicando la técnica 5W+2H.
+
+#### Objetivos, justificación y alcance
 
 **Objetivo general.** Desarrollar una plataforma SaaS que centralice la gestión de activos, lecturas de uso, mantenimiento preventivo y disponibilidad operativa para organizaciones de maquinaria pesada y transporte de carga.
 
@@ -172,8 +176,6 @@ TechnoLoad es una completa plataforma web desarrollada por nuestra startup, dise
 **Justificación.** La información fragmentada en hojas de cálculo, llamadas y mensajes produce mantenimiento reactivo, decisiones tardías y períodos de inoperatividad costosos. TechnoLoad convierte registros dispersos en información operativa auditable, oportuna y accesible desde una interfaz web.
 
 **Alcance.** El MVP comprende gestión de activos, lecturas, órdenes de mantenimiento, alertas, consulta de disponibilidad y asignación de unidades. Quedan fuera del alcance inicial la telemetría en tiempo real, la optimización automática de rutas, la facturación y la integración productiva con proveedores IoT; estas capacidades se consideran extensiones futuras.
-
-### 1.2.2. Antecedentes y problemática
 
 #### Uso de la técnica The 5 W's y 2 H's
 
@@ -1084,48 +1086,48 @@ erDiagram
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
 CREATE TABLE asset (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  code VARCHAR(40) NOT NULL UNIQUE,
-  name VARCHAR(160) NOT NULL,
-  status VARCHAR(30) NOT NULL CHECK (status IN ('AVAILABLE', 'IN_MAINTENANCE', 'ASSIGNED', 'INACTIVE')),
-  image_url TEXT,
-  created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-  updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+                     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                     code VARCHAR(40) NOT NULL UNIQUE,
+                     name VARCHAR(160) NOT NULL,
+                     status VARCHAR(30) NOT NULL CHECK (status IN ('AVAILABLE', 'IN_MAINTENANCE', 'ASSIGNED', 'INACTIVE')),
+                     image_url TEXT,
+                     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+                     updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
 CREATE TABLE meter_reading (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
-  value NUMERIC(14,2) NOT NULL CHECK (value >= 0),
-  unit VARCHAR(12) NOT NULL CHECK (unit IN ('KM', 'HOURS')),
-  recorded_at TIMESTAMPTZ NOT NULL DEFAULT now()
+                             id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                             asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
+                             value NUMERIC(14,2) NOT NULL CHECK (value >= 0),
+                             unit VARCHAR(12) NOT NULL CHECK (unit IN ('KM', 'HOURS')),
+                             recorded_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
 CREATE TABLE maintenance_order (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
-  maintenance_type VARCHAR(60) NOT NULL,
-  priority VARCHAR(20) NOT NULL CHECK (priority IN ('LOW', 'MEDIUM', 'HIGH', 'CRITICAL')),
-  status VARCHAR(25) NOT NULL CHECK (status IN ('SCHEDULED', 'IN_PROGRESS', 'COMPLETED', 'CANCELLED')),
-  scheduled_at TIMESTAMPTZ NOT NULL,
-  completed_at TIMESTAMPTZ,
-  CHECK (completed_at IS NULL OR completed_at >= scheduled_at)
+                                 id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                                 asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
+                                 maintenance_type VARCHAR(60) NOT NULL,
+                                 priority VARCHAR(20) NOT NULL CHECK (priority IN ('LOW', 'MEDIUM', 'HIGH', 'CRITICAL')),
+                                 status VARCHAR(25) NOT NULL CHECK (status IN ('SCHEDULED', 'IN_PROGRESS', 'COMPLETED', 'CANCELLED')),
+                                 scheduled_at TIMESTAMPTZ NOT NULL,
+                                 completed_at TIMESTAMPTZ,
+                                 CHECK (completed_at IS NULL OR completed_at >= scheduled_at)
 );
 
 CREATE TABLE operation (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  name VARCHAR(160) NOT NULL,
-  status VARCHAR(25) NOT NULL CHECK (status IN ('PLANNED', 'ACTIVE', 'CLOSED')),
-  created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+                         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                         name VARCHAR(160) NOT NULL,
+                         status VARCHAR(25) NOT NULL CHECK (status IN ('PLANNED', 'ACTIVE', 'CLOSED')),
+                         created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
 CREATE TABLE unit_assignment (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  operation_id UUID NOT NULL REFERENCES operation(id) ON DELETE RESTRICT,
-  asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
-  assigned_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-  released_at TIMESTAMPTZ,
-  CHECK (released_at IS NULL OR released_at >= assigned_at)
+                               id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                               operation_id UUID NOT NULL REFERENCES operation(id) ON DELETE RESTRICT,
+                               asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
+                               assigned_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+                               released_at TIMESTAMPTZ,
+                               CHECK (released_at IS NULL OR released_at >= assigned_at)
 );
 
 CREATE INDEX idx_meter_reading_asset_recorded_at ON meter_reading(asset_id, recorded_at DESC);
