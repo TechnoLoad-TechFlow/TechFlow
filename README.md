@@ -415,6 +415,17 @@ El journey representa el proceso que sigue el coordinador desde que recibe una s
 (AQUI VA)
 
 #### 2.3.4. Empathy Mapping
+
+Los Empathy Maps permiten profundizar en los comportamientos, preocupaciones, necesidades y expectativas de los User Personas identificados. La información utilizada se obtiene de los patrones encontrados durante las entrevistas.
+
+##### Empathy Map – Administrador de Flota de Maquinaria Pesada
+
+(AQUI VA)
+
+##### Empathy Map – Coordinador Logístico
+
+(AQUI VA)
+
 #### 2.3.5. Big Picture Event Storming
 ### 2.4. Ubiquitous Language
 ### 3.1. User Stories
