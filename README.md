@@ -338,6 +338,7 @@ Para la recolección de requerimientos se diseñaron guías de entrevista breves
 ---
 
 ### 2.2.2 Registro de entrevistas
+n esta sección se presentan las entrevistas realizadas a representantes de los segmentos objetivo de MaquiControl. Cada entrevista permite recopilar información sobre sus experiencias, necesidades, problemas y hábitos relacionados con la gestión y alquiler de maquinaria. Los resultados obtenidos servirán como base para el análisis de entrevistas y la construcción de los artefactos de Needfinding.
 
 ### 2.2.3. Análisis de entrevistas
 
