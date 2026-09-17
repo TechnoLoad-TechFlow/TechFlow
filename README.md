@@ -404,7 +404,7 @@ La siguiente matriz compara la frecuencia e importancia de las principales tarea
 | Revisar historial de mantenimiento | Medium | High | Medium | Medium |
 | Coordinar asignación de unidades | Medium | Medium | High | High |
 | Coordinar rutas y despachos | Low | Low | High | High |
-| Revisar costos operativos | Medium | High | Media | High |
+| Revisar costos operativos | Medium | High | Medium | High |
 | Comunicar incidencias operativas | High | High | High | High |
 
 La matriz evidencia que ambos perfiles requieren conocer constantemente la disponibilidad y condición de los activos que administran. Sin embargo, el administrador de maquinaria concentra mayor esfuerzo en el seguimiento de horómetros, mantenimiento y disponibilidad de equipos, mientras que el coordinador logístico prioriza la asignación de vehículos, organización de rutas y coordinación de despachos.
