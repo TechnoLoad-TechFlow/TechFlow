@@ -293,6 +293,7 @@ Para afrontar las fortalezas y debilidades identificadas en nuestros competidore
 *Táctica:* Iniciar con empresas de alquiler de maquinaria pesada y empresas de transporte y logística de carga, y posteriormente incorporar nuevas funcionalidades y segmentos de acuerdo con las necesidades identificadas en el mercado.
 
 ### 2.2. Entrevistas
+<<<<<<< HEAD
 ### 2.2.1 Diseño de entrevistas
 
 Para la recolección de requerimientos se diseñaron guías de entrevista breves y estructuradas de 8 preguntas clave por segmento objetivo. Estas combinan datos demográficos/tecnológicos para el perfilamiento de arquetipos (User Personas) con preguntas profundas sobre la problemática operativa y de negocio.
@@ -446,7 +447,79 @@ Los Empathy Maps permiten profundizar en los comportamientos, preocupaciones, ne
 | Route | Recorrido establecido para realizar un servicio de transporte. |
 | Downtime | Periodo durante el cual un activo no se encuentra operativo. |
 
-### 3.1. User Stories
+## 3.1. User Stories
+
+A partir del análisis de las entrevistas y de los artefactos de Needfinding, se identificaron las principales necesidades de los usuarios de TechnoLoad. Estas necesidades fueron transformadas en historias de usuario y organizadas según las épicas funcionales del producto.
+
+Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [funcionalidad] para [beneficio esperado]**.
+
+| Orden | Epic | User Story ID | Título | Descripción | Story Points |
+|---:|---|---|---|---|---:|
+| 1 | EP-01 Gestión de maquinaria y disponibilidad | US-001 | Registrar maquinaria | Como administrador de flota, deseo registrar una maquinaria con sus datos técnicos para mantener actualizada la información de mis activos. | 3 |
+| 2 | EP-01 Gestión de maquinaria y disponibilidad | US-002 | Consultar disponibilidad | Como administrador de flota, deseo consultar la disponibilidad de una maquinaria para conocer si está disponible, en obra o en mantenimiento antes de asignarla. | 2 |
+| 3 | EP-01 Gestión de maquinaria y disponibilidad | US-003 | Gestionar mantenimiento | Como administrador de flota, deseo gestionar el mantenimiento de una maquinaria para mantenerla en condiciones operativas. | 3 |
+| 4 | EP-01 Gestión de maquinaria y disponibilidad | US-016 | Editar datos | Como administrador de flota, deseo editar los datos de una maquinaria para mantener actualizada su información. | 2 |
+| 5 | EP-01 Gestión de maquinaria y disponibilidad | US-017 | Dar de baja | Como administrador de flota, deseo dar de baja una maquinaria para evitar que aparezca como disponible cuando ya no forma parte de la flota. | 2 |
+| 6 | EP-02 Gestión de reservas | US-004 | Crear reserva | Como cliente, deseo crear una reserva de maquinaria o vehículo para asegurar su disponibilidad durante el periodo requerido. | 3 |
+| 7 | EP-02 Gestión de reservas | US-005 | Evitar reservas duplicadas | Como administrador de flota, deseo evitar reservas duplicadas para impedir conflictos de disponibilidad. | 3 |
+| 8 | EP-02 Gestión de reservas | US-006 | Cancelar reserva | Como usuario, deseo cancelar una reserva para liberar el activo cuando ya no sea necesario. | 2 |
+| 9 | EP-02 Gestión de reservas | US-018 | Modificar fechas | Como usuario, deseo modificar las fechas de una reserva para adaptar la contratación a cambios en mi proyecto. | 2 |
+| 10 | EP-02 Gestión de reservas | US-019 | Aprobar/rechazar | Como administrador, deseo aprobar o rechazar solicitudes de reserva para controlar la asignación de los activos. | 3 |
+| 11 | EP-03 Consulta y contratación | US-007 | Catálogo | Como cliente, deseo consultar un catálogo de maquinaria y vehículos para conocer las opciones disponibles. | 1 |
+| 12 | EP-03 Consulta y contratación | US-008 | Tarifas | Como cliente, deseo consultar las tarifas de alquiler para conocer los costos antes de solicitar una reserva. | 1 |
+| 13 | EP-03 Consulta y contratación | US-009 | Reservas por obra | Como cliente, deseo gestionar las reservas asociadas a una obra para organizar los recursos necesarios para cada proyecto. | 2 |
+| 14 | EP-03 Consulta y contratación | US-020 | Filtrar por categoría | Como cliente, deseo filtrar las máquinas por categoría para encontrar rápidamente el tipo de equipo que necesito. | 2 |
+| 15 | EP-03 Consulta y contratación | US-021 | Buscar por ubicación | Como cliente, deseo buscar maquinaria por ubicación para encontrar activos disponibles cercanos a mi proyecto. | 2 |
+| 16 | EP-04 Horas y facturación | US-010 | Registrar horas | Como operador, deseo registrar las horas de uso o kilometraje de una unidad para mantener actualizado su nivel de utilización. | 3 |
+| 17 | EP-04 Horas y facturación | US-011 | Validar horas | Como administrador, deseo validar las horas registradas para asegurar que la información utilizada para la facturación sea correcta. | 3 |
+| 18 | EP-04 Horas y facturación | US-012 | Resumen de facturación | Como administrador, deseo consultar un resumen de facturación para conocer los ingresos generados por los activos. | 2 |
+| 19 | EP-04 Horas y facturación | US-022 | Comprobante | Como administrador, deseo generar un comprobante de pago por el servicio realizado para formalizar la operación. | 3 |
+| 20 | EP-04 Horas y facturación | US-023 | Penalización por mora | Como administrador, deseo registrar o calcular penalizaciones por mora para controlar los pagos pendientes de los clientes. | 2 |
+| 21 | EP-05 Landing Page | US-013 | Propuesta de valor | Como visitante, deseo conocer el valor que ofrece TechnoLoad para entender cómo puede solucionar los problemas de gestión de mi empresa. | 1 |
+| 22 | EP-05 Landing Page | US-014 | Segmentos | Como visitante, deseo conocer los segmentos a los que está dirigida la plataforma para identificar si TechnoLoad se adapta a mi empresa. | 1 |
+| 23 | EP-05 Landing Page | US-015 | Contacto/demo | Como visitante, deseo solicitar una demostración o establecer contacto para conocer más sobre la plataforma. | 2 |
+| 24 | EP-05 Landing Page | US-024 | ROI Calculator | Como visitante, deseo utilizar una calculadora de ROI para estimar los posibles beneficios económicos de utilizar TechnoLoad. | 3 |
+| 25 | EP-05 Landing Page | US-025 | Sales Chat | Como visitante, deseo utilizar un chat comercial para resolver dudas sobre la plataforma y sus servicios. | 2 |
+| 26 | EP-06 Acceso | US-026 | Registrar usuario | Como nuevo usuario, deseo registrarme en la plataforma para crear una cuenta y utilizar TechnoLoad. | 2 |
+| 27 | EP-06 Acceso | US-027 | Iniciar sesión | Como usuario registrado, deseo iniciar sesión para acceder de forma segura a las funcionalidades de la plataforma. | 2 |
+| 28 | EP-06 Acceso | US-028 | Recuperar contraseña | Como usuario, deseo recuperar mi contraseña para volver a acceder a mi cuenta cuando la haya olvidado. | 2 |
+| 29 | EP-06 Acceso | US-029 | Gestionar roles | Como administrador, deseo asignar roles de propietario, contratista u operador para controlar el acceso a las funcionalidades. | 3 |
+| 30 | EP-06 Acceso | US-030 | Gestionar perfil | Como usuario, deseo gestionar mi perfil para mantener actualizada mi información personal y empresarial. | 2 |
+| 31 | EP-07 Mantenimiento | US-031 | Alertas preventivas | Como administrador de flota, deseo recibir alertas de mantenimiento preventivo basadas en las horas de uso o kilometraje para anticiparme a posibles fallas. | 3 |
+| 32 | EP-07 Mantenimiento | US-032 | Orden de reparación | Como responsable de mantenimiento, deseo registrar órdenes de reparación para llevar un control de las intervenciones realizadas. | 3 |
+| 33 | EP-07 Mantenimiento | US-033 | Historial de mantenimiento | Como administrador, deseo consultar el historial de mantenimiento para conocer las intervenciones realizadas sobre cada activo. | 2 |
+| 34 | EP-07 Mantenimiento | US-034 | Reportar falla | Como operador, deseo reportar una falla para informar rápidamente al responsable de mantenimiento sobre un problema detectado. | 2 |
+| 35 | EP-08 Operaciones en campo | US-035 | Delivery check-in | Como operador, deseo registrar el check-in de entrega de una unidad incluyendo horómetro y fotografías para dejar evidencia del estado inicial del activo. | 3 |
+| 36 | EP-08 Operaciones en campo | US-036 | Return check-out | Como operador, deseo registrar el check-out de una unidad para documentar su devolución y estado final. | 3 |
+| 37 | EP-08 Operaciones en campo | US-037 | Equipo de reemplazo | Como administrador, deseo asignar un equipo de reemplazo cuando una unidad presente una falla para reducir el impacto de la inoperatividad. | 3 |
+| 38 | EP-09 Analytics | US-038 | Utilización | Como gerente de operaciones, deseo consultar el nivel de utilización de cada activo para evaluar su rendimiento. | 3 |
+| 39 | EP-09 Analytics | US-039 | Reportes | Como administrador, deseo generar reportes en Excel o PDF para analizar y compartir información operativa. | 3 |
+| 40 | EP-09 Analytics | US-040 | Calificación | Como cliente, deseo calificar el servicio recibido para proporcionar retroalimentación sobre la experiencia de alquiler. | 2 |
+| 41 | EP-10 Technical Story API | US-041 | API de maquinaria | Como sistema externo, deseo consultar el catálogo de maquinaria mediante una API para integrar la información de activos con otros servicios. | 3 |
+| 42 | EP-10 Technical Story API | US-042 | API de reservas | Como sistema externo, deseo registrar reservas mediante una API para automatizar la creación de solicitudes. | 3 |
+| 43 | EP-10 Technical Story API | US-043 | Conflicto de reserva | Como sistema, deseo recibir una respuesta de conflicto cuando exista una reserva incompatible para evitar duplicidades. | 2 |
+| 44 | EP-10 Technical Story API | US-044 | Validación API | Como sistema, deseo validar los datos enviados mediante la API para evitar registros incorrectos. | 2 |
+| 45 | EP-10 Technical Story API | US-045 | Autenticación JWT | Como sistema, deseo utilizar autenticación mediante JWT para proteger las operaciones de la API. | 3 |
+| 46 | EP-10 Technical Story API | US-046 | Horómetros batch | Como sistema, deseo registrar lecturas de horómetros mediante cargas masivas para facilitar la actualización de datos. | 3 |
+| 47 | EP-10 Technical Story API | US-047 | Facturación PSE/SUNAT | Como administrador, deseo emitir comprobantes electrónicos mediante la integración con PSE/SUNAT para automatizar la facturación. | 5 |
+| 48 | EP-10 Technical Story API | US-048 | Webhooks | Como sistema externo, deseo recibir webhooks sobre cambios importantes para mantener sincronizada la información. | 3 |
+
+### 3.1.1. Resumen de Épicas
+
+| Epic | Nombre | Cantidad de User Stories |
+|---|---|---:|
+| EP-01 | Gestión de maquinaria y disponibilidad | 5 |
+| EP-02 | Gestión de reservas | 5 |
+| EP-03 | Consulta y contratación | 5 |
+| EP-04 | Horas y facturación | 5 |
+| EP-05 | Landing Page | 5 |
+| EP-06 | Acceso | 5 |
+| EP-07 | Mantenimiento | 4 |
+| EP-08 | Operaciones en campo | 3 |
+| EP-09 | Analytics | 3 |
+| EP-10 | Technical Story API | 8 |
+| **Total** | | **48** |
+
 ### 3.2. Impact Mapping
 ### 3.3. Product Backlog
 
@@ -489,3 +562,7 @@ Los Empathy Maps permiten profundizar en los comportamientos, preocupaciones, ne
 ### 5.2. Landing Page, Services & Applications Implementation
 ### 5.3. Validation Interviews
 ### 5.4. Video About-the-Product
+=======
+
+
+
