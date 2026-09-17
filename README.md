@@ -523,6 +523,55 @@ Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [
 ### 3.2. Impact Mapping
 ### 3.3. Product Backlog
 
+| Orden | ID | Epic | Título | Story Points |
+| :---: | :---: | :---: | :--- | :---: |
+| 1 | US-002 | EP-01 | Consultar disponibilidad | 2 |
+| 2 | US-004 | EP-02 | Crear reserva | 3 |
+| 3 | US-005 | EP-02 | Evitar reservas duplicadas | 3 |
+| 4 | US-001 | EP-01 | Registrar maquinaria | 3 |
+| 5 | US-003 | EP-01 | Gestionar mantenimiento | 3 |
+| 6 | US-031 | EP-07 | Alertas preventivas | 3 |
+| 7 | US-010 | EP-04 | Registrar horas/kilometraje | 3 |
+| 8 | US-007 | EP-03 | Catálogo | 1 |
+| 9 | US-008 | EP-03 | Consultar tarifas | 1 |
+| 10 | US-009 | EP-03 | Reservas por obra | 2 |
+| 11 | US-019 | EP-02 | Aprobar/rechazar reserva | 3 |
+| 12 | US-006 | EP-02 | Cancelar reserva | 2 |
+| 13 | US-018 | EP-02 | Modificar reserva | 2 |
+| 14 | US-033 | EP-07 | Historial de mantenimiento | 2 |
+| 15 | US-032 | EP-07 | Orden de reparación | 3 |
+| 16 | US-034 | EP-07 | Reportar falla | 2 |
+| 17 | US-037 | EP-08 | Equipo de reemplazo | 3 |
+| 18 | US-011 | EP-04 | Validar horas | 3 |
+| 19 | US-012 | EP-04 | Resumen de facturación | 2 |
+| 20 | US-022 | EP-04 | Comprobante | 3 |
+| 21 | US-038 | EP-09 | Utilización de activos | 3 |
+| 22 | US-039 | EP-09 | Reportes | 3 |
+| 23 | US-035 | EP-08 | Delivery check-in | 3 |
+| 24 | US-036 | EP-08 | Return check-out | 3 |
+| 25 | US-020 | EP-03 | Filtrar por categoría | 2 |
+| 26 | US-021 | EP-03 | Buscar por ubicación | 2 |
+| 27 | US-026 | EP-06 | Registrar usuario | 2 |
+| 28 | US-027 | EP-06 | Iniciar sesión | 2 |
+| 29 | US-029 | EP-06 | Gestionar roles | 3 |
+| 30 | US-030 | EP-06 | Gestionar perfil | 2 |
+| 31 | US-028 | EP-06 | Recuperar contraseña | 2 |
+| 32 | US-016 | EP-01 | Editar maquinaria | 2 |
+| 33 | US-017 | EP-01 | Dar de baja maquinaria | 2 |
+| 34 | US-013 | EP-05 | Propuesta de valor | 1 |
+| 35 | US-014 | EP-05 | Segmentos | 1 |
+| 36 | US-015 | EP-05 | Contacto/demo | 2 |
+| 37 | US-024 | EP-05 | ROI Calculator | 3 |
+| 38 | US-025 | EP-05 | Sales Chat | 2 |
+| 39 | US-041 | EP-10 | API de maquinaria | 3 |
+| 40 | US-042 | EP-10 | API de reservas | 3 |
+| 41 | US-043 | EP-10 | Conflicto de reserva | 2 |
+| 42 | US-044 | EP-10 | Validación API | 2 |
+| 43 | US-045 | EP-10 | Autenticación JWT | 3 |
+| 44 | US-046 | EP-10 | Horómetros batch | 3 |
+| 45 | US-047 | EP-10 | Facturación PSE/SUNAT | 5 |
+| 46 | US-048 | EP-10 | Webhooks | 3 |
+
 # Capítulo IV: Product Design
 
 ### 4.1. Style Guidelines.
