@@ -843,9 +843,36 @@ La escala de espaciado se compone de 4, 8, 12, 16, 24, 32 y 48 px. Las tarjetas 
 
 ### 4.1.2. Web Style Guidelines
 
-La grilla de escritorio utiliza 12 columnas, margen lateral de 80 px y gutters de 24 px a partir de 1440 px. En tablet (768 px) emplea margen de 32 px y gutters de 16 px; en móvil (375 px) emplea una sola columna y margen de 16 px. PrimeFlex organiza el AppShell mediante topbar, área de navegación lateral y contenedor principal; el sidebar se transforma en `pv-drawer` en pantallas reducidas.
+Las Web Style Guidelines de TechnoLoad establecen los criterios visuales y de interacción que serán aplicados tanto en la Landing Page como en la Web Application, buscando mantener una experiencia consistente, responsive y accesible en diferentes tamaños de pantalla.
 
-Los breakpoints priorizan contenido antes que decoración: los KPIs se apilan, las tablas habilitan desplazamiento horizontal y las acciones secundarias pasan al menú contextual. Todo control interactivo es alcanzable con teclado, muestra foco visible y ofrece etiquetas accesibles.
+La interfaz utiliza un enfoque responsive basado en una grilla flexible que permite adaptar el contenido a computadoras, tablets y dispositivos móviles. En pantallas de escritorio se utiliza una distribución de hasta 12 columnas, mientras que en dispositivos móviles los elementos se reorganizan verticalmente para facilitar su lectura e interacción.
+
+Los principales breakpoints considerados son:
+
+| Dispositivo | Resolución de referencia | Comportamiento |
+|---|---|---|
+| Mobile | 375 px – 767 px | Una columna, navegación mediante menú desplegable y componentes apilados. |
+| Tablet | 768 px – 1023 px | Distribución intermedia con reducción de columnas y espacios. |
+| Desktop | 1024 px o superior | Navegación completa, múltiples columnas y visualización ampliada de tablas y dashboards. |
+
+Los componentes interactivos mantienen estados visuales claramente diferenciados.
+
+| Componente | Estados considerados |
+|---|---|
+| Buttons | Default, Hover, Focus, Disabled y Loading |
+| Input Fields | Default, Focus, Error y Disabled |
+| Cards | Default, Hover y Selected |
+| Tables | Loading, Empty, Selected y Error |
+| Alerts | Info, Success, Warning y Error |
+| Navigation Items | Default, Hover, Active y Focus |
+
+Los botones principales utilizan el color de acción definido en el Design System, mientras que las acciones secundarias emplean estilos con menor jerarquía visual. Los estados de error, advertencia y éxito utilizan colores acompañados de iconos o textos, evitando depender únicamente del color para transmitir información.
+
+En dispositivos móviles, el menú lateral de la Web Application se transforma en un Drawer que puede abrirse mediante un botón de navegación. Las tablas que contienen gran cantidad de información permiten desplazamiento horizontal o presentan una versión simplificada para conservar la legibilidad.
+
+Las interfaces mantienen áreas de interacción suficientemente amplias y controles accesibles mediante teclado. Los formularios proporcionan mensajes de validación cercanos al campo correspondiente y muestran claramente los errores detectados.
+
+TechnoLoad utiliza componentes de PrimeVue para mantener consistencia visual y de comportamiento entre las diferentes vistas de la aplicación. Entre los componentes principales se consideran `Button`, `InputText`, `DataTable`, `Card`, `Tag`, `Dialog`, `Toast`, `Drawer` y `Skeleton`.
 
 ## 4.2. Information Architecture
 
