@@ -1157,11 +1157,370 @@ CREATE INDEX idx_asset_status ON asset(status);
 ```
 
 # Capítulo V: Product Implementation, Validation & Deployment
+
 ## 5.1. Software Configuration Management
+
+La gestión de configuración de software de TechnoLoad establece las herramientas, convenciones y procedimientos utilizados por el equipo para mantener consistencia y trazabilidad durante el ciclo de vida de los productos digitales.
+
+Para ello, se utilizan herramientas de gestión de proyectos, diseño UX/UI, desarrollo de software, documentación, control de versiones y despliegue. Git y GitHub permiten registrar los cambios realizados por los integrantes del equipo, mientras que GitFlow, Conventional Commits y Semantic Versioning proporcionan un esquema organizado para la evolución del código fuente.
+
   ### 5.1.1. Software Development Environment Configuration
+  
+El desarrollo de TechnoLoad requiere diferentes herramientas que permiten cubrir las actividades de gestión del proyecto, especificación de requisitos, diseño UX/UI, implementación, documentación, control de versiones y despliegue.
+
+Las principales herramientas utilizadas o previstas para el proyecto son las siguientes:
+
+| Área | Herramienta / Tecnología | Propósito en TechnoLoad | Referencia |
+|---|---|---|---|
+| Project Management | [Trello / Jira / YouTrack - seleccionar el utilizado] | Organización del Product Backlog, Sprints, User Stories y tareas del equipo. | [COLOCAR URL DEL BOARD] |
+| Requirements Management | GitHub + Markdown | Documentación colaborativa de requisitos, User Stories, Product Backlog y demás artefactos del informe. | https://github.com/TechnoLoad-TechFlow/TechFlow |
+| UX Research | UXPressia | Elaboración de User Personas, Empathy Maps, User Journey Maps e Impact Maps. | https://uxpressia.com/ |
+| UX/UI Design | Figma | Elaboración de Wireframes, Mock-ups y Prototipos de la experiencia web. | https://www.figma.com/ |
+| Version Control | Git | Control distribuido de versiones del código fuente y documentación. | https://git-scm.com/ |
+| Source Code Management | GitHub | Almacenamiento de repositorios, gestión de ramas, commits y colaboración del equipo. | https://github.com/ |
+| Development Environment | [IDE UTILIZADO POR EL EQUIPO] | Edición, ejecución y depuración del código fuente. | [COLOCAR URL] |
+| Frontend Runtime | Node.js | Entorno de ejecución utilizado para instalar y administrar las dependencias del Frontend Web Application. | https://nodejs.org/ |
+| Frontend Framework | Vue | Framework utilizado para desarrollar la Frontend Web Application. | https://vuejs.org/ |
+| Frontend Build Tool | Vite | Herramienta utilizada para gestionar el entorno de desarrollo y generar el build de producción del frontend. | https://vite.dev/ |
+| UI Components | PrimeVue | Biblioteca de componentes basada en Material Design utilizada para construir la interfaz de usuario. | https://primevue.org/ |
+| Backend Framework | ASP.NET Core | Framework utilizado para implementar los RESTful Web Services de TechnoLoad. | https://dotnet.microsoft.com/apps/aspnet |
+| Programming Language | C# | Lenguaje utilizado para implementar la lógica del lado servidor. | https://learn.microsoft.com/dotnet/csharp/ |
+| ORM | Entity Framework Core | Gestión de persistencia y acceso a datos desde los Web Services. | https://learn.microsoft.com/ef/core/ |
+| DBMS | PostgreSQL | Sistema gestor de base de datos relacional utilizado para almacenar la información del dominio. | https://www.postgresql.org/ |
+| API Documentation | OpenAPI / Swagger | Documentación e interacción con los endpoints de los RESTful Web Services. | https://swagger.io/ |
+| Software Documentation | Markdown | Elaboración del Project Report y documentación técnica dentro de GitHub. | https://www.markdownguide.org/ |
+| Software Deployment | [PLATAFORMA DE DESPLIEGUE] | Publicación del Landing Page, Frontend Web Application y Web Services. | [COLOCAR URL] |
+
+La combinación de estas herramientas permite mantener un entorno común entre los integrantes del equipo. El frontend es desarrollado con Vue y PrimeVue, mientras que los servicios del lado servidor se implementan mediante ASP.NET Core, Entity Framework Core y C#. PostgreSQL proporciona la persistencia relacional de la información correspondiente a activos, lecturas, mantenimientos y operaciones.
+
   ### 5.1.2. Source Code Management
+  
+El código fuente y la documentación de TechnoLoad se administran mediante Git y GitHub. El uso de control de versiones permite mantener la trazabilidad de cada modificación realizada por el equipo, identificar la participación de los integrantes y recuperar versiones anteriores cuando sea necesario.
+
+Los repositorios correspondientes a los productos de TechnoLoad son:
+
+| Producto | Repositorio |
+|---|---|
+| Project Report | https://github.com/TechnoLoad-TechFlow/TechFlow |
+| Landing Page | [COLOCAR URL DEL REPOSITORIO] |
+| Frontend Web Application | [COLOCAR URL DEL REPOSITORIO] |
+| RESTful Web Services | [COLOCAR URL DEL REPOSITORIO] |
+
+El repositorio correspondiente a los RESTful Web Services deberá incluir tanto el código fuente de la solución como los archivos correspondientes a las pruebas unitarias y de integración.
+
+#### GitFlow Workflow
+
+Para organizar el desarrollo se establece GitFlow como flujo de trabajo de control de versiones.
+
+Las ramas principales consideradas son:
+
+| Branch | Propósito |
+|---|---|
+| `main` | Contiene las versiones estables y preparadas para producción. |
+| `develop` | Integra los cambios terminados correspondientes al desarrollo de la siguiente versión. |
+| `feature/*` | Desarrollo de nuevas características o modificaciones específicas. |
+| `release/*` | Preparación y estabilización de una nueva versión antes de integrarla en `main`. |
+| `hotfix/*` | Correcciones urgentes sobre una versión publicada en producción. |
+
+Los feature branches deben utilizar nombres descriptivos escritos en inglés y en formato kebab-case.
+
+Ejemplos:
+
+`feature/fleet-management`
+
+`feature/maintenance-alerts`
+
+`feature/asset-registration`
+
+`feature/reservation-management`
+
+`feature/landing-page`
+
+Las ramas de release utilizarán Semantic Versioning:
+
+`release/v1.0.0`
+
+`release/v1.1.0`
+
+Las correcciones urgentes seguirán el mismo esquema:
+
+`hotfix/v1.0.1`
+
+#### Semantic Versioning
+
+Las versiones de TechnoLoad seguirán el esquema:
+
+`MAJOR.MINOR.PATCH`
+
+- `MAJOR`: cambios incompatibles con versiones anteriores.
+- `MINOR`: nuevas funcionalidades compatibles con versiones anteriores.
+- `PATCH`: correcciones de errores compatibles con versiones anteriores.
+
+Ejemplos:
+
+`v1.0.0`
+
+`v1.1.0`
+
+`v1.1.1`
+
+#### Conventional Commits
+
+Los mensajes de commit siguen la estructura:
+
+`<type>(<scope>): <description>`
+
+Los principales tipos utilizados son:
+
+| Type | Uso |
+|---|---|
+| `feat` | Nueva funcionalidad. |
+| `fix` | Corrección de un error. |
+| `docs` | Cambios en documentación. |
+| `style` | Cambios de formato que no modifican comportamiento. |
+| `refactor` | Reestructuración interna del código. |
+| `test` | Creación o modificación de pruebas. |
+| `chore` | Tareas de mantenimiento o configuración. |
+
+Ejemplos aplicados al proyecto:
+
+`feat(fleet): add asset registration`
+
+`feat(maintenance): add preventive maintenance alerts`
+
+`feat(operations): add unit assignment`
+
+`fix(reservations): prevent duplicate reservations`
+
+`docs(readme): add needfinding artifacts`
+
+`docs(chapter5): add software configuration management`
+
+Con estas convenciones se busca facilitar la comprensión del historial de cambios y mantener consistencia entre los diferentes repositorios del proyecto.
+
+---
+
   ### 5.1.3. Source Code Style Guide & Conventions
+  
+TechnoLoad adopta convenciones de programación para mantener un código consistente, legible y mantenible entre todos los integrantes del equipo.
+
+Los nombres utilizados en código fuente deben escribirse en inglés, evitando abreviaturas ambiguas y manteniendo una terminología consistente con el Ubiquitous Language del proyecto.
+
+#### HTML
+
+Para HTML5 se aplican las siguientes convenciones:
+
+- Utilizar elementos semánticos como `header`, `nav`, `main`, `section`, `article` y `footer`.
+- Escribir etiquetas y atributos en minúsculas.
+- Utilizar comillas dobles para atributos.
+- Mantener una indentación consistente.
+- Incluir el atributo `alt` en imágenes.
+- Utilizar atributos ARIA cuando sea necesario para mejorar la accesibilidad.
+- Evitar elementos HTML utilizados únicamente con fines visuales cuando exista una alternativa semántica.
+
+#### CSS
+
+Las clases CSS deben utilizar nombres descriptivos en inglés y formato kebab-case.
+
+Ejemplos:
+
+`.asset-card`
+
+`.maintenance-alert`
+
+`.fleet-dashboard`
+
+`.primary-button`
+
+`.reservation-form`
+
+Se debe evitar el uso de nombres poco descriptivos como:
+
+`.box1`
+
+`.red-button`
+
+`.section2`
+
+Los estilos deben mantener coherencia con el Design System establecido en el Capítulo IV.
+
+#### JavaScript
+
+Para JavaScript se establecen las siguientes convenciones:
+
+- Variables y funciones: `camelCase`.
+- Clases y componentes: `PascalCase`.
+- Constantes globales: `UPPER_SNAKE_CASE`.
+- Utilizar `const` por defecto y `let` cuando el valor requiera modificación.
+- Evitar `var`.
+- Mantener funciones pequeñas y orientadas a una responsabilidad específica.
+
+Ejemplos:
+
+`assetList`
+
+`getAvailableAssets()`
+
+`MAX_RETRY_ATTEMPTS`
+
+#### Vue
+
+Los componentes Vue deben utilizar nombres descriptivos y mantener una responsabilidad claramente delimitada.
+
+Ejemplos:
+
+`AssetList.vue`
+
+`AssetDetail.vue`
+
+`MaintenanceBoard.vue`
+
+`ReservationForm.vue`
+
+`FleetDashboard.vue`
+
+Los componentes reutilizables deben separarse de las vistas específicas del dominio y mantenerse organizados según el módulo al que pertenecen.
+
+#### C#
+
+Para C# se adoptan las convenciones recomendadas por Microsoft:
+
+- Clases, interfaces, métodos y propiedades públicas: `PascalCase`.
+- Variables locales y parámetros: `camelCase`.
+- Interfaces con prefijo `I`.
+- Namespaces escritos en PascalCase.
+- Clases con una responsabilidad claramente definida.
+
+Ejemplos:
+
+`AssetController`
+
+`MaintenanceService`
+
+`ReservationRepository`
+
+`IAssetRepository`
+
+`GetAvailableAssetsAsync()`
+
+#### RESTful Web Services
+
+Los endpoints deben representar recursos mediante sustantivos escritos en inglés y mantener una estructura consistente.
+
+Ejemplos:
+
+`GET /api/v1/assets`
+
+`POST /api/v1/assets`
+
+`GET /api/v1/assets/{id}`
+
+`GET /api/v1/maintenance-orders`
+
+`POST /api/v1/reservations`
+
+Se utilizarán correctamente los códigos de estado HTTP, entre ellos:
+
+`200 OK`
+
+`201 Created`
+
+`400 Bad Request`
+
+`401 Unauthorized`
+
+`404 Not Found`
+
+`409 Conflict`
+
+`500 Internal Server Error`
+
+#### Internationalization and Accessibility
+
+La experiencia web deberá considerar internacionalización mediante los idiomas:
+
+`en_US` — English
+
+`es_419` — Latin American Spanish
+
+El idioma predeterminado será inglés.
+
+Asimismo, el Landing Page y la Frontend Web Application deberán considerar prácticas de accesibilidad como HTML semántico, atributos ARIA, navegación mediante teclado, texto alternativo en imágenes, contraste adecuado y feedback comprensible para las acciones del usuario.
+
+---
+
   ### 5.1.4. Software Deployment Configuration
+  
+El proceso de despliegue de TechnoLoad comprende la publicación independiente de los tres productos principales que conforman la solución: Landing Page, Frontend Web Application y RESTful Web Services.
+
+| Producto | Tecnología | Branch de producción | Plataforma |
+|---|---|---|---|
+| Landing Page | HTML5, CSS3 y JavaScript | `main` | [COLOCAR PLATAFORMA] |
+| Frontend Web Application | Vue, Vite y PrimeVue | `main` | [COLOCAR PLATAFORMA] |
+| RESTful Web Services | ASP.NET Core, Entity Framework Core y C# | `main` | [COLOCAR PLATAFORMA] |
+| Database | PostgreSQL | — | [COLOCAR PLATAFORMA] |
+
+#### Landing Page Deployment
+
+El proceso de publicación del Landing Page seguirá el siguiente flujo:
+
+`feature branch → develop → validation → main → build/publication → production`
+
+Los archivos HTML, CSS, JavaScript y assets son obtenidos desde el repositorio correspondiente y publicados en la plataforma seleccionada.
+
+**Production URL:**
+
+[COLOCAR URL DEL LANDING PAGE]
+
+#### Frontend Web Application Deployment
+
+El Frontend Web Application será construido con Vue y Vite.
+
+El flujo de despliegue será:
+
+`feature branch → develop → validation → main → npm install → npm run build → deployment`
+
+El resultado del build de producción será publicado en la plataforma seleccionada.
+
+Las variables dependientes del entorno, especialmente la URL base de los RESTful Web Services, deberán configurarse mediante variables de entorno y no directamente en el código fuente.
+
+**Production URL:**
+
+[COLOCAR URL DEL FRONTEND WEB APPLICATION]
+
+#### RESTful Web Services Deployment
+
+Los Web Services desarrollados con ASP.NET Core serán construidos y publicados desde el repositorio correspondiente.
+
+El proceso considera:
+
+1. Obtener la versión estable desde `main`.
+2. Restaurar las dependencias del proyecto.
+3. Ejecutar las pruebas correspondientes.
+4. Generar el build de producción.
+5. Configurar las variables de entorno.
+6. Establecer la conexión con PostgreSQL.
+7. Publicar el servicio en la plataforma seleccionada.
+8. Verificar los endpoints mediante Swagger/OpenAPI.
+
+Las credenciales, cadenas de conexión y demás información sensible no serán almacenadas directamente en el repositorio.
+
+**RESTful API Base URL:**
+
+[COLOCAR URL DEL WEB SERVICE]
+
+**Swagger / OpenAPI URL:**
+
+[COLOCAR URL DE SWAGGER]
+
+#### Database Deployment
+
+La base de datos PostgreSQL deberá estar configurada en un entorno accesible desde los RESTful Web Services.
+
+La cadena de conexión será administrada mediante variables de entorno. Las migraciones generadas mediante Entity Framework Core permitirán mantener sincronizada la estructura de la base de datos entre los diferentes entornos.
+
+---
+
 ## 5.2. Landing Page, Services & Applications Implementation
 ## 5.3. Validation Interviews
 ## 5.4. Video About-the-Product
