@@ -880,7 +880,66 @@ La arquitectura de información de TechnoLoad organiza de forma progresiva los c
 
 ### 4.2.1. Organization Systems
 
-La Landing Page sigue una secuencia jerárquica desde información general hasta la acción: (1) Header y navegación, (2) presentación principal, (3) beneficios, (4) perfiles objetivo, (5) funcionamiento, (6) trazabilidad y módulos, (7) CTA final y (8) Footer. Los beneficios, módulos y perfiles se agrupan por tarjetas para favorecer el escaneo visual y conservar unidades de información comparables. En la aplicación, esta jerarquía se transforma en módulos de Dashboard, Activos, Mantenimientos y Operaciones; cada módulo conduce a listas, detalle y acciones transaccionales.
+La arquitectura de información de TechnoLoad utiliza diferentes sistemas de organización dependiendo del tipo de contenido y del objetivo que debe cumplir el usuario.
+
+#### Organización jerárquica
+
+La organización jerárquica se utiliza principalmente en la Web Application, donde la información se estructura desde módulos generales hasta información específica.
+
+La jerarquía principal es:
+
+**Dashboard → Módulos → Listados → Detalle → Acciones**
+
+Los módulos principales considerados son:
+
+- Dashboard
+- Assets
+- Maintenance
+- Operations
+- Reservations
+- Profile
+
+Por ejemplo, un administrador puede ingresar al módulo de activos, seleccionar una maquinaria específica y posteriormente consultar su información detallada, historial de uso o mantenimiento.
+
+#### Organización secuencial
+
+La organización secuencial se utiliza cuando el usuario debe completar un conjunto ordenado de pasos para alcanzar un objetivo.
+
+Ejemplos:
+
+**Seleccionar activo → Registrar lectura → Validar información → Confirmar registro**
+
+**Seleccionar activo → Programar mantenimiento → Definir fecha y prioridad → Confirmar mantenimiento**
+
+**Consultar disponibilidad → Seleccionar unidad → Asignar operación → Confirmar asignación**
+
+Este sistema permite que los procesos transaccionales sean fáciles de comprender y reduzcan errores durante su ejecución.
+
+#### Organización por tópicos
+
+El contenido se agrupa según las principales áreas funcionales del dominio de TechnoLoad:
+
+- Gestión de activos.
+- Control de horómetros y kilometraje.
+- Gestión de mantenimiento.
+- Disponibilidad de unidades.
+- Operaciones.
+- Reservas.
+- Reportes y análisis.
+
+#### Organización según audiencia
+
+La información también se organiza de acuerdo con los principales tipos de usuario.
+
+**Fleet Manager:** accede principalmente a información relacionada con activos, lecturas, disponibilidad y mantenimiento.
+
+**Operations Manager:** accede a indicadores de utilización, costos y rendimiento de la flota.
+
+**Logistics Coordinator:** accede a disponibilidad de unidades, asignaciones y operaciones.
+
+**Visitor:** accede al Landing Page para conocer la propuesta de valor, características y mecanismos de contacto de TechnoLoad.
+
+De esta manera, la organización del contenido permite reducir la cantidad de información innecesaria presentada a cada usuario.
 
 ### 4.2.2. Labeling Systems
 
