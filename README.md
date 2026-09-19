@@ -1349,31 +1349,19 @@ Este nivel del modelo C4 permite visualizar el alcance general de TechnoLoad y l
 
 ### 4.6.3. Software Architecture Container Diagram
 
-El C4 Nivel 2 separa la SPA Vue 3/PrimeVue/Vite, el REST API Gateway, los servicios de dominio y PostgreSQL. Axios transporta JSON por HTTPS y el Gateway concentra autenticación, control de acceso y enrutamiento.
+El Software Architecture Container Diagram muestra la estructura de alto nivel de TechnoLoad y la distribución de responsabilidades entre los principales elementos de la solución.
 
-![Diagrama de contenedores de TechnoLoad](assets/architecture-overview.svg)
+La aplicación está compuesta por una Single Page Application desarrollada con Angular, una REST API desarrollada con Spring Boot y Java, y una base de datos relacional encargada de la persistencia de la información.
 
-```plantuml
-@startuml
-!include <C4/C4_Container>
-Person(user, "Usuario operativo")
-System_Boundary(technoload, "TechnoLoad") {
-  Container(spa, "SPA", "Vue 3, Vite, PrimeVue", "Interfaz responsive y i18n")
-  Container(gateway, "API Gateway", "REST", "Autenticación, autorización y enrutamiento")
-  Container(fleet, "Fleet Service", "Servicio de dominio", "Activos, lecturas y estado")
-  Container(maintenance, "Maintenance Service", "Servicio de dominio", "Órdenes y programación")
-  ContainerDb(db, "Base de datos", "PostgreSQL", "Datos transaccionales")
-}
-System_Ext(telematics, "Telemática externa")
-Rel(user, spa, "Usa", "HTTPS")
-Rel(spa, gateway, "Consume API", "Axios / JSON")
-Rel(gateway, fleet, "Enruta")
-Rel(gateway, maintenance, "Enruta")
-Rel(fleet, db, "Lee y escribe", "SQL")
-Rel(maintenance, db, "Lee y escribe", "SQL")
-Rel(telematics, gateway, "Envía lecturas", "HTTPS")
-@enduml
-```
+Los usuarios interactúan con la aplicación web mediante un navegador. La Single Page Application consume los servicios proporcionados por la REST API utilizando HTTPS y JSON. A su vez, la API gestiona el acceso a la información persistida mediante Spring Data JPA.
+
+Este nivel del modelo C4 permite visualizar las principales decisiones tecnológicas de la solución y la comunicación entre los containers que conforman TechnoLoad.
+
+---
+
+#### **Diagrama de Contenedores (Modelo C4 - Nivel 2)**
+
+![Software Architecture Container Diagram TechnoLoad](assets/c4-container-diagram.svg)
 
 ### 4.6.4. Software Architecture Components Diagrams
 
