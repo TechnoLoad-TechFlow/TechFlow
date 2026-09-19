@@ -390,7 +390,7 @@ Para la recolección de requerimientos se diseñaron guías de entrevista breves
 ---
 
 ### 2.2.2 Registro de entrevistas
-En esta sección se presentan las entrevistas realizadas a representantes de los segmentos objetivo de MaquiControl. Cada entrevista permite recopilar información sobre sus experiencias, necesidades, problemas y hábitos relacionados con la gestión y alquiler de maquinaria. Los resultados obtenidos servirán como base para el análisis de entrevistas y la construcción de los artefactos de Needfinding.
+En esta sección se presentan las entrevistas realizadas a representantes de los segmentos objetivo de TechnoLoad.. Cada entrevista permite recopilar información sobre sus experiencias, necesidades, problemas y hábitos relacionados con la gestión y alquiler de maquinaria. Los resultados obtenidos servirán como base para el análisis de entrevistas y la construcción de los artefactos de Needfinding.
 #### Segmento 1: Propietarios y administradores de pequeñas empresas de alquiler de maquinaria
 
 ##### Entrevista 1
@@ -655,7 +655,7 @@ El siguiente User Journey Map fue elaborado en la plataforma UXPressia para el U
 
 #### 2.3.4. Empathy Mapping
 
-A continuación se presentan los Empathy Mapping de los segmentos objetivos de MaquiControl.
+A continuación se presentan los Empathy Mapping de los segmentos objetivos de TechnoLoad..
 
 ### Segmento 1: Propietarios y administradores de pequeñas empresas de alquiler de maquinaria
 
@@ -1403,7 +1403,7 @@ Este diagrama muestra la estructura interna del Profiles Management Bounded Cont
 
 La Domain Layer contiene el aggregate Profile y sus reglas de negocio correspondientes.
 
-![Profiles Management Component Diagram](assets/c4-profiles-component.svg)
+![Profiles Management Component Diagram](assets/c4-profiles-component.svg)  
 
 ## 4.7 Software Object-Oriented Design
 
