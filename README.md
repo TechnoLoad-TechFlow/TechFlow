@@ -1122,9 +1122,19 @@ El Dashboard y la Web App se diseñan a partir de los User Personas y User Stori
 
 ### 4.4.1. Web Applications Wireframes
 
-Los wireframes B/F especifican Dashboard con KPIs y actividad; listado de Activos con búsqueda, filtros y tabla; Detalle con historial; formulario Registrar Lectura; Mantenimientos con prioridad y programación; y Operaciones con drawer de asignación.
+Los wireframes de TechnoLoad representan la estructura inicial de las principales vistas de la Web Application antes de aplicar los estilos visuales definitivos.
 
-![Wireframes de la aplicación TechnoLoad](assets/web-app-wireframes.svg)
+Estos diseños de baja fidelidad permiten establecer la distribución de los componentes, la jerarquía de la información y la ubicación de los principales elementos de interacción.
+
+Los wireframes fueron elaborados considerando los principales procesos de la plataforma, permitiendo validar la organización de las vistas antes de desarrollar los mock-ups de alta fidelidad.
+
+A continuación, se presentan los wireframes correspondientes a las principales interfaces de la Web Application de TechnoLoad.
+
+---
+
+#### **14 Vistas Prioritarias del MVP**
+
+![Wireframes de las 14 vistas prioritarias de la Web Application de TechnoLoad](assets/web-app-wireframes.svg)
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
