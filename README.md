@@ -1050,6 +1050,9 @@ El mock-up de alta fidelidad aplica la jerarquía Inter, superficies claras, car
 
 #### **Vista Desktop**
 
+![Mock-up de alta fidelidad de la Landing Page de TechnoLoad en vista Desktop](assets/landing-mockup-desktop.svg)
+
+<!-- SVG embebido anterior conservado solo como referencia de diseño; la imagen local anterior es la representación visible.
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" style="background:#0F1115; border-radius:8px; font-family:'Inter', sans-serif;">
   <!-- Header -->
   <rect x="0" y="0" width="1200" height="70" fill="#171A20"/>
@@ -1105,6 +1108,13 @@ El mock-up de alta fidelidad aplica la jerarquía Inter, superficies claras, car
   <text x="830" y="605" fill="#A8ADB8" font-size="14">evitar averías críticas y reducir</text>
   <text x="830" y="630" fill="#A8ADB8" font-size="14">penalizaciones contractuales.</text>
 </svg>
+-->
+
+---
+
+#### **Vista Mobile**
+
+![Mock-up responsive de la Landing Page de TechnoLoad en vista Mobile](assets/landing-mockup-mobile.svg)
 
 ### 4.4. Web Applications UX/UI Design
 
