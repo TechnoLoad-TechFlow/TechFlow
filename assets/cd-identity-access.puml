@@ -1,0 +1,77 @@
+@startuml
+package "Identity & Access Management" {
+
+  class IdentityAccessService <<Application Service>> {
+    -accountRepository: UserAccountRepository
+    +registerUser(account: UserAccount): UserAccount
+    +authenticateUser(email: String, password: String): UserAccount
+    +assignRole(accountId: UUID, role: Role): UserAccount
+    +removeRole(accountId: UUID, role: Role): UserAccount
+    +changePassword(accountId: UUID, passwordHash: String): void
+    +activate(accountId: UUID): void
+    +suspend(accountId: UUID): void
+    +hasRole(roleName: RoleName): Boolean
+  }
+
+  interface UserAccountRepository <<Interface>> {
+    +save(account: UserAccount): UserAccount
+    +findById(id: UUID): Optional<UserAccount>
+    +findByEmail(email: String): Optional<UserAccount>
+    +existsByEmail(email: String): Boolean
+  }
+
+  class UserAccount <<Aggregate Root>> {
+    -id: UUID
+    -email: String
+    -credential: Credential
+    -status: AccountStatus
+    -roles: Set<Role>
+    -createdAt: LocalDateTime
+    -lastLoginAt: LocalDateTime
+    +register(): void
+    +authenticate(rawPassword: String): Boolean
+    +assignRole(role: Role): void
+    +removeRole(role: Role): void
+    +changePassword(passwordHash: String): void
+    +activate(): void
+    +suspend(): void
+    +hasRole(roleName: RoleName): Boolean
+  }
+
+  class Credential <<Value Object>> {
+    -passwordHash: String
+    -changedAt: LocalDateTime
+    +matches(rawPassword: String): Boolean
+    +update(passwordHash: String): Credential
+  }
+
+  class Role <<Entity>> {
+    -id: UUID
+    -name: RoleName
+    -description: String
+    +isAdministrative(): Boolean
+  }
+
+  enum AccountStatus {
+    PENDING
+    ACTIVE
+    SUSPENDED
+    DISABLED
+  }
+
+  enum RoleName {
+    CONTRACTOR
+    FLEET_OWNER
+    FLEET_ADMINISTRATOR
+    OPERATOR
+    SYSTEM_ADMINISTRATOR
+  }
+
+  IdentityAccessService --> UserAccountRepository : uses
+  UserAccountRepository --> UserAccount : persists
+  UserAccount *-- "1" Credential : owns >
+  UserAccount o-- "1..*" Role : has >
+  UserAccount --> AccountStatus : has >
+  Role --> RoleName : identified by >
+}
+@enduml

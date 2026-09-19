@@ -1,0 +1,74 @@
+@startuml
+package "Profiles Management" {
+
+  class ProfilesManagementService <<Application Service>> {
+    -profileRepository: ProfileRepository
+    +createProfile(profile: Profile): Profile
+    +updateProfileInformation(id: UUID, firstName: String, lastName: String, documentNumber: String): Profile
+    +updateContactInformation(id: UUID, contact: ContactInformation): Profile
+    +updateOrganizationInformation(id: UUID, organization: Organization): Profile
+    +viewProfile(id: UUID): Profile
+    +viewContactInformation(id: UUID): ContactInformation
+    +viewOrganizationInformation(id: UUID): Organization
+  }
+
+  interface ProfileRepository <<Interface>> {
+    +save(profile: Profile): Profile
+    +findById(id: UUID): Optional<Profile>
+    +findByUserAccountId(userAccountId: UUID): Optional<Profile>
+    +findByDocumentNumber(documentNumber: String): Optional<Profile>
+    +existsByDocumentNumber(documentNumber: String): Boolean
+  }
+
+  class Profile <<Aggregate Root>> {
+    -id: UUID
+    -userAccountId: UUID
+    -firstName: String
+    -lastName: String
+    -documentNumber: String
+    -contactInformation: ContactInformation
+    -organization: Organization
+    -createdAt: LocalDateTime
+    -updatedAt: LocalDateTime
+    +create(): void
+    +updatePersonalInformation(firstName: String, lastName: String, documentNumber: String): void
+    +updateContactInformation(contact: ContactInformation): void
+    +updateOrganizationInformation(organization: Organization): void
+    +fullName(): String
+  }
+
+  class ContactInformation <<Value Object>> {
+    -phoneNumber: String
+    -secondaryEmail: String
+    -address: String
+    -district: String
+    -city: String
+    +isValid(): Boolean
+    +formattedAddress(): String
+  }
+
+  class Organization <<Entity>> {
+    -id: UUID
+    -legalName: String
+    -tradeName: String
+    -taxId: String
+    -type: OrganizationType
+    -address: String
+    +updateInformation(legalName: String, tradeName: String, address: String): void
+    +isValidTaxId(): Boolean
+  }
+
+  enum OrganizationType {
+    INDEPENDENT_CONTRACTOR
+    RENTAL_COMPANY
+    CONSTRUCTION_COMPANY
+    OTHER
+  }
+
+  ProfilesManagementService --> ProfileRepository : uses
+  ProfileRepository --> Profile : persists
+  Profile *-- "1" ContactInformation : contains >
+  Profile o-- "0..1" Organization : belongs to >
+  Organization --> OrganizationType : classified as >
+}
+@enduml
