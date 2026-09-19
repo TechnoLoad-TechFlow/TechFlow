@@ -1044,27 +1044,67 @@ La interfaz final está compuesta por las siguientes secciones:
 * **Final Call to Action.**
 * **Footer.**
 
-El mock-up de alta fidelidad aplica la jerarquía Inter, superficies claras, cards con bordes suaves y CTAs contrastantes. El copy principal, “Controla tu flota antes de que una parada detenga tu operación”, se acompaña de “Solicitar una demostración” y “Conocer los módulos”. Las variantes de componentes contemplan hover, foco, deshabilitado y carga.
-
-Los diseños contemplan versiones Desktop y Mobile con el objetivo de mantener una experiencia consistente en diferentes dispositivos.
+El mock-up de alta fidelidad aplica la jerarquía Inter, superficies claras, cards con bordes suaves y CTAs contrastantes. El copy principal, “Controla tu flota antes de que una parada detenga tu operación”, se acompaña de “Solicitar una demostración” y “Conocer los módulos”.
 
 ---
 
 #### **Vista Desktop**
 
-<div align="center" style="background: #0F1115; padding: 24px; border-radius: 10px; border: 1px solid #2A2F38; margin: 16px 0;">
-  <p style="color: #F5F5F5; font-weight: bold; margin-bottom: 8px; font-size: 16px;">🖥️ TechnoLoad - Landing Page (Vista Desktop)</p>
-  <p style="color: #A8ADB8; font-size: 14px; margin: 0;">[ UI Mockup de Alta Fidelidad: Header, Hero, Módulos, Precios y Call to Action ]</p>
-</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" style="background:#0F1115; border-radius:8px; font-family:'Inter', sans-serif;">
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="70" fill="#171A20"/>
+  <text x="40" y="42" fill="#F5F5F5" font-size="20" font-weight="bold">TechnoLoad</text>
+  <text x="750" y="42" fill="#A8ADB8" font-size="14">Inicio</text>
+  <text x="820" y="42" fill="#A8ADB8" font-size="14">Servicios</text>
+  <text x="910" y="42" fill="#A8ADB8" font-size="14">Planes</text>
+  <rect x="1000" y="20" width="160" height="36" rx="6" fill="#FF8F00"/>
+  <text x="1035" y="43" fill="#FFFFFF" font-size="13" font-weight="bold">Ir a la Plataforma</text>
 
----
+  <!-- Hero Section -->
+  <text x="80" y="160" fill="#FFFFFF" font-size="38" font-weight="bold">Controla tu flota antes de que</text>
+  <text x="80" y="210" fill="#FF8F00" font-size="38" font-weight="bold">una parada detenga tu operación.</text>
+  <text x="80" y="260" fill="#A8ADB8" font-size="16">Monitoreo de horómetros, mantenimiento preventivo y gestión logística en tiempo real.</text>
 
-#### **Vista Mobile**
+  <rect x="80" y="300" width="200" height="48" rx="6" fill="#1976D2"/>
+  <text x="110" y="330" fill="#FFFFFF" font-size="15" font-weight="bold">Solicitar Demostración</text>
 
-<div align="center" style="background: #0F1115; padding: 24px; border-radius: 10px; border: 1px solid #2A2F38; margin: 16px 0;">
-  <p style="color: #F5F5F5; font-weight: bold; margin-bottom: 8px; font-size: 16px;">📱 TechnoLoad - Landing Page (Vista Mobile)</p>
-  <p style="color: #A8ADB8; font-size: 14px; margin: 0;">[ UI Mockup Responsive: Navegación Colapsable y Layout Vertical ]</p>
-</div>
+  <rect x="300" y="300" width="180" height="48" rx="6" fill="none" stroke="#2A2F38" stroke-width="2"/>
+  <text x="335" y="330" fill="#F5F5F5" font-size="15">Conocer Módulos</text>
+
+  <!-- Hero Card Graphic -->
+  <rect x="680" y="130" width="440" height="260" rx="12" fill="#171A20" stroke="#2A2F38" stroke-width="2"/>
+  <rect x="710" y="160" width="380" height="130" rx="8" fill="#0F3D5E"/>
+  <circle cx="800" cy="225" r="30" fill="#FF8F00"/>
+  <rect x="850" y="210" width="180" height="12" rx="4" fill="#FFFFFF"/>
+  <rect x="850" y="232" width="120" height="10" rx="4" fill="#A8ADB8"/>
+  <rect x="710" y="310" width="140" height="32" rx="16" fill="#2E7D32"/>
+  <text x="735" y="331" fill="#FFFFFF" font-size="12" font-weight="bold">● Flota Operativa 98%</text>
+
+  <!-- Cards Grid -->
+  <rect x="80" y="440" width="320" height="280" rx="10" fill="#171A20" stroke="#2A2F38"/>
+  <rect x="110" y="470" width="40" height="40" rx="8" fill="#FF8F00"/>
+  <text x="123" y="496" fill="#FFFFFF" font-size="18" font-weight="bold">01</text>
+  <text x="110" y="545" fill="#FFFFFF" font-size="20" font-weight="bold">Maquinaria Pesada</text>
+  <text x="110" y="580" fill="#A8ADB8" font-size="14">Control automático de horómetros,</text>
+  <text x="110" y="605" fill="#A8ADB8" font-size="14">alertas de servicios preventivos y</text>
+  <text x="110" y="630" fill="#A8ADB8" font-size="14">reportes de costos operativos en obra.</text>
+
+  <rect x="440" y="440" width="320" height="280" rx="10" fill="#171A20" stroke="#2A2F38"/>
+  <rect x="470" y="470" width="40" height="40" rx="8" fill="#1976D2"/>
+  <text x="483" y="496" fill="#FFFFFF" font-size="18" font-weight="bold">02</text>
+  <text x="470" y="545" fill="#FFFFFF" font-size="20" font-weight="bold">Transporte y Carga</text>
+  <text x="470" y="580" fill="#A8ADB8" font-size="14">Asignación eficiente de rutas,</text>
+  <text x="470" y="605" fill="#A8ADB8" font-size="14">seguimiento de kilometraje y</text>
+  <text x="470" y="630" fill="#A8ADB8" font-size="14">reducción de tiempos muertos.</text>
+
+  <rect x="800" y="440" width="320" height="280" rx="10" fill="#171A20" stroke="#2A2F38"/>
+  <rect x="830" y="470" width="40" height="40" rx="8" fill="#2E7D32"/>
+  <text x="843" y="496" fill="#FFFFFF" font-size="18" font-weight="bold">03</text>
+  <text x="830" y="545" fill="#FFFFFF" font-size="20" font-weight="bold">Mantenimiento</text>
+  <text x="830" y="580" fill="#A8ADB8" font-size="14">Planificación centralizada para</text>
+  <text x="830" y="605" fill="#A8ADB8" font-size="14">evitar averías críticas y reducir</text>
+  <text x="830" y="630" fill="#A8ADB8" font-size="14">penalizaciones contractuales.</text>
+</svg>
 ## 4.4. Web Applications UX/UI Design
 
 El Dashboard y la Web App se diseñan a partir de los User Personas y User Stories. El administrador requiere visibilidad de activos y mantenimiento; el coordinador necesita conocer disponibilidad y asignar unidades sin perder trazabilidad.
