@@ -999,7 +999,7 @@ La configuración implementada en la Landing Page es la siguiente:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TechnoLoad | Intelligent Fleet Management</title>
 <meta name="description" content="TechnoLoad centraliza activos, mantenimiento y operaciones de transporte de carga y maquinaria pesada en una sola plataforma.">
-<meta name="keywords" content="fleet management, maintenance, machinery, logistics, TechnoLoad, maquinaria pesada, transporte de carga">
+<meta name="keywords" content="fleet management, maintenance, machinery, logistics, TechnoLoad">
 <meta name="author" content="TechnoLoad Team" />
 <link rel="canonical" href="[https://technoload.pe/](https://technoload.pe/)" />
 <meta property="og:type" content="website" />
@@ -1008,6 +1008,7 @@ La configuración implementada en la Landing Page es la siguiente:
 <meta property="og:url" content="[https://technoload.pe/](https://technoload.pe/)" />
 <meta property="og:image" content="[https://technoload.pe/og-cover.png](https://technoload.pe/og-cover.png)" />
 <meta name="twitter:card" content="summary_large_image" />
+```
 
 ### 4.2.4. Searching Systems
 
