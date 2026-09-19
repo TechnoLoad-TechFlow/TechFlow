@@ -595,6 +595,12 @@ Harold Angello representa al contratista responsable de pequeñas obras que nece
 
 ![User Persona - Harold Angello](https://drive.google.com/uc?export=view&id=1upOL-SUfHb9zqnYesjOgERQdI3wfDt0F)
 
+#### User Persona Contratistas independientes y responsables de obras de construcción
+
+Renzo Huamán representa al contratista independiente que supervisa varias obras y requiere información confiable sobre disponibilidad de maquinaria, tarifas transparentes y registro digital de horas trabajadas.
+
+![User Persona - Renzo Huamán](assets/user-persona-renzo-huaman.png)
+
 #### 2.3.2. User Task Matrix
 
 La siguiente matriz compara la frecuencia e importancia de las principales tareas realizadas actualmente por los dos User Personas identificados. Las tareas consideradas corresponden a actividades que los usuarios realizan independientemente de la existencia de TechnoLoad.
@@ -670,7 +676,7 @@ El siguiente Empathy Map representa a Luis Herrera, User Persona del Segmento 1.
 | **Ganancias (Gains)** | Disponibilidad garantizada en tiempo real, cumplimiento estricto de los plazos de entrega y supervisión centralizada multi-obra de alquileres y costos. |
 | **Dolores (Pains)** | Doble reserva de maquinaria por proveedores poco éticos, paradas de obra por fallas mecánicas y dispersión de datos entre múltiples chats de WhatsApp y hojas de cálculo. |
 
-A continuación se presenta el Empathy Map elaborado en **UXPressia** para el User Persona **Renzo Huamán**, contratista independiente del Segmento 2. Este artefacto sintetiza sus observaciones, sentimientos, influencias, dolores y metas en el contexto de sus actividades diarias en obra.
+A continuación se presenta el Empathy Map elaborado en UXPressia para el User Persona Renzo Huamán, contratista independiente del Segmento 2. Este artefacto sintetiza sus observaciones, sentimientos, influencias, dolores y metas en el contexto de sus actividades diarias en obra.
 
 ![Empathy Map - Renzo Huamán](assets/empathy-map-renzo-huaman.png)
 
