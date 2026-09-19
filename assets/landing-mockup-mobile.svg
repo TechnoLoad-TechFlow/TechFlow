@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="900" viewBox="0 0 420 900" role="img" aria-labelledby="title description">
+  <title id="title">TechnoLoad Landing Page - Vista Mobile</title>
+  <desc id="description">Mock-up móvil de una página de aterrizaje de gestión de flotas.</desc>
+  <defs>
+    <linearGradient id="mobileHero" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0F3D5E"/><stop offset="1" stop-color="#08263D"/></linearGradient>
+    <filter id="mobileShadow" x="-30%" y="-20%" width="160%" height="150%"><feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#08111C" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="420" height="900" fill="#F6F8FB"/>
+  <rect width="420" height="64" fill="#FFFFFF"/>
+  <text x="24" y="40" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#0F3D5E">Techno<tspan fill="#FF8F00">Load</tspan></text>
+  <rect x="358" y="22" width="30" height="3" rx="2" fill="#17324D"/><rect x="358" y="30" width="30" height="3" rx="2" fill="#17324D"/><rect x="358" y="38" width="30" height="3" rx="2" fill="#17324D"/>
+  <rect y="64" width="420" height="360" fill="url(#mobileHero)"/>
+  <text x="24" y="111" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.3" fill="#FFB34A">GESTIÓN INTELIGENTE DE FLOTAS</text>
+  <text x="24" y="158" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">Controla tu flota</text>
+  <text x="24" y="195" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">antes de que una parada</text>
+  <text x="24" y="232" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="700" fill="#FFB34A">detenga tu operación.</text>
+  <text x="24" y="271" font-family="Inter,Arial,sans-serif" font-size="14" fill="#DCE7F1">Mantenimiento preventivo, activos y rutas</text>
+  <text x="24" y="293" font-family="Inter,Arial,sans-serif" font-size="14" fill="#DCE7F1">conectados en una sola plataforma.</text>
+  <rect x="24" y="321" width="180" height="44" rx="8" fill="#FF8F00"/>
+  <text x="52" y="349" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#17212B">Solicitar demo</text>
+  <g filter="url(#mobileShadow)">
+    <rect x="238" y="314" width="158" height="82" rx="12" fill="#FFFFFF"/>
+    <text x="253" y="338" font-family="Inter,Arial,sans-serif" font-size="10" fill="#52616B">FLOTA OPERATIVA</text>
+    <text x="253" y="373" font-family="Inter,Arial,sans-serif" font-size="27" font-weight="700" fill="#0F3D5E">98%</text>
+    <circle cx="367" cy="358" r="14" fill="#2E7D32"/><path d="M361 358l4 4 8-9" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+  </g>
+  <text x="24" y="476" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700" fill="#17324D">Tu operación, bajo control</text>
+  <text x="24" y="503" font-family="Inter,Arial,sans-serif" font-size="13" fill="#52616B">Herramientas diseñadas para trabajar en campo.</text>
+  <g filter="url(#mobileShadow)">
+    <rect x="24" y="531" width="372" height="96" rx="14" fill="#FFFFFF"/>
+    <rect x="42" y="550" width="42" height="42" rx="10" fill="#FFF1DC"/>
+    <text x="54" y="578" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700" fill="#D97706">01</text>
+    <text x="102" y="562" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" fill="#17324D">Activos conectados</text>
+    <text x="102" y="587" font-family="Inter,Arial,sans-serif" font-size="13" fill="#52616B">Horómetros y kilometraje actualizados.</text>
+    <rect x="24" y="645" width="372" height="96" rx="14" fill="#FFFFFF"/>
+    <rect x="42" y="664" width="42" height="42" rx="10" fill="#E8F2FF"/>
+    <text x="54" y="692" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700" fill="#1976D2">02</text>
+    <text x="102" y="676" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" fill="#17324D">Mantenimiento al día</text>
+    <text x="102" y="701" font-family="Inter,Arial,sans-serif" font-size="13" fill="#52616B">Alertas antes de una parada crítica.</text>
+    <rect x="24" y="759" width="372" height="96" rx="14" fill="#FFFFFF"/>
+    <rect x="42" y="778" width="42" height="42" rx="10" fill="#E8F7ED"/>
+    <text x="54" y="806" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700" fill="#2E7D32">03</text>
+    <text x="102" y="790" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" fill="#17324D">Rutas eficientes</text>
+    <text x="102" y="815" font-family="Inter,Arial,sans-serif" font-size="13" fill="#52616B">Mejora disponibilidad y cumplimiento.</text>
+  </g>
+  <rect y="878" width="420" height="22" fill="#0F3D5E"/>
+</svg>
