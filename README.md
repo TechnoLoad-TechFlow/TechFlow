@@ -871,6 +871,7 @@ La escala de espaciado se compone de 4, 8, 12, 16, 24, 32 y 48 px. Las tarjetas 
 | **Estado de activo** | `pv-tag` | disponible, mantenimiento, crítico |
 | **Confirmación y error** | `pv-toast` | success, warn, error, info |
 | **Carga de contenido** | `pv-skeleton` | tarjeta, fila y detalle |
+
 ### 4.1.2. Web Style Guidelines
 
 Las Web Style Guidelines de TechnoLoad establecen los criterios visuales y de interacción que serán aplicados tanto en la Landing Page como en la Web Application, buscando mantener una experiencia consistente, responsive y accesible en diferentes tamaños de pantalla.
@@ -973,7 +974,61 @@ De esta manera, la organización del contenido permite reducir la cantidad de in
 
 ### 4.2.2. Labeling Systems
 
-El etiquetado emplea textos breves, directos y consistentes con el dominio de flotas. “Inicio”, “Activos”, “Mantenimiento” y “Operaciones” nombran destinos; “Registrar lectura” y “Asignar unidad” nombran acciones; “Disponible” y “En mantenimiento” comunican estado; “Comenzar ahora” expresa la llamada a la acción. Estos términos se implementan como claves de `vue-i18n`, permitiendo la equivalencia ES/EN sin alterar los componentes.
+El sistema de etiquetado de TechnoLoad utiliza términos breves, comprensibles y consistentes con el Ubiquitous Language definido para el dominio.
+
+Se busca evitar etiquetas ambiguas o excesivamente técnicas y utilizar nombres que permitan al usuario comprender rápidamente la función de cada elemento.
+
+#### Navigation Labels
+
+| Label | Propósito |
+|---|---|
+| Home | Página principal de la Landing Page. |
+| Features | Presenta las principales características de TechnoLoad. |
+| Solutions | Presenta los beneficios de la plataforma para cada segmento. |
+| Contact | Permite acceder a los medios de contacto. |
+| Dashboard | Presenta una visión general de la operación. |
+| Assets | Permite administrar maquinaria y vehículos. |
+| Maintenance | Permite consultar y gestionar mantenimientos. |
+| Operations | Permite gestionar las operaciones de las unidades. |
+| Reservations | Permite consultar y administrar reservas. |
+| Profile | Permite gestionar la información del usuario. |
+
+#### Action Labels
+
+Las acciones utilizan verbos que describen directamente lo que realizará el usuario.
+
+- Register Asset
+- Edit Asset
+- Register Reading
+- Schedule Maintenance
+- Assign Unit
+- Create Reservation
+- Cancel Reservation
+- View Details
+- Save
+- Confirm
+- Cancel
+
+#### Status Labels
+
+Los estados utilizados para representar la situación actual de los activos son:
+
+- Available
+- Assigned
+- In Operation
+- In Maintenance
+- Inactive
+
+Los mantenimientos podrán utilizar estados como:
+
+- Scheduled
+- In Progress
+- Completed
+- Cancelled
+
+Las etiquetas mantendrán la misma terminología en toda la plataforma para evitar que un mismo concepto sea representado con diferentes palabras.
+
+Además, los textos visibles serán administrados mediante internacionalización, permitiendo presentar la interfaz en `en_US` y `es_419`.
 
 ### 4.2.3. SEO Tags and Meta Tags
 
