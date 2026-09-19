@@ -1154,9 +1154,19 @@ A continuación, se presentan los principales Wireflow Diagrams de TechnoLoad.
 
 ### 4.4.3. Web Applications Mock-ups
 
-Las interfaces H/F se implementan en Vue 3 y PrimeVue mediante Auto-layout y componentes reutilizables. La carga utiliza Skeleton; la ausencia de datos presenta un estado vacío con CTA; el éxito usa Toast y actualización local; el error es recuperable y conserva los campos ingresados.
+Los mock-ups presentan la propuesta visual de alta fidelidad de la Web Application de TechnoLoad.
 
-![Estados visuales de la aplicación TechnoLoad](assets/web-app-mockups.svg)
+A diferencia de los wireframes, estas interfaces incorporan la identidad visual definida en las Style Guidelines, incluyendo colores, tipografía, iconografía, componentes, botones, tarjetas, estados visuales y jerarquías de información.
+
+Los mock-ups permiten representar de manera más cercana la apariencia final de la aplicación y sirven como referencia visual para la etapa de implementación.
+
+A continuación, se presentan los mock-ups correspondientes a las principales vistas de la Web Application de TechnoLoad.
+
+---
+
+#### **Mock-ups de Alta Fidelidad**
+
+![Web Applications Mock-ups TechnoLoad](assets/web-app-mockups.svg)
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
