@@ -1281,17 +1281,57 @@ A continuación, se presenta una captura del prototipo en funcionamiento y el en
 
 ## 4.6. Domain-Driven Software Architecture
 
-La arquitectura orientada al dominio separa el conocimiento de negocio mediante Event Storming y Bounded Contexts. Esta delimitación evita que la gestión de activos, mantenimiento, operaciones, identidad y perfiles compartan modelos ambiguos.
+En esta sección se presenta la arquitectura de software de TechnoLoad desde una perspectiva orientada al dominio.
+
+La propuesta arquitectónica toma como referencia los procesos de negocio identificados previamente, el Ubiquitous Language, el Big Picture Event Storming y los principales requerimientos funcionales de la plataforma.
+
+A partir de estos elementos se identifican los principales límites del dominio, las responsabilidades del sistema y las relaciones entre los diferentes componentes que conforman la solución.
+
+La arquitectura se documenta mediante Design-Level Event Storming y diagramas C4 a nivel de Context, Container y Component.
 
 ### 4.6.1. Design-Level Event Storming
 
-El **Fleet Management Bounded Context** concentra inventario, estado y lecturas de activos. **Maintenance Management** gestiona programación, prioridades y órdenes. **Operations Management** controla asignaciones y horas operativas. **Identity & Access Management** resuelve cuentas, roles y autenticación; **Profiles Management** conserva organización y preferencias de usuario. Los comandos producen eventos, los agregados protegen reglas y los read models satisfacen las consultas de interfaz.
+En esta sección se presenta el Design-Level Event Storming de TechnoLoad, desarrollado a partir del Big Picture Event Storming realizado previamente.
 
-| Bounded Context | Commands | Aggregate | Value Objects | Domain Events | Read Model |
-|---|---|---|---|---|---|
-| Fleet / Asset | RegisterAsset, UpdateAssetStatus, RecordReading | Asset | AssetCode, AssetStatus, MeterReading | AssetRegistered, AssetStatusChanged, ReadingRecorded | AssetList, AssetDetail |
-| Maintenance | ScheduleMaintenance, StartMaintenance, CompleteMaintenance | MaintenanceOrder | Priority, MaintenanceType, ScheduledDate | MaintenanceScheduled, MaintenanceStarted, MaintenanceCompleted | MaintenanceBoard |
-| Operations | AssignUnit, CloseOperation | Operation | AssignmentPeriod, OperationStatus | UnitAssigned, OperationClosed | AvailabilityBoard |
+El objetivo de esta etapa es profundizar en el dominio del problema e identificar los principales Bounded Contexts, Aggregates, Commands, Domain Events, Queries y Read Models de la solución.
+
+A partir del análisis realizado se identificaron los siguientes Bounded Contexts principales: Fleet Management, Rental Management, Maintenance Management, Operations Management, Identity & Access Management y Profiles Management.
+
+#### Fleet Management Bounded Context
+
+Este Bounded Context concentra las responsabilidades relacionadas con la gestión de la maquinaria, incluyendo su registro, actualización de información, cambio de estado, consulta de inventario y disponibilidad.
+
+![Fleet Management Event Storming](assets/es-fleet-management.svg)
+
+#### Rental Management Bounded Context
+
+Este Bounded Context gestiona las solicitudes y reservas de maquinaria, incluyendo la creación de solicitudes, confirmación, cancelación y actualización de las fechas asociadas al alquiler.
+
+![Rental Management Event Storming](assets/es-rental-management.svg)
+
+#### Maintenance Management Bounded Context
+
+Este Bounded Context agrupa las responsabilidades relacionadas con el mantenimiento de la maquinaria. Incluye la programación y finalización de mantenimientos, el reporte de averías y la actualización del estado de mantenimiento. Su agregado principal es Maintenance y permite además consultar el historial, los mantenimientos pendientes y el detalle de cada intervención realizada.
+
+![Maintenance Management Event Storming](assets/es-maintenance-management.svg)
+
+#### Operations Management Bounded Context
+
+Este Bounded Context representa la ejecución operativa de los servicios realizados con la maquinaria. Incluye el inicio y finalización de un servicio, el registro de horas trabajadas y la validación de dichas horas. Su agregado principal es Service Operation y permite consultar el estado del servicio, el resumen de horas trabajadas y el historial de operaciones.
+
+![Operations Management Event Storming](assets/es-operations-management.svg)
+
+#### Identity & Access Management Bounded Context
+
+Este Bounded Context se encarga de la gestión de identidad, autenticación y control de acceso de los usuarios de TechnoLoad. Incluye el registro de cuentas, la autenticación, la asignación de roles y el cambio de contraseñas. Su agregado principal es User Account y permite consultar los datos de la cuenta, los roles asignados y el estado de autenticación.
+
+![Identity & Access Management Event Storming](assets/es-identity-access-management.svg)
+
+#### Profiles Management Bounded Context
+
+Este Bounded Context gestiona la información asociada a los perfiles de los usuarios. Incluye la creación y actualización de perfiles, datos de contacto e información de la organización. Su agregado principal es Profile y permite consultar la información personal, de contacto y organizacional asociada a cada usuario.
+
+![Profiles Management Event Storming](assets/es-profiles-management.svg)
 
 ### 4.6.2. Software Architecture Context Diagram
 
