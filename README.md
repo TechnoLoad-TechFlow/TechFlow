@@ -403,7 +403,7 @@ En esta sección se presentan las entrevistas realizadas a representantes de los
 
 **Captura de la entrevista:**
 
-
+![Captura de la entrevista a Jose Ramirez](assets/interview-jose-ramirez.png)
 
 **Resumen de la entrevista:**
 
@@ -429,7 +429,7 @@ Sus principales prioridades son garantizar la disponibilidad de la maquinaria, r
 
 **Captura de la entrevista:**
 
-
+![Captura de la entrevista a Carlos Mendoza](assets/interview-carlos-stephano-mendoza.png)
 
 **Resumen de la entrevista:**
 
@@ -459,7 +459,7 @@ Entrevista 1
 
 **Captura de la entrevista:**
 
-
+![Captura de la entrevista a Andrea Lopez](assets/interview-andrea-lopez.png)
 
 **Resumen de la entrevista:**
 
@@ -478,6 +478,9 @@ La entrevistada considera indispensable disponer de un calendario de disponibili
 - **Ocupación:** Ingeniero civil y propietario de una pequeña constructora
 - **Obras supervisadas:** Entre 2 y 3 obras simultáneamente
 - **Dispositivos y navegador:** iPhone en obra; laptop con Google Chrome en oficina.
+
+**Captura de la entrevista:**
+![Captura de la entrevista a Harold Angello](assets/interview-harold-angello.png)
 
 **Resumen de la entrevista:**
 
@@ -499,6 +502,10 @@ Sus principales prioridades son evitar que las obras se detengan por falta de ma
 - **Obras supervisadas:** Entre 2 y 3 obras simultáneamente
 - **Dispositivos y navegador:** Celular y laptop con google en la oficina, ademas de exel.
 
+**Captura de la entrevista:**
+
+![Captura de la entrevista a Renzo Huaman](assets/interview-renzo-huaman.png)
+
 **Resumen de la entrevista:**
 
 Renzo Huamán es un contratista de 38 años con formación en construcción civil, habituado a operar con su teléfono en obra y una laptop en oficina. Para sus tareas diarias se apoya en WhatsApp, Facebook, Google Maps y Excel, gestionando sus proyectos con el objetivo principal de evitar tiempos muertos, controlar los costos y cumplir estrictamente los cronogramas pactados con sus clientes.
@@ -506,6 +513,28 @@ Renzo Huamán es un contratista de 38 años con formación en construcción civi
 Al buscar maquinaria, prioriza las recomendaciones de colegas sobre las búsquedas en internet, pero enfrenta constantes fricciones con los proveedores tradicionales. Sus mayores frustraciones radican en la falta de transparencia en las tarifas —con cargos imprevistos de flete u operador—, la falsa disponibilidad que deja la obra sin equipo, y las averías mecánicas que paralizan la jornada generando sobrecostos por mano de obra inactiva.
 
 Para solucionar estos problemas y reemplazar el control manual que lleva en su cuaderno de obra, Renzo adoptaría una plataforma digital siempre que ofrezca precios finales transparentes por hora, garantía de disponibilidad en tiempo real y un comprobante formal que respalde cada reserva.
+
+##### Entrevista 3
+
+- **Nombre y apellidos:** Piero Reaño
+- **Edad:** 25 años
+- **Ocupación:** Contratista independiente
+- **Distrito:** Surquillo
+- **Timing en el video:** 20:01-25:42
+
+**Captura de la entrevista:**
+![Captura de la entrevista a Piero Reaño](assets/interview-piero-reano.png)
+
+**Resumen de la entrevista:**
+
+Piero Reaño, contratista independiente de 25 años, trabaja en proyectos de construcción y remodelación, donde utiliza principalmente excavadoras, retroexcavadoras y cargadores. Actualmente busca maquinaria mediante proveedores conocidos, recomendaciones, Google, Facebook y grupos de WhatsApp.
+
+Entre sus principales dificultades identifica la falta de disponibilidad actualizada, los costos adicionales no informados y las fallas mecánicas que pueden generar retrasos en las obras. Además, gestiona las horas trabajadas y la asignación de maquinaria mediante WhatsApp, llamadas y Excel.
+
+El entrevistado considera útil una plataforma que centralice la disponibilidad, reservas, costos, horas trabajadas, mantenimiento y ubicación de las máquinas. También destaca la importancia de contar con información actualizada, precios transparentes y una experiencia sencilla desde el celular.
+
+**Video consolidado de las entrevistas:** [Ver entrevistas completas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416147_upc_edu_pe/IQCtDKm3Mx7YSICszqpbHVACAZ5fOdZ3xGF08nsq6eXrey4?e=WBrQyq&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
 ### 2.2.3. Análisis de entrevistas
 
 #### **Análisis preliminar del Segmento 1: Empresas de Alquiler de Maquinaria Pesada**
@@ -599,7 +628,8 @@ De manera general, el proceso actual considera las siguientes etapas:
 
 Durante este proceso pueden presentarse dificultades relacionadas con registros manuales, información desactualizada, falta de alertas preventivas y poca visibilidad del estado real de los equipos.
 
-(AQUI VA LA IMAGEN DEL USER JOURNEY DEL SEGMENTO 1)
+![User Journey Map - Luis Herrera](assets/user-journey-luis-herrera.png)
+
 
 ##### User Journey Map - Coordinador Logístico
 
@@ -611,7 +641,11 @@ De manera general, el proceso actual considera las siguientes etapas:
 
 Los principales puntos de fricción se relacionan con la necesidad de consultar diferentes medios para conocer la disponibilidad de las unidades, la comunicación mediante llamadas o mensajería y la falta de información centralizada para tomar decisiones rápidamente.
 
-(AQUI VA LA IMAGEN DEL USER JOURNEY DEL SEGMENTO 2)
+![User Journey Map - Harold Angello](https://drive.google.com/uc?export=view&id=1mEbEbfmUMl4W5BJVEFg18EAV93pycqXV)
+
+El siguiente User Journey Map fue elaborado en la plataforma UXPressia para el User Persona Renzo Huamán. El recorrido documenta la experiencia completa en el escenario actual (*As-Is*) cuando Renzo necesita contratar una retroexcavadora para una obra de zanjado y habilitación urbana, enfrentando la falta de transparencia en costos, la informalidad en las reservas y las averías no previstas.
+
+![User Journey Map - Renzo Huamán](assets/user-journey-renzo-huaman.png)
 
 #### 2.3.4. Empathy Mapping
 
@@ -636,31 +670,21 @@ El siguiente Empathy Map representa a Luis Herrera, User Persona del Segmento 1.
 | **Ganancias (Gains)** | Disponibilidad garantizada en tiempo real, cumplimiento estricto de los plazos de entrega y supervisión centralizada multi-obra de alquileres y costos. |
 | **Dolores (Pains)** | Doble reserva de maquinaria por proveedores poco éticos, paradas de obra por fallas mecánicas y dispersión de datos entre múltiples chats de WhatsApp y hojas de cálculo. |
 
-##### Empathy Map - Administrador de Flota de Maquinaria Pesada
+A continuación se presenta el Empathy Map elaborado en **UXPressia** para el User Persona **Renzo Huamán**, contratista independiente del Segmento 2. Este artefacto sintetiza sus observaciones, sentimientos, influencias, dolores y metas en el contexto de sus actividades diarias en obra.
 
-El administrador de flota necesita mantener la maquinaria disponible para las operaciones y reducir las fallas inesperadas que puedan generar pérdidas económicas o retrasos.
-
-Entre sus principales preocupaciones se encuentran el control de las horas de funcionamiento, el cumplimiento de los mantenimientos preventivos, la disponibilidad de los equipos y la reducción de los costos derivados de fallas mecánicas.
-
-Este perfil busca contar con información confiable que le permita tomar decisiones oportunas y reducir la dependencia de registros manuales o información dispersa.
-
-(AQUI VA LA IMAGEN DEL EMPATHY MAP DEL SEGMENTO 1)
-
-##### Empathy Map - Coordinador Logístico
-
-El coordinador logístico necesita organizar los servicios de transporte de manera eficiente, asignando vehículos disponibles y evitando retrasos en los despachos.
-
-Entre sus principales preocupaciones se encuentran los tiempos muertos, la falta de información actualizada sobre las unidades, los retrasos ocasionados por fallas mecánicas y la dificultad para coordinar simultáneamente vehículos, conductores y rutas.
-
-Este perfil busca acceder rápidamente a información que le permita conocer qué unidades se encuentran disponibles y tomar decisiones con mayor rapidez.
-
-(AQUI VA LA IMAGEN DEL EMPATHY MAP DEL SEGMENTO 2)
+![Empathy Map - Renzo Huamán](assets/empathy-map-renzo-huaman.png)
 
 #### 2.3.5. Big Picture Event Storming
 
 El Big Picture Event Storming permite visualizar de manera general los principales procesos del negocio de TechnoLoad, identificando actores, comandos, eventos del dominio, políticas y puntos críticos. En este proyecto se representan los flujos relacionados con la gestión de activos, el mantenimiento preventivo y la coordinación de transporte y logística, con el objetivo de comprender cómo se relacionan las principales actividades del dominio.
 
-(AQUI VA LA IMAGEN DEL EVENT STORMING)
+![Big Picture Event Storming 1 - MaquiControl](assets/big-picture-event-storming-1.jpg)
+![Big Picture Event Storming 2 - MaquiControl](assets/big-picture-event-storming-2.jpg)
+![Big Picture Event Storming 3 - MaquiControl](assets/big-picture-event-storming-3.jpg)
+![Big Picture Event Storming 4 - MaquiControl](assets/big-picture-event-storming-4.jpg)
+![Big Picture Event Storming 5 - MaquiControl](assets/big-picture-event-storming-5.jpg)
+![Big Picture Event Storming 6 - MaquiControl](assets/big-picture-event-storming-6.jpg)
+A partir del mapa se reconocen áreas de dominio candidatas como Discovery and Availability, Rental and Reservation Management, Fleet and Maintenance Management, Service Execution and Hour Control, Subscription Management, Billing and SUNAT Compliance, Operational Notifications y Dashboard and Analytics. Estas áreas todavía no representan Bounded Contexts definitivos, ya que su refinamiento se realizará posteriormente mediante Design-Level Event Storming.
 
 ### 2.4. Ubiquitous Language
 
