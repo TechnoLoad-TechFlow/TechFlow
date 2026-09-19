@@ -1,98 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title description">
-  <title id="title">TechnoLoad — Wireframes de las 14 vistas prioritarias del MVP</title>
-  <desc id="description">Grilla de baja fidelidad con interfaces administrativas y de cliente, y panel lateral de responsive y estados.</desc>
-  <style>
-    .title{font-family:Inter,Arial,sans-serif;font-size:28px;font-weight:700;fill:#171A20}
-    .subtitle{font-family:Inter,Arial,sans-serif;font-size:16px;fill:#667085}
-    .code{font-family:Inter,Arial,sans-serif;font-size:13px;font-weight:700;fill:#344054}
-    .label{font-family:Inter,Arial,sans-serif;font-size:12px;fill:#667085}
-    .panel-title{font-family:Inter,Arial,sans-serif;font-size:20px;font-weight:700;fill:#171A20}
-    .panel-label{font-family:Inter,Arial,sans-serif;font-size:15px;font-weight:700;fill:#344054}
-    .panel-text{font-family:Inter,Arial,sans-serif;font-size:14px;fill:#667085}
-    .card{fill:#FFFFFF;stroke:#D0D5DD;stroke-width:1}
-    .header-line{stroke:#E0E4EC;stroke-width:1}
-    .muted{fill:#E8ECEF}.mid{fill:#D0D5DD}.dark{fill:#98A2B3}.button{fill:#667085}
-  </style>
-  <rect width="1600" height="1100" fill="#F4F5F7"/>
-  <text class="title" x="60" y="60">TechnoLoad · Web Applications Wireframes</text>
-  <text class="subtitle" x="60" y="90">14 vistas prioritarias del MVP · Interfaces administrativas y de cliente</text>
-  <rect x="1380" y="40" width="160" height="40" rx="6" fill="#FF8F00"/>
-  <text x="1418" y="66" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700" fill="#171A20">TechnoLoad</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%" role="img" aria-labelledby="title description">
+  <title id="title">TechnoLoad — Wireframes de baja fidelidad</title>
+  <desc id="description">Grilla de catorce tarjetas de wireframes del MVP de TechnoLoad.</desc>
+  <rect width="1600" height="1000" fill="#F4F5F7"/>
 
-  <g id="base-card">
-    <rect class="card" width="210" height="280" rx="8"/>
-    <line class="header-line" x1="0" y1="43" x2="210" y2="43"/>
-    <rect class="muted" x="16" y="60" width="178" height="10" rx="4"/>
-    <rect class="muted" x="16" y="80" width="124" height="8" rx="4"/>
-    <rect class="mid" x="16" y="102" width="178" height="30" rx="5"/>
-    <rect class="muted" x="16" y="148" width="178" height="10" rx="4"/>
-    <rect class="muted" x="16" y="168" width="154" height="10" rx="4"/>
-    <rect class="muted" x="16" y="188" width="178" height="10" rx="4"/>
-    <rect class="muted" x="16" y="208" width="112" height="10" rx="4"/>
-  </g>
-  <g id="table">
-    <rect class="mid" x="16" y="102" width="178" height="18" rx="4"/>
-    <rect class="dark" x="16" y="134" width="45" height="9" rx="4"/>
-    <rect class="muted" x="72" y="134" width="122" height="9" rx="4"/>
-    <rect class="dark" x="16" y="157" width="58" height="9" rx="4"/>
-    <rect class="muted" x="84" y="157" width="110" height="9" rx="4"/>
-    <rect class="dark" x="16" y="180" width="40" height="9" rx="4"/>
-    <rect class="muted" x="67" y="180" width="127" height="9" rx="4"/>
-    <rect class="muted" x="16" y="203" width="178" height="9" rx="4"/>
-  </g>
-  <g id="calendar">
-    <rect class="mid" x="16" y="102" width="178" height="22" rx="4"/>
-    <g fill="#E8ECEF">
-      <rect x="16" y="138" width="22" height="20" rx="3"/><rect x="44" y="138" width="22" height="20" rx="3"/>
-      <rect x="72" y="138" width="22" height="20" rx="3"/><rect x="100" y="138" width="22" height="20" rx="3"/>
-      <rect x="128" y="138" width="22" height="20" rx="3"/><rect x="156" y="138" width="22" height="20" rx="3"/>
-      <rect x="16" y="165" width="22" height="20" rx="3"/><rect x="44" y="165" width="22" height="20" rx="3"/>
-      <rect x="72" y="165" width="22" height="20" rx="3"/><rect x="100" y="165" width="22" height="20" rx="3"/>
-      <rect x="128" y="165" width="22" height="20" rx="3"/>
-    </g>
-    <rect x="156" y="165" width="22" height="20" rx="3" fill="#98A2B3"/>
-  </g>
+  <!-- Plantilla visual repetida: tarjeta, header gris, título y barras de interfaz -->
+  <!-- Fila 1 -->
+  <g><rect x="40" y="40" width="230" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><rect x="40" y="40" width="230" height="32" rx="12" fill="#DCDFE4"/><text x="54" y="61" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">A01</text><text x="241" y="61" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">A01</text><text x="56" y="101" font-family="sans-serif" font-size="14" font-weight="bold" fill="#171A20">Iniciar sesión</text><rect x="56" y="124" width="198" height="30" rx="4" fill="#F1F3F5"/><rect x="56" y="166" width="198" height="30" rx="4" fill="#F1F3F5"/><rect x="56" y="214" width="198" height="34" rx="4" fill="#B0BEC5"/><rect x="56" y="271" width="120" height="9" rx="4" fill="#E0E6ED"/></g>
+  <g><rect x="290" y="40" width="230" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><rect x="290" y="40" width="230" height="32" rx="12" fill="#DCDFE4"/><text x="304" y="61" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">A02</text><text x="491" y="61" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">A02</text><text x="306" y="101" font-family="sans-serif" font-size="14" font-weight="bold" fill="#171A20">Crear cuenta</text><rect x="306" y="124" width="198" height="25" rx="4" fill="#F1F3F5"/><rect x="306" y="160" width="198" height="25" rx="4" fill="#F1F3F5"/><rect x="306" y="196" width="198" height="25" rx="4" fill="#F1F3F5"/><rect x="420" y="249" width="84" height="32" rx="4" fill="#B0BEC5"/></g>
+  <g><rect x="540" y="40" width="230" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><rect x="540" y="40" width="230" height="32" rx="12" fill="#DCDFE4"/><text x="554" y="61" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">P01</text><text x="741" y="61" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">P01</text><text x="556" y="101" font-family="sans-serif" font-size="14" font-weight="bold" fill="#171A20">Dashboard operativo</text><rect x="556" y="124" width="58" height="52" rx="6" fill="#E0E6ED"/><rect x="626" y="124" width="58" height="52" rx="6" fill="#E0E6ED"/><rect x="696" y="124" width="58" height="52" rx="6" fill="#E0E6ED"/><rect x="556" y="194" width="198" height="60" rx="5" fill="#F1F3F5"/><rect x="556" y="272" width="145" height="10" rx="4" fill="#E0E6ED"/></g>
+  <g><rect x="790" y="40" width="230" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><rect x="790" y="40" width="230" height="32" rx="12" fill="#DCDFE4"/><text x="804" y="61" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">P02</text><text x="991" y="61" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">P02</text><text x="806" y="101" font-family="sans-serif" font-size="14" font-weight="bold" fill="#171A20">Inventario de maquinaria</text><rect x="806" y="124" width="198" height="18" rx="4" fill="#E0E6ED"/><rect x="806" y="157" width="52" height="9" rx="4" fill="#B0BEC5"/><rect x="871" y="157" width="133" height="9" rx="4" fill="#E0E6ED"/><rect x="806" y="184" width="64" height="9" rx="4" fill="#B0BEC5"/><rect x="883" y="184" width="121" height="9" rx="4" fill="#E0E6ED"/><rect x="806" y="211" width="48" height="9" rx="4" fill="#B0BEC5"/><rect x="867" y="211" width="137" height="9" rx="4" fill="#E0E6ED"/></g>
+  <g><rect x="1040" y="40" width="230" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><rect x="1040" y="40" width="230" height="32" rx="12" fill="#DCDFE4"/><text x="1054" y="61" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">P03</text><text x="1241" y="61" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">P03</text><text x="1056" y="101" font-family="sans-serif" font-size="14" font-weight="bold" fill="#171A20">Registrar maquinaria</text><rect x="1056" y="124" width="198" height="25" rx="4" fill="#F1F3F5"/><rect x="1056" y="160" width="198" height="25" rx="4" fill="#F1F3F5"/><rect x="1056" y="196" width="198" height="25" rx="4" fill="#F1F3F5"/><rect x="1170" y="249" width="84" height="32" rx="4" fill="#B0BEC5"/></g>
 
-  <!-- Fila 1: y=140 -->
-  <g transform="translate(60 140)"><use href="#base-card"/><text class="code" x="16" y="28">A01 · Iniciar sesión</text><rect class="muted" x="16" y="103" width="178" height="32" rx="5"/><rect class="muted" x="16" y="148" width="178" height="32" rx="5"/><rect class="button" x="16" y="201" width="178" height="34" rx="5"/></g>
-  <g transform="translate(290 140)"><use href="#base-card"/><text class="code" x="16" y="28">A02 · Crear cuenta</text><rect class="muted" x="16" y="103" width="178" height="25" rx="5"/><rect class="muted" x="16" y="139" width="178" height="25" rx="5"/><rect class="muted" x="16" y="175" width="178" height="25" rx="5"/><rect class="button" x="116" y="218" width="78" height="28" rx="5"/></g>
-  <g transform="translate(520 140)"><use href="#base-card"/><text class="code" x="16" y="28">P01 · Dashboard operativo</text><rect class="muted" x="16" y="102" width="52" height="50" rx="6"/><rect class="muted" x="79" y="102" width="52" height="50" rx="6"/><rect class="muted" x="142" y="102" width="52" height="50" rx="6"/><rect class="mid" x="16" y="172" width="178" height="55" rx="6"/></g>
-  <g transform="translate(750 140)"><use href="#base-card"/><text class="code" x="16" y="28">P02 · Inventario de maquinaria</text><use href="#table"/></g>
-  <g transform="translate(980 140)"><use href="#base-card"/><text class="code" x="16" y="28">P03 · Registrar maquinaria</text><rect class="muted" x="16" y="103" width="178" height="23" rx="5"/><rect class="muted" x="16" y="137" width="178" height="23" rx="5"/><rect class="muted" x="16" y="171" width="178" height="23" rx="5"/><rect class="button" x="116" y="216" width="78" height="28" rx="5"/></g>
+  <!-- Fila 2 -->
+  <g><rect x="40" y="360" width="230" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><rect x="40" y="360" width="230" height="32" rx="12" fill="#DCDFE4"/><text x="54" y="381" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">P04</text><text x="241" y="381" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">P04</text><text x="56" y="421" font-family="sans-serif" font-size="14" font-weight="bold" fill="#171A20">Disponibilidad calendario</text><rect x="56" y="446" width="198" height="20" rx="4" fill="#E0E6ED"/><rect x="56" y="484" width="25" height="24" rx="3" fill="#E0E6ED"/><rect x="87" y="484" width="25" height="24" rx="3" fill="#E0E6ED"/><rect x="118" y="484" width="25" height="24" rx="3" fill="#E0E6ED"/><rect x="149" y="484" width="25" height="24" rx="3" fill="#E0E6ED"/><rect x="180" y="484" width="25" height="24" rx="3" fill="#E0E6ED"/><rect x="211" y="484" width="25" height="24" rx="3" fill="#B0BEC5"/></g>
+  <g><rect x="290" y="360" width="230" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><rect x="290" y="360" width="230" height="32" rx="12" fill="#DCDFE4"/><text x="304" y="381" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">P05</text><text x="491" y="381" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">P05</text><text x="306" y="421" font-family="sans-serif" font-size="14" font-weight="bold" fill="#171A20">Solicitudes de reserva</text><rect x="306" y="446" width="198" height="18" rx="4" fill="#E0E6ED"/><rect x="306" y="480" width="52" height="9" rx="4" fill="#B0BEC5"/><rect x="371" y="480" width="133" height="9" rx="4" fill="#E0E6ED"/><rect x="306" y="507" width="64" height="9" rx="4" fill="#B0BEC5"/><rect x="383" y="507" width="121" height="9" rx="4" fill="#E0E6ED"/><rect x="450" y="562" width="54" height="26" rx="4" fill="#B0BEC5"/></g>
+  <g><rect x="540" y="360" width="230" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><rect x="540" y="360" width="230" height="32" rx="12" fill="#DCDFE4"/><text x="554" y="381" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">P06</text><text x="741" y="381" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">P06</text><text x="556" y="421" font-family="sans-serif" font-size="14" font-weight="bold" fill="#171A20">Mantenimiento e historial</text><rect x="556" y="446" width="198" height="18" rx="4" fill="#E0E6ED"/><rect x="556" y="480" width="52" height="9" rx="4" fill="#B0BEC5"/><rect x="621" y="480" width="133" height="9" rx="4" fill="#E0E6ED"/><rect x="556" y="507" width="64" height="9" rx="4" fill="#B0BEC5"/><rect x="633" y="507" width="121" height="9" rx="4" fill="#E0E6ED"/><rect x="556" y="559" width="66" height="22" rx="11" fill="#B0BEC5"/></g>
+  <g><rect x="790" y="360" width="230" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><rect x="790" y="360" width="230" height="32" rx="12" fill="#DCDFE4"/><text x="804" y="381" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">P07</text><text x="991" y="381" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">P07</text><text x="806" y="421" font-family="sans-serif" font-size="14" font-weight="bold" fill="#171A20">Horas y facturación</text><rect x="806" y="446" width="91" height="54" rx="5" fill="#E0E6ED"/><rect x="913" y="446" width="91" height="54" rx="5" fill="#E0E6ED"/><rect x="806" y="523" width="198" height="62" rx="5" fill="#F1F3F5"/></g>
+  <g><rect x="1040" y="360" width="230" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><rect x="1040" y="360" width="230" height="32" rx="12" fill="#DCDFE4"/><text x="1054" y="381" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">C01</text><text x="1241" y="381" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">C01</text><text x="1056" y="421" font-family="sans-serif" font-size="14" font-weight="bold" fill="#171A20">Catálogo con filtros</text><rect x="1056" y="446" width="58" height="118" rx="5" fill="#E0E6ED"/><rect x="1126" y="446" width="58" height="118" rx="5" fill="#E0E6ED"/><rect x="1196" y="446" width="58" height="118" rx="5" fill="#E0E6ED"/><rect x="1056" y="585" width="124" height="10" rx="4" fill="#B0BEC5"/></g>
 
-  <!-- Fila 2: y=450 -->
-  <g transform="translate(60 450)"><use href="#base-card"/><text class="code" x="16" y="28">P04 · Disponibilidad calendario</text><use href="#calendar"/></g>
-  <g transform="translate(290 450)"><use href="#base-card"/><text class="code" x="16" y="28">P05 · Solicitudes de reserva</text><use href="#table"/><rect class="button" x="140" y="226" width="54" height="22" rx="5"/></g>
-  <g transform="translate(520 450)"><use href="#base-card"/><text class="code" x="16" y="28">P06 · Mantenimiento e historial</text><use href="#table"/><rect x="16" y="226" width="62" height="20" rx="10" fill="#D0D5DD"/></g>
-  <g transform="translate(750 450)"><use href="#base-card"/><text class="code" x="16" y="28">P07 · Horas y facturación</text><rect class="muted" x="16" y="102" width="82" height="52" rx="6"/><rect class="muted" x="112" y="102" width="82" height="52" rx="6"/><rect class="mid" x="16" y="174" width="178" height="55" rx="6"/></g>
-  <g transform="translate(980 450)"><use href="#base-card"/><text class="code" x="16" y="28">C01 · Catálogo con filtros</text><rect class="muted" x="16" y="102" width="54" height="112" rx="5"/><rect class="muted" x="78" y="102" width="54" height="112" rx="5"/><rect class="muted" x="140" y="102" width="54" height="112" rx="5"/></g>
+  <!-- Fila 3 -->
+  <g><rect x="40" y="680" width="230" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><rect x="40" y="680" width="230" height="32" rx="12" fill="#DCDFE4"/><text x="54" y="701" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">C02</text><text x="241" y="701" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">C02</text><text x="56" y="741" font-family="sans-serif" font-size="14" font-weight="bold" fill="#171A20">Detalle e historial técnico</text><rect x="56" y="766" width="76" height="76" rx="6" fill="#E0E6ED"/><rect x="145" y="766" width="109" height="10" rx="4" fill="#E0E6ED"/><rect x="145" y="788" width="80" height="9" rx="4" fill="#E0E6ED"/><rect x="56" y="866" width="198" height="10" rx="4" fill="#E0E6ED"/></g>
+  <g><rect x="290" y="680" width="230" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><rect x="290" y="680" width="230" height="32" rx="12" fill="#DCDFE4"/><text x="304" y="701" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">C03</text><text x="491" y="701" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">C03</text><text x="306" y="741" font-family="sans-serif" font-size="14" font-weight="bold" fill="#171A20">Confirmar reserva</text><rect x="306" y="766" width="198" height="28" rx="4" fill="#F1F3F5"/><rect x="306" y="806" width="198" height="28" rx="4" fill="#F1F3F5"/><rect x="398" y="859" width="106" height="34" rx="4" fill="#B0BEC5"/></g>
+  <g><rect x="540" y="680" width="230" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><rect x="540" y="680" width="230" height="32" rx="12" fill="#DCDFE4"/><text x="554" y="701" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">C04</text><text x="741" y="701" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">C04</text><text x="556" y="741" font-family="sans-serif" font-size="14" font-weight="bold" fill="#171A20">Mis reservas por obra</text><rect x="556" y="766" width="198" height="20" rx="4" fill="#E0E6ED"/><rect x="556" y="804" width="26" height="24" rx="3" fill="#E0E6ED"/><rect x="588" y="804" width="26" height="24" rx="3" fill="#E0E6ED"/><rect x="620" y="804" width="26" height="24" rx="3" fill="#E0E6ED"/><rect x="652" y="804" width="26" height="24" rx="3" fill="#E0E6ED"/><rect x="556" y="854" width="78" height="22" rx="11" fill="#B0BEC5"/></g>
+  <g><rect x="790" y="680" width="230" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><rect x="790" y="680" width="230" height="32" rx="12" fill="#DCDFE4"/><text x="804" y="701" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">C05</text><text x="991" y="701" font-family="sans-serif" font-size="11" font-weight="bold" fill="#78909C">C05</text><text x="806" y="741" font-family="sans-serif" font-size="14" font-weight="bold" fill="#171A20">Reportar avería</text><rect x="806" y="766" width="198" height="28" rx="4" fill="#F1F3F5"/><rect x="806" y="806" width="198" height="58" rx="4" fill="#F1F3F5"/><rect x="918" y="891" width="86" height="32" rx="4" fill="#B0BEC5"/></g>
 
-  <!-- Fila 3: y=760 -->
-  <g transform="translate(60 760)"><use href="#base-card"/><text class="code" x="16" y="28">C02 · Detalle e historial técnico</text><rect class="mid" x="16" y="102" width="70" height="70" rx="6"/><rect class="muted" x="98" y="102" width="96" height="11" rx="4"/><rect class="muted" x="98" y="123" width="72" height="10" rx="4"/><rect class="muted" x="16" y="191" width="178" height="10" rx="4"/></g>
-  <g transform="translate(290 760)"><use href="#base-card"/><text class="code" x="16" y="28">C03 · Confirmar reserva</text><rect class="muted" x="16" y="102" width="178" height="27" rx="5"/><rect class="muted" x="16" y="140" width="178" height="27" rx="5"/><rect class="button" x="88" y="194" width="106" height="32" rx="5"/></g>
-  <g transform="translate(520 760)"><use href="#base-card"/><text class="code" x="16" y="28">C04 · Mis reservas por obra</text><use href="#calendar"/><rect x="16" y="220" width="76" height="20" rx="10" fill="#D0D5DD"/></g>
-  <g transform="translate(750 760)"><use href="#base-card"/><text class="code" x="16" y="28">C05 · Reportar avería</text><rect class="muted" x="16" y="102" width="178" height="26" rx="5"/><rect class="muted" x="16" y="140" width="178" height="54" rx="5"/><rect class="button" x="118" y="214" width="76" height="28" rx="5"/></g>
-
-  <!-- Panel lateral -->
-  <g transform="translate(1220 140)">
-    <rect width="320" height="900" rx="12" fill="#FFFFFF" stroke="#E0E4EC"/>
-    <text class="panel-title" x="28" y="44">Responsive requerido</text>
-    <text class="panel-title" x="28" y="70">&amp; Estados incluidos</text>
-    <line x1="28" y1="94" x2="292" y2="94" stroke="#E0E4EC"/>
-    <text class="panel-label" x="28" y="130">Breakpoints</text>
-    <rect x="28" y="148" width="264" height="34" rx="6" fill="#E8ECEF"/>
-    <text class="panel-text" x="44" y="170">Desktop · Tablet · Mobile</text>
-    <text class="panel-label" x="28" y="226">Estados de interfaz</text>
-    <circle cx="42" cy="260" r="9" fill="#D0D5DD"/><text class="panel-text" x="64" y="265">Vacío</text>
-    <circle cx="42" cy="304" r="9" fill="#C62828"/><text class="panel-text" x="64" y="309">Error</text>
-    <circle cx="42" cy="348" r="9" fill="#FF8F00"/><text class="panel-text" x="64" y="353">Conflicto</text>
-    <circle cx="42" cy="392" r="9" fill="#2E7D32"/><text class="panel-text" x="64" y="397">Éxito</text>
-    <circle cx="42" cy="436" r="9" fill="#1976D2"/><text class="panel-text" x="64" y="441">Carga</text>
-    <line x1="28" y1="480" x2="292" y2="480" stroke="#E0E4EC"/>
-    <text class="panel-label" x="28" y="520">Criterios de validación</text>
-    <text class="panel-text" x="28" y="552">• Jerarquía de información</text>
-    <text class="panel-text" x="28" y="582">• Navegación y acciones</text>
-    <text class="panel-text" x="28" y="612">• Feedback contextual</text>
-    <text class="panel-text" x="28" y="642">• Adaptación por dispositivo</text>
-  </g>
+  <!-- Panel lateral derecho -->
+  <g><rect x="1290" y="680" width="270" height="290" rx="12" fill="#FFFFFF" stroke="#D0D5DD"/><text x="1310" y="714" font-family="sans-serif" font-size="15" font-weight="bold" fill="#171A20">Responsive requerido</text><text x="1310" y="740" font-family="sans-serif" font-size="12" fill="#78909C">Desktop 1440px · Tablet 768-1024px</text><text x="1310" y="760" font-family="sans-serif" font-size="12" fill="#78909C">Mobile 390px</text><text x="1310" y="800" font-family="sans-serif" font-size="15" font-weight="bold" fill="#171A20">Estados incluidos</text><circle cx="1318" cy="827" r="6" fill="#D0D5DD"/><text x="1332" y="831" font-family="sans-serif" font-size="12" fill="#667085">Vacío / sin resultados</text><circle cx="1318" cy="853" r="6" fill="#E53935"/><text x="1332" y="857" font-family="sans-serif" font-size="12" fill="#667085">Error de validación</text><circle cx="1318" cy="879" r="6" fill="#FF9800"/><text x="1332" y="883" font-family="sans-serif" font-size="12" fill="#667085">Conflicto de fechas</text><circle cx="1318" cy="905" r="6" fill="#4CAF50"/><text x="1332" y="909" font-family="sans-serif" font-size="12" fill="#667085">Éxito / confirmación</text><circle cx="1318" cy="931" r="6" fill="#2196F3"/><text x="1332" y="935" font-family="sans-serif" font-size="12" fill="#667085">Carga y disponibilidad</text></g>
 </svg>
