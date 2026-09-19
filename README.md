@@ -1335,24 +1335,17 @@ Este Bounded Context gestiona la información asociada a los perfiles de los usu
 
 ### 4.6.2. Software Architecture Context Diagram
 
-El C4 Nivel 1 ubica a TechnoLoad como sistema central. El Administrador de Flota registra y controla mantenimiento; el Coordinador consulta disponibilidad y asigna unidades; las APIs externas entregan telemetría y notificaciones.
+El Software Architecture Context Diagram presenta a TechnoLoad como el sistema principal y muestra su relación con los principales tipos de usuario identificados en el proyecto.
 
-![Diagrama de contexto de TechnoLoad](assets/architecture-overview.svg)
+El Fleet Administrator utiliza TechnoLoad para gestionar la maquinaria, reservas, mantenimiento y operaciones asociadas al servicio. Por otro lado, el Contractor o Site Manager utiliza la plataforma para consultar maquinaria disponible, solicitar alquileres y realizar seguimiento de los servicios contratados.
 
-```plantuml
-@startuml
-!include <C4/C4_Context>
-Person(admin, "Administrador de flota", "Gestiona activos y mantenimiento")
-Person(coordinator, "Coordinador operativo", "Consulta disponibilidad y asigna unidades")
-System(technoload, "TechnoLoad", "Gestión de activos, mantenimiento y operaciones")
-System_Ext(telematics, "Plataforma telemática", "Entrega lecturas y ubicación")
-System_Ext(notifications, "Servicio de notificaciones", "Envía alertas operativas")
-Rel(admin, technoload, "Administra")
-Rel(coordinator, technoload, "Consulta y asigna")
-Rel(telematics, technoload, "Publica telemetría", "HTTPS/JSON")
-Rel(technoload, notifications, "Solicita alertas", "HTTPS/JSON")
-@enduml
-```
+Este nivel del modelo C4 permite visualizar el alcance general de TechnoLoad y las principales interacciones entre el sistema y sus usuarios.
+
+---
+
+#### **Diagrama de Contexto (Modelo C4 - Nivel 1)**
+
+![Software Architecture Context Diagram TechnoLoad](assets/c4-context-diagram.svg)
 
 ### 4.6.3. Software Architecture Container Diagram
 
