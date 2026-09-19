@@ -1138,9 +1138,19 @@ A continuación, se presentan los wireframes correspondientes a las principales 
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-El wireflow visualiza la conexión Dashboard → Activos → Detalle → Registrar lectura → confirmación, además de los recorridos de mantenimiento y asignación. Las conexiones previenen pantallas aisladas y documentan retorno, cancelación y éxito.
+Los Wireflow Diagrams permiten representar la relación entre los wireframes y las acciones que conectan las diferentes vistas de la Web Application de TechnoLoad.
 
-![Wireflow de la aplicación TechnoLoad](assets/web-app-wireflow.svg)
+Estos diagramas muestran cómo el usuario puede desplazarse entre las interfaces para completar determinadas tareas, combinando la representación visual de las pantallas con las conexiones que describen el flujo de navegación.
+
+Los wireflows permiten validar la continuidad de la experiencia y detectar posibles problemas de navegación antes de la implementación de la aplicación.
+
+A continuación, se presentan los principales Wireflow Diagrams de TechnoLoad.
+
+---
+
+#### **Seis Wireflows Priorizados**
+
+![Web Applications Wireflow Diagrams TechnoLoad](assets/web-app-wireflows.svg)
 
 ### 4.4.3. Web Applications Mock-ups
 
