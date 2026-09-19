@@ -1105,7 +1105,8 @@ El mock-up de alta fidelidad aplica la jerarquía Inter, superficies claras, car
   <text x="830" y="605" fill="#A8ADB8" font-size="14">evitar averías críticas y reducir</text>
   <text x="830" y="630" fill="#A8ADB8" font-size="14">penalizaciones contractuales.</text>
 </svg>
-## 4.4. Web Applications UX/UI Design
+
+### 4.4. Web Applications UX/UI Design
 
 El Dashboard y la Web App se diseñan a partir de los User Personas y User Stories. El administrador requiere visibilidad de activos y mantenimiento; el coordinador necesita conocer disponibilidad y asignar unidades sin perder trazabilidad.
 
