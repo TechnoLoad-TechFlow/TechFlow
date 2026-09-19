@@ -977,23 +977,37 @@ El etiquetado emplea textos breves, directos y consistentes con el dominio de fl
 
 ### 4.2.3. SEO Tags and Meta Tags
 
-Los metadatos identifican la página, mejoran su representación en buscadores y controlan la previsualización al compartirla. La descripción comunica la propuesta de valor; las etiquetas OpenGraph estandarizan título, URL, descripción e imagen en redes sociales.
+La Landing Page de TechnoLoad incorpora etiquetas HTML orientadas a mejorar la identificación del sitio por los motores de búsqueda y proporcionar información básica sobre el contenido de la página.
 
-~~~html
+En el elemento `<head>` se han implementado las siguientes etiquetas:
+
+* **Title:** `TechnoLoad | Intelligent Fleet Management`
+* **Description:** describe a TechnoLoad como una plataforma para la gestión de flotas, control de mantenimientos preventivos, horómetros y optimización de rutas para maquinaria pesada y transporte.
+* **Keywords:** incluye términos relacionados con gestión de flotas, mantenimiento preventivo, maquinaria pesada, logística, transporte de carga y TechnoLoad.
+* **Author:** identifica a `TechnoLoad Team` como autor del sitio.
+
+Además, se incluyen etiquetas técnicas necesarias para una correcta visualización y optimización en redes sociales:
+
+* `charset="UTF-8"` para la codificación de caracteres.
+* `viewport` para adaptar correctamente la página a dispositivos móviles.
+* Etiquetas `OpenGraph` para estandarizar el título, descripción, imagen y URL al compartir la página.
+
+La configuración implementada en la Landing Page es la siguiente:
+
+```html
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TechnoLoad | Intelligent Fleet Management</title>
-<meta name="description" content="TechnoLoad centraliza activos, mantenimiento y operaciones de flotas." />
-<meta name="keywords" content="fleet management, maintenance, machinery, logistics, TechnoLoad" />
+<meta name="description" content="TechnoLoad centraliza activos, mantenimiento y operaciones de transporte de carga y maquinaria pesada en una sola plataforma.">
+<meta name="keywords" content="fleet management, maintenance, machinery, logistics, TechnoLoad, maquinaria pesada, transporte de carga">
 <meta name="author" content="TechnoLoad Team" />
-<link rel="canonical" href="https://technoload.pe/" />
+<link rel="canonical" href="[https://technoload.pe/](https://technoload.pe/)" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="TechnoLoad | Intelligent Fleet Management" />
-<meta property="og:description" content="Gestión inteligente de activos y mantenimiento." />
-<meta property="og:url" content="https://technoload.pe/" />
-<meta property="og:image" content="https://technoload.pe/og-cover.png" />
+<meta property="og:description" content="Gestión inteligente de activos, mantenimiento preventivo y optimización de rutas logísticas." />
+<meta property="og:url" content="[https://technoload.pe/](https://technoload.pe/)" />
+<meta property="og:image" content="[https://technoload.pe/og-cover.png](https://technoload.pe/og-cover.png)" />
 <meta name="twitter:card" content="summary_large_image" />
-~~~
 
 ### 4.2.4. Searching Systems
 
