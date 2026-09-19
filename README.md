@@ -1028,10 +1028,37 @@ El wireframe de baja fidelidad define Navbar, Hero de dos columnas, beneficios, 
 
 ### 4.3.2. Landing Page Mock-ups
 
-El mock-up de alta fidelidad aplica la jerarquía Inter, superficies blancas, cards con bordes suaves y CTAs contrastantes. El copy principal, “Controla tu flota antes de que una parada detenga tu operación”, se acompaña de “Solicitar una demostración” y “Conocer los módulos”. Las variantes de componentes contemplan hover, foco, deshabilitado y carga.
+En esta sección se presentan los mockups de alta fidelidad de la Landing Page de TechnoLoad.
 
-![Mock-up de la landing page de TechnoLoad](assets/landing-mockup.svg)
+Los mockups aplican la identidad visual definida previamente, incluyendo colores, tipografía, componentes, botones, tarjetas, iconografía y distribución responsive.
 
+La interfaz final está compuesta por las siguientes secciones:
+
+* **Header.**
+* **Hero Section.**
+* **Benefits Section.**
+* **Target Segments Section.**
+* **How It Works Section.**
+* **Value Proposition.**
+* **Pricing Section.**
+* **Final Call to Action.**
+* **Footer.**
+
+El mock-up de alta fidelidad aplica la jerarquía Inter, superficies claras, cards con bordes suaves y CTAs contrastantes. El copy principal, “Controla tu flota antes de que una parada detenga tu operación”, se acompaña de “Solicitar una demostración” y “Conocer los módulos”. Las variantes de componentes contemplan hover, foco, deshabilitado y carga.
+
+Los diseños contemplan versiones Desktop y Mobile con el objetivo de mantener una experiencia consistente en diferentes dispositivos.
+
+---
+
+#### **Vista Desktop**
+
+![Landing Page Mockup Desktop](assets/landing-mockup-desktop.svg)
+
+---
+
+#### **Vista Mobile**
+
+![Landing Page Mockup Mobile](assets/landing-mockup-mobile.svg)
 ## 4.4. Web Applications UX/UI Design
 
 El Dashboard y la Web App se diseñan a partir de los User Personas y User Stories. El administrador requiere visibilidad de activos y mantenimiento; el coordinador necesita conocer disponibilidad y asignar unidades sin perder trazabilidad.
