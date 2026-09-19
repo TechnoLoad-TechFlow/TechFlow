@@ -60,40 +60,70 @@ Efrain Ricardo Bautista Ubillus
 # ÍNDICE
 
 ## Capítulo I: Introducción
-- 1.1. Startup Profile
-  - 1.1.1. Descripción de la Startup
-  - 1.1.2. Perfiles de integrantes del equipo
-- 1.2. Solution Profile
-  - 1.2.1. Antecedentes y problemática
-  - 1.2.2. Lean UX Process
-    - 1.2.2.1. Lean UX Problem Statements
-    - 1.2.2.2. Lean UX Assumptions
-    - 1.2.2.3. Lean UX Hypothesis Statements
-    - 1.2.2.4. Lean UX Canvas
-- 1.3. Segmentos objetivo
+- [1.1. Startup Profile](#11-startup-profile)
+  - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+  - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+- [1.2. Solution Profile](#12-solution-profile)
+  - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+  - [1.2.2. Lean UX Process](#122-lean-ux-process)
+    - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+    - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+    - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+    - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+- [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 
 ## Capítulo II: Requirements Elicitation & Analysis
-- 2.1. Competidores
-  - 2.1.1. Análisis competitivo
-  - 2.1.2. Estrategias y tácticas frente a competidores
-- 2.2. Entrevistas
-  - 2.2.1. Diseño de entrevistas
-  - 2.2.2. Registro de entrevistas
-  - 2.2.3. Análisis de entrevistas
-- 2.3. Needfinding
-  - 2.3.1. User Personas
-  - 2.3.2. User Task Matrix
-  - 2.3.3. User Journey Mapping
-  - 2.3.4. Empathy Mapping
-  - 2.3.5. Big Picture Event Storming
-- 2.4. Ubiquitous Language
+- [2.1. Competidores](#21-competidores)
+  - [2.1.1. Análisis competitivo](#211-competitive-analysis-landscape)
+  - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+- [2.2. Entrevistas](#22-entrevistas)
+  - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+  - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+  - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+- [2.3. Needfinding](#23-needfinding)
+  - [2.3.1. User Personas](#231-user-personas)
+  - [2.3.2. User Task Matrix](#232-user-task-matrix)
+  - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+  - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+  - [2.3.5. Big Picture Event Storming](#235-big-picture-event-storming)
+- [2.4. Ubiquitous Language](#24-ubiquitous-language)
 
 ## Capítulo III: Requirements Specification
-- 3.1. User Stories
-- 3.2. Impact Mapping
-- 3.3. Product Backlog
+- [3.1. User Stories](#31-user-stories)
+- [3.2. Impact Mapping](#32-impact-mapping)
+- [3.3. Product Backlog](#33-product-backlog)
 
-## Capítulo IV: Product Implementation, Validation & Deployment
+## Capítulo IV: Product Design
+- [4.1. Style Guidelines](#41-style-guidelines)
+  - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
+  - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
+- [4.2. Information Architecture](#42-information-architecture)
+  - [4.2.1. Organization Systems](#421-organization-systems)
+  - [4.2.2. Labeling Systems](#422-labeling-systems)
+  - [4.2.3. SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
+  - [4.2.4. Searching Systems](#424-searching-systems)
+  - [4.2.5. Navigation Systems](#425-navigation-systems)
+- [4.3. Landing Page UI Design](#43-landing-page-ui-design)
+  - [4.3.1. Landing Page Wireframes](#431-landing-page-wireframes)
+  - [4.3.2. Landing Page Mock-ups](#432-landing-page-mock-ups)
+- [4.4. Web Applications UX/UI Design](#44-web-applications-uxui-design)
+  - [4.4.1. Web Applications Wireframes](#441-web-applications-wireframes)
+  - [4.4.2. Web Applications Wireflow Diagrams](#442-web-applications-wireflow-diagrams)
+  - [4.4.3. Web Applications Mock-ups](#443-web-applications-mock-ups)
+  - [4.4.4. Web Applications User Flow Diagrams](#444-web-applications-user-flow-diagrams)
+- [4.5. Web Applications Prototyping](#45-web-applications-prototyping)
+- [4.6. Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
+  - [4.6.1. Design-Level Event Storming](#461-design-level-event-storming)
+  - [4.6.2. Software Architecture Context Diagram](#462-software-architecture-context-diagram)
+  - [4.6.3. Software Architecture Container Diagram](#463-software-architecture-container-diagram)
+  - [4.6.4. Software Architecture Components Diagrams](#464-software-architecture-components-diagrams)
+- [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
+  - [4.7.1. Class Diagrams](#471-class-diagrams)
+- [4.8. Database Design](#48-database-design)
+  - [4.8.1. Database Diagrams](#481-database-diagrams)
+  - [4.8.2. Script DDL](#482-script-ddl)
+
+## Capítulo V: Product Implementation, Validation & Deployment _(pendiente de redactar)_
 - 5.1. Software Configuration Management
   - 5.1.1. Software Development Environment Configuration
   - 5.1.2. Source Code Management
@@ -102,7 +132,6 @@ Efrain Ricardo Bautista Ubillus
 - 5.2. Landing Page, Services & Applications Implementation
 - 5.3. Validation Interviews
 - 5.4. Video About-the-Product
-
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
@@ -133,7 +162,11 @@ TechnoLoad es una completa plataforma web desarrollada por nuestra startup, dise
 * **Monitoreo Telemetrado de Flota:** TechnoLoad ofrece un dashboard interactivo donde los usuarios pueden visualizar el estado operativo (Disponible, En Tránsito, En Mantenimiento) de cada activo de la empresa.
 * **Seguimiento de Rendimiento y Costos:** TechnoLoad permite realizar un seguimiento continuo del desempeño de la flota mediante informes detallados, monitoreando métricas clave como costos de mantenimiento, horas de uso y rentabilidad por unidad.
 
-### 1.2.1. Objetivos, justificación y alcance
+### 1.2.1. Antecedentes y problemática
+
+Esta sección presenta los objetivos, la justificación y el alcance del proyecto, junto con el análisis de antecedentes y problemática aplicando la técnica 5W+2H.
+
+#### Objetivos, justificación y alcance
 
 **Objetivo general.** Desarrollar una plataforma SaaS que centralice la gestión de activos, lecturas de uso, mantenimiento preventivo y disponibilidad operativa para organizaciones de maquinaria pesada y transporte de carga.
 
@@ -142,8 +175,6 @@ TechnoLoad es una completa plataforma web desarrollada por nuestra startup, dise
 **Justificación.** La información fragmentada en hojas de cálculo, llamadas y mensajes produce mantenimiento reactivo, decisiones tardías y períodos de inoperatividad costosos. TechnoLoad convierte registros dispersos en información operativa auditable, oportuna y accesible desde una interfaz web.
 
 **Alcance.** El MVP comprende gestión de activos, lecturas, órdenes de mantenimiento, alertas, consulta de disponibilidad y asignación de unidades. Quedan fuera del alcance inicial la telemetría en tiempo real, la optimización automática de rutas, la facturación y la integración productiva con proveedores IoT; estas capacidades se consideran extensiones futuras.
-
-### 1.2.2. Antecedentes y problemática
 
 #### Uso de la técnica The 5 W's y 2 H's
 
@@ -190,10 +221,31 @@ Como grupo, nos comprometeremos a resolver este desafío mediante una colaboraci
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-* "Si ofrecemos a los usuarios un acceso conveniente y flexible a la gestión de flotas en línea, permitiendo el control de mantenimientos preventivos y asignación de rutas, entonces aumentará la probabilidad de que las empresas se comprometan a largo plazo con la plataforma, lo que resultará en una mayor retención de clientes."
-* "Si proporcionamos un sistema de alertas de mantenimiento preventivo configurables por horómetro y kilometraje, entonces aumentará la satisfacción del usuario y se reducirán las paradas no programadas en obra, lo que contribuirá al crecimiento del negocio a través de recomendaciones positivas en el sector."
-* "Si garantizamos la seguridad y confidencialidad de los datos operativos y de telemetría de las flotas de nuestros clientes, entonces aumentará la confianza y la lealtad de los usuarios hacia la plataforma, lo que resultará en una menor tasa de cancelación de suscripciones."
-* "Si desarrollamos una interfaz de usuario intuitiva y fácil de usar en TechnoLoad, que permita a los administradores visualizar el estado de sus equipos en un dashboard claro, entonces aumentará la frecuencia de uso y la precisión en los registros de datos, lo que conducirá a una mejor adopción del sistema y al crecimiento del negocio."
+Siguiendo el template exigido por el enunciado, cada Hypothesis Statement se redacta en inglés a partir de una Feature Assumption, indicando el business outcome que se busca lograr, las personas involucradas, el beneficio esperado y la funcionalidad o solución que lo habilita.
+
+* **Hypothesis 1**
+  We believe we will achieve *higher long-term platform retention among fleet operators*
+  If *heavy machinery fleet managers and logistics coordinators*
+  Attain *convenient, flexible online access to preventive maintenance control and route assignment*
+  With *a centralized SaaS fleet management platform*.
+
+* **Hypothesis 2**
+  We believe we will achieve *a reduction in unplanned equipment downtime and increased customer satisfaction*
+  If *fleet managers*
+  Attain *configurable preventive maintenance alerts based on horometer and mileage readings*
+  With *an automated maintenance alerting module*.
+
+* **Hypothesis 3**
+  We believe we will achieve *greater user trust and a lower subscription cancellation rate*
+  If *fleet managers and logistics coordinators*
+  Attain *confidence that their operational and telemetry data is secure and confidential*
+  With *data security and privacy safeguards built into the platform*.
+
+* **Hypothesis 4**
+  We believe we will achieve *higher usage frequency, more accurate data entry, and better system adoption*
+  If *fleet administrators*
+  Attain *a clear, intuitive dashboard that shows the status of their equipment at a glance*
+  With *an intuitive, easy-to-use TechnoLoad user interface*.
 
 #### 1.2.2.4. Lean UX Canvas
 
@@ -766,34 +818,91 @@ Esta sección define las decisiones visuales y de interacción que mantienen una
 
 ### 4.1.1. General Style Guidelines
 
-El UI Kit emplea **Inter** como tipografía principal por su legibilidad en tablas, indicadores y formularios. La escala tipográfica usa 12, 14, 16, 20, 24, 32 y 40 px; el cuerpo base es 16 px (1 rem) y los títulos usan peso 600 o 700. Los textos mantienen contraste suficiente y no dependen exclusivamente del color para transmitir estado.
+La identidad visual de TechnoLoad busca transmitir una imagen profesional, tecnológica y orientada a la gestión operativa de flotas de maquinaria pesada y transporte de carga por carretera.
 
-| Token | Valor | Uso en TechnoLoad |
-|---|---:|---|
-| Primary | `#0F3D5E` | navegación, encabezados y confianza operativa |
-| Action | `#1976D2` | botones primarios, enlaces y foco |
-| Accent | `#FF8F00` | CTA, alertas de atención y priorización |
-| Success | `#2E7D32` | activo disponible y confirmaciones |
-| Error | `#C62828` | validación, fallos y acciones bloqueadas |
-| Neutral 50–900 | `#F6F8FB`–`#17324D` | superficies, bordes y jerarquía de texto |
+La interfaz utiliza principalmente una paleta clara y contrastada acompañada de elementos en color azul y naranja para resaltar acciones importantes, estados de activos y componentes interactivos.
 
-La escala de espaciado se compone de 4, 8, 12, 16, 24, 32 y 48 px. Las tarjetas usan radio de 12 px, una sombra tenue y separación interna mínima de 16 px. El color de estado siempre se acompaña con una etiqueta, icono o texto descriptivo.
+Los principales colores utilizados son:
+
+#### Color Palette
+
+TechnoLoad utiliza una paleta de colores de alto contraste que combina superficies limpias con colores de acento bien definidos para destacar acciones importantes y estados de la flota.
+
+| Token | Código HEX | Uso en TechnoLoad |
+| :--- | :---: | :--- |
+| **Primary** | `#0F3D5E` | Navegación, encabezados y confianza operativa |
+| **Action** | `#1976D2` | Botones primarios, enlaces y focos activos |
+| **Accent** | `#FF8F00` | CTA, alertas de atención y priorización de mantenimientos |
+| **Success** | `#2E7D32` | Activo disponible, rutas activas y confirmaciones |
+| **Error** | `#C62828` | Validación, fallos críticos de máquina y acciones bloqueadas |
+| **Neutral 50–900** | `#F6F8FB`–`#17324D` | Superficies, bordes y jerarquía de texto |
+
+---
+
+#### Typography
+
+La tipografía principal utilizada es `Inter`, con fuentes alternativas Arial, Helvetica y sans-serif por su alta legibilidad en dashboards, tablas de horómetros e indicadores logísticos.
+
+La jerarquía visual se establece mediante diferentes tamaños y pesos tipográficos, utilizando títulos grandes para comunicar métricas clave y textos secundarios con menor contraste para información complementaria.
+
+| Elemento | Tipografía | Peso aproximado | Aplicación |
+| :--- | :---: | :---: | :--- |
+| **Main Headings** | Inter | Bold / 700 | Hero y títulos principales |
+| **Section Headings** | Inter | Bold / 700 | Títulos de secciones y módulos |
+| **Card Titles** | Inter | Semi Bold / 600 | Métrica de activos, tarjetas de flota y pasos |
+| **Body Text** | Inter | Regular / 400 | Descripciones, lecturas de horómetros y contenido |
+| **Buttons** | Inter | Semi Bold / 600 | Call to Action y botones de comando |
+| **Navigation** | Inter | Regular / 400–500 | Enlaces de navegación y pestañas |
+
+La jerarquía tipográfica se mantiene mediante variaciones de tamaño (escala de 12, 14, 16, 20, 24, 32 y 40 px) y peso, permitiendo distinguir claramente títulos, subtítulos, textos descriptivos y acciones.
+
+---
+
+#### Component Mapping & Spacing Rules
+
+La escala de espaciado se compone de 4, 8, 12, 16, 24, 32 y 48 px. Las tarjetas usan un radio de borde de 12 px, una sombra tenue y separación interna mínima de 16 px. El color de estado siempre se acompaña con una etiqueta, icono o texto descriptivo.
 
 | Elemento Figma | Equivalente PrimeVue | Estados documentados |
-|---|---|---|
-| Primary / secondary button | `pv-button` | default, hover, focus, disabled, loading |
-| Campo de formulario | `pv-input-text` | default, focus, error, disabled |
-| Tarjeta de activo | `pv-card` | default, hover, loading |
-| Tabla operativa | `pv-data-table` | loading, empty, selected, error |
-| Estado de activo | `pv-tag` | disponible, mantenimiento, crítico |
-| Confirmación y error | `pv-toast` | success, warn, error, info |
-| Carga de contenido | `pv-skeleton` | tarjeta, fila y detalle |
-
+| :--- | :---: | :--- |
+| **Primary / secondary button** | `pv-button` | default, hover, focus, disabled, loading |
+| **Campo de formulario** | `pv-input-text` | default, focus, error, disabled |
+| **Tarjeta de activo** | `pv-card` | default, hover, loading |
+| **Tabla operativa** | `pv-data-table` | loading, empty, selected, error |
+| **Estado de activo** | `pv-tag` | disponible, mantenimiento, crítico |
+| **Confirmación y error** | `pv-toast` | success, warn, error, info |
+| **Carga de contenido** | `pv-skeleton` | tarjeta, fila y detalle |
 ### 4.1.2. Web Style Guidelines
 
-La grilla de escritorio utiliza 12 columnas, margen lateral de 80 px y gutters de 24 px a partir de 1440 px. En tablet (768 px) emplea margen de 32 px y gutters de 16 px; en móvil (375 px) emplea una sola columna y margen de 16 px. PrimeFlex organiza el AppShell mediante topbar, área de navegación lateral y contenedor principal; el sidebar se transforma en `pv-drawer` en pantallas reducidas.
+Las Web Style Guidelines de TechnoLoad establecen los criterios visuales y de interacción que serán aplicados tanto en la Landing Page como en la Web Application, buscando mantener una experiencia consistente, responsive y accesible en diferentes tamaños de pantalla.
 
-Los breakpoints priorizan contenido antes que decoración: los KPIs se apilan, las tablas habilitan desplazamiento horizontal y las acciones secundarias pasan al menú contextual. Todo control interactivo es alcanzable con teclado, muestra foco visible y ofrece etiquetas accesibles.
+La interfaz utiliza un enfoque responsive basado en una grilla flexible que permite adaptar el contenido a computadoras, tablets y dispositivos móviles. En pantallas de escritorio se utiliza una distribución de hasta 12 columnas, mientras que en dispositivos móviles los elementos se reorganizan verticalmente para facilitar su lectura e interacción.
+
+Los principales breakpoints considerados son:
+
+| Dispositivo | Resolución de referencia | Comportamiento |
+|---|---|---|
+| Mobile | 375 px – 767 px | Una columna, navegación mediante menú desplegable y componentes apilados. |
+| Tablet | 768 px – 1023 px | Distribución intermedia con reducción de columnas y espacios. |
+| Desktop | 1024 px o superior | Navegación completa, múltiples columnas y visualización ampliada de tablas y dashboards. |
+
+Los componentes interactivos mantienen estados visuales claramente diferenciados.
+
+| Componente | Estados considerados |
+|---|---|
+| Buttons | Default, Hover, Focus, Disabled y Loading |
+| Input Fields | Default, Focus, Error y Disabled |
+| Cards | Default, Hover y Selected |
+| Tables | Loading, Empty, Selected y Error |
+| Alerts | Info, Success, Warning y Error |
+| Navigation Items | Default, Hover, Active y Focus |
+
+Los botones principales utilizan el color de acción definido en el Design System, mientras que las acciones secundarias emplean estilos con menor jerarquía visual. Los estados de error, advertencia y éxito utilizan colores acompañados de iconos o textos, evitando depender únicamente del color para transmitir información.
+
+En dispositivos móviles, el menú lateral de la Web Application se transforma en un Drawer que puede abrirse mediante un botón de navegación. Las tablas que contienen gran cantidad de información permiten desplazamiento horizontal o presentan una versión simplificada para conservar la legibilidad.
+
+Las interfaces mantienen áreas de interacción suficientemente amplias y controles accesibles mediante teclado. Los formularios proporcionan mensajes de validación cercanos al campo correspondiente y muestran claramente los errores detectados.
+
+TechnoLoad utiliza componentes de PrimeVue para mantener consistencia visual y de comportamiento entre las diferentes vistas de la aplicación. Entre los componentes principales se consideran `Button`, `InputText`, `DataTable`, `Card`, `Tag`, `Dialog`, `Toast`, `Drawer` y `Skeleton`.
 
 ## 4.2. Information Architecture
 
@@ -801,7 +910,66 @@ La arquitectura de información de TechnoLoad organiza de forma progresiva los c
 
 ### 4.2.1. Organization Systems
 
-La Landing Page sigue una secuencia jerárquica desde información general hasta la acción: (1) Header y navegación, (2) presentación principal, (3) beneficios, (4) perfiles objetivo, (5) funcionamiento, (6) trazabilidad y módulos, (7) CTA final y (8) Footer. Los beneficios, módulos y perfiles se agrupan por tarjetas para favorecer el escaneo visual y conservar unidades de información comparables. En la aplicación, esta jerarquía se transforma en módulos de Dashboard, Activos, Mantenimientos y Operaciones; cada módulo conduce a listas, detalle y acciones transaccionales.
+La arquitectura de información de TechnoLoad utiliza diferentes sistemas de organización dependiendo del tipo de contenido y del objetivo que debe cumplir el usuario.
+
+#### Organización jerárquica
+
+La organización jerárquica se utiliza principalmente en la Web Application, donde la información se estructura desde módulos generales hasta información específica.
+
+La jerarquía principal es:
+
+**Dashboard → Módulos → Listados → Detalle → Acciones**
+
+Los módulos principales considerados son:
+
+- Dashboard
+- Assets
+- Maintenance
+- Operations
+- Reservations
+- Profile
+
+Por ejemplo, un administrador puede ingresar al módulo de activos, seleccionar una maquinaria específica y posteriormente consultar su información detallada, historial de uso o mantenimiento.
+
+#### Organización secuencial
+
+La organización secuencial se utiliza cuando el usuario debe completar un conjunto ordenado de pasos para alcanzar un objetivo.
+
+Ejemplos:
+
+**Seleccionar activo → Registrar lectura → Validar información → Confirmar registro**
+
+**Seleccionar activo → Programar mantenimiento → Definir fecha y prioridad → Confirmar mantenimiento**
+
+**Consultar disponibilidad → Seleccionar unidad → Asignar operación → Confirmar asignación**
+
+Este sistema permite que los procesos transaccionales sean fáciles de comprender y reduzcan errores durante su ejecución.
+
+#### Organización por tópicos
+
+El contenido se agrupa según las principales áreas funcionales del dominio de TechnoLoad:
+
+- Gestión de activos.
+- Control de horómetros y kilometraje.
+- Gestión de mantenimiento.
+- Disponibilidad de unidades.
+- Operaciones.
+- Reservas.
+- Reportes y análisis.
+
+#### Organización según audiencia
+
+La información también se organiza de acuerdo con los principales tipos de usuario.
+
+**Fleet Manager:** accede principalmente a información relacionada con activos, lecturas, disponibilidad y mantenimiento.
+
+**Operations Manager:** accede a indicadores de utilización, costos y rendimiento de la flota.
+
+**Logistics Coordinator:** accede a disponibilidad de unidades, asignaciones y operaciones.
+
+**Visitor:** accede al Landing Page para conocer la propuesta de valor, características y mecanismos de contacto de TechnoLoad.
+
+De esta manera, la organización del contenido permite reducir la cantidad de información innecesaria presentada a cada usuario.
 
 ### 4.2.2. Labeling Systems
 
@@ -809,23 +977,36 @@ El etiquetado emplea textos breves, directos y consistentes con el dominio de fl
 
 ### 4.2.3. SEO Tags and Meta Tags
 
-Los metadatos identifican la página, mejoran su representación en buscadores y controlan la previsualización al compartirla. La descripción comunica la propuesta de valor; las etiquetas OpenGraph estandarizan título, URL, descripción e imagen en redes sociales.
+La Landing Page de TechnoLoad incorpora etiquetas HTML orientadas a mejorar la identificación del sitio por los motores de búsqueda y proporcionar información básica sobre el contenido de la página.
 
-~~~html
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TechnoLoad | Intelligent Fleet Management</title>
-<meta name="description" content="TechnoLoad centraliza activos, mantenimiento y operaciones de flotas." />
-<meta name="keywords" content="fleet management, maintenance, machinery, logistics, TechnoLoad" />
-<meta name="author" content="TechnoLoad Team" />
-<link rel="canonical" href="https://technoload.pe/" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="TechnoLoad | Intelligent Fleet Management" />
-<meta property="og:description" content="Gestión inteligente de activos y mantenimiento." />
-<meta property="og:url" content="https://technoload.pe/" />
-<meta property="og:image" content="https://technoload.pe/og-cover.png" />
-<meta name="twitter:card" content="summary_large_image" />
-~~~
+En el elemento `<head>` se han implementado las siguientes etiquetas:
+
+* **Title:** `TechnoLoad | Intelligent Fleet Management`
+* **Description:** describe a TechnoLoad como una plataforma para la gestión de flotas, control de mantenimientos preventivos, horómetros y optimización de rutas para maquinaria pesada y transporte.
+* **Keywords:** incluye términos relacionados con gestión de flotas, mantenimiento preventivo, maquinaria pesada, logística, transporte de carga y TechnoLoad.
+* **Author:** identifica a `TechnoLoad Team` como autor del sitio.
+
+Además, se incluyen etiquetas técnicas necesarias para una correcta visualización y optimización en redes sociales:
+
+* `charset="UTF-8"` para la codificación de caracteres.
+* `viewport` para adaptar correctamente la página a dispositivos móviles.
+* Etiquetas `OpenGraph` para estandarizar el título, descripción, imagen y URL al compartir la página.
+
+La configuración implementada en la Landing Page es la siguiente:
+
+```html
+`<meta charset="UTF-8">`
+
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+`<meta name="description" content="TechnoLoad centraliza activos, mantenimiento y operaciones de transporte de carga y maquinaria pesada en una sola plataforma.">`
+
+`<meta name="keywords" content="fleet management, maintenance, machinery, logistics, TechnoLoad">`
+
+`<meta name="author" content="TechnoLoad Team">`
+
+`<title>TechnoLoad | Intelligent Fleet Management</title>`
+```
 
 ### 4.2.4. Searching Systems
 
@@ -847,19 +1028,113 @@ El wireframe de baja fidelidad define Navbar, Hero de dos columnas, beneficios, 
 
 ### 4.3.2. Landing Page Mock-ups
 
-El mock-up de alta fidelidad aplica la jerarquía Inter, superficies blancas, cards con bordes suaves y CTAs contrastantes. El copy principal, “Controla tu flota antes de que una parada detenga tu operación”, se acompaña de “Solicitar una demostración” y “Conocer los módulos”. Las variantes de componentes contemplan hover, foco, deshabilitado y carga.
+En esta sección se presentan los mockups de alta fidelidad de la Landing Page de TechnoLoad.
 
-![Mock-up de la landing page de TechnoLoad](assets/landing-mockup.svg)
+Los mockups aplican la identidad visual definida previamente, incluyendo colores, tipografía, componentes, botones, tarjetas, iconografía y distribución responsive.
 
-## 4.4. Web Applications UX/UI Design
+La interfaz final está compuesta por las siguientes secciones:
+
+* **Header.**
+* **Hero Section.**
+* **Benefits Section.**
+* **Target Segments Section.**
+* **How It Works Section.**
+* **Value Proposition.**
+* **Pricing Section.**
+* **Final Call to Action.**
+* **Footer.**
+
+El mock-up de alta fidelidad aplica la jerarquía Inter, superficies claras, cards con bordes suaves y CTAs contrastantes. El copy principal, “Controla tu flota antes de que una parada detenga tu operación”, se acompaña de “Solicitar una demostración” y “Conocer los módulos”.
+
+---
+
+#### **Vista Desktop**
+
+![Mock-up de alta fidelidad de la Landing Page de TechnoLoad en vista Desktop](assets/landing-mockup-desktop.svg)
+
+<!-- SVG embebido anterior conservado solo como referencia de diseño; la imagen local anterior es la representación visible.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" style="background:#0F1115; border-radius:8px; font-family:'Inter', sans-serif;">
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="70" fill="#171A20"/>
+  <text x="40" y="42" fill="#F5F5F5" font-size="20" font-weight="bold">TechnoLoad</text>
+  <text x="750" y="42" fill="#A8ADB8" font-size="14">Inicio</text>
+  <text x="820" y="42" fill="#A8ADB8" font-size="14">Servicios</text>
+  <text x="910" y="42" fill="#A8ADB8" font-size="14">Planes</text>
+  <rect x="1000" y="20" width="160" height="36" rx="6" fill="#FF8F00"/>
+  <text x="1035" y="43" fill="#FFFFFF" font-size="13" font-weight="bold">Ir a la Plataforma</text>
+
+  <!-- Hero Section -->
+  <text x="80" y="160" fill="#FFFFFF" font-size="38" font-weight="bold">Controla tu flota antes de que</text>
+  <text x="80" y="210" fill="#FF8F00" font-size="38" font-weight="bold">una parada detenga tu operación.</text>
+  <text x="80" y="260" fill="#A8ADB8" font-size="16">Monitoreo de horómetros, mantenimiento preventivo y gestión logística en tiempo real.</text>
+
+  <rect x="80" y="300" width="200" height="48" rx="6" fill="#1976D2"/>
+  <text x="110" y="330" fill="#FFFFFF" font-size="15" font-weight="bold">Solicitar Demostración</text>
+
+  <rect x="300" y="300" width="180" height="48" rx="6" fill="none" stroke="#2A2F38" stroke-width="2"/>
+  <text x="335" y="330" fill="#F5F5F5" font-size="15">Conocer Módulos</text>
+
+  <!-- Hero Card Graphic -->
+  <rect x="680" y="130" width="440" height="260" rx="12" fill="#171A20" stroke="#2A2F38" stroke-width="2"/>
+  <rect x="710" y="160" width="380" height="130" rx="8" fill="#0F3D5E"/>
+  <circle cx="800" cy="225" r="30" fill="#FF8F00"/>
+  <rect x="850" y="210" width="180" height="12" rx="4" fill="#FFFFFF"/>
+  <rect x="850" y="232" width="120" height="10" rx="4" fill="#A8ADB8"/>
+  <rect x="710" y="310" width="140" height="32" rx="16" fill="#2E7D32"/>
+  <text x="735" y="331" fill="#FFFFFF" font-size="12" font-weight="bold">● Flota Operativa 98%</text>
+
+  <!-- Cards Grid -->
+  <rect x="80" y="440" width="320" height="280" rx="10" fill="#171A20" stroke="#2A2F38"/>
+  <rect x="110" y="470" width="40" height="40" rx="8" fill="#FF8F00"/>
+  <text x="123" y="496" fill="#FFFFFF" font-size="18" font-weight="bold">01</text>
+  <text x="110" y="545" fill="#FFFFFF" font-size="20" font-weight="bold">Maquinaria Pesada</text>
+  <text x="110" y="580" fill="#A8ADB8" font-size="14">Control automático de horómetros,</text>
+  <text x="110" y="605" fill="#A8ADB8" font-size="14">alertas de servicios preventivos y</text>
+  <text x="110" y="630" fill="#A8ADB8" font-size="14">reportes de costos operativos en obra.</text>
+
+  <rect x="440" y="440" width="320" height="280" rx="10" fill="#171A20" stroke="#2A2F38"/>
+  <rect x="470" y="470" width="40" height="40" rx="8" fill="#1976D2"/>
+  <text x="483" y="496" fill="#FFFFFF" font-size="18" font-weight="bold">02</text>
+  <text x="470" y="545" fill="#FFFFFF" font-size="20" font-weight="bold">Transporte y Carga</text>
+  <text x="470" y="580" fill="#A8ADB8" font-size="14">Asignación eficiente de rutas,</text>
+  <text x="470" y="605" fill="#A8ADB8" font-size="14">seguimiento de kilometraje y</text>
+  <text x="470" y="630" fill="#A8ADB8" font-size="14">reducción de tiempos muertos.</text>
+
+  <rect x="800" y="440" width="320" height="280" rx="10" fill="#171A20" stroke="#2A2F38"/>
+  <rect x="830" y="470" width="40" height="40" rx="8" fill="#2E7D32"/>
+  <text x="843" y="496" fill="#FFFFFF" font-size="18" font-weight="bold">03</text>
+  <text x="830" y="545" fill="#FFFFFF" font-size="20" font-weight="bold">Mantenimiento</text>
+  <text x="830" y="580" fill="#A8ADB8" font-size="14">Planificación centralizada para</text>
+  <text x="830" y="605" fill="#A8ADB8" font-size="14">evitar averías críticas y reducir</text>
+  <text x="830" y="630" fill="#A8ADB8" font-size="14">penalizaciones contractuales.</text>
+</svg>
+-->
+
+---
+
+#### **Vista Mobile**
+
+![Mock-up responsive de la Landing Page de TechnoLoad en vista Mobile](assets/landing-mockup-mobile.svg)
+
+### 4.4. Web Applications UX/UI Design
 
 El Dashboard y la Web App se diseñan a partir de los User Personas y User Stories. El administrador requiere visibilidad de activos y mantenimiento; el coordinador necesita conocer disponibilidad y asignar unidades sin perder trazabilidad.
 
 ### 4.4.1. Web Applications Wireframes
 
-Los wireframes B/F especifican Dashboard con KPIs y actividad; listado de Activos con búsqueda, filtros y tabla; Detalle con historial; formulario Registrar Lectura; Mantenimientos con prioridad y programación; y Operaciones con drawer de asignación.
+Los wireframes de TechnoLoad representan la estructura inicial de las principales vistas de la Web Application antes de aplicar los estilos visuales definitivos.
 
-![Wireframes de la aplicación TechnoLoad](assets/web-app-wireframes.svg)
+Estos diseños de baja fidelidad permiten establecer la distribución de los componentes, la jerarquía de la información y la ubicación de los principales elementos de interacción.
+
+Los wireframes fueron elaborados considerando los principales procesos de la plataforma, permitiendo validar la organización de las vistas antes de desarrollar los mock-ups de alta fidelidad.
+
+A continuación, se presentan los wireframes correspondientes a las principales interfaces de la Web Application de TechnoLoad.
+
+---
+
+#### **14 Vistas Prioritarias del MVP**
+
+![Wireframes de las 14 vistas prioritarias de la Web Application de TechnoLoad](assets/web-app-wireframes.svg)
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
@@ -1054,48 +1329,48 @@ erDiagram
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
 CREATE TABLE asset (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  code VARCHAR(40) NOT NULL UNIQUE,
-  name VARCHAR(160) NOT NULL,
-  status VARCHAR(30) NOT NULL CHECK (status IN ('AVAILABLE', 'IN_MAINTENANCE', 'ASSIGNED', 'INACTIVE')),
-  image_url TEXT,
-  created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-  updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+                     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                     code VARCHAR(40) NOT NULL UNIQUE,
+                     name VARCHAR(160) NOT NULL,
+                     status VARCHAR(30) NOT NULL CHECK (status IN ('AVAILABLE', 'IN_MAINTENANCE', 'ASSIGNED', 'INACTIVE')),
+                     image_url TEXT,
+                     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+                     updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
 CREATE TABLE meter_reading (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
-  value NUMERIC(14,2) NOT NULL CHECK (value >= 0),
-  unit VARCHAR(12) NOT NULL CHECK (unit IN ('KM', 'HOURS')),
-  recorded_at TIMESTAMPTZ NOT NULL DEFAULT now()
+                             id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                             asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
+                             value NUMERIC(14,2) NOT NULL CHECK (value >= 0),
+                             unit VARCHAR(12) NOT NULL CHECK (unit IN ('KM', 'HOURS')),
+                             recorded_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
 CREATE TABLE maintenance_order (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
-  maintenance_type VARCHAR(60) NOT NULL,
-  priority VARCHAR(20) NOT NULL CHECK (priority IN ('LOW', 'MEDIUM', 'HIGH', 'CRITICAL')),
-  status VARCHAR(25) NOT NULL CHECK (status IN ('SCHEDULED', 'IN_PROGRESS', 'COMPLETED', 'CANCELLED')),
-  scheduled_at TIMESTAMPTZ NOT NULL,
-  completed_at TIMESTAMPTZ,
-  CHECK (completed_at IS NULL OR completed_at >= scheduled_at)
+                                 id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                                 asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
+                                 maintenance_type VARCHAR(60) NOT NULL,
+                                 priority VARCHAR(20) NOT NULL CHECK (priority IN ('LOW', 'MEDIUM', 'HIGH', 'CRITICAL')),
+                                 status VARCHAR(25) NOT NULL CHECK (status IN ('SCHEDULED', 'IN_PROGRESS', 'COMPLETED', 'CANCELLED')),
+                                 scheduled_at TIMESTAMPTZ NOT NULL,
+                                 completed_at TIMESTAMPTZ,
+                                 CHECK (completed_at IS NULL OR completed_at >= scheduled_at)
 );
 
 CREATE TABLE operation (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  name VARCHAR(160) NOT NULL,
-  status VARCHAR(25) NOT NULL CHECK (status IN ('PLANNED', 'ACTIVE', 'CLOSED')),
-  created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+                         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                         name VARCHAR(160) NOT NULL,
+                         status VARCHAR(25) NOT NULL CHECK (status IN ('PLANNED', 'ACTIVE', 'CLOSED')),
+                         created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
 CREATE TABLE unit_assignment (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  operation_id UUID NOT NULL REFERENCES operation(id) ON DELETE RESTRICT,
-  asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
-  assigned_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-  released_at TIMESTAMPTZ,
-  CHECK (released_at IS NULL OR released_at >= assigned_at)
+                               id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                               operation_id UUID NOT NULL REFERENCES operation(id) ON DELETE RESTRICT,
+                               asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
+                               assigned_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+                               released_at TIMESTAMPTZ,
+                               CHECK (released_at IS NULL OR released_at >= assigned_at)
 );
 
 CREATE INDEX idx_meter_reading_asset_recorded_at ON meter_reading(asset_id, recorded_at DESC);
@@ -1103,3 +1378,383 @@ CREATE INDEX idx_maintenance_order_asset_status ON maintenance_order(asset_id, s
 CREATE INDEX idx_unit_assignment_operation ON unit_assignment(operation_id);
 CREATE INDEX idx_asset_status ON asset(status);
 ```
+
+# Capítulo V: Product Implementation, Validation & Deployment
+
+## 5.1. Software Configuration Management
+
+La gestión de configuración de software de TechnoLoad establece las herramientas, convenciones y procedimientos utilizados por el equipo para mantener consistencia y trazabilidad durante el ciclo de vida de los productos digitales.
+
+Para ello, se utilizan herramientas de gestión de proyectos, diseño UX/UI, desarrollo de software, documentación, control de versiones y despliegue. Git y GitHub permiten registrar los cambios realizados por los integrantes del equipo, mientras que GitFlow, Conventional Commits y Semantic Versioning proporcionan un esquema organizado para la evolución del código fuente.
+
+  ### 5.1.1. Software Development Environment Configuration
+  
+El desarrollo de TechnoLoad requiere diferentes herramientas que permiten cubrir las actividades de gestión del proyecto, especificación de requisitos, diseño UX/UI, implementación, documentación, control de versiones y despliegue.
+
+Las principales herramientas utilizadas o previstas para el proyecto son las siguientes:
+
+| Área | Herramienta / Tecnología | Propósito en TechnoLoad | Referencia |
+|---|---|---|---|
+| Project Management | [Trello / Jira / YouTrack - seleccionar el utilizado] | Organización del Product Backlog, Sprints, User Stories y tareas del equipo. | [COLOCAR URL DEL BOARD] |
+| Requirements Management | GitHub + Markdown | Documentación colaborativa de requisitos, User Stories, Product Backlog y demás artefactos del informe. | https://github.com/TechnoLoad-TechFlow/TechFlow |
+| UX Research | UXPressia | Elaboración de User Personas, Empathy Maps, User Journey Maps e Impact Maps. | https://uxpressia.com/ |
+| UX/UI Design | Figma | Elaboración de Wireframes, Mock-ups y Prototipos de la experiencia web. | https://www.figma.com/ |
+| Version Control | Git | Control distribuido de versiones del código fuente y documentación. | https://git-scm.com/ |
+| Source Code Management | GitHub | Almacenamiento de repositorios, gestión de ramas, commits y colaboración del equipo. | https://github.com/ |
+| Development Environment | [IDE UTILIZADO POR EL EQUIPO] | Edición, ejecución y depuración del código fuente. | [COLOCAR URL] |
+| Frontend Runtime | Node.js | Entorno de ejecución utilizado para instalar y administrar las dependencias del Frontend Web Application. | https://nodejs.org/ |
+| Frontend Framework | Vue | Framework utilizado para desarrollar la Frontend Web Application. | https://vuejs.org/ |
+| Frontend Build Tool | Vite | Herramienta utilizada para gestionar el entorno de desarrollo y generar el build de producción del frontend. | https://vite.dev/ |
+| UI Components | PrimeVue | Biblioteca de componentes basada en Material Design utilizada para construir la interfaz de usuario. | https://primevue.org/ |
+| Backend Framework | ASP.NET Core | Framework utilizado para implementar los RESTful Web Services de TechnoLoad. | https://dotnet.microsoft.com/apps/aspnet |
+| Programming Language | C# | Lenguaje utilizado para implementar la lógica del lado servidor. | https://learn.microsoft.com/dotnet/csharp/ |
+| ORM | Entity Framework Core | Gestión de persistencia y acceso a datos desde los Web Services. | https://learn.microsoft.com/ef/core/ |
+| DBMS | PostgreSQL | Sistema gestor de base de datos relacional utilizado para almacenar la información del dominio. | https://www.postgresql.org/ |
+| API Documentation | OpenAPI / Swagger | Documentación e interacción con los endpoints de los RESTful Web Services. | https://swagger.io/ |
+| Software Documentation | Markdown | Elaboración del Project Report y documentación técnica dentro de GitHub. | https://www.markdownguide.org/ |
+| Software Deployment | [PLATAFORMA DE DESPLIEGUE] | Publicación del Landing Page, Frontend Web Application y Web Services. | [COLOCAR URL] |
+
+La combinación de estas herramientas permite mantener un entorno común entre los integrantes del equipo. El frontend es desarrollado con Vue y PrimeVue, mientras que los servicios del lado servidor se implementan mediante ASP.NET Core, Entity Framework Core y C#. PostgreSQL proporciona la persistencia relacional de la información correspondiente a activos, lecturas, mantenimientos y operaciones.
+
+![ESTRUCTURA DEL PROYECTO](assets/Estructura TechnoLoad.png)
+
+
+  ### 5.1.2. Source Code Management
+  
+El código fuente y la documentación de TechnoLoad se administran mediante Git y GitHub. El uso de control de versiones permite mantener la trazabilidad de cada modificación realizada por el equipo, identificar la participación de los integrantes y recuperar versiones anteriores cuando sea necesario.
+
+Los repositorios correspondientes a los productos de TechnoLoad son:
+
+| Producto | Repositorio |
+|---|---|
+| Project Report | https://github.com/TechnoLoad-TechFlow/TechFlow |
+| Landing Page | [COLOCAR URL DEL REPOSITORIO] |
+| Frontend Web Application | [COLOCAR URL DEL REPOSITORIO] |
+| RESTful Web Services | [COLOCAR URL DEL REPOSITORIO] |
+
+El repositorio correspondiente a los RESTful Web Services deberá incluir tanto el código fuente de la solución como los archivos correspondientes a las pruebas unitarias y de integración.
+
+![Repositorios de TechnoLoad](assets/Repositorios.png)
+
+#### GitFlow Workflow
+
+Para organizar el desarrollo se establece GitFlow como flujo de trabajo de control de versiones.
+
+Las ramas principales consideradas son:
+
+| Branch | Propósito |
+|---|---|
+| `main` | Contiene las versiones estables y preparadas para producción. |
+| `develop` | Integra los cambios terminados correspondientes al desarrollo de la siguiente versión. |
+| `feature/*` | Desarrollo de nuevas características o modificaciones específicas. |
+| `release/*` | Preparación y estabilización de una nueva versión antes de integrarla en `main`. |
+| `hotfix/*` | Correcciones urgentes sobre una versión publicada en producción. |
+
+Los feature branches deben utilizar nombres descriptivos escritos en inglés y en formato kebab-case.
+
+Ejemplos:
+
+`feature/fleet-management`
+
+`feature/maintenance-alerts`
+
+`feature/asset-registration`
+
+`feature/reservation-management`
+
+`feature/landing-page`
+
+Las ramas de release utilizarán Semantic Versioning:
+
+`release/v1.0.0`
+
+`release/v1.1.0`
+
+Las correcciones urgentes seguirán el mismo esquema:
+
+`hotfix/v1.0.1`
+
+![Ramas en GitHub](assets/Ramas.png)
+
+#### Semantic Versioning
+
+Las versiones de TechnoLoad seguirán el esquema:
+
+`MAJOR.MINOR.PATCH`
+
+- `MAJOR`: cambios incompatibles con versiones anteriores.
+- `MINOR`: nuevas funcionalidades compatibles con versiones anteriores.
+- `PATCH`: correcciones de errores compatibles con versiones anteriores.
+
+Ejemplos:
+
+`v1.0.0`
+
+`v1.1.0`
+
+`v1.1.1`
+
+#### Conventional Commits
+
+Los mensajes de commit siguen la estructura:
+
+`<type>(<scope>): <description>`
+
+Los principales tipos utilizados son:
+
+| Type | Uso |
+|---|---|
+| `feat` | Nueva funcionalidad. |
+| `fix` | Corrección de un error. |
+| `docs` | Cambios en documentación. |
+| `style` | Cambios de formato que no modifican comportamiento. |
+| `refactor` | Reestructuración interna del código. |
+| `test` | Creación o modificación de pruebas. |
+| `chore` | Tareas de mantenimiento o configuración. |
+
+Ejemplos aplicados al proyecto:
+
+`feat(fleet): add asset registration`
+
+`feat(maintenance): add preventive maintenance alerts`
+
+`feat(operations): add unit assignment`
+
+`fix(reservations): prevent duplicate reservations`
+
+`docs(readme): add needfinding artifacts`
+
+`docs(chapter5): add software configuration management`
+
+Con estas convenciones se busca facilitar la comprensión del historial de cambios y mantener consistencia entre los diferentes repositorios del proyecto.
+
+![COMMITS REALIZADOS](assets/commit 1.png)
+![COMMITS REALIZADOS](assets/commit 2.png)
+![COMMITS REALIZADOS](assets/commit 3.png)
+![COMMITS REALIZADOS](assets/commit 4.png)
+---
+
+  ### 5.1.3. Source Code Style Guide & Conventions
+  
+TechnoLoad adopta convenciones de programación para mantener un código consistente, legible y mantenible entre todos los integrantes del equipo.
+
+Los nombres utilizados en código fuente deben escribirse en inglés, evitando abreviaturas ambiguas y manteniendo una terminología consistente con el Ubiquitous Language del proyecto.
+
+#### HTML
+
+Para HTML5 se aplican las siguientes convenciones:
+
+- Utilizar elementos semánticos como `header`, `nav`, `main`, `section`, `article` y `footer`.
+- Escribir etiquetas y atributos en minúsculas.
+- Utilizar comillas dobles para atributos.
+- Mantener una indentación consistente.
+- Incluir el atributo `alt` en imágenes.
+- Utilizar atributos ARIA cuando sea necesario para mejorar la accesibilidad.
+- Evitar elementos HTML utilizados únicamente con fines visuales cuando exista una alternativa semántica.
+
+#### CSS
+
+Las clases CSS deben utilizar nombres descriptivos en inglés y formato kebab-case.
+
+Ejemplos:
+
+`.asset-card`
+
+`.maintenance-alert`
+
+`.fleet-dashboard`
+
+`.primary-button`
+
+`.reservation-form`
+
+Se debe evitar el uso de nombres poco descriptivos como:
+
+`.box1`
+
+`.red-button`
+
+`.section2`
+
+Los estilos deben mantener coherencia con el Design System establecido en el Capítulo IV.
+
+#### JavaScript
+
+Para JavaScript se establecen las siguientes convenciones:
+
+- Variables y funciones: `camelCase`.
+- Clases y componentes: `PascalCase`.
+- Constantes globales: `UPPER_SNAKE_CASE`.
+- Utilizar `const` por defecto y `let` cuando el valor requiera modificación.
+- Evitar `var`.
+- Mantener funciones pequeñas y orientadas a una responsabilidad específica.
+
+Ejemplos:
+
+`assetList`
+
+`getAvailableAssets()`
+
+`MAX_RETRY_ATTEMPTS`
+
+#### Vue
+
+Los componentes Vue deben utilizar nombres descriptivos y mantener una responsabilidad claramente delimitada.
+
+Ejemplos:
+
+`AssetList.vue`
+
+`AssetDetail.vue`
+
+`MaintenanceBoard.vue`
+
+`ReservationForm.vue`
+
+`FleetDashboard.vue`
+
+Los componentes reutilizables deben separarse de las vistas específicas del dominio y mantenerse organizados según el módulo al que pertenecen.
+
+#### C#
+
+Para C# se adoptan las convenciones recomendadas por Microsoft:
+
+- Clases, interfaces, métodos y propiedades públicas: `PascalCase`.
+- Variables locales y parámetros: `camelCase`.
+- Interfaces con prefijo `I`.
+- Namespaces escritos en PascalCase.
+- Clases con una responsabilidad claramente definida.
+
+Ejemplos:
+
+`AssetController`
+
+`MaintenanceService`
+
+`ReservationRepository`
+
+`IAssetRepository`
+
+`GetAvailableAssetsAsync()`
+
+#### RESTful Web Services
+
+Los endpoints deben representar recursos mediante sustantivos escritos en inglés y mantener una estructura consistente.
+
+Ejemplos:
+
+`GET /api/v1/assets`
+
+`POST /api/v1/assets`
+
+`GET /api/v1/assets/{id}`
+
+`GET /api/v1/maintenance-orders`
+
+`POST /api/v1/reservations`
+
+Se utilizarán correctamente los códigos de estado HTTP, entre ellos:
+
+`200 OK`
+
+`201 Created`
+
+`400 Bad Request`
+
+`401 Unauthorized`
+
+`404 Not Found`
+
+`409 Conflict`
+
+`500 Internal Server Error`
+
+#### Internationalization and Accessibility
+
+La experiencia web deberá considerar internacionalización mediante los idiomas:
+
+`en_US` — English
+
+`es_419` — Latin American Spanish
+
+El idioma predeterminado será inglés.
+
+Asimismo, el Landing Page y la Frontend Web Application deberán considerar prácticas de accesibilidad como HTML semántico, atributos ARIA, navegación mediante teclado, texto alternativo en imágenes, contraste adecuado y feedback comprensible para las acciones del usuario.
+
+---
+
+  ### 5.1.4. Software Deployment Configuration
+  
+El proceso de despliegue de TechnoLoad comprende la publicación independiente de los tres productos principales que conforman la solución: Landing Page, Frontend Web Application y RESTful Web Services.
+
+| Producto | Tecnología | Branch de producción | Plataforma |
+|---|---|---|---|
+| Landing Page | HTML5, CSS3 y JavaScript | `main` | [COLOCAR PLATAFORMA] |
+| Frontend Web Application | Vue, Vite y PrimeVue | `main` | [COLOCAR PLATAFORMA] |
+| RESTful Web Services | ASP.NET Core, Entity Framework Core y C# | `main` | [COLOCAR PLATAFORMA] |
+| Database | PostgreSQL | — | [COLOCAR PLATAFORMA] |
+
+#### Landing Page Deployment
+
+El proceso de publicación del Landing Page seguirá el siguiente flujo:
+
+`feature branch → develop → validation → main → build/publication → production`
+
+Los archivos HTML, CSS, JavaScript y assets son obtenidos desde el repositorio correspondiente y publicados en la plataforma seleccionada.
+
+**Production URL:**
+
+[COLOCAR URL DEL LANDING PAGE]
+
+#### Frontend Web Application Deployment
+
+El Frontend Web Application será construido con Vue y Vite.
+
+El flujo de despliegue será:
+
+`feature branch → develop → validation → main → npm install → npm run build → deployment`
+
+El resultado del build de producción será publicado en la plataforma seleccionada.
+
+Las variables dependientes del entorno, especialmente la URL base de los RESTful Web Services, deberán configurarse mediante variables de entorno y no directamente en el código fuente.
+
+**Production URL:**
+
+[COLOCAR URL DEL FRONTEND WEB APPLICATION]
+
+#### RESTful Web Services Deployment
+
+Los Web Services desarrollados con ASP.NET Core serán construidos y publicados desde el repositorio correspondiente.
+
+El proceso considera:
+
+1. Obtener la versión estable desde `main`.
+2. Restaurar las dependencias del proyecto.
+3. Ejecutar las pruebas correspondientes.
+4. Generar el build de producción.
+5. Configurar las variables de entorno.
+6. Establecer la conexión con PostgreSQL.
+7. Publicar el servicio en la plataforma seleccionada.
+8. Verificar los endpoints mediante Swagger/OpenAPI.
+
+Las credenciales, cadenas de conexión y demás información sensible no serán almacenadas directamente en el repositorio.
+
+**RESTful API Base URL:**
+
+[COLOCAR URL DEL WEB SERVICE]
+
+**Swagger / OpenAPI URL:**
+
+[COLOCAR URL DE SWAGGER]
+
+#### Database Deployment
+
+La base de datos PostgreSQL deberá estar configurada en un entorno accesible desde los RESTful Web Services.
+
+La cadena de conexión será administrada mediante variables de entorno. Las migraciones generadas mediante Entity Framework Core permitirán mantener sincronizada la estructura de la base de datos entre los diferentes entornos.
+
+---
+
+## 5.2. Landing Page, Services & Applications Implementation
+## 5.3. Validation Interviews
+## 5.4. Video About-the-Product
