@@ -1225,9 +1225,19 @@ A continuación, se presentan los mock-ups correspondientes a las principales vi
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-Los diagramas representan tres procesos core: Registrar Lectura valida el valor antes de persistirlo y actualizar historial; Programar Mantenimiento crea una orden con activo, tipo, fecha y prioridad; Asignar Unidad filtra activos disponibles, solicita confirmación y actualiza la operación.
+Los User Flow Diagrams representan los recorridos que realizan los usuarios para completar las principales tareas dentro de la Web Application de TechnoLoad.
 
-![Flujos de usuario de TechnoLoad](assets/web-app-user-flows.svg)
+Estos diagramas muestran las acciones, decisiones y transiciones entre diferentes vistas, permitiendo comprender cómo cada tipo de usuario interactúa con la plataforma para alcanzar un objetivo determinado.
+
+Los flujos fueron definidos tomando como referencia las User Stories y las necesidades identificadas para los User Personas de TechnoLoad.
+
+A continuación, se presentan los principales User Flow Diagrams de la aplicación.
+
+---
+
+#### **Seis User Flows**
+
+![Web Applications User Flow Diagrams TechnoLoad](assets/web-app-userflows.svg)
 
 ## 4.5. Web Applications Prototyping
 
