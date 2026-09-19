@@ -783,6 +783,8 @@ Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [
 
 ### 3.2. Impact Mapping
 
+![Impact Map - Maquicontrol](assets/impact-mapping-maquicontrol.png)
+
 ### 3.3. Product Backlog
 
 | Orden | ID | Epic | Título | Story Points |
