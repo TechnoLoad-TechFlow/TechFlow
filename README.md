@@ -1399,63 +1399,462 @@ La Domain Layer contiene el aggregate Profile y sus reglas de negocio correspond
 
 ![Profiles Management Component Diagram](assets/c4-profiles-component.svg)
 
-## 4.7. Software Object-Oriented Design
+## 4.7 Software Object-Oriented Design
 
-### 4.7.1. Class Diagrams
+El diseño orientado a objetos de TechnoLoad representa las principales clases, interfaces, enumeraciones, atributos, operaciones y relaciones que conforman cada Bounded Context. Los modelos mantienen los límites definidos mediante Domain-Driven Design y utilizan identificadores para referenciar agregados pertenecientes a otros contextos, evitando el acoplamiento directo entre ellos.
 
-El diseño orientado a objetos mantiene el modelo de dominio aislado de DTOs y componentes. `Asset` y `MaintenanceOrder` son entidades inmutables; `Url` y `DateTime` encapsulan validación y representación. Los assemblers transforman los contratos de API en objetos de dominio y el store coordina el estado visible sin filtrar detalles de infraestructura a la interfaz.
+### 4.7.1 Class Diagrams
 
-```plantuml
-@startuml
-class Asset {
-  - #id: String
-  - #name: String
-  - #status: String
-  - #imageUrl: Url
-  + get id(): String
-  + get name(): String
-  + get status(): String
-}
-class MaintenanceOrder {
-  - #id: String
-  - #assetId: String
-  - #scheduledAt: DateTime
-  - #priority: String
-}
-class Url { + get value(): String }
-class DateTime { + get value(): Date }
-class AssetAssembler { + toDomain(dto): Asset }
-class MaintenanceOrderAssembler { + toDomain(dto): MaintenanceOrder }
-class FleetStore { + state: Object + loadAssets(): Promise }
-class AssetList
-class AssetItem
-class AssetSummary
-Asset --> Url
-MaintenanceOrder --> DateTime
-AssetAssembler ..> Asset
-MaintenanceOrderAssembler ..> MaintenanceOrder
-FleetStore ..> AssetAssembler
-FleetStore ..> MaintenanceOrderAssembler
-AssetList --> FleetStore
-AssetList --> AssetItem
-AssetItem --> AssetSummary
-@enduml
+#### Fleet Management Bounded Context Class Diagram
+
+El diagrama de Fleet Management representa el agregado Machinery, responsable del registro, actualización, clasificación, ubicación, estado y disponibilidad de la maquinaria. También incluye el objeto de valor MachineryLocation, las enumeraciones correspondientes y los servicios e interfaces necesarios para coordinar y persistir las operaciones del contexto.
+
+```mermaid
+classDiagram
+    class FleetManagementService {
+        -MachineryRepository machineryRepository
+        +registerMachinery(machinery) Machinery
+        +updateMachineryInformation(id, name, description, hourlyRate) Machinery
+        +updateMachineryStatus(id, status) Machinery
+        +viewMachineryInventory() List~Machinery~
+        +checkMachineryAvailability(id) Boolean
+    }
+    class MachineryRepository {
+        <<interface>>
+        +save(machinery) Machinery
+        +findById(id) Optional~Machinery~
+        +findAll() List~Machinery~
+        +findAvailable() List~Machinery~
+        +existsById(id) Boolean
+    }
+    class Machinery {
+        <<Aggregate Root>>
+        -UUID id
+        -UUID ownerProfileId
+        -String name
+        -String description
+        -MachineryType type
+        -String brand
+        -String model
+        -Integer year
+        -BigDecimal hourlyRate
+        -MachineryStatus status
+        -MachineryLocation location
+        -LocalDateTime createdAt
+        -LocalDateTime updatedAt
+        +register() void
+        +updateInformation(name, description, hourlyRate) void
+        +changeStatus(status) void
+        +updateLocation(location) void
+        +isAvailable() Boolean
+    }
+    class MachineryLocation {
+        <<Value Object>>
+        -String department
+        -String province
+        -String district
+        -String address
+        -Double latitude
+        -Double longitude
+        +fullAddress() String
+        +isValid() Boolean
+    }
+    class MachineryType {
+        <<enumeration>>
+        EXCAVATOR
+        BACKHOE_LOADER
+        LOADER
+        CRANE
+        BULLDOZER
+        OTHER
+    }
+    class MachineryStatus {
+        <<enumeration>>
+        AVAILABLE
+        RESERVED
+        RENTED
+        IN_MAINTENANCE
+        OUT_OF_SERVICE
+    }
+
+    FleetManagementService --> MachineryRepository : uses
+    MachineryRepository --> Machinery : persists
+    Machinery *-- MachineryLocation : contains
+    Machinery --> MachineryType : classified as
+    Machinery --> MachineryStatus : has
+```
+
+#### Rental Management Bounded Context Class Diagram
+
+```mermaid
+classDiagram
+    class RentalManagementService {
+        -RentalRepository rentalRepository
+        +requestRental(rental) Rental
+        +confirmReservation(id) Rental
+        +cancelReservation(id, reason) Rental
+        +updateRentalDates(id, period) Rental
+        +viewRentalRequests() List~Rental~
+        +viewMyReservations(profileId) List~Rental~
+        +checkReservationDetails(id) Rental
+    }
+    class RentalRepository {
+        <<interface>>
+        +save(rental) Rental
+        +findById(id) Optional~Rental~
+        +findByContractorProfileId(profileId) List~Rental~
+        +findByMachineryId(machineryId) List~Rental~
+        +findByStatus(status) List~Rental~
+        +existsOverlappingRental(machineryId, period) Boolean
+    }
+    class Rental {
+        <<Aggregate Root>>
+        -UUID id
+        -UUID machineryId
+        -UUID contractorProfileId
+        -RentalPeriod period
+        -RentalStatus status
+        -BigDecimal totalAmount
+        -LocalDateTime requestedAt
+        -LocalDateTime confirmedAt
+        -LocalDateTime cancelledAt
+        +request() void
+        +confirm() void
+        +cancel(reason) void
+        +updateDates(period) void
+        +calculateTotal(hourlyRate) BigDecimal
+        +isActive() Boolean
+    }
+    class RentalPeriod {
+        <<Value Object>>
+        -LocalDate startDate
+        -LocalDate endDate
+        +durationInDays() Long
+        +overlaps(other) Boolean
+        +isValid() Boolean
+    }
+    class RentalStatus {
+        <<enumeration>>
+        REQUESTED
+        CONFIRMED
+        IN_PROGRESS
+        COMPLETED
+        CANCELLED
+    }
+
+    RentalManagementService --> RentalRepository : uses
+    RentalRepository --> Rental : persists
+    Rental *-- RentalPeriod : contains
+    Rental --> RentalStatus : has
+```
+
+#### Maintenance Management Bounded Context Class Diagram
+
+```mermaid
+classDiagram
+    class MaintenanceManagementService {
+        -MaintenanceRepository maintenanceRepository
+        +scheduleMaintenance(maintenance) Maintenance
+        +completeMaintenance(id, cost) Maintenance
+        +reportBreakdown(id, report) Maintenance
+        +updateMaintenanceStatus(id, status) Maintenance
+        +viewMaintenanceHistory(machineryId) List~Maintenance~
+        +viewPendingMaintenance() List~Maintenance~
+        +checkMaintenanceDetails(id) Maintenance
+    }
+    class MaintenanceRepository {
+        <<interface>>
+        +save(maintenance) Maintenance
+        +findById(id) Optional~Maintenance~
+        +findByMachineryId(machineryId) List~Maintenance~
+        +findByStatus(status) List~Maintenance~
+        +findCompletedByMachineryId(machineryId) List~Maintenance~
+    }
+    class Maintenance {
+        <<Aggregate Root>>
+        -UUID id
+        -UUID machineryId
+        -MaintenanceType type
+        -MaintenanceStatus status
+        -String description
+        -LocalDateTime scheduledDate
+        -LocalDateTime startedAt
+        -LocalDateTime completedAt
+        -String technicianName
+        -BigDecimal cost
+        -List~BreakdownReport~ breakdownReports
+        +schedule() void
+        +start() void
+        +complete(cost) void
+        +updateStatus(status) void
+        +reportBreakdown(report) void
+        +isPending() Boolean
+    }
+    class BreakdownReport {
+        <<Entity>>
+        -UUID id
+        -String description
+        -BreakdownSeverity severity
+        -LocalDateTime reportedAt
+        -LocalDateTime resolvedAt
+        -Boolean resolved
+        +resolve() void
+        +isCritical() Boolean
+    }
+    class MaintenanceType {
+        <<enumeration>>
+        PREVENTIVE
+        CORRECTIVE
+        INSPECTION
+    }
+    class MaintenanceStatus {
+        <<enumeration>>
+        SCHEDULED
+        IN_PROGRESS
+        COMPLETED
+        CANCELLED
+    }
+    class BreakdownSeverity {
+        <<enumeration>>
+        LOW
+        MEDIUM
+        HIGH
+        CRITICAL
+    }
+
+    MaintenanceManagementService --> MaintenanceRepository : uses
+    MaintenanceRepository --> Maintenance : persists
+    Maintenance *-- BreakdownReport : contains
+    Maintenance --> MaintenanceType : classified as
+    Maintenance --> MaintenanceStatus : has
+    BreakdownReport --> BreakdownSeverity : has
+```
+
+#### Operations Management Bounded Context Class Diagram
+
+```mermaid
+classDiagram
+    class OperationsManagementService {
+        -ServiceOperationRepository operationRepository
+        +startService(operation) ServiceOperation
+        +recordWorkedHours(operationId, record) ServiceOperation
+        +validateWorkedHours(operationId, recordId) ServiceOperation
+        +completeService(operationId) ServiceOperation
+        +viewServiceStatus(id) OperationStatus
+        +viewWorkedHours(id) List~WorkedHours~
+        +viewOperationHistory(machineryId) List~ServiceOperation~
+    }
+    class ServiceOperationRepository {
+        <<interface>>
+        +save(operation) ServiceOperation
+        +findById(id) Optional~ServiceOperation~
+        +findByRentalId(rentalId) Optional~ServiceOperation~
+        +findByMachineryId(machineryId) List~ServiceOperation~
+        +findByStatus(status) List~ServiceOperation~
+    }
+    class ServiceOperation {
+        <<Aggregate Root>>
+        -UUID id
+        -UUID rentalId
+        -UUID machineryId
+        -UUID operatorProfileId
+        -OperationStatus status
+        -LocalDateTime startedAt
+        -LocalDateTime completedAt
+        -List~WorkedHours~ workedHours
+        +start() void
+        +recordWorkedHours(record) void
+        +validateWorkedHours(recordId) void
+        +complete() void
+        +calculateTotalHours() BigDecimal
+        +isInProgress() Boolean
+    }
+    class WorkedHours {
+        <<Entity>>
+        -UUID id
+        -LocalDate workDate
+        -LocalTime startTime
+        -LocalTime endTime
+        -BigDecimal totalHours
+        -WorkedHoursStatus status
+        -String observations
+        +calculateHours() BigDecimal
+        +validate() void
+        +reject() void
+        +isValidated() Boolean
+    }
+    class OperationStatus {
+        <<enumeration>>
+        SCHEDULED
+        IN_PROGRESS
+        COMPLETED
+        CANCELLED
+    }
+    class WorkedHoursStatus {
+        <<enumeration>>
+        PENDING
+        VALIDATED
+        REJECTED
+    }
+
+    OperationsManagementService --> ServiceOperationRepository : uses
+    ServiceOperationRepository --> ServiceOperation : persists
+    ServiceOperation *-- WorkedHours : records
+    ServiceOperation --> OperationStatus : has
+    WorkedHours --> WorkedHoursStatus : has
 ```
 
 #### Identity & Access Management Bounded Context Class Diagram
 
-El diagrama de Identity & Access Management representa el agregado UserAccount, sus credenciales y los roles asignados. El modelo concentra las operaciones de registro, autenticación, cambio de contraseña, asignación de roles y control del estado de las cuentas.
+```mermaid
+classDiagram
+    class IdentityAccessService {
+        -UserAccountRepository accountRepository
+        +registerUser(account) UserAccount
+        +authenticateUser(email, password) UserAccount
+        +assignRole(accountId, role) UserAccount
+        +removeRole(accountId, role) UserAccount
+        +changePassword(accountId, passwordHash) void
+        +activate(accountId) void
+        +suspend(accountId) void
+        +hasRole(roleName) Boolean
+    }
+    class UserAccountRepository {
+        <<interface>>
+        +save(account) UserAccount
+        +findById(id) Optional~UserAccount~
+        +findByEmail(email) Optional~UserAccount~
+        +existsByEmail(email) Boolean
+    }
+    class UserAccount {
+        <<Aggregate Root>>
+        -UUID id
+        -String email
+        -Credential credential
+        -AccountStatus status
+        -Set~Role~ roles
+        -LocalDateTime createdAt
+        -LocalDateTime lastLoginAt
+        +register() void
+        +authenticate(rawPassword) Boolean
+        +assignRole(role) void
+        +removeRole(role) void
+        +changePassword(passwordHash) void
+        +activate() void
+        +suspend() void
+        +hasRole(roleName) Boolean
+    }
+    class Credential {
+        <<Value Object>>
+        -String passwordHash
+        -LocalDateTime changedAt
+        +matches(rawPassword) Boolean
+        +update(passwordHash) Credential
+    }
+    class Role {
+        <<Entity>>
+        -UUID id
+        -RoleName name
+        -String description
+        +isAdministrative() Boolean
+    }
+    class AccountStatus {
+        <<enumeration>>
+        PENDING
+        ACTIVE
+        SUSPENDED
+        DISABLED
+    }
+    class RoleName {
+        <<enumeration>>
+        CONTRACTOR
+        FLEET_OWNER
+        FLEET_ADMINISTRATOR
+        OPERATOR
+        SYSTEM_ADMINISTRATOR
+    }
 
-```plantuml
-!include assets/cd-identity-access.puml
+    IdentityAccessService --> UserAccountRepository : uses
+    UserAccountRepository --> UserAccount : persists
+    UserAccount *-- Credential : owns
+    UserAccount o-- Role : has
+    UserAccount --> AccountStatus : has
+    Role --> RoleName : identified by
 ```
 
 #### Profiles Management Bounded Context Class Diagram
 
-El diagrama de Profiles Management representa el agregado Profile, la información de contacto y la organización asociada al usuario. Este modelo permite administrar los datos personales, de contacto y organizacionales sin acoplar el contexto de perfiles con la gestión de credenciales.
+```mermaid
+classDiagram
+    class ProfilesManagementService {
+        -ProfileRepository profileRepository
+        +createProfile(profile) Profile
+        +updateProfileInformation(id, firstName, lastName, documentNumber) Profile
+        +updateContactInformation(id, contact) Profile
+        +updateOrganizationInformation(id, organization) Profile
+        +viewProfile(id) Profile
+        +viewContactInformation(id) ContactInformation
+        +viewOrganizationInformation(id) Organization
+    }
+    class ProfileRepository {
+        <<interface>>
+        +save(profile) Profile
+        +findById(id) Optional~Profile~
+        +findByUserAccountId(userAccountId) Optional~Profile~
+        +findByDocumentNumber(documentNumber) Optional~Profile~
+        +existsByDocumentNumber(documentNumber) Boolean
+    }
+    class Profile {
+        <<Aggregate Root>>
+        -UUID id
+        -UUID userAccountId
+        -String firstName
+        -String lastName
+        -String documentNumber
+        -ContactInformation contactInformation
+        -Organization organization
+        -LocalDateTime createdAt
+        -LocalDateTime updatedAt
+        +create() void
+        +updatePersonalInformation(firstName, lastName, documentNumber) void
+        +updateContactInformation(contact) void
+        +updateOrganizationInformation(organization) void
+        +fullName() String
+    }
+    class ContactInformation {
+        <<Value Object>>
+        -String phoneNumber
+        -String secondaryEmail
+        -String address
+        -String district
+        -String city
+        +isValid() Boolean
+        +formattedAddress() String
+    }
+    class Organization {
+        <<Entity>>
+        -UUID id
+        -String legalName
+        -String tradeName
+        -String taxId
+        -OrganizationType type
+        -String address
+        +updateInformation(legalName, tradeName, address) void
+        +isValidTaxId() Boolean
+    }
+    class OrganizationType {
+        <<enumeration>>
+        INDEPENDENT_CONTRACTOR
+        RENTAL_COMPANY
+        CONSTRUCTION_COMPANY
+        OTHER
+    }
 
-```plantuml
-!include assets/cd-profiles-management.puml
+    ProfilesManagementService --> ProfileRepository : uses
+    ProfileRepository --> Profile : persists
+    Profile *-- ContactInformation : contains
+    Profile o-- Organization : belongs to
+    Organization --> OrganizationType : classified as
 ```
 
 ## 4.8. Database Design
