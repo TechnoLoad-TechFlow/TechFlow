@@ -1239,11 +1239,21 @@ A continuación, se presentan los principales User Flow Diagrams de la aplicaci�
 
 ![Web Applications User Flow Diagrams TechnoLoad](assets/web-app-userflows.svg)
 
-## 4.5. Web Applications Prototyping
+### 4.5 Web Applications Prototyping
 
-El prototipo simula navegación, modales y drawers. Los triggers On Click y On Hover se vinculan con Smart Animate, Dissolve y overlays para demostrar continuidad, feedback de validación y cambios de estado antes de la implementación final.
+En esta sección se presenta el prototipo interactivo de la Web Application de TechnoLoad, desarrollado a partir de los mock-ups y User Flow Diagrams definidos previamente.
 
-![Mapa de interacciones del prototipo TechnoLoad](assets/web-app-prototype.svg)
+El prototipo permite simular la navegación entre las principales vistas de la aplicación y validar la secuencia de interacción que siguen los usuarios para completar sus tareas principales. Las conexiones entre pantallas fueron definidas considerando los recorridos planteados en los User Flows y el sistema de navegación establecido para la aplicación.
+
+Se consideraron las principales funcionalidades de TechnoLoad, como el acceso a la plataforma, visualización del dashboard, consulta y gestión de maquinaria, reservas, mantenimiento, disponibilidad y seguimiento de servicios.
+
+A continuación, se presenta una captura del prototipo en funcionamiento y el enlace al video de demostración, donde se muestran los principales flujos de navegación e interacción de la aplicación.
+
+---
+
+#### **Prototipo Interactivo en Figma**
+
+![Web Applications Prototyping TechnoLoad](assets/web-app-prototype.svg)
 
 ## 4.6. Domain-Driven Software Architecture
 
