@@ -1381,6 +1381,22 @@ También se representan las principales relaciones entre los contextos, la Singl
 
 ![API Application Component Diagram TechnoLoad](assets/c4-api-component-diagram.svg)
 
+#### **Identity & Access Management Bounded Context Component Diagram**
+
+Este diagrama representa la estructura interna del Identity & Access Management Bounded Context. Este contexto se encarga de la autenticación, autorización, gestión de cuentas, roles y credenciales de los usuarios de TechnoLoad.
+
+La Domain Layer contiene el aggregate User Account y las reglas asociadas al control de identidad y acceso.
+
+![Identity & Access Management Component Diagram](assets/c4-identity-component.svg)
+
+#### **Profiles Management Bounded Context Component Diagram**
+
+Este diagrama muestra la estructura interna del Profiles Management Bounded Context, encargado de gestionar la información del perfil, datos de contacto e información de las organizaciones asociadas a los usuarios.
+
+La Domain Layer contiene el aggregate Profile y sus reglas de negocio correspondientes.
+
+![Profiles Management Component Diagram](assets/c4-profiles-component.svg)
+
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
