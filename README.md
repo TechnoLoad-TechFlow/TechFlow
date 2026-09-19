@@ -818,29 +818,59 @@ Esta sección define las decisiones visuales y de interacción que mantienen una
 
 ### 4.1.1. General Style Guidelines
 
-El UI Kit emplea **Inter** como tipografía principal por su legibilidad en tablas, indicadores y formularios. La escala tipográfica usa 12, 14, 16, 20, 24, 32 y 40 px; el cuerpo base es 16 px (1 rem) y los títulos usan peso 600 o 700. Los textos mantienen contraste suficiente y no dependen exclusivamente del color para transmitir estado.
+La identidad visual de TechnoLoad busca transmitir una imagen profesional, tecnológica y orientada a la gestión operativa de flotas de maquinaria pesada y transporte de carga por carretera.
 
-| Token | Valor | Uso en TechnoLoad |
-|---|---:|---|
-| Primary | `#0F3D5E` | navegación, encabezados y confianza operativa |
-| Action | `#1976D2` | botones primarios, enlaces y foco |
-| Accent | `#FF8F00` | CTA, alertas de atención y priorización |
-| Success | `#2E7D32` | activo disponible y confirmaciones |
-| Error | `#C62828` | validación, fallos y acciones bloqueadas |
-| Neutral 50–900 | `#F6F8FB`–`#17324D` | superficies, bordes y jerarquía de texto |
+La interfaz utiliza principalmente una paleta clara y contrastada acompañada de elementos en color azul y naranja para resaltar acciones importantes, estados de activos y componentes interactivos.
 
-La escala de espaciado se compone de 4, 8, 12, 16, 24, 32 y 48 px. Las tarjetas usan radio de 12 px, una sombra tenue y separación interna mínima de 16 px. El color de estado siempre se acompaña con una etiqueta, icono o texto descriptivo.
+Los principales colores utilizados son:
+
+#### Color Palette
+
+TechnoLoad utiliza una paleta de colores de alto contraste que combina superficies limpias con colores de acento bien definidos para destacar acciones importantes y estados de la flota.
+
+| Token | Código HEX | Uso en TechnoLoad |
+| :--- | :---: | :--- |
+| **Primary** | `#0F3D5E` | Navegación, encabezados y confianza operativa |
+| **Action** | `#1976D2` | Botones primarios, enlaces y focos activos |
+| **Accent** | `#FF8F00` | CTA, alertas de atención y priorización de mantenimientos |
+| **Success** | `#2E7D32` | Activo disponible, rutas activas y confirmaciones |
+| **Error** | `#C62828` | Validación, fallos críticos de máquina y acciones bloqueadas |
+| **Neutral 50–900** | `#F6F8FB`–`#17324D` | Superficies, bordes y jerarquía de texto |
+
+---
+
+#### Typography
+
+La tipografía principal utilizada es `Inter`, con fuentes alternativas Arial, Helvetica y sans-serif por su alta legibilidad en dashboards, tablas de horómetros e indicadores logísticos.
+
+La jerarquía visual se establece mediante diferentes tamaños y pesos tipográficos, utilizando títulos grandes para comunicar métricas clave y textos secundarios con menor contraste para información complementaria.
+
+| Elemento | Tipografía | Peso aproximado | Aplicación |
+| :--- | :---: | :---: | :--- |
+| **Main Headings** | Inter | Bold / 700 | Hero y títulos principales |
+| **Section Headings** | Inter | Bold / 700 | Títulos de secciones y módulos |
+| **Card Titles** | Inter | Semi Bold / 600 | Métrica de activos, tarjetas de flota y pasos |
+| **Body Text** | Inter | Regular / 400 | Descripciones, lecturas de horómetros y contenido |
+| **Buttons** | Inter | Semi Bold / 600 | Call to Action y botones de comando |
+| **Navigation** | Inter | Regular / 400–500 | Enlaces de navegación y pestañas |
+
+La jerarquía tipográfica se mantiene mediante variaciones de tamaño (escala de 12, 14, 16, 20, 24, 32 y 40 px) y peso, permitiendo distinguir claramente títulos, subtítulos, textos descriptivos y acciones.
+
+---
+
+#### Component Mapping & Spacing Rules
+
+La escala de espaciado se compone de 4, 8, 12, 16, 24, 32 y 48 px. Las tarjetas usan un radio de borde de 12 px, una sombra tenue y separación interna mínima de 16 px. El color de estado siempre se acompaña con una etiqueta, icono o texto descriptivo.
 
 | Elemento Figma | Equivalente PrimeVue | Estados documentados |
-|---|---|---|
-| Primary / secondary button | `pv-button` | default, hover, focus, disabled, loading |
-| Campo de formulario | `pv-input-text` | default, focus, error, disabled |
-| Tarjeta de activo | `pv-card` | default, hover, loading |
-| Tabla operativa | `pv-data-table` | loading, empty, selected, error |
-| Estado de activo | `pv-tag` | disponible, mantenimiento, crítico |
-| Confirmación y error | `pv-toast` | success, warn, error, info |
-| Carga de contenido | `pv-skeleton` | tarjeta, fila y detalle |
-
+| :--- | :---: | :--- |
+| **Primary / secondary button** | `pv-button` | default, hover, focus, disabled, loading |
+| **Campo de formulario** | `pv-input-text` | default, focus, error, disabled |
+| **Tarjeta de activo** | `pv-card` | default, hover, loading |
+| **Tabla operativa** | `pv-data-table` | loading, empty, selected, error |
+| **Estado de activo** | `pv-tag` | disponible, mantenimiento, crítico |
+| **Confirmación y error** | `pv-toast` | success, warn, error, info |
+| **Carga de contenido** | `pv-skeleton` | tarjeta, fila y detalle |
 ### 4.1.2. Web Style Guidelines
 
 Las Web Style Guidelines de TechnoLoad establecen los criterios visuales y de interacción que serán aplicados tanto en la Landing Page como en la Web Application, buscando mantener una experiencia consistente, responsive y accesible en diferentes tamaños de pantalla.
