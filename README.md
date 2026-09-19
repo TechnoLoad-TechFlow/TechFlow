@@ -1440,6 +1440,18 @@ AssetItem --> AssetSummary
 @enduml
 ```
 
+#### Identity & Access Management Bounded Context Class Diagram
+
+El diagrama de Identity & Access Management representa el agregado UserAccount, sus credenciales y los roles asignados. El modelo concentra las operaciones de registro, autenticación, cambio de contraseña, asignación de roles y control del estado de las cuentas.
+
+![Identity & Access Management Class Diagram](assets/cd-identity-access.svg)
+
+#### Profiles Management Bounded Context Class Diagram
+
+El diagrama de Profiles Management representa el agregado Profile, la información de contacto y la organización asociada al usuario. Este modelo permite administrar los datos personales, de contacto y organizacionales sin acoplar el contexto de perfiles con la gestión de credenciales.
+
+![Profiles Management Class Diagram](assets/cd-profiles-management.svg)
+
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
