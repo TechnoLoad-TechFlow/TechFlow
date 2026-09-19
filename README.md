@@ -1052,13 +1052,19 @@ Los diseños contemplan versiones Desktop y Mobile con el objetivo de mantener u
 
 #### **Vista Desktop**
 
-![Landing Page Mockup Desktop](assets/landing-mockup-desktop.svg)
+<div align="center" style="background: #0F1115; padding: 24px; border-radius: 10px; border: 1px solid #2A2F38; margin: 16px 0;">
+  <p style="color: #F5F5F5; font-weight: bold; margin-bottom: 8px; font-size: 16px;">🖥️ TechnoLoad - Landing Page (Vista Desktop)</p>
+  <p style="color: #A8ADB8; font-size: 14px; margin: 0;">[ UI Mockup de Alta Fidelidad: Header, Hero, Módulos, Precios y Call to Action ]</p>
+</div>
 
 ---
 
 #### **Vista Mobile**
 
-![Landing Page Mockup Mobile](assets/landing-mockup-mobile.svg)
+<div align="center" style="background: #0F1115; padding: 24px; border-radius: 10px; border: 1px solid #2A2F38; margin: 16px 0;">
+  <p style="color: #F5F5F5; font-weight: bold; margin-bottom: 8px; font-size: 16px;">📱 TechnoLoad - Landing Page (Vista Mobile)</p>
+  <p style="color: #A8ADB8; font-size: 14px; margin: 0;">[ UI Mockup Responsive: Navegación Colapsable y Layout Vertical ]</p>
+</div>
 ## 4.4. Web Applications UX/UI Design
 
 El Dashboard y la Web App se diseñan a partir de los User Personas y User Stories. El administrador requiere visibilidad de activos y mantenimiento; el coordinador necesita conocer disponibilidad y asignar unidades sin perder trazabilidad.
