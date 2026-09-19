@@ -1365,16 +1365,21 @@ Este nivel del modelo C4 permite visualizar las principales decisiones tecnológ
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-Cada contexto se descompone en cuatro capas: Interfaces presenta componentes Vue/PrimeVue; Application coordina stores y casos de uso; Domain contiene agregados, entidades y objetos de valor; Infrastructure adapta API, persistencia y assemblers. Las dependencias apuntan hacia Domain y Shared Kernel.
+En esta sección se presentan los Component Diagrams de TechnoLoad, los cuales permiten visualizar la descomposición interna del container correspondiente a la REST API.
 
-```mermaid
-flowchart LR
-  UI[Presentation\nVue components + PrimeVue] --> APP[Application\nreactive fleet store]
-  APP --> DOM[Domain\nAsset + MaintenanceOrder + Value Objects]
-  APP --> INF[Infrastructure\nAxios client + Assemblers]
-  INF --> API[REST API]
-  UI --> SHARED[Shared Kernel\ni18n, layout, validation]
-```
+En primer lugar, se muestra la organización general de los principales Bounded Contexts identificados durante el proceso de Domain-Driven Design. Posteriormente, se presenta el detalle interno de cada Bounded Context, mostrando sus principales capas y responsabilidades.
+
+La estructura interna sigue una separación entre Interfaces Layer, Application Layer, Domain Layer e Infrastructure Layer, permitiendo mantener separadas las responsabilidades del dominio y los aspectos técnicos de la implementación.
+
+---
+
+#### **API Application Component Diagram**
+
+El siguiente diagrama muestra la organización general de la REST API de TechnoLoad y los principales Bounded Contexts que forman parte de la solución: Identity & Access Management, Profiles Management, Fleet Management, Rental Management, Maintenance Management y Operations Management.
+
+También se representan las principales relaciones entre los contextos, la Single Page Application y la base de datos.
+
+![API Application Component Diagram TechnoLoad](assets/c4-api-component-diagram.svg)
 
 ## 4.7. Software Object-Oriented Design
 
