@@ -24,8 +24,7 @@
 Aplicaciones Web
 
 **Sección:**  
-[Tu Sección]
-
+8093
 <br>
 
 ### Integrantes
@@ -151,7 +150,7 @@ Por esta razón, nos reunimos y trabajamos con cooperación, eficiencia y respon
 |            <img src="./assets/Foto_Daniel.jpeg" width="150" alt="Daniel">            | Mi nombre es Edgard Daniel Diaz Caruzo con código de estudiante u202323911 estoy en la carrera de Ingeniería de Software y voy en mi 5to ciclo de la carrera, una de mis cualidades es la responsabilidad y la puntualidad. Mi objetivo es apoyar en cualquier cosa a mis compañeros. |
 |      <img src="./assets/Foto_NicolasTantalean.jpeg" width="150" alt="Nicolas">       | Mi nombre es NICOLAS TANTALEAN GRANDA con código de estudiante U202410728, soy estudiante de la carrera de Ingeniería de Software. Entre mis conocimientos se encuentran desarrollo web y algoritmos. Como miembro del equipo, aportaré dedicación y colaboración constante para lograr un proyecto sólido. |
 |       <img src="./assets/Foto_MathiasCastillo.jpeg" width="150" alt="Mathias">       | Mi nombre es MATHIAS ALEJANDRO CASTILLO GUEVARA con código de estudiante U202410783, soy estudiante de la carrera de Ingeniería de Software. Entre mis conocimientos se encuentran bases de datos y desarrollo de software. Como miembro del equipo, aportaré dedicación y colaboración constante. |te. |
-|      <img src="./assets/integrante5.jpg" width="150" alt="Nombre Compañero 5">       | Mi nombre es [Nombre del Compañero 5] con código de estudiante [Código], soy estudiante de la carrera de Ingeniería de Software. Entre mis conocimientos se encuentran desarrollo frontend y documentación. |
+
 
 ## 1.2. Solution Profile
 
