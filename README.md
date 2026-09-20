@@ -2353,3 +2353,36 @@ La URL pública proporcionada corresponde a la Landing Page. El prototipo de la 
 
 ## 5.3. Validation Interviews
 ## 5.4. Video About-the-Product
+
+# Conclusiones
+
+
+1. **Validación del dominio y modelo Lean UX:**  
+   A través de la formulación del *Lean UX Canvas*, los *Problem Statements* y los *Assumptions*, se logró alinear los objetivos del negocio con las necesidades críticas de los segmentos objetivo (empresas de alquiler de maquinaria pesada y transporte de carga). La investigación cualitativa evidenció que la falta de centralización operativa genera tiempos de inactividad de hasta 32% en sobrecostos por mantenimiento reactivo, validando nuestra hipótesis central de que una plataforma SaaS accesible y basada en control de horómetros/kilometraje resuelve una fricción operativa determinante en el mercado peruano.
+2. **Elicitación y especificación de requisitos:**  
+   El proceso de *Needfinding*, soportado por entrevistas a profundidad y artefactos como *User Personas*, *Empathy Maps* y *User Journey Maps*, permitió estructurar un *Product Backlog* priorizado por valor de negocio. La descomposición de necesidades en historias de usuario (*User Stories*) con criterios de aceptación en sintaxis Gherkin garantiza una trazabilidad comprobable entre los dolores del usuario y las funcionalidades del sistema, asegurando además la correcta delimitación de historias para el sitio web estático (Landing Page) y la API RESTful.
+3. **Consistencia de diseño y arquitectura de software:**  
+   La definición temprana de las *Style Guidelines* y la *Information Architecture* permitió diseñar interfaces web responsivas e intuitivas tanto en escritorio como en dispositivos móviles (wireframes y mock-ups en Figma). A nivel arquitectural, la aplicación de *Domain-Driven Design (DDD)* mediante *EventStorming* y el modelo de diagramado *C4* (Contexto, Contenedor y Componentes) sienta una base escalable y desacoplada para el desarrollo de la solución con Vue.js (PrimeVue), ASP.NET Core (C#) y PostgreSQL.
+
+# Bibliografía
+
+* Adzic, G. (2012). *Impact Mapping: Making a big impact with software products and projects*. Provoking Thoughts.
+* Brandolini, A. (2021). *Introducing EventStorming: An act of deliberate collective learning*. Leanpub.
+* Brown, S. (2018). *The C4 model for visualising software architecture*. Leanpub. https://c4model.com/
+* Cohn, M. (2004). *User stories applied: For agile software development*. Addison-Wesley Professional.
+* Driessen, V. (2010). *A successful Git branching model*. nvie.com. https://nvie.com/posts/a-successful-git-branching-model/
+* Evans, E. (2003). *Domain-Driven Design: Tackling complexity in the heart of software*. Addison-Wesley.
+* Gothelf, J., & Seiden, J. (2021). *Lean UX: Designing great products with Agile teams* (3rd ed.). O'Reilly Media.
+* Microsoft. (2023). *C# coding conventions and engineering guidelines*. Microsoft Learn. https://learn.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions
+* Microsoft. (2023). *ASP.NET Core documentation*. Microsoft Learn. https://learn.microsoft.com/aspnet/core/
+* Nielsen, J. (1994). *Usability engineering*. Morgan Kaufmann / Nielsen Norman Group.
+* PrimeTek Informatics. (2023). *PrimeVue - The Next Gen UI Component Suite for Vue.js*. https://primevue.org/
+* Rosenfeld, L., Morville, P., & Arango, J. (2015). *Information Architecture: For the web and beyond* (4th ed.). O'Reilly Media.
+* Schwaber, K., & Sutherland, J. (2020). *The Scrum Guide: The definitive guide to Scrum: The rules of the game*. Scrum.org. https://scrumguides.org/
+* SmartBear Software. (2023). *OpenAPI Specification 3.0*. Swagger. https://swagger.io/specification/
+* SpecFlow. (2022). *Gherkin conventions for readable specifications*. https://specflow.org/gherkin/gherkin-conventions-for-readable-specifications/
+* The Linux Foundation. (2021). *Semantic Versioning 2.0.0*. SemVer.org. https://semver.org/
+* Torvalds, L., & Chacon, S. (2020). *Pro Git* (2nd ed.). Apress.
+* Vue.js Team. (2023). *Vue.js Style Guide & Documentation*. https://vuejs.org/style-guide/
+* World Wide Web Consortium (W3C). (2018). *Web Content Accessibility Guidelines (WCAG) 2.1*. https://www.w3.org/TR/WCAG21/
+## Anexos
