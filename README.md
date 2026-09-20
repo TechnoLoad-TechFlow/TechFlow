@@ -2170,11 +2170,6 @@ Ejemplos aplicados al proyecto:
 
 Con estas convenciones se busca facilitar la comprensión del historial de cambios y mantener consistencia entre los diferentes repositorios del proyecto.
 
-![COMMITS REALIZADOS](assets/commit 1.png)
-![COMMITS REALIZADOS](assets/commit 2.png)
-![COMMITS REALIZADOS](assets/commit 3.png)
-![COMMITS REALIZADOS](assets/commit 4.png)
----
 
   ### 5.1.3. Source Code Style Guide & Conventions
   
