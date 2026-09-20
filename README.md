@@ -1986,7 +1986,7 @@ Las principales herramientas utilizadas o previstas para el proyecto son las sig
 | UX/UI Design | Figma | Elaboración de Wireframes, Mock-ups y Prototipos de la experiencia web. | https://www.figma.com/ |
 | Version Control | Git | Control distribuido de versiones del código fuente y documentación. | https://git-scm.com/ |
 | Source Code Management | GitHub | Almacenamiento de repositorios, gestión de ramas, commits y colaboración del equipo. | https://github.com/ |
-| Development Environment | [IDE UTILIZADO POR EL EQUIPO] | Edición, ejecución y depuración del código fuente. | [COLOCAR URL] |
+| Development Environment | JetBrains Rider | Edición, ejecución y depuración del código fuente. | https://www.jetbrains.com/rider/ |
 | Frontend Runtime | Node.js | Entorno de ejecución utilizado para instalar y administrar las dependencias del Frontend Web Application. | https://nodejs.org/ |
 | Frontend Framework | Vue | Framework utilizado para desarrollar la Frontend Web Application. | https://vuejs.org/ |
 | Frontend Build Tool | Vite | Herramienta utilizada para gestionar el entorno de desarrollo y generar el build de producción del frontend. | https://vite.dev/ |
@@ -1997,7 +1997,7 @@ Las principales herramientas utilizadas o previstas para el proyecto son las sig
 | DBMS | PostgreSQL | Sistema gestor de base de datos relacional utilizado para almacenar la información del dominio. | https://www.postgresql.org/ |
 | API Documentation | OpenAPI / Swagger | Documentación e interacción con los endpoints de los RESTful Web Services. | https://swagger.io/ |
 | Software Documentation | Markdown | Elaboración del Project Report y documentación técnica dentro de GitHub. | https://www.markdownguide.org/ |
-| Software Deployment | [PLATAFORMA DE DESPLIEGUE] | Publicación del Landing Page, Frontend Web Application y Web Services. | [COLOCAR URL] |
+| Software Deployment | GitHub Pages | Publicación del Landing Page y del prototipo de Frontend Web Application. | https://pages.github.com/ |
 
 La combinación de estas herramientas permite mantener un entorno común entre los integrantes del equipo. El frontend es desarrollado con Vue y PrimeVue, mientras que los servicios del lado servidor se implementan mediante ASP.NET Core, Entity Framework Core y C#. PostgreSQL proporciona la persistencia relacional de la información correspondiente a activos, lecturas, mantenimientos y operaciones.
 
@@ -2013,8 +2013,8 @@ Los repositorios correspondientes a los productos de TechnoLoad son:
 | Producto | Repositorio |
 |---|---|
 | Project Report | https://github.com/TechnoLoad-TechFlow/TechFlow |
-| Landing Page | [COLOCAR URL DEL REPOSITORIO] |
-| Frontend Web Application | [COLOCAR URL DEL REPOSITORIO] |
+| Landing Page | https://github.com/TechnoLoad-TechFlow/TechFlow |
+| Frontend Web Application | https://github.com/TechnoLoad-TechFlow/TechFlow |
 | RESTful Web Services | [COLOCAR URL DEL REPOSITORIO] |
 
 El repositorio correspondiente a los RESTful Web Services deberá incluir tanto el código fuente de la solución como los archivos correspondientes a las pruebas unitarias y de integración.
@@ -2274,8 +2274,8 @@ El proceso de despliegue de TechnoLoad comprende la publicación independiente d
 
 | Producto | Tecnología | Branch de producción | Plataforma |
 |---|---|---|---|
-| Landing Page | HTML5, CSS3 y JavaScript | `main` | [COLOCAR PLATAFORMA] |
-| Frontend Web Application | Vue, Vite y PrimeVue | `main` | [COLOCAR PLATAFORMA] |
+| Landing Page | HTML5, CSS3 y JavaScript | `main` | GitHub Pages |
+| Frontend Web Application | HTML5, CSS3 y JavaScript (Vanilla ES6) | `main` | GitHub Pages |
 | RESTful Web Services | ASP.NET Core, Entity Framework Core y C# | `main` | [COLOCAR PLATAFORMA] |
 | Database | PostgreSQL | — | [COLOCAR PLATAFORMA] |
 
@@ -2289,7 +2289,7 @@ Los archivos HTML, CSS, JavaScript y assets son obtenidos desde el repositorio c
 
 **Production URL:**
 
-[COLOCAR URL DEL LANDING PAGE]
+[https://technoload-techflow.github.io/TechFlow/](https://technoload-techflow.github.io/TechFlow/)
 
 #### Frontend Web Application Deployment
 
@@ -2305,7 +2305,7 @@ Las variables dependientes del entorno, especialmente la URL base de los RESTful
 
 **Production URL:**
 
-[COLOCAR URL DEL FRONTEND WEB APPLICATION]
+[https://technoload-techflow.github.io/TechFlow/](https://technoload-techflow.github.io/TechFlow/)
 
 #### RESTful Web Services Deployment
 
@@ -2341,5 +2341,15 @@ La cadena de conexión será administrada mediante variables de entorno. Las mig
 ---
 
 ## 5.2. Landing Page, Services & Applications Implementation
+
+La entrega visible de TechnoLoad se compone de una Landing Page pública y una Web Application prototipo. La Landing Page comunica la propuesta de valor y conduce al visitante hacia las funcionalidades de gestión de flota, alquileres y mantenimiento. La Web Application implementa una demostración navegable con datos simulados y persistencia local en el navegador.
+
+| Producto | URL / acceso | Estado |
+|---|---|---|
+| Landing Page | [https://technoload-techflow.github.io/TechFlow/](https://technoload-techflow.github.io/TechFlow/) | Publicada en GitHub Pages |
+| Frontend Web Application (prototipo) | [index.html](index.html) | Disponible en el repositorio; se ejecuta directamente en un navegador |
+
+La URL pública proporcionada corresponde a la Landing Page. El prototipo de la Web Application está contenido en el mismo repositorio en `index.html`, junto con sus estilos, módulos JavaScript y datos simulados. Una URL de producción independiente para este prototipo podrá agregarse cuando se publique en GitHub Pages u otra plataforma.
+
 ## 5.3. Validation Interviews
 ## 5.4. Video About-the-Product
