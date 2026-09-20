@@ -2019,7 +2019,7 @@ Los repositorios correspondientes a los productos de TechnoLoad son:
 
 El repositorio correspondiente a los RESTful Web Services deberá incluir tanto el código fuente de la solución como los archivos correspondientes a las pruebas unitarias y de integración.
 
-![Repositorios de TechnoLoad](assets/Repositorios.png)
+![Landing Page de TechnoLoad](assets/landing-page-technoload.jpeg)
 
 #### GitFlow Workflow
 
