@@ -99,7 +99,7 @@ A continuación, se presentan los espacios para las capturas de pantalla de los 
 ![Foto commits tanta](assets/NIcolas-tantalean-commits.jpeg)
 ![Foto commits mathias](assets/mathias-castillo-commits.jpeg)
 ![Foto commits sebas](assets/sebastian-commits.jpeg)
-![Foto commits d](assets/dan-trax-commits.jpeg)
+![Foto commits d](assets/Dan-trax-commits.jpeg)
 
 ---
 
