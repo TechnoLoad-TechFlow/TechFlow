@@ -58,7 +58,55 @@ Efrain Ricardo Bautista Ubillus
 
 ---
 
+# Registro de Versiones del Informe
+
+El presente registro resume las modificaciones relevantes realizadas al informe durante el ciclo de vida del proyecto para la entrega de la Semana 4 (AV1).
+
+| Versión | Fecha | Autor | Descripción de modificación |
+| :---: | :---: | :--- | :--- |
+| **1.0.0** | 2026-08-25 | Wilmer Gutierrez | Creación inicial del repositorio en GitHub y estructuración base de la plantilla Markdown para el informe de proyecto. |
+| **1.1.0** | 2026-08-28 | Nicolas Tantalean | Elaboración del Capítulo I: Startup Profile, perfiles de los integrantes y definición de la problemática aplicando The 5 W's y 2 H's. |
+| **1.2.0** | 2026-09-02 | Mathias Castillo | Desarrollo del marco Lean UX: Problem Statements, Assumptions, Hypothesis Statements y elaboración del Lean UX Canvas inicial. |
+| **1.3.0** | 2026-09-06 | Edgard Diaz | Elaboración del Capítulo II: Competitive Analysis Landscape y diseño preliminar de guías de entrevistas a los segmentos objetivo. |
+| **1.4.0** | 2026-09-10 | Wilmer Gutierrez, Nicolas Tantalean | Registro de entrevistas, análisis cualitativo y elaboración de artefactos de Needfinding en UXPressia (User Personas, User Task Matrix y Journey Maps). |
+| **1.5.0** | 2026-09-13 | Mathias Castillo, Edgard Diaz | Elaboración de Empathy Maps, Big Picture Event Storming, glosario de Ubiquitous Language y especificación de User Stories en el Capítulo III. |
+| **1.6.0** | 2026-09-15 | Wilmer Gutierrez | Elaboración del Impact Mapping, estructuración del Product Backlog priorizado y definición de Style Guidelines e Information Architecture en el Capítulo IV. |
+| **1.7.0** | 2026-09-17 | Nicolas Tantalean, Mathias Castillo | Diseño de Wireframes, Mock-ups de alta fidelidad y prototipos en Figma; elaboración de diagramas de arquitectura C4 (Contexto, Contenedor y Componentes) y modelo relacional de base de datos. |
+| **1.8.0** | 2026-09-18 | Wilmer Gutierrez, Edgard Diaz | Redacción del Capítulo V: Software Configuration Management, registro del Sprint 1 y despliegue del Landing Page en GitHub Pages. |
+| **1.9.0** | 2026-09-19 | Todos los integrantes | Revisión general, incorporación de Conclusiones, Bibliografía según formato APA 7 y consolidación final del informe para la entrega AV1 (Semana 4). |
+
+---
+
+# Project Report Collaboration Insights
+
+En esta sección, el equipo evidencia y detalla la dinámica de colaboración para la redacción, edición y consolidación del informe del proyecto durante el desarrollo del hito **AV1 (Semana 4)**.
+
+* **URL del repositorio del Project Report:** [https://github.com/TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow)
+
+### Dinámica de colaboración y gestión del informe
+La elaboración del informe se gestionó de forma colaborativa y continua bajo la plataforma **GitHub**, empleando Markdown como estándar de documentación técnica. Para garantizar la integridad y trazabilidad del documento, el equipo adoptó las siguientes prácticas de ingeniería:
+1. **Flujo de trabajo basado en ramas (GitFlow):** La rama `main` se reservó para versiones estables e hitos consolidados. Los integrantes trabajaron en ramas dedicadas (`feature/report-chapter-i`, `feature/report-needfinding`, `feature/report-c4-diagrams`, etc.), integrando los avances hacia `develop` mediante *Pull Requests* revisados por pares.
+2. **Convención de commits (Conventional Commits):** Se estandarizó el uso de mensajes con prefijos semánticos como `docs(cap-1): ...`, `docs(ux): ...`, `feat(report): ...` y `fix(grammar): ...`, permitiendo un historial claro y auditable.
+3. **Distribución equitativa de responsabilidades:** Todos los miembros del equipo participaron en la redacción técnica, diseño de artefactos y verificación de la coherencia interna del informe, manteniendo alineación con el *Registro de Versiones del Informe*.
+
+### Evidencias de colaboración y analíticas en GitHub
+
+A continuación, se presentan los espacios para las capturas de pantalla de los analíticos de colaboración, historial de commits y contribuciones por miembro del equipo en el repositorio del informe (`TechFlow`), demostrando la participación activa y conjunta durante las semanas de trabajo:
+
+
+#### Historial de Commits y Registro de Actividad (GitHub Network / Commits Graph)
+
+![Foto commits tanta](assets/NIcolas-tantalean-commits.jpeg)
+![Foto commits mathias](assets/mathias-castillo-commits.jpeg)
+![Foto commits sebas](assets/sebastian-commits.jpeg)
+![Foto commits d](assets/dan-trax-commits.jpeg)
+
+---
+
 # ÍNDICE
+
+- [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
+- [Project Report Collaboration Insights](#project-report-collaboration-insights)
 
 ## Capítulo I: Introducción
 - [1.1. Startup Profile](#11-startup-profile)
@@ -124,15 +172,23 @@ Efrain Ricardo Bautista Ubillus
   - [4.8.1. Database Diagrams](#481-database-diagrams)
   - [4.8.2. Script DDL](#482-script-ddl)
 
-## Capítulo V: Product Implementation, Validation & Deployment _(pendiente de redactar)_
-- 5.1. Software Configuration Management
-  - 5.1.1. Software Development Environment Configuration
-  - 5.1.2. Source Code Management
-  - 5.1.3. Source Code Style Guide & Conventions
-  - 5.1.4. Software Deployment Configuration
-- 5.2. Landing Page, Services & Applications Implementation
-- 5.3. Validation Interviews
-- 5.4. Video About-the-Product
+## Capítulo V: Product Implementation, Validation & Deployment
+- [5.1. Software Configuration Management](#51-software-configuration-management)
+  - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
+  - [5.1.2. Source Code Management](#512-source-code-management)
+  - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--coding-conventions)
+  - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
+- [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
+
+## Conclusiones
+- [Conclusiones y recomendaciones](#conclusiones)
+
+## Bibliografía
+- [Bibliografía](#bibliografía)
+
+## Anexos
+- [Anexos](#anexos)
+
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
@@ -2388,4 +2444,12 @@ La URL pública proporcionada corresponde a la Landing Page. El prototipo de la 
 * Vue.js Team. (2023). *Vue.js Style Guide & Documentation*. https://vuejs.org/style-guide/
 * World Wide Web Consortium (W3C). (2018). *Web Content Accessibility Guidelines (WCAG) 2.1*. https://www.w3.org/TR/WCAG21/
 
-## Anexos
+# Anexos
+
+## Anexo: Videos de Exposiciones
+
+En esta sección se consolidan los enlaces a los videos de exposición grabados por el equipo para cada entrega del proyecto en Microsoft Stream:
+
+| Entrega | Hito | Enlace al Video (Microsoft Stream) | Duración |
+| :---: | :---: | :--- | :---: |
+| **Semana 4** | AV1 – Sprint Review | [Ver Video de Exposición AV1 - TechnoLoad](https://web.microsoftstream.com/) | [MM:SS] |
