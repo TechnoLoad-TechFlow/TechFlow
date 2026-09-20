@@ -2071,7 +2071,6 @@ Los repositorios correspondientes a los productos de TechnoLoad son:
 | Project Report | https://github.com/TechnoLoad-TechFlow/TechFlow |
 | Landing Page | https://github.com/TechnoLoad-TechFlow/TechFlow |
 | Frontend Web Application | https://github.com/TechnoLoad-TechFlow/TechFlow |
-| RESTful Web Services | [COLOCAR URL DEL REPOSITORIO] |
 
 El repositorio correspondiente a los RESTful Web Services deberá incluir tanto el código fuente de la solución como los archivos correspondientes a las pruebas unitarias y de integración.
 
