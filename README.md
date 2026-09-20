@@ -2059,7 +2059,9 @@ Las correcciones urgentes seguirán el mismo esquema:
 
 `hotfix/v1.0.1`
 
-![Ramas en GitHub](assets/Ramas.png)
+![Estructura del repositorio en la rama develop](assets/repository-develop-structure.jpeg)
+
+![Contenido de la carpeta assets](assets/repository-assets-folder.jpeg)
 
 #### Semantic Versioning
 
