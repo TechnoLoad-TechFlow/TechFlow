@@ -2385,4 +2385,5 @@ La URL pública proporcionada corresponde a la Landing Page. El prototipo de la 
 * Torvalds, L., & Chacon, S. (2020). *Pro Git* (2nd ed.). Apress.
 * Vue.js Team. (2023). *Vue.js Style Guide & Documentation*. https://vuejs.org/style-guide/
 * World Wide Web Consortium (W3C). (2018). *Web Content Accessibility Guidelines (WCAG) 2.1*. https://www.w3.org/TR/WCAG21/
+
 ## Anexos
