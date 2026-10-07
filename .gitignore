@@ -1,0 +1,16 @@
+﻿# JetBrains Rider / IntelliJ
+.idea/
+*.sln.iml
+
+# Build outputs & .NET targets
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+*.user
+*.userosscache
+*.sln.docstates
+
+# System Files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+{
+  "app": { "name": "TechnoLoad", "tagline": "Gestión inteligente de flotas" },
+  "nav": { "dashboard": "Dashboard", "assets": "Activos", "maintenance": "Mantenimientos", "operations": "Operaciones", "sources": "Fuentes" },
+  "action": { "create": "Crear", "save": "Guardar", "cancel": "Cancelar", "close": "Cerrar", "retry": "Reintentar", "changeLanguage": "Cambiar idioma" },
+  "status": { "available": "Disponible", "inMaintenance": "En mantenimiento", "inOperation": "En operación", "outOfService": "Fuera de servicio" },
+  "feedback": { "unavailableTitle": "Contenido no disponible", "unavailableMessage": "No fue posible cargar la información solicitada.", "unexpectedError": "Ocurrió un error inesperado." },
+  "footer": { "copyright": "Todos los derechos reservados.", "privacy": "Privacidad", "support": "Soporte" },
+  "fleet": { "assetsTitle": "Activos", "assetsSubtitle": "Consulta el estado operativo de tu flota.", "assetDetails": "Detalle del activo", "assetCode": "Código", "assetName": "Nombre", "assetStatus": "Estado", "noAssets": "No existen activos para mostrar." }
+}

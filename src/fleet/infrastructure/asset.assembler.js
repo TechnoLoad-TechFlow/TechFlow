@@ -1,0 +1,1 @@
+import { AssetEntity } from '../domain/model/asset.entity.js';export class AssetAssembler{static toDomain(dto){return new AssetEntity({...dto,currentUsage:Number(dto.currentUsage)});}static toDomainCollection(dtos){if(!Array.isArray(dtos))throw new TypeError('Los activos deben ser una colección.');return Object.freeze(dtos.map((dto)=>this.toDomain(dto)));}}

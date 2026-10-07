@@ -1,0 +1,2 @@
+import axios from 'axios';import { installErrorInterceptor } from '../../shared/infrastructure/error.interceptor.js';
+export const fleetApi=axios.create({baseURL:import.meta.env.VITE_API_BASE_URL??'http://localhost:8080/api',timeout:10000,headers:Object.freeze({Accept:'application/json'})});installErrorInterceptor(fleetApi);export async function getAssets(){return(await fleetApi.get('/fleet/assets')).data;}export async function getMaintenanceOrders(){return(await fleetApi.get('/fleet/maintenance-orders')).data;}

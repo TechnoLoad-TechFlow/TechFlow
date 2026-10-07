@@ -1,0 +1,66 @@
+@startuml
+title TechFlow - Fleet Management\nBig Picture Event Storming
+
+left to right direction
+skinparam shadowing false
+skinparam roundcorner 8
+skinparam defaultFontName Arial
+
+' =========================
+' Styles
+' =========================
+
+rectangle "COMMAND\nRegister Machinery" as CMD_REGISTER #87CEFA
+rectangle "AGGREGATE\nMachinery" as AGG_REGISTER #FFF59D
+rectangle "DOMAIN EVENT\nMachinery Registered" as EVT_REGISTERED #FFB74D
+rectangle "ACTOR\nFleet Owner" as ACT_REGISTER #FFF9C4
+
+rectangle "COMMAND\nUpdate Machinery Information" as CMD_UPDATE_INFO #87CEFA
+rectangle "AGGREGATE\nMachinery" as AGG_UPDATE_INFO #FFF59D
+rectangle "DOMAIN EVENT\nMachinery Information Updated" as EVT_INFO_UPDATED #FFB74D
+rectangle "ACTOR\nFleet Owner" as ACT_UPDATE_INFO #FFF9C4
+
+rectangle "COMMAND\nUpdate Machinery Status" as CMD_UPDATE_STATUS #87CEFA
+rectangle "AGGREGATE\nMachinery" as AGG_UPDATE_STATUS #FFF59D
+rectangle "DOMAIN EVENT\nMachinery Status Updated" as EVT_STATUS_UPDATED #FFB74D
+rectangle "ACTOR\nFleet Owner" as ACT_UPDATE_STATUS #FFF9C4
+
+rectangle "READ MODEL\nMachinery Inventory" as READ_INVENTORY #81C784
+rectangle "QUERY\nView Machinery Inventory" as QUERY_INVENTORY #87CEFA
+rectangle "QUERY RESULT\nMachinery Inventory" as RESULT_INVENTORY #C8E6C9
+
+rectangle "READ MODEL\nMachinery Availability" as READ_AVAILABILITY #81C784
+rectangle "QUERY\nCheck Machinery Availability" as QUERY_AVAILABILITY #87CEFA
+rectangle "QUERY RESULT\nMachinery Availability" as RESULT_AVAILABILITY #C8E6C9
+
+' =========================
+' Commands -> Aggregate -> Events
+' =========================
+
+CMD_REGISTER --> AGG_REGISTER --> EVT_REGISTERED
+ACT_REGISTER -[hidden]up-> CMD_REGISTER
+
+CMD_UPDATE_INFO --> AGG_UPDATE_INFO --> EVT_INFO_UPDATED
+ACT_UPDATE_INFO -[hidden]up-> CMD_UPDATE_INFO
+
+CMD_UPDATE_STATUS --> AGG_UPDATE_STATUS --> EVT_STATUS_UPDATED
+ACT_UPDATE_STATUS -[hidden]up-> CMD_UPDATE_STATUS
+
+' =========================
+' Queries -> Read Models
+' =========================
+
+READ_INVENTORY --> QUERY_INVENTORY --> RESULT_INVENTORY
+READ_AVAILABILITY --> QUERY_AVAILABILITY --> RESULT_AVAILABILITY
+
+legend right
+|= Color |= Element |
+|<#87CEFA>| Command / Query |
+|<#FFF59D>| Aggregate |
+|<#FFB74D>| Domain Event |
+|<#FFF9C4>| Actor |
+|<#81C784>| Read Model |
+|<#C8E6C9>| Query Result |
+endlegend
+
+@enduml

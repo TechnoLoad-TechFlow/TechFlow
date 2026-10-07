@@ -1,0 +1,1 @@
+import { MaintenanceOrderEntity } from '../domain/model/maintenance-order.entity.js';export class MaintenanceOrderAssembler{static toDomain(dto){return new MaintenanceOrderEntity(dto);}static toDomainCollection(dtos){if(!Array.isArray(dtos))throw new TypeError('Las órdenes deben ser una colección.');return Object.freeze(dtos.map((dto)=>this.toDomain(dto)));}}
