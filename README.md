@@ -1406,7 +1406,7 @@ flowchart TD
   retry -->|No| endDraft([Draft retained])
   connection -->|Yes| duplicate{"Asset code already exists?"}
   duplicate -->|Yes| duplicateError["Show duplicate-code error"] --> fill
-  duplicate -->|No| created["Show success and asset detail"] --> end([End])
+  duplicate -->|No| created["Show success and asset detail"] --> endSuccess([End])
   classDef decision fill:#FFF3CD,stroke:#B7791F,color:#5F370E
   classDef error fill:#FDE2E2,stroke:#C53030,color:#742A2A
   class permission,complete,connection,retry,duplicate decision
@@ -1433,7 +1433,7 @@ flowchart TD
   connection -->|No| offline["Show retry; do not create assignment"] --> choose
   connection -->|Yes| conflict{"Asset still available?"}
   conflict -->|No| conflictError["Show conflict and refresh availability"] --> availability
-  conflict -->|Yes| assigned["Create assignment and show confirmation"] --> end([End])
+  conflict -->|Yes| assigned["Create assignment and show confirmation"] --> endSuccess([End])
   classDef decision fill:#FFF3CD,stroke:#B7791F,color:#5F370E
   classDef error fill:#FDE2E2,stroke:#C53030,color:#742A2A
   class permission,assetsFound,reschedule,cancel,connection,conflict decision
@@ -1457,7 +1457,7 @@ flowchart TD
   notify --> submit
   submit --> connection{"Connection available?"}
   connection -->|No| offline["Keep draft and offer retry"] --> submit
-  connection -->|Yes| created["Show maintenance order and status"] --> end([End])
+  connection -->|Yes| created["Show maintenance order and status"] --> endSuccess([End])
   classDef decision fill:#FFF3CD,stroke:#B7791F,color:#5F370E
   classDef error fill:#FDE2E2,stroke:#C53030,color:#742A2A
   class permission,valid,severity,connection decision
@@ -1480,7 +1480,7 @@ flowchart TD
   connection -->|No| offline["Queue request and show pending status"] --> endPending([Pending])
   connection -->|Yes| sunat["Submit to electronic invoicing service"]
   sunat --> accepted{"Accepted by SUNAT?"}
-  accepted -->|Yes| success["Store reference and show invoice"] --> end([End])
+  accepted -->|Yes| success["Store reference and show invoice"] --> endSuccess([End])
   accepted -->|No| rejected["Show rejection reason and retry option"] --> review
   classDef decision fill:#FFF3CD,stroke:#B7791F,color:#5F370E
   classDef error fill:#FDE2E2,stroke:#C53030,color:#742A2A
