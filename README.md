@@ -1617,16 +1617,16 @@ Asimismo, TechnoLoad se integra con los siguientes sistemas externos:
 
 ```mermaid
 flowchart LR
-  visitor["Public Visitor<br/>«person»"] -->|explora catálogo y solicita info [HTTPS]| technoLoad["TechnoLoad<br/>SaaS Platform<br/>«software system»"]
-  fleetAdmin["Fleet Administrator<br/>«person»"] -->|administra flota y mantenimientos [HTTPS]| technoLoad
-  contractor["Contractor / Site Manager<br/>«person»"] -->|solicita y monitorea alquileres [HTTPS]| technoLoad
-  technician["Maintenance Technician<br/>«person»"] -->|registra lecturas y averías [HTTPS]| technoLoad
-  coordinator["Operations Coordinator<br/>«person»"] -->|supervisa operaciones y horas [HTTPS]| technoLoad
+  visitor["Public Visitor<br/>«person»"] -->|"explora catálogo y solicita info [HTTPS]"| technoLoad["TechnoLoad<br/>SaaS Platform<br/>«software system»"]
+  fleetAdmin["Fleet Administrator<br/>«person»"] -->|"administra flota y mantenimientos [HTTPS]"| technoLoad
+  contractor["Contractor / Site Manager<br/>«person»"] -->|"solicita y monitorea alquileres [HTTPS]"| technoLoad
+  technician["Maintenance Technician<br/>«person»"] -->|"registra lecturas y averías [HTTPS]"| technoLoad
+  coordinator["Operations Coordinator<br/>«person»"] -->|"supervisa operaciones y horas [HTTPS]"| technoLoad
 
-  technoLoad -->|procesa cobros de alquiler [HTTPS / REST]| paymentGateway["Payment Gateway<br/>«external system»"]
-  technoLoad -->|emite comprobantes electrónicos [HTTPS / REST]| sunat["Electronic Invoicing / SUNAT<br/>«external system»"]
-  technoLoad -->|envía alertas y notificaciones [HTTPS / REST]| notificationService["Notification Service<br/>«external system»"]
-  telemetryProvider["GPS / Telematics Provider<br/>«external system»"] -->|suministra telemetría y horómetros [HTTPS Webhook]| technoLoad
+  technoLoad -->|"procesa cobros de alquiler [HTTPS / REST]"| paymentGateway["Payment Gateway<br/>«external system»"]
+  technoLoad -->|"emite comprobantes electrónicos [HTTPS / REST]"| sunat["Electronic Invoicing / SUNAT<br/>«external system»"]
+  technoLoad -->|"envía alertas y notificaciones [HTTPS / REST]"| notificationService["Notification Service<br/>«external system»"]
+  telemetryProvider["GPS / Telematics Provider<br/>«external system»"] -->|"suministra telemetría y horómetros [HTTPS Webhook]"| technoLoad
 
   classDef person fill:#08427B,stroke:#0B4D8C,color:#FFFFFF
   classDef system fill:#1168BD,stroke:#0B4D8C,color:#FFFFFF
@@ -1688,16 +1688,16 @@ flowchart LR
   visitor -->|HTTPS| landing
   landing -.->|Redirige CTA / Auth| spa
 
-  fleetAdmin -->|HTTPS (Uso Operativo Directo)| spa
-  contractor -->|HTTPS (Uso Operativo Directo)| spa
-  technician -->|HTTPS (Registro de Horómetros)| spa
-  coordinator -->|HTTPS (Asignación Logística)| spa
+  fleetAdmin -->|"HTTPS (Uso Operativo Directo)"| spa
+  contractor -->|"HTTPS (Uso Operativo Directo)"| spa
+  technician -->|"HTTPS (Registro de Horómetros)"| spa
+  coordinator -->|"HTTPS (Asignación Logística)"| spa
 
-  fleetAdmin -.->|HTTPS (Exploración Comercial)| landing
-  contractor -.->|HTTPS (Consulta de Tarifas)| landing
+  fleetAdmin -.->|"HTTPS (Exploración Comercial)"| landing
+  contractor -.->|"HTTPS (Consulta de Tarifas)"| landing
 
-  landing -->|HTTPS / JSON (Catálogo Público)| api
-  spa -->|HTTPS / JSON (Peticiones Autenticadas JWT)| api
+  landing -->|"HTTPS / JSON (Catálogo Público)"| api
+  spa -->|"HTTPS / JSON (Peticiones Autenticadas JWT)"| api
 
   api -->|EF Core / TCP Port 5432| database
 
@@ -1789,18 +1789,18 @@ flowchart TD
   end
 
   loginView -->|usa| loginForm
-  loginForm -->|emite @submit| loginView
+  loginForm -->|"emite @submit"| loginView
   registerView -->|usa| registerForm
-  registerForm -->|emite @submit| registerView
+  registerForm -->|"emite @submit"| registerView
   loginForm -.->|renderiza| primeVueUI
   registerForm -.->|renderiza| primeVueUI
 
-  loginView -->|invoca logIn()| authStore
-  registerView -->|invoca register()| authStore
+  loginView -->|"invoca logIn()"| authStore
+  registerView -->|"invoca register()"| authStore
 
-  authStore -->|invoca postSignIn()| identityApi
-  authStore -->|invoca postSignUp()| identityApi
-  authStore -->|usa toDomain()| userAssembler
+  authStore -->|"invoca postSignIn()"| identityApi
+  authStore -->|"invoca postSignUp()"| identityApi
+  authStore -->|"usa toDomain()"| userAssembler
 
   userAssembler -->|instancia| userEntity
   userEntity -->|contiene| credentialVO
@@ -1873,14 +1873,14 @@ flowchart TD
   end
 
   assetList -->|renderiza colección| assetItem
-  assetItem -->|emite @select| assetList
+  assetItem -->|"emite @select"| assetList
   assetList -->|incluye| assetSummary
   assetList -.->|usa| fleetUI
 
-  assetList -->|invoca loadAssets() / selectAsset()| fleetStore
-  fleetStore -->|invoca getAssets()| fleetApi
-  fleetStore -->|usa toDomainCollection()| assetAssembler
-  fleetStore -->|usa toDomainCollection()| orderAssembler
+  assetList -->|"invoca loadAssets() / selectAsset()"| fleetStore
+  fleetStore -->|"invoca getAssets()"| fleetApi
+  fleetStore -->|"usa toDomainCollection()"| assetAssembler
+  fleetStore -->|"usa toDomainCollection()"| orderAssembler
 
   assetAssembler -->|instancia| assetEntity
   orderAssembler -->|instancia| maintOrderEntity
