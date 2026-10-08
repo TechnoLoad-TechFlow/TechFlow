@@ -2799,6 +2799,18 @@ El Sprint 1 comprendió el periodo del 8 al 19 de septiembre de 2026. Su objetiv
 | Productos incluidos | Landing Page e informe técnico del proyecto. |
 | Productos planificados para siguientes Sprints | Aplicación web, servicios/API y componentes de persistencia, según el alcance y la arquitectura finalmente aprobados. |
 
+## 5.2.1.2. Aspect Leaders and Collaborators
+
+La siguiente matriz conserva la estructura de la tabla original. Los integrantes se actualizaron con los nombres que aparecen en el informe de TechnoLoad. Como no se dispone de una matriz de responsabilidades ni de autores Git verificados para este sprint, los roles y usuarios se dejan pendientes de confirmación.
+Se utiliza `L` para líder y `C` para colaborador.
+
+| Team Member | GitHub Username / Git Author | Landing Page / Interfaz | UX/UI Design | Requirements & Report | Architecture & Database | SCM & Deployment |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| Tantalean Granda, Nicolas | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| Gutiérrez Lizarbe, Wilmer Sebastián | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| Castillo Guevara, Mathias Alejandro | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| Díaz Caruzo, Edgard Daniel | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] |
+
 
 
 ## 5.3. Validation Interviews
