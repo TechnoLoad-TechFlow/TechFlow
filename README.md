@@ -2845,7 +2845,17 @@ La siguiente tabla conserva las columnas de la evidencia de desarrollo del docum
 
 Las evidencias de desarrollo que conviene incluir son los cambios en la documentación de requerimientos, los artefactos UX/UI, la definición de arquitectura y los archivos de la aplicación que hayan sido efectivamente modificados en el sprint. Deben agregarse enlaces a los commits verificables y no únicamente descripciones generales.
 
+#### 5.2.1.5. Execution Evidence for Sprint Review
 
+La evidencia de ejecución debe mostrar el resultado que puede comprobarse al revisar el incremento del Sprint 1. El informe de TechnoLoad describe la problemática y las necesidades de los segmentos objetivo, así como historias de usuario para registrar maquinaria, consultar disponibilidad, gestionar mantenimiento y crear reservas. Estas definiciones no demuestran por sí solas que todas esas funcionalidades estén implementadas.
+
+- **URL de ejecución:** [Agregar la URL exacta del incremento de TechFlow, si existe].
+- **Tecnologías:** completar con las tecnologías efectivamente utilizadas en la versión ejecutable del sprint.
+- **Resultado de verificación:** [Registrar el resultado real de la prueba o revisión].
+
+![Sprint 1 Execution Evidence](assets/sprint-1-execution-evidence.png)
+
+La imagen anterior conserva el espacio de evidencia de la plantilla original. Sustituir la ruta por una captura existente del proyecto o agregar la captura al repositorio. No debe dejarse una imagen de otro proyecto como evidencia de TechFlow.
 
 
 
