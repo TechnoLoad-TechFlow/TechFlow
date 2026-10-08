@@ -889,56 +889,63 @@ Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [
 
 ### 3.3. Product Backlog
 
-| Orden | ID | Epic | Título | Story Points |
-| :---: | :---: | :---: | :--- | :---: |
-| 1 | US-002 | EP-01 | Consultar disponibilidad | 2 |
-| 2 | US-004 | EP-02 | Crear reserva | 3 |
-| 3 | US-005 | EP-02 | Evitar reservas duplicadas | 3 |
-| 4 | US-001 | EP-01 | Registrar maquinaria | 3 |
-| 5 | US-003 | EP-01 | Gestionar mantenimiento | 3 |
-| 6 | US-031 | EP-07 | Alertas preventivas | 3 |
-| 7 | US-010 | EP-04 | Registrar horas/kilometraje | 3 |
-| 8 | US-007 | EP-03 | Catálogo | 1 |
-| 9 | US-008 | EP-03 | Consultar tarifas | 1 |
-| 10 | US-009 | EP-03 | Reservas por obra | 2 |
-| 11 | US-019 | EP-02 | Aprobar/rechazar reserva | 3 |
-| 12 | US-006 | EP-02 | Cancelar reserva | 2 |
-| 13 | US-018 | EP-02 | Modificar reserva | 2 |
-| 14 | US-033 | EP-07 | Historial de mantenimiento | 2 |
-| 15 | US-032 | EP-07 | Orden de reparación | 3 |
-| 16 | US-034 | EP-07 | Reportar falla | 2 |
-| 17 | US-037 | EP-08 | Equipo de reemplazo | 3 |
-| 18 | US-011 | EP-04 | Validar horas | 3 |
-| 19 | US-012 | EP-04 | Resumen de facturación | 2 |
-| 20 | US-022 | EP-04 | Comprobante | 3 |
-| 21 | US-038 | EP-09 | Utilización de activos | 3 |
-| 22 | US-039 | EP-09 | Reportes | 3 |
-| 23 | US-035 | EP-08 | Delivery check-in | 3 |
-| 24 | US-036 | EP-08 | Return check-out | 3 |
-| 25 | US-020 | EP-03 | Filtrar por categoría | 2 |
-| 26 | US-021 | EP-03 | Buscar por ubicación | 2 |
-| 27 | US-026 | EP-06 | Registrar usuario | 2 |
-| 28 | US-027 | EP-06 | Iniciar sesión | 2 |
-| 29 | US-029 | EP-06 | Gestionar roles | 3 |
-| 30 | US-030 | EP-06 | Gestionar perfil | 2 |
-| 31 | US-028 | EP-06 | Recuperar contraseña | 2 |
-| 32 | US-016 | EP-01 | Editar maquinaria | 2 |
-| 33 | US-017 | EP-01 | Dar de baja maquinaria | 2 |
-| 34 | US-013 | EP-05 | Propuesta de valor | 1 |
-| 35 | US-014 | EP-05 | Segmentos | 1 |
-| 36 | US-015 | EP-05 | Contacto/demo | 2 |
-| 37 | US-024 | EP-05 | ROI Calculator | 3 |
-| 38 | US-025 | EP-05 | Sales Chat | 2 |
-| 39 | US-041 | EP-10 | API de maquinaria | 3 |
-| 40 | US-042 | EP-10 | API de reservas | 3 |
-| 41 | US-043 | EP-10 | Conflicto de reserva | 2 |
-| 42 | US-044 | EP-10 | Validación API | 2 |
-| 43 | US-045 | EP-10 | Autenticación JWT | 3 |
-| 44 | US-046 | EP-10 | Horómetros batch | 3 |
-| 45 | US-047 | EP-10 | Facturación PSE/SUNAT | 5 |
-| 46 | US-048 | EP-10 | Webhooks | 3 |
+| Orden | User Story ID | Título | Descripción | Story Points |
+| :---: | :---: | :--- | :--- | :---: |
+| 1 | **US-001** | Registrar maquinaria | Como propietario de una empresa de alquiler, quiero registrar una maquinaria con sus características, para mantener actualizado el inventario. | 2 |
+| 2 | **US-002** | Consultar disponibilidad | Como administrador, quiero consultar la disponibilidad de una maquinaria por fecha, para evitar reservas duplicadas. | 2 |
+| 3 | **US-003** | Gestionar mantenimiento | Como propietario, quiero actualizar el estado de mantenimiento de una maquinaria, para evitar que sea reservada cuando no está operativa. | 3 |
+| 4 | **US-004** | Crear una reserva | Como contratista, quiero reservar una maquinaria disponible, para utilizarla en mi obra durante el periodo requerido. | 3 |
+| 5 | **US-005** | Evitar reservas duplicadas | Como administrador, quiero evitar reservas que se superpongan, para garantizar la disponibilidad correcta de la maquinaria. | 3 |
+| 6 | **US-006** | Cancelar una reserva | Como administrador, quiero cancelar una reserva, para liberar la maquinaria cuando ya no sea necesaria. | 2 |
+| 7 | **US-007** | Consultar catálogo de maquinaria | Como contratista, quiero consultar el catálogo de maquinarias, para elegir el equipo adecuado para mi obra. | 1 |
+| 8 | **US-008** | Consultar tarifas | Como contratista, quiero consultar las tarifas de alquiler, para calcular el presupuesto de mi obra. | 1 |
+| 9 | **US-009** | Consultar reservas por obra | Como contratista, quiero consultar las reservas asociadas a mi obra, para organizar el uso de las maquinarias contratadas. | 2 |
+| 10 | **US-010** | Registrar horas trabajadas | Como administrador, quiero registrar las horas trabajadas por cada maquinaria, para calcular correctamente el costo del servicio. | 3 |
+| 11 | **US-011** | Validar horas trabajadas | Como propietario, quiero validar las horas registradas, para asegurar que los cobros se basen en información correcta. | 3 |
+| 12 | **US-012** | Generar resumen de facturación | Como propietario, quiero obtener un resumen de facturación, para controlar los ingresos generados por los alquileres. | 3 |
+| 13 | **US-013** | Mostrar propuesta de valor | Como visitante, quiero conocer la propuesta de valor de MaquiControl, para identificar cómo puede ayudar a mi empresa. | 1 |
+| 14 | **US-014** | Mostrar información por segmento | Como visitante, quiero consultar información relacionada con mi tipo de negocio, para determinar si MaquiControl se adapta a mis necesidades. | 1 |
+| 15 | **US-015** | Solicitar contacto o demostración | Como visitante, quiero enviar una solicitud de contacto, para obtener más información sobre MaquiControl. | 1 |
+| 16 | **US-016** | Editar datos de maquinaria | Como propietario, quiero modificar los datos técnicos de un equipo, para mantener la información actualizada. | 2 |
+| 17 | **US-017** | Dar de baja maquinaria | Como propietario, quiero desactivar una maquinaria fuera de servicio, para retirarla del inventario activo. | 1 |
+| 18 | **US-018** | Modificar fechas de reserva | Como contratista, quiero solicitar la extensión de una reserva activa, para continuar mis trabajos en obra. | 3 |
+| 19 | **US-019** | Aprobar o rechazar reservas | Como administrador, quiero revisar las solicitudes pendientes de alquiler, para confirmar o rechazar contratos. | 2 |
+| 20 | **US-020** | Filtrar maquinaria por categoría | Como contratista, quiero filtrar equipos por tipo de máquina, para agilizar la búsqueda de equipos específicos. | 1 |
+| 21 | **US-021** | Buscar maquinaria por ubicación | Como contratista, quiero buscar equipos según su ubicación, para reducir costos de flete. | 2 |
+| 22 | **US-022** | Emitir comprobante de pago | Como propietario, quiero generar comprobantes electrónicos, para cumplir con los requerimientos fiscales. | 3 |
+| 23 | **US-023** | Aplicar penalizaciones por mora | Como propietario, quiero aplicar cargos por entrega tardía, para compensar retrasos no acordados. | 2 |
+| 24 | **US-024** | Calculadora de ahorro / ROI | Como visitante, quiero simular mi ahorro operativo según el tamaño de mi flota, para evaluar la compra del SaaS. | 2 |
+| 25 | **US-025** | Chat de soporte comercial | Como visitante, quiero enviar preguntas directas en la Landing Page, para resolver dudas antes de registrarme. | 2 |
+| 26 | **US-026** | Registrar cuenta de usuario | Como usuario nuevo, quiero crear una cuenta en el sistema, para acceder a las funciones del software. | 2 |
+| 27 | **US-027** | Iniciar sesión | Como usuario registrado, quiero autenticarme en el sistema, para acceder a mi panel personalizado. | 2 |
+| 28 | **US-028** | Recuperar contraseña | Como usuario, quiero solicitar el restablecimiento de clave, para recuperar el acceso en caso de olvido. | 2 |
+| 29 | **US-029** | Gestionar roles de usuario | Como administrador, quiero asignar roles de propietario, contratista u operador, para restringir los accesos correspondientes. | 2 |
+| 30 | **US-030** | Actualizar perfil | Como usuario, quiero modificar mis datos personales, para mantener actualizada mi información. | 1 |
+| 31 | **US-031** | Programar mantenimientos preventivos | Como propietario, quiero agendar alertas periódicas por horas de uso, para prevenir fallas mayores. | 3 |
+| 32 | **US-032** | Registrar orden de reparación | Como técnico, quiero ingresar los detalles de las reparaciones efectuadas, para mantener la ficha técnica del equipo. | 2 |
+| 33 | **US-033** | Consultar historial mecánico | Como contratista, quiero consultar el registro de mantenimientos de un equipo, para validar su estado antes de alquilarlo. | 2 |
+| 34 | **US-034** | Reportar avería en obra | Como contratista, quiero reportar una falla mecánica durante el uso, para solicitar soporte urgente. | 2 |
+| 35 | **US-035** | Registrar check-in de entrega | Como operador, quiero registrar el estado inicial del equipo al entregarlo en obra, para evitar disputas por daños. | 2 |
+| 36 | **US-036** | Registrar check-out de devolución | Como operador, quiero registrar el estado del equipo al ser devuelto, para verificar su condición final. | 2 |
+| 37 | **US-037** | Reasignar equipo por falla | Como administrador, quiero asignar una máquina de reemplazo, para evitar detener los trabajos del cliente. | 3 |
+| 38 | **US-038** | Consultar reporte de utilización | Como propietario, quiero visualizar el porcentaje de uso de mi flota, para identificar los equipos más rentables. | 2 |
+| 39 | **US-039** | Exportar reportes en Excel/PDF | Como administrador, quiero descargar la lista de reservas y facturas, para realizar auditorías externas. | 2 |
+| 40 | **US-040** | Calificar servicio y maquinaria | Como contratista, quiero puntuar el desempeño del equipo alquilado, para retroalimentar la calidad del servicio. | 1 |
+| 41 | **TS-001** | Consultar maquinarias mediante API | Como desarrollador, quiero consultar las maquinarias mediante `GET /api/machinery`, para integrar el inventario con otros sistemas. | 2 |
+| 42 | **TS-002** | Registrar reservas mediante API | Como desarrollador, quiero registrar reservas mediante `POST /api/reservations`, para permitir que otros sistemas creen reservas. | 3 |
+| 43 | **TS-003** | Validar conflictos de reservas en la API | Como desarrollador, quiero validar los conflictos de fechas en la API, para mantener la consistencia de la disponibilidad. | 3 |
+| 44 | **TS-004** | Validar datos incorrectos en la API | Como desarrollador, quiero validar los datos recibidos por la API, para evitar registros incompletos o incorrectos. | 2 |
+| 45 | **TS-005** | Autenticación basada en JWT | Como desarrollador, quiero asegurar los endpoints con JWT, para proteger las rutas privadas de la API. | 3 |
+| 46 | **TS-006** | Registro masivo de horómetros | Como desarrollador, quiero procesar lotes de lecturas mediante `POST /api/horometers/batch`, para permitir la sincronización móvil. | 3 |
+| 47 | **TS-007** | Endpoint para facturación fiscal | Como desarrollador, quiero integrar la API con el servicio del PSE/SUNAT, para tramitar la emisión de facturas. | 3 |
+| 48 | **TS-008** | Webhooks de eventos de reserva | Como desarrollador, quiero notificar eventos mediante webhooks, para mantener sincronizados los sistemas externos. | 3 |
+| 49 | **US-041** | Consultar planes de suscripción | Como propietario, quiero ver los planes de suscripción disponibles (Essential, Pro), para elegir el que se ajuste al tamaño de mi flota. | 1 |
+| 50 | **US-042** | Contratar un plan de suscripción | Como propietario, quiero seleccionar y pagar un plan de suscripción mediante el proveedor de pagos, para habilitar la gestión de mi flota en MaquiControl. | 3 |
+| 51 | **US-043** | Renovar suscripción | Como propietario, quiero que mi suscripción se renueve automáticamente al vencer el periodo contratado, para mantener el acceso sin interrupciones. | 3 |
+| 52 | **US-044** | Consultar estado de la suscripción | Como propietario, quiero consultar el estado y el historial de pagos de mi suscripción, para verificar mi situación con la plataforma. | 2 |
+| 53 | **US-045** | Bloquear registro de maquinaria al superar el límite del plan | Como sistema, quiero impedir que un propietario registre más maquinarias que las permitidas por su plan, para hacer cumplir los límites comerciales de la suscripción. | 2 |
 
-# Capítulo IV: Product Design
+##Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
 
