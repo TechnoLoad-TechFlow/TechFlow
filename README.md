@@ -2889,6 +2889,22 @@ La página de presentación del proyecto aparece referenciada en el material de 
 
 La captura debe mostrar la URL y la versión efectivamente desplegada. Si la ruta de la imagen no existe en el repositorio de TechFlow, reemplazarla por una captura real o actualizar el nombre del archivo.
 
+El informe de TechnoLoad identifica como integrantes a Nicolas Tantalean Granda, Wilmer Sebastián Gutiérrez Lizarbe, Mathias Alejandro Castillo Guevara y Edgard Daniel Díaz Caruzo. Para completar el análisis de colaboración del Sprint 1, se deben revisar los commits y normalizar las identidades que pertenezcan a una misma persona. No se deben trasladar al equipo TechFlow los nombres, usuarios ni conteos de commits que aparecían en el documento de MaquiControl.
+
+| Integrante / Identidad Git | Commits en el informe | Commits en la aplicación | Commits en otros repositorios | Total identificado |
+|---|---:|---:|---:|---:|
+| Nicolas Tantalean Granda | [Contar] | [Contar] | [Contar] | [Calcular] |
+| Wilmer Sebastián Gutiérrez Lizarbe | [Contar] | [Contar] | [Contar] | [Calcular] |
+| Mathias Alejandro Castillo Guevara | [Contar] | [Contar] | [Contar] | [Calcular] |
+| Edgard Daniel Díaz Caruzo | [Contar] | [Contar] | [Contar] | [Calcular] |
+
+Las cantidades deben obtenerse del historial real del repositorio y no constituyen por sí solas una medición completa de la calidad o complejidad de las contribuciones. También deben considerarse reuniones, coordinación, elaboración de artefactos visuales, revisión de contenidos y demás actividades realizadas fuera del repositorio.
+
+![Project Report Collaboration Commits](assets/project-report-collaboration-commits.png)
+
+![Project Report Collaboration Additional Commits](assets/project-report-collaboration-commits-2.png)
+
+---
 
 
 ## 5.3. Validation Interviews
