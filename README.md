@@ -2811,7 +2811,24 @@ Se utiliza `L` para líder y `C` para colaborador.
 | Castillo Guevara, Mathias Alejandro | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] |
 | Díaz Caruzo, Edgard Daniel | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] |
 
+#### 5.2.1.3. Sprint Backlog 1
 
+El Product Backlog del informe TechnoLoad define historias de usuario relacionadas con la gestión de maquinaria y disponibilidad, reservas, consulta de catálogo, control de horas, facturación, página de presentación, autenticación, mantenimiento, suscripciones y servicios de API. La tabla siguiente mantiene el formato de la tabla de sprints original y adapta las tareas al dominio del proyecto. Las estimaciones, responsables y estados deben contrastarse con el tablero real, ya que el informe general no permite verificar qué tareas fueron asignadas y completadas específicamente en el Sprint 1.
+
+| Sprint | Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---:|---|---|
+| Sprint 1 | US-013 | Mostrar propuesta de valor | S1-T01 | Definir propuesta de valor del producto | Documentar la propuesta de valor para empresas de alquiler de maquinaria pesada y empresas de transporte y logística. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 1 | US-014 | Mostrar información por segmento | S1-T02 | Organizar contenido por segmento | Estructurar la información para los segmentos objetivo identificados en el informe: empresas de alquiler de maquinaria pesada y empresas de transporte y logística. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 1 | US-001 | Registrar maquinaria | S1-T03 | Definir datos de maquinaria | Especificar los datos necesarios para registrar una maquinaria y mantener actualizado el inventario. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 1 | US-002 | Consultar disponibilidad | S1-T04 | Definir reglas de disponibilidad | Documentar cómo se consultará la disponibilidad por fecha y cómo se distinguirán los estados de disponibilidad, reserva y mantenimiento. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 1 | US-003 | Gestionar mantenimiento | S1-T05 | Definir estados de mantenimiento | Establecer reglas para impedir nuevas reservas cuando una maquinaria no se encuentre operativa. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 1 | US-004 | Crear una reserva | S1-T06 | Documentar el flujo de reserva | Definir el flujo para que un contratista solicite una maquinaria disponible durante un periodo determinado. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 1 | — | Documentación técnica | S1-T07 | Consolidar documentación del proyecto | Organizar investigación, requerimientos, UX/UI, arquitectura, diseño orientado a objetos y diseño de datos que figuran en el informe del proyecto. | [Confirmar] | Equipo TechFlow | [Confirmar] |
+
+Durante el Sprint 1, la trazabilidad debe documentarse con el tablero de trabajo, las ramas, los commits y las revisiones que realmente se hayan utilizado. No se cuenta con evidencia suficiente para afirmar que existió o no un tablero público de GitHub Projects durante este sprint.
+
+- [Repositorio del proyecto](https://github.com/TechnoLoad-TechFlow/TechFlow)
+- [Página de presentación, si corresponde al despliegue actual](https://technoload-techflow.github.io/TechFlow/)
 
 ## 5.3. Validation Interviews
 ## 5.4. Video About-the-Product
