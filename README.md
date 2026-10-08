@@ -2857,6 +2857,38 @@ La evidencia de ejecución debe mostrar el resultado que puede comprobarse al re
 
 La imagen anterior conserva el espacio de evidencia de la plantilla original. Sustituir la ruta por una captura existente del proyecto o agregar la captura al repositorio. No debe dejarse una imagen de otro proyecto como evidencia de TechFlow.
 
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+En el informe de TechnoLoad se incluyen historias técnicas para consultar maquinarias mediante API (`TS-001`), registrar reservas mediante API (`TS-002`), validar conflictos de reservas (`TS-003`), validar datos (`TS-004`), autenticar endpoints con JWT (`TS-005`), registrar horómetros por lotes (`TS-006`), integrar facturación fiscal (`TS-007`) y notificar eventos de reserva mediante webhooks (`TS-008`). Estas historias forman parte del backlog y no prueban que los endpoints ya estén implementados.
+
+| Elemento | Evidencia para completar |
+|---|---|
+| API o servicio disponible | [Indicar servicio y estado real] |
+| URL base | [Agregar URL si el servicio está desplegado] |
+| Documentación OpenAPI/Swagger | [Agregar enlace o indicar que todavía no aplica] |
+| Endpoints implementados | [Listar únicamente los endpoints comprobados] |
+| Pruebas de servicios | [Agregar resultados o capturas] |
+
+Si durante el Sprint 1 solo se definieron los requerimientos y la arquitectura, debe indicarse que la documentación de servicios no aplica todavía al incremento, sin afirmar que existen servicios desplegados.
+
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+La página de presentación del proyecto aparece referenciada en el material de TechFlow mediante la siguiente dirección. Debe verificarse que corresponda a la versión y al repositorio que se presentarán como evidencia del Sprint 1. La publicación de una página de presentación no demuestra por sí sola el despliegue de una API o de una base de datos.
+
+| Elemento | Detalle |
+|---|---|
+| Producto desplegado | Página de presentación de TechFlow, sujeto a confirmar el nombre oficial del producto |
+| Plataforma | GitHub Pages, si se mantiene la configuración actual |
+| Repositorio | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) |
+| URL pública | [https://technoload-techflow.github.io/TechFlow/](https://technoload-techflow.github.io/TechFlow/) |
+| Protocolo | HTTPS |
+| Estado verificado | [Comprobar antes de entregar] |
+| Última versión identificada | [Agregar etiqueta o versión real] |
+
+![Sprint 1 Deployment Evidence](assets/sprint-1-deployment-evidence.png)
+
+La captura debe mostrar la URL y la versión efectivamente desplegada. Si la ruta de la imagen no existe en el repositorio de TechFlow, reemplazarla por una captura real o actualizar el nombre del archivo.
+
 
 
 ## 5.3. Validation Interviews
