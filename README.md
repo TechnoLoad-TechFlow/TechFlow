@@ -2936,7 +2936,141 @@ Se utiliza `L` para líder y `C` para colaborador.
 | Tantalean Granda, Nicolas | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 | Gutiérrez Lizarbe, Wilmer Sebastián | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 | Castillo Guevara, Mathias Alejandro | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| Díaz Caruzo, Edgard Daniel | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 
+#### 5.2.2.3. Sprint Backlog 2
+
+La siguiente tabla conserva el formato detallado de la plantilla original y utiliza historias existentes en el Product Backlog de TechnoLoad. Las tareas son una propuesta de organización basada en esos requerimientos, no una afirmación de que ya se hayan ejecutado en el Sprint 2. Completar las horas, responsables y estados con el tablero real.
+
+| Sprint | Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---:|---|---|
+| Sprint 2 | US-001 | Registrar maquinaria | S2-T01 | Preparar registro de maquinaria | Implementar o documentar el formulario y los datos necesarios para registrar una maquinaria. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-002 | Consultar disponibilidad | S2-T02 | Consultar disponibilidad por fecha | Implementar o documentar la consulta de disponibilidad de maquinaria por un periodo determinado. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-003 | Gestionar mantenimiento | S2-T03 | Actualizar estado de mantenimiento | Permitir cambiar el estado de una maquinaria y evitar reservas cuando no esté operativa. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-004 | Crear una reserva | S2-T04 | Solicitar reserva | Desarrollar el flujo para solicitar una maquinaria disponible durante el periodo requerido. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-005 | Evitar reservas duplicadas | S2-T05 | Validar conflictos de fechas | Comprobar que una solicitud no se superponga con una reserva existente. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-006 | Cancelar una reserva | S2-T06 | Cancelar reserva | Permitir cancelar una reserva y liberar el periodo cuando corresponda. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-007 | Consultar catálogo de maquinaria | S2-T07 | Mostrar catálogo | Mostrar las características principales de las maquinarias disponibles para consulta. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-008 | Consultar tarifas | S2-T08 | Mostrar tarifas | Mostrar la tarifa y unidad de cobro de cada maquinaria cuando esos datos estén disponibles. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-009 | Consultar reservas por obra | S2-T09 | Listar reservas de la obra | Mostrar la maquinaria, el periodo y el estado de las reservas asociadas a una obra. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-010 | Registrar horas trabajadas | S2-T10 | Registrar horas de operación | Registrar las horas trabajadas por maquinaria para calcular el costo del servicio. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-011 | Validar horas trabajadas | S2-T11 | Validar horas | Permitir revisar y aprobar las horas registradas o indicar que requieren corrección. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-012 | Generar resumen de facturación | S2-T12 | Generar resumen de cobros | Reunir cliente, maquinaria, horas e importe para el control de ingresos. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-016 | Editar datos de maquinaria | S2-T13 | Editar maquinaria | Permitir modificar las especificaciones de una maquinaria registrada. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-017 | Dar de baja maquinaria | S2-T14 | Desactivar maquinaria | Retirar del inventario activo los equipos que ya no deban ofrecerse. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-019 | Aprobar o rechazar reservas | S2-T15 | Revisar solicitudes | Permitir al propietario revisar solicitudes pendientes y confirmar o rechazar la reserva. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-026 | Registrar cuenta de usuario | S2-T16 | Registrar usuario | Crear el flujo de registro de una cuenta, si forma parte del alcance priorizado del sprint. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-027 | Iniciar sesión | S2-T17 | Autenticar usuario | Implementar el acceso a la plataforma para usuarios registrados, si forma parte del alcance del sprint. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-029 | Gestionar roles de usuario | S2-T18 | Restringir funciones por rol | Definir o implementar permisos diferenciados según los roles previstos en el backlog. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-031 | Programar mantenimientos preventivos | S2-T19 | Programar mantenimiento | Permitir programar alertas periódicas de mantenimiento según horas de uso. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-034 | Reportar avería en obra | S2-T20 | Registrar avería | Documentar o implementar el registro de una falla mecánica ocurrida durante el uso. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | TS-001 | Consultar maquinarias mediante API | S2-T21 | Definir endpoint de maquinaria | Desarrollar o documentar la consulta de maquinarias mediante API, de acuerdo con la historia técnica. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | TS-002 | Registrar reservas mediante API | S2-T22 | Definir endpoint de reservas | Desarrollar o documentar la creación de reservas mediante API. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | TS-003 | Validar conflictos de reservas en la API | S2-T23 | Validar disponibilidad en el servicio | Aplicar reglas de validación para impedir reservas con fechas incompatibles. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | TS-004 | Validar datos incorrectos en la API | S2-T24 | Validar datos recibidos | Comprobar campos obligatorios y datos de entrada antes de guardar información. | [Confirmar] | [Confirmar] | [Confirmar] |
+
+- [Repositorio del proyecto TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow)
+- [Página de presentación](https://technoload-techflow.github.io/TechFlow/)
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+La tabla mantiene las columnas del documento original para que se pueda documentar el historial real de desarrollo. Los commits de MaquiControl no deben copiarse como si pertenecieran a TechFlow; los campos siguientes deben completarse con los identificadores y mensajes extraídos del repositorio correcto.
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on |
+|---|---|---|---|---|---|
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 1] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 2] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 3] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 4] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 5] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 6] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 7] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 8] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 9] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 10] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
+
+Se deben seleccionar los commits más representativos del sprint, incluyendo cambios de funcionalidades, correcciones, pruebas y despliegue cuando existan. Para cada fila debe utilizarse el historial del repositorio, no estimaciones ni mensajes inventados.
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+
+La revisión de ejecución debe describir el comportamiento que realmente pueda probarse en la versión del Sprint 2. El Product Backlog de TechnoLoad contempla, entre otras funcionalidades, el registro y consulta de maquinaria, la disponibilidad, las reservas, el mantenimiento preventivo, el registro de horas y el control de perfiles. La presencia de una historia de usuario en el backlog no implica que se encuentre implementada.
+
+- **Propietario o administrador de maquinaria:** [Describir únicamente las acciones implementadas y verificadas].
+- **Contratista:** [Describir únicamente las acciones implementadas y verificadas].
+- **Otros roles:** [Completar según los roles efectivamente desarrollados].
+
+| Producto | URL de ejecución |
+|---|---|
+| Aplicación web | [Agregar URL pública real, si existe] |
+| Página de presentación | [https://technoload-techflow.github.io/TechFlow/](https://technoload-techflow.github.io/TechFlow/) |
+| API o servicios | [Agregar URL real si existe] |
+
+![Sprint 2 Web Application Execution Evidence](assets/sprint-2-web-application-execution.png)
+
+Reemplazar la ruta de imagen con una captura real del producto TechFlow. Si la aplicación todavía no se encuentra desplegada, adjuntar capturas locales y explicitar que se trata de una ejecución local.
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+El backlog técnico de TechnoLoad contempla servicios para consulta de maquinaria, registro de reservas, validación de conflictos, validación de datos, autenticación JWT, registro masivo de horómetros, facturación fiscal y webhooks. Deben documentarse únicamente los servicios implementados durante el sprint y diferenciarse de las funcionalidades planificadas.
+
+| Bounded Context | Endpoint / Servicio | Acciones o descripción | Estado / Evidencia |
+|---|---|---|---|
+| Gestión de maquinaria | `GET /api/machinery` (referencia de TS-001) | Consultar maquinarias mediante API. | [Confirmar implementación] |
+| Gestión de reservas | `POST /api/reservations` (referencia de TS-002) | Registrar reservas mediante API. | [Confirmar implementación] |
+| Gestión de reservas | Validación de conflictos (TS-003) | Validar superposición de fechas. | [Confirmar implementación] |
+| Validación de datos | TS-004 | Validar datos recibidos por el servicio. | [Confirmar implementación] |
+| Identidad y acceso | TS-005 | Proteger endpoints con JWT. | [Confirmar implementación] |
+| Control de horas | `POST /api/horometers/batch` (referencia de TS-006) | Procesar lotes de lecturas de horómetros. | [Confirmar implementación] |
+| Facturación | TS-007 | Integración con PSE/SUNAT para facturación fiscal. | [Confirmar implementación] |
+| Integración externa | TS-008 | Notificar eventos de reserva mediante webhooks. | [Confirmar implementación] |
+
+**URL base:** [Agregar URL real del servicio, si existe].
+
+**Ejemplo de solicitud:** completar con un ejemplo que responda el servicio real. No reutilizar ejemplos de datos de MaquiControl sin verificar que coincidan con el modelo y la API de TechFlow.
+
+```json
+{
+  "nota": "Reemplazar este objeto por una respuesta real obtenida del servicio TechFlow",
+  "endpoint": "GET /api/machinery",
+  "estado": "Pendiente de verificación"
+}
+```
+
+Si los servicios todavía no fueron implementados, mantener la tabla como planificación técnica y explicar que no corresponde presentar endpoints como funcionales.
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+La evidencia de despliegue debe identificar cada producto publicado, la plataforma, el repositorio, la URL pública y la versión. Los datos concretos deben verificarse en el proyecto TechFlow antes de entregar.
+
+| Producto desplegado | Plataforma | Repositorio | URL pública | Versión |
+|---|---|---|---|---|
+| Página de presentación | GitHub Pages, si se mantiene la configuración actual | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | [TechFlow](https://technoload-techflow.github.io/TechFlow/) | [Confirmar versión] |
+| Aplicación web | [Confirmar plataforma] | [Confirmar repositorio] | [Agregar URL pública] | [Confirmar versión] |
+| API / Servicios | [Confirmar plataforma] | [Confirmar repositorio] | [Agregar URL pública o endpoint health] | [Confirmar versión] |
+| Base de datos | [Confirmar proveedor, si está desplegada] | [No aplica o indicar repositorio de configuración] | [No publicar credenciales; documentar solo evidencia segura] | [Confirmar versión/configuración] |
+
+Durante el sprint se deben documentar las incidencias reales de despliegue y las soluciones aplicadas, si las hubo. No se debe copiar como si fuera propio el registro de incidencias de Azure del proyecto MaquiControl.
+
+![Sprint 2 Deployment Evidence](assets/sprint-2-deployment-evidence.png)
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 2, el análisis de colaboración debe basarse en la actividad real del equipo TechFlow: commits, revisiones, merges, asignaciones del tablero y coordinación. No se deben reutilizar las identidades Git ni los conteos del documento MaquiControl.
+
+| Integrante / Identidad Git | Commits en el informe | Commits en la aplicación | Commits en API / servicios | Commits en la página de presentación | Total identificado |
+|---|---:|---:|---:|---:|---:|
+| Nicolas Tantalean Granda | [Contar] | [Contar] | [Contar] | [Contar] | [Calcular] |
+| Wilmer Sebastián Gutiérrez Lizarbe | [Contar] | [Contar] | [Contar] | [Contar] | [Calcular] |
+| Mathias Alejandro Castillo Guevara | [Contar] | [Contar] | [Contar] | [Contar] | [Calcular] |
+| Edgard Daniel Díaz Caruzo | [Contar] | [Contar] | [Contar] | [Contar] | [Calcular] |
+
+Las cantidades representan la actividad registrada en los repositorios y no miden por sí solas la calidad o complejidad de cada aporte. También deben considerarse la coordinación, las pruebas, la revisión de requisitos, la elaboración de artefactos y las actividades realizadas fuera del repositorio.
+
+![Sprint 2 Frontend Commits](assets/sprint-2-frontend-commits.png)
+
+![Sprint 2 Additional Commits](assets/sprint-2-additional-commits.png)
+
+---
 ## 5.3. Validation Interviews
 ## 5.4. Video About-the-Product
 
