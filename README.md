@@ -1594,11 +1594,20 @@ flowchart LR
 
 ### 4.6.2. Software Architecture Context Diagram
 
-El Software Architecture Context Diagram presenta a TechnoLoad como el sistema principal y muestra su relación con los principales tipos de usuario identificados en el proyecto.
+El Software Architecture Context Diagram presenta a TechnoLoad como el sistema principal de la solución y delimita sus fronteras operativas respecto a los actores humanos y sistemas externos con los que interactúa dentro del ecosistema de gestión y alquiler de maquinaria pesada.
 
-El Fleet Administrator utiliza TechnoLoad para gestionar la maquinaria, reservas, mantenimiento y operaciones asociadas al servicio. Por otro lado, el Contractor o Site Manager utiliza la plataforma para consultar maquinaria disponible, solicitar alquileres y realizar seguimiento de los servicios contratados.
+Los usuarios clave del sistema son:
+- **Fleet Administrator**: Administra el inventario de maquinaria pesada, configura tarifas y especificaciones técnicas, autoriza solicitudes de alquiler y supervisa los programas de mantenimiento preventivo y correctivo.
+- **Contractor / Site Manager**: Consulta la disponibilidad de maquinaria en tiempo real, solicita y contrata servicios de alquiler para frentes de obra, y monitorea el estado operativo de los equipos asignados.
+- **Maintenance Technician**: Registra intervenciones mecánicas, reporta averías y documenta inspecciones y lecturas de horómetros en campo.
+- **Operations Coordinator**: Planifica la asignación logística de maquinaria y operadores, valida partes de horas trabajadas y coordina la entrega y recepción de equipos.
+- **Public Visitor**: Potencial cliente que accede al portal web público para explorar el catálogo de soluciones, consultar información comercial y tarifas, y solicitar demostraciones o registrarse en la plataforma.
 
-Este nivel del modelo C4 permite visualizar el alcance general de TechnoLoad y las principales interacciones entre el sistema y sus usuarios.
+Asimismo, TechnoLoad se integra con los siguientes sistemas externos:
+- **Payment Gateway**: Procesa transacciones electrónicas de pago seguro de alquileres y suscripciones corporativas.
+- **Electronic Invoicing / SUNAT**: Emisión y validación tributaria de comprobantes de pago electrónicos conforme a la normativa fiscal.
+- **Notification Service**: Envío automatizado de alertas operativas, avisos de mantenimiento preventivo y notificaciones de estado por correo electrónico y mensajería push.
+- **GPS / Telematics Provider**: Suministra datos telemétricos en tiempo real (posicionamiento satelital, lecturas de horómetro y alertas de motor) mediante enlaces de telemetría e IoT.
 
 ---
 
@@ -1608,18 +1617,21 @@ Este nivel del modelo C4 permite visualizar el alcance general de TechnoLoad y l
 
 ```mermaid
 flowchart LR
-  fleetAdmin["Fleet Administrator"] -->|manages assets and maintenance| technoLoad["TechnoLoad<br/>SaaS Platform"]
-  technician["Maintenance Technician"] -->|records readings and work| technoLoad
-  coordinator["Operations Coordinator"] -->|plans rentals and operations| technoLoad
-  contractor["Contractor"] -->|requests and tracks rentals| technoLoad
-  technoLoad -->|creates and confirms payments| paymentGateway["Payment Gateway"]
-  technoLoad -->|submits invoices| sunat["Electronic Invoicing / SUNAT"]
-  technoLoad -->|sends alerts| notificationService["Notification Service"]
-  telemetryProvider["GPS / Telematics Provider"] -->|supplies readings and locations| technoLoad
-  classDef person fill:#E3F2FD,stroke:#1565C0,color:#0D47A1
-  classDef system fill:#E8F5E9,stroke:#2E7D32,color:#1B5E20
-  classDef external fill:#FFF3E0,stroke:#EF6C00,color:#E65100
-  class fleetAdmin,technician,coordinator,contractor person
+  visitor["Public Visitor<br/>«person»"] -->|explora catálogo y solicita info [HTTPS]| technoLoad["TechnoLoad<br/>SaaS Platform<br/>«software system»"]
+  fleetAdmin["Fleet Administrator<br/>«person»"] -->|administra flota y mantenimientos [HTTPS]| technoLoad
+  contractor["Contractor / Site Manager<br/>«person»"] -->|solicita y monitorea alquileres [HTTPS]| technoLoad
+  technician["Maintenance Technician<br/>«person»"] -->|registra lecturas y averías [HTTPS]| technoLoad
+  coordinator["Operations Coordinator<br/>«person»"] -->|supervisa operaciones y horas [HTTPS]| technoLoad
+
+  technoLoad -->|procesa cobros de alquiler [HTTPS / REST]| paymentGateway["Payment Gateway<br/>«external system»"]
+  technoLoad -->|emite comprobantes electrónicos [HTTPS / REST]| sunat["Electronic Invoicing / SUNAT<br/>«external system»"]
+  technoLoad -->|envía alertas y notificaciones [HTTPS / REST]| notificationService["Notification Service<br/>«external system»"]
+  telemetryProvider["GPS / Telematics Provider<br/>«external system»"] -->|suministra telemetría y horómetros [HTTPS Webhook]| technoLoad
+
+  classDef person fill:#08427B,stroke:#0B4D8C,color:#FFFFFF
+  classDef system fill:#1168BD,stroke:#0B4D8C,color:#FFFFFF
+  classDef external fill:#8C8C8C,stroke:#475569,color:#FFFFFF
+  class visitor,fleetAdmin,contractor,technician,coordinator person
   class technoLoad system
   class paymentGateway,sunat,notificationService,telemetryProvider external
 ```
@@ -1628,11 +1640,20 @@ flowchart LR
 
 El Software Architecture Container Diagram muestra la estructura de alto nivel de TechnoLoad y la distribución de responsabilidades entre los principales elementos de la solución.
 
-La solución separa la Landing Web Application, destinada a contenido público y captación comercial, de la Single Page Application (SPA), destinada a usuarios autenticados. Ambas consumen una REST API implementada con ASP.NET Core; la API persiste la información en PostgreSQL y se integra con los servicios externos requeridos por el dominio.
+La solución arquitectónica se descompone en los siguientes contenedores de despliegue:
+1. **Landing Web Application (Vue 3 + Vite)**: Aplicación web orientada al público general y potenciales clientes. Presenta la propuesta de valor comercial de TechnoLoad, catálogo referencial de maquinaria, planes de suscripción y formularios de contacto. Desde sus llamadas a la acción (*Call to Action* - CTA), redirige al usuario a la vista correspondiente dentro de la Single Page Application (SPA). Consume endpoints públicos de la API para consultar catálogos y registrar prospectos.
+2. **Single Page Application (SPA) (Vue 3 + PrimeVue)**: Aplicación web enriquecida para usuarios autenticados. Proporciona la interfaz interactiva para el **Fleet Administrator**, el **Contractor / Site Manager**, el **Maintenance Technician** y el **Operations Coordinator**. Permite la administración integral de inventario de maquinaria, solicitud y aprobación de alquileres, calendario de mantenimientos preventivos, reporte de fallas mecánicas, registro de horas de servicio y configuración de cuentas y perfiles. Se comunica con la Backend REST API mediante HTTPS consumiendo recursos en formato JSON con autenticación basada en tokens JWT.
+3. **Backend REST API (ASP.NET Core 8 / C#)**: Núcleo de servicios del lado servidor estructurado según los principios de *Domain-Driven Design (DDD)* y arquitectura en capas limpias (*Clean Architecture*). Expone endpoints RESTful para los Bounded Contexts de Identity & Access, Profiles, Fleet, Rental, Maintenance y Operations. Gestiona la autenticación, la autorización basada en roles (RBAC), la orquestación de casos de uso y la lógica de negocio.
+4. **Database (PostgreSQL 16)**: Sistema gestor de base de datos relacional encargado de la persistencia transaccional y la integridad referencial de todas las entidades del dominio. La Backend REST API accede a la base de datos a través de Entity Framework Core (EF Core) mediante una conexión TCP sobre el puerto 5432.
 
-Los usuarios interactúan con la aplicación web mediante un navegador. La Single Page Application consume los servicios proporcionados por la REST API utilizando HTTPS y JSON. A su vez, la API gestiona el acceso a la información persistida mediante Spring Data JPA.
+Asimismo, la Backend REST API se integra con los servicios externos:
+- **Payment Gateway**: Integración REST para el procesamiento seguro de pagos con tarjeta de crédito/débito en reservas de maquinaria.
+- **Electronic Invoicing / SUNAT**: Integración de facturación electrónica para la generación, firma y envío de comprobantes de pago (facturas y boletas) conforme a la regulación tributaria.
+- **Notification Service**: Servicio de envío de correos electrónicos transaccionales y notificaciones de mantenimiento preventivo.
+- **GPS / Telematics Provider**: Ingesta continua de datos telemétricos de horómetros y geolocalización mediante webhooks seguros.
 
-Este nivel del modelo C4 permite visualizar las principales decisiones tecnológicas de la solución y la comunicación entre los containers que conforman TechnoLoad.
+> [!NOTE]
+> **Interacción de Actores y Contenedores:** Los usuarios operativos (**Fleet Administrator** y **Contractor / Site Manager**) interactúan directamente con la **Single Page Application (SPA)** para ejecutar sus flujos de trabajo especializados. De igual manera, ambos actores pueden visitar inicialmente la **Landing Web Application** para consultar novedades, tarifas y enlaces públicos, desde donde son derivados a la SPA al iniciar sesión o registrarse.
 
 ---
 
@@ -1642,99 +1663,313 @@ Este nivel del modelo C4 permite visualizar las principales decisiones tecnológ
 
 ```mermaid
 flowchart LR
-  visitor["Public Visitor"] -->|HTTPS| landing["Landing Web Application<br/>Vue + Vite"]
-  user["Authenticated User"] -->|HTTPS| spa["Operations SPA<br/>Vue + PrimeVue"]
-  landing -->|HTTPS / JSON| api["Backend API<br/>ASP.NET Core / C#"]
-  spa -->|HTTPS / JSON| api
-  api -->|EF Core / SQL| database[("PostgreSQL")]
-  api --> payments["Payment Gateway"]
-  api --> sunat["Electronic Invoicing / SUNAT"]
-  api --> notifications["Notification Service"]
-  telemetry["GPS / Telematics Provider"] -->|HTTPS webhook| api
-  classDef container fill:#E3F2FD,stroke:#1565C0,color:#0D47A1
-  classDef external fill:#FFF3E0,stroke:#EF6C00,color:#E65100
-  class landing,spa,api,database container
+  subgraph actors["Usuarios Clave"]
+    visitor["Public Visitor<br/>«person»"]
+    fleetAdmin["Fleet Administrator<br/>«person»"]
+    contractor["Contractor / Site Manager<br/>«person»"]
+    technician["Maintenance Technician<br/>«person»"]
+    coordinator["Operations Coordinator<br/>«person»"]
+  end
+
+  subgraph technoLoadSystem["TechnoLoad [Software System]"]
+    landing["Landing Web Application<br/>[Vue 3 + Vite]<br/>«container»"]
+    spa["Single Page Application (SPA)<br/>[Vue 3 + PrimeVue]<br/>«container»"]
+    api["Backend REST API<br/>[ASP.NET Core 8 / C#]<br/>«container»"]
+    database[("Database<br/>[PostgreSQL 16]<br/>«container»")]
+  end
+
+  subgraph externalSystems["Sistemas Externos"]
+    payments["Payment Gateway<br/>«external system»"]
+    sunat["Electronic Invoicing / SUNAT<br/>«external system»"]
+    notifications["Notification Service<br/>«external system»"]
+    telemetry["GPS / Telematics Provider<br/>«external system»"]
+  end
+
+  visitor -->|HTTPS| landing
+  landing -.->|Redirige CTA / Auth| spa
+
+  fleetAdmin -->|HTTPS (Uso Operativo Directo)| spa
+  contractor -->|HTTPS (Uso Operativo Directo)| spa
+  technician -->|HTTPS (Registro de Horómetros)| spa
+  coordinator -->|HTTPS (Asignación Logística)| spa
+
+  fleetAdmin -.->|HTTPS (Exploración Comercial)| landing
+  contractor -.->|HTTPS (Consulta de Tarifas)| landing
+
+  landing -->|HTTPS / JSON (Catálogo Público)| api
+  spa -->|HTTPS / JSON (Peticiones Autenticadas JWT)| api
+
+  api -->|EF Core / TCP Port 5432| database
+
+  api -->|HTTPS / REST| payments
+  api -->|HTTPS / REST| sunat
+  api -->|HTTPS / REST| notifications
+  telemetry -->|HTTPS Webhook| api
+
+  classDef person fill:#08427B,stroke:#0B4D8C,color:#FFFFFF
+  classDef webContainer fill:#2563EB,stroke:#1D4ED8,color:#FFFFFF
+  classDef apiContainer fill:#1D4ED8,stroke:#1E40AF,color:#FFFFFF
+  classDef dbContainer fill:#1E40AF,stroke:#172554,color:#FFFFFF
+  classDef external fill:#64748B,stroke:#475569,color:#FFFFFF
+
+  class visitor,fleetAdmin,contractor,technician,coordinator person
+  class landing,spa webContainer
+  class api apiContainer
+  class database dbContainer
   class payments,sunat,notifications,telemetry external
 ```
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-En esta sección se presentan los Component Diagrams de TechnoLoad, los cuales permiten visualizar la descomposición interna del container correspondiente a la REST API.
+En esta sección se presentan los Component Diagrams (C4 Modelo - Nivel 3) para cada uno de los contenedores que componen la arquitectura de software de TechnoLoad: la **Single Page Application (Frontend)** y la **Backend REST API**. 
 
-En primer lugar, se muestra la organización general de los principales Bounded Contexts identificados durante el proceso de Domain-Driven Design. Posteriormente, se presenta el detalle interno de cada Bounded Context, mostrando sus principales capas y responsabilidades.
-
-La estructura interna sigue una separación entre Interfaces Layer, Application Layer, Domain Layer e Infrastructure Layer, permitiendo mantener separadas las responsabilidades del dominio y los aspectos técnicos de la implementación.
+Estos diagramas reflejan la descomposición interna de cada contenedor en bloques estructurales cohesivos, detallando sus responsabilidades, capas arquitecturales, dependencias tecnológicas e interfaces de comunicación según los principios de *Domain-Driven Design (DDD)* y *Clean Architecture*.
 
 ---
 
-#### **API Application Component Diagram**
+#### 4.6.4.1. Single Page Application (Frontend) Component Diagrams
 
-El siguiente diagrama muestra la organización general de la REST API de TechnoLoad y los principales Bounded Contexts que forman parte de la solución: Identity & Access Management, Profiles Management, Fleet Management, Rental Management, Maintenance Management y Operations Management.
+La Frontend Web Application de TechnoLoad está construida bajo una arquitectura modular y desacoplada en **Vue 3** y **PrimeVue**, organizada en cuatro capas alineadas a DDD:
+1. **Presentation Layer**: Compuesta por vistas (`*.vue` views) y componentes reutilizables (`*.vue` components) que implementan la interfaz visual adaptativa con componentes de PrimeVue (`pv-input-text`, `pv-button`, `pv-data-table`, `pv-card`, etc.), Composition API (`<script setup>`) y gestión de eventos locales (`defineEmits`, `defineProps`).
+2. **Application Layer**: Stores reactivos (`*.store.js`) creados con Composition API (`reactive`, `computed`, `readonly`). Orquestan los casos de uso del frontend, gestionan el estado global reactivo del cliente y sincronizan los flujos de negocio.
+3. **Infrastructure Layer**: Módulos encargados de la comunicación externa, incluyendo clientes API HTTP (`*-api.js`), interceptores de red (`auth.interceptor.js`, `error.interceptor.js`) y ensambladores (*Assemblers* `*.assembler.js`) que transforman las respuestas del API (DTOs) en entidades y modelos de dominio.
+4. **Domain Layer**: Entidades (`*.entity.js`) y objetos de valor (`*.vo.js`) que encapsulan atributos y reglas de validación en el cliente.
 
-También se representan las principales relaciones entre los contextos, la Single Page Application y la base de datos.
+##### Identity & Access Management Frontend Component Diagram
+
+Este diagrama detalla la arquitectura interna del módulo frontend de autenticación y control de acceso. Todos los componentes, funciones y archivos siguen con exactitud los estándares y nombres reales de código:
+
+- **Vistas y Componentes de Presentación**:
+  - `LogInView.vue`: Vista principal de inicio de sesión que gestiona la interacción del usuario. Contiene las funciones de controlador `logIn(credentials)`, `handleLogInSubmit(event)`, `validateCredentialsForm()` y `navigateToRegister()`.
+  - `LogInForm.vue`: Componente reutilizable de formulario. Recibe propiedades como `isLoading` y `errorMessage`, expone el evento emitido `@submit(credentials)` y define métodos internos como `onFormSubmit()`, `clearInputs()` y `onPasswordToggle()`.
+  - `RegisterView.vue`: Vista de registro para contratistas y administradores. Implementa funciones como `registerUser(accountData)`, `handleRegisterSubmit(event)`, `validateAccountPayload()` y `navigateToLogIn()`.
+  - `RegisterForm.vue`: Componente desacoplado de formulario de registro que emite `@submit(accountData)`.
+  - Componentes PrimeVue integrados: `<pv-input-text>`, `<pv-password>`, `<pv-button>`, `<pv-message>`, `<pv-toast>`, `<pv-card>`.
+- **Capa de Aplicación (State Store)**:
+  - `identity.store.js` (`authStore`): Store reactivo que mantiene el estado de autenticación (`currentUser`, `token`, `isAuthenticated`, `roles`, `isLoading`, `errorMessage`). Expone acciones reactivas como `async logIn(email, password)`, `async register(accountData)`, `logOut()`, `restoreSession()`, `hasRole(roleName): Boolean` y `clearAuthError()`.
+- **Capa de Infraestructura**:
+  - `identity-api.js`: Cliente HTTP que encapsula las peticiones REST: `postSignIn(credentials)`, `postSignUp(userData)` y `postRefreshToken(token)`.
+  - `user-account.assembler.js`: Ensamblador con métodos de transformación `toDomain(apiResource)`, `toDomainCollection(resources)` y `toDto(entity)`.
+  - `auth.interceptor.js`: Middleware HTTP que intercepta peticiones salientes para inyectar la cabecera `Authorization: Bearer <jwt>` e intercepta errores `401 Unauthorized` ejecutando `redirectToLogIn()`.
+- **Capa de Dominio**:
+  - `user-account.entity.js`: Entidad con propiedades `id`, `email`, `roles`, `status` y métodos de validación `hasRole(roleName)`, `isContractor()` e `isFleetAdmin()`.
+  - `credential.vo.js`: Value object con métodos de validación de sintaxis y fortaleza `isValidEmail()` e `isStrongPassword()`.
+
+![Identity & Access Management Frontend Component Diagram](assets/architecture/c4/c4-frontend-identity-component.svg)
+
+```mermaid
+flowchart TD
+  subgraph spaContainer["Single Page Application (SPA) [Vue 3 + PrimeVue]"]
+    subgraph presentationLayer["Presentation Layer"]
+      loginView["LogInView.vue<br/><i>logIn() · handleLogInSubmit()<br/>validateCredentialsForm()</i>"]
+      loginForm["LogInForm.vue<br/><i>props: isLoading, errorMessage<br/>emits: @submit</i>"]
+      registerView["RegisterView.vue<br/><i>registerUser() · handleRegisterSubmit()<br/>validateAccountPayload()</i>"]
+      registerForm["RegisterForm.vue<br/><i>emits: @submit</i>"]
+      primeVueUI["PrimeVue UI Elements<br/><i>&lt;pv-input-text&gt; · &lt;pv-password&gt;<br/>&lt;pv-button&gt; · &lt;pv-toast&gt; · &lt;pv-message&gt;</i>"]
+    end
+
+    subgraph appLayer["Application Layer"]
+      authStore["identity.store.js (authStore)<br/><i>state: currentUser, token, isAuthenticated, roles<br/>actions: logIn(), register(), logOut(), restoreSession()</i>"]
+    end
+
+    subgraph domainLayer["Domain Layer"]
+      userEntity["user-account.entity.js<br/><i>hasRole() · isContractor() · isFleetAdmin()</i>"]
+      credentialVO["credential.vo.js<br/><i>isValidEmail() · isStrongPassword()</i>"]
+    end
+
+    subgraph infraLayer["Infrastructure Layer"]
+      identityApi["identity-api.js<br/><i>postSignIn() · postSignUp() · postRefreshToken()</i>"]
+      userAssembler["user-account.assembler.js<br/><i>toDomain() · toDomainCollection() · toDto()</i>"]
+      authInterceptor["auth.interceptor.js<br/><i>onRequest() [Bearer Token] · onResponseError() [401]</i>"]
+    end
+  end
+
+  subgraph backendContainer["Backend REST API [ASP.NET Core 8 / C#]"]
+    authEndpoints["POST /api/v1/authentication/sign-in<br/>POST /api/v1/authentication/sign-up"]
+  end
+
+  loginView -->|usa| loginForm
+  loginForm -->|emite @submit| loginView
+  registerView -->|usa| registerForm
+  registerForm -->|emite @submit| registerView
+  loginForm -.->|renderiza| primeVueUI
+  registerForm -.->|renderiza| primeVueUI
+
+  loginView -->|invoca logIn()| authStore
+  registerView -->|invoca register()| authStore
+
+  authStore -->|invoca postSignIn()| identityApi
+  authStore -->|invoca postSignUp()| identityApi
+  authStore -->|usa toDomain()| userAssembler
+
+  userAssembler -->|instancia| userEntity
+  userEntity -->|contiene| credentialVO
+
+  authInterceptor -.->|inyecta token / captura 401| identityApi
+  identityApi -->|HTTPS / JSON Request| authEndpoints
+
+  classDef pres fill:#2563EB,stroke:#1D4ED8,color:#FFFFFF
+  classDef app fill:#16A34A,stroke:#15803D,color:#FFFFFF
+  classDef dom fill:#CA8A04,stroke:#A16207,color:#FFFFFF
+  classDef inf fill:#475569,stroke:#334155,color:#FFFFFF
+  classDef ext fill:#1D4ED8,stroke:#1E40AF,color:#FFFFFF
+
+  class loginView,loginForm,registerView,registerForm,primeVueUI pres
+  class authStore app
+  class userEntity,credentialVO dom
+  class identityApi,userAssembler,authInterceptor inf
+  class authEndpoints ext
+```
+
+##### Fleet Management Frontend Component Diagram
+
+Este diagrama representa la estructura del módulo frontend de gestión de flota de maquinaria pesada, alineado directamente con la implementación en `src/fleet`:
+
+- **Vistas y Componentes**:
+  - `asset-list.vue`: Componente contenedor principal. Maneja las funciones `selectAsset(asset)`, `retryLoad()` y ejecuta `onMounted() -> fleetStore.loadAssets()`.
+  - `asset-item.vue`: Componente de presentación individual de maquinaria. Recibe la prop `asset: Asset`, emite `@select` y define `onCardClick()`, `getStatusSeverity()` y `formatHourlyRate()`.
+  - `asset-summary.vue`: Componente de métricas operativas con funciones `calculateAvailableCount()`, `calculateInMaintenance()` y `calculateRentedCount()`.
+  - PrimeVue: `<pv-button>`, `<pv-skeleton>`, `<pv-message>`, `<pv-tag>` y `<pv-data-table>`.
+- **Capa de Aplicación**:
+  - `fleet.store.js`: Store reactivo que gestiona el estado (`assets`, `maintenanceOrders`, `selectedAsset`, `isLoading`, `errorMessage`) y provee las acciones `loadAssets()`, `loadMaintenanceOrders()`, `selectAsset(asset)` y `clearSelectedAsset()`.
+- **Capa de Infraestructura**:
+  - `fleet-api.js`: Cliente HTTP que consume la API REST mediante `getAssets()`, `getMaintenanceOrders()` y `postAsset(assetData)`.
+  - `asset.assembler.js`: Transforma DTOs en entidades con `toDomainCollection(resources)` y `toDomain(resource)`.
+  - `maintenance-order.assembler.js`: Transforma DTOs de órdenes de mantenimiento en entidades del dominio.
+- **Capa de Dominio**:
+  - `asset.entity.js`: Entidad `Asset` con atributos (`id`, `name`, `serialNumber`, `status`, `hourMeter`) y métodos (`isAvailable()`, `requiresMaintenance()`).
+  - `maintenance-order.entity.js`: Entidad `MaintenanceOrder` con métodos (`isPending()`, `complete()`).
+
+![Fleet Management Frontend Component Diagram](assets/architecture/c4/c4-frontend-fleet-component.svg)
+
+```mermaid
+flowchart TD
+  subgraph spaContainer["Single Page Application (SPA) [Vue 3 + PrimeVue]"]
+    subgraph presentationLayer["Presentation Layer"]
+      assetList["asset-list.vue<br/><i>selectAsset() · onMounted() -> loadAssets()<br/>retryLoad() · emit('select')</i>"]
+      assetItem["asset-item.vue<br/><i>props: asset<br/>emits: @select · formatHourlyRate()</i>"]
+      assetSummary["asset-summary.vue<br/><i>calculateAvailableCount()<br/>calculateInMaintenance()</i>"]
+      fleetUI["PrimeVue UI Elements<br/><i>&lt;pv-button&gt; · &lt;pv-skeleton&gt;<br/>&lt;pv-message&gt; · &lt;pv-tag&gt;</i>"]
+    end
+
+    subgraph appLayer["Application Layer"]
+      fleetStore["fleet.store.js<br/><i>state: assets, maintenanceOrders, selectedAsset<br/>actions: loadAssets(), loadMaintenanceOrders(), selectAsset()</i>"]
+    end
+
+    subgraph domainLayer["Domain Layer"]
+      assetEntity["asset.entity.js (Asset)<br/><i>isAvailable() · requiresMaintenance()</i>"]
+      maintOrderEntity["maintenance-order.entity.js<br/><i>isPending() · complete()</i>"]
+    end
+
+    subgraph infraLayer["Infrastructure Layer"]
+      fleetApi["fleet-api.js<br/><i>getAssets() · getMaintenanceOrders() · postAsset()</i>"]
+      assetAssembler["asset.assembler.js<br/><i>toDomain() · toDomainCollection() · toDto()</i>"]
+      orderAssembler["maintenance-order.assembler.js<br/><i>toDomain() · toDomainCollection()</i>"]
+    end
+  end
+
+  subgraph backendContainer["Backend REST API [ASP.NET Core 8 / C#]"]
+    fleetEndpoints["GET /api/v1/machinery<br/>GET /api/v1/maintenance-orders"]
+  end
+
+  assetList -->|renderiza colección| assetItem
+  assetItem -->|emite @select| assetList
+  assetList -->|incluye| assetSummary
+  assetList -.->|usa| fleetUI
+
+  assetList -->|invoca loadAssets() / selectAsset()| fleetStore
+  fleetStore -->|invoca getAssets()| fleetApi
+  fleetStore -->|usa toDomainCollection()| assetAssembler
+  fleetStore -->|usa toDomainCollection()| orderAssembler
+
+  assetAssembler -->|instancia| assetEntity
+  orderAssembler -->|instancia| maintOrderEntity
+
+  fleetApi -->|HTTPS / JSON Request| fleetEndpoints
+
+  classDef pres fill:#2563EB,stroke:#1D4ED8,color:#FFFFFF
+  classDef app fill:#16A34A,stroke:#15803D,color:#FFFFFF
+  classDef dom fill:#CA8A04,stroke:#A16207,color:#FFFFFF
+  classDef inf fill:#475569,stroke:#334155,color:#FFFFFF
+  classDef ext fill:#1D4ED8,stroke:#1E40AF,color:#FFFFFF
+
+  class assetList,assetItem,assetSummary,fleetUI pres
+  class fleetStore app
+  class assetEntity,maintOrderEntity dom
+  class fleetApi,assetAssembler,orderAssembler inf
+  class fleetEndpoints ext
+```
+
+---
+
+#### 4.6.4.2. Backend API Component Diagrams
+
+La Backend REST API está implementada con **ASP.NET Core 8** y **C#**, aplicando la estructura de capas de Domain-Driven Design:
+- **Interfaces Layer**: Controladores RESTful (`*Controller.cs`) que exponen recursos JSON bajo versionamiento `/api/v1/*`, validan los modelos de solicitud y transforman códigos de estado HTTP.
+- **Application Layer**: Servicios de aplicación y manejadores de comandos/consultas (*Command and Query Handlers*) que orquestan las transacciones y publican eventos de dominio.
+- **Domain Layer**: Agregados raíz, entidades, objetos de valor y reglas de negocio puras sin dependencias de infraestructura ni de frameworks externos.
+- **Infrastructure Layer**: Contexto de datos `AppDbContext` de Entity Framework Core, repositorios concretos (`*Repository.cs`), adaptadores hacia PostgreSQL y clientes de integración con pasarelas de pago, SUNAT, notificaciones y telemetría.
+
+##### API Application Component Diagram
+
+El siguiente diagrama muestra la organización general de la REST API de TechnoLoad en ASP.NET Core y los Bounded Contexts que forman parte de la solución: Identity & Access Management, Profiles Management, Fleet Management, Rental Management, Maintenance Management, Operations Management y el Shared Bounded Context.
 
 ![API Application Component Diagram TechnoLoad](assets/architecture/c4/c4-api-component-diagram.svg)
 
-#### **Identity & Access Management Bounded Context Component Diagram**
+##### Identity & Access Management Bounded Context Component Diagram
 
-Este diagrama representa la estructura interna del Identity & Access Management Bounded Context. Este contexto se encarga de la autenticación, autorización, gestión de cuentas, roles y credenciales de los usuarios de TechnoLoad.
-
-La Domain Layer contiene el aggregate User Account y las reglas asociadas al control de identidad y acceso.
+Este diagrama representa la estructura interna del Identity & Access Management Bounded Context en ASP.NET Core. Este contexto se encarga de la autenticación, autorización basada en roles (RBAC), emisión de tokens JWT y gestión de credenciales seguras.
 
 ![Identity & Access Management Component Diagram](assets/architecture/c4/c4-identity-component.svg)
 
-#### **Profiles Management Bounded Context Component Diagram**
+##### Profiles Management Bounded Context Component Diagram
 
-Este diagrama muestra la estructura interna del Profiles Management Bounded Context, encargado de gestionar la información del perfil, datos de contacto e información de las organizaciones asociadas a los usuarios.
-
-La Domain Layer contiene el aggregate Profile y sus reglas de negocio correspondientes.
+Este diagrama muestra la estructura interna del Profiles Management Bounded Context en ASP.NET Core, encargado de gestionar los perfiles de usuario, números de identificación fiscal/documentos de identidad, datos de contacto e información organizacional de las empresas contratistas y proveedoras de maquinaria.
 
 ![Profiles Management Component Diagram](assets/architecture/c4/c4-profiles-component.svg)  
 
-#### Backend API Component Diagrams (maintainable source)
+##### Backend API Component Diagrams (maintainable source)
 
-Los siguientes diagramas especifican la estructura de los contenedores principales. Cada controlador depende de un *application service*; los agregados y reglas permanecen en la capa de dominio, mientras que los repositorios e integraciones pertenecen a infraestructura.
+Los siguientes diagramas especifican la estructura de los controladores y servicios principales de la API backend en C# y ASP.NET Core:
 
 ```mermaid
 flowchart LR
-  subgraph api["Backend API"]
-    controllers["Controllers"] --> services["Application Services"]
-    services --> domain["Domain Aggregates"]
-    services --> dispatcher["Domain Event Dispatcher"]
-    services --> repositories["Repository Adapters"]
+  subgraph api["Backend API [ASP.NET Core 8 / C#]"]
+    controllers["Controllers (Interfaces Layer)<br/><i>Authentication · Profiles · Fleet · Rental · Maintenance · Operations</i>"] --> services["Application Services & Handlers<br/><i>Use Case Orchestration</i>"]
+    services --> domain["Domain Aggregates & Rules<br/><i>UserAccount · Profile · Asset · Rental · MaintenanceOrder · ServiceOperation</i>"]
+    services --> dispatcher["Domain Event Dispatcher<br/><i>In-Memory Event Bus</i>"]
+    services --> repositories["Repository Interfaces & EF Core Adapters"]
   end
-  controllers --- controllerTypes["Asset · Maintenance · Rental · Operation · Identity"]
-  services --- serviceTypes["Asset · Maintenance · Rental · Operation · Identity"]
-  repositories --> database[("PostgreSQL")]
-  classDef layer fill:#E3F2FD,stroke:#1565C0,color:#0D47A1
+  repositories --> database[("PostgreSQL 16 Database")]
+  classDef layer fill:#1E40AF,stroke:#1D4ED8,color:#FFFFFF
   class controllers,services,domain,dispatcher,repositories layer
 ```
 
 ```mermaid
 flowchart LR
-  assetService["Asset Application Service"] --> asset["Asset Aggregate"]
-  assetService --> assetRepository["Asset Repository Port"]
-  maintenanceService["Maintenance Application Service"] --> maintenancePlan["Maintenance Plan Aggregate"]
+  assetService["Asset Application Service<br/>(C#)"] --> asset["Asset Aggregate Root<br/>(Domain Entity)"]
+  assetService --> assetRepository["IAssetRepository<br/>(Domain Port)"]
+  maintenanceService["Maintenance Application Service<br/>(C#)"] --> maintenancePlan["Maintenance Plan Aggregate"]
   maintenanceService --> maintenanceOrder["Maintenance Order Aggregate"]
-  maintenanceService --> maintenanceRepository["Maintenance Repository Port"]
-  maintenanceOrder -->|publishes alert| notificationPort["Notification Port"]
-  assetRepository --> adapters["PostgreSQL Repository Adapters"]
+  maintenanceService --> maintenanceRepository["IMaintenanceRepository<br/>(Domain Port)"]
+  maintenanceOrder -->|publishes MaintenanceDueEvent| notificationPort["INotificationService Port"]
+  assetRepository --> adapters["PostgreSQL EF Core Adapters<br/>(Infrastructure)"]
   maintenanceRepository --> adapters
-  classDef component fill:#E8F5E9,stroke:#2E7D32,color:#1B5E20
+  classDef component fill:#065F46,stroke:#047857,color:#FFFFFF
   class assetService,asset,assetRepository,maintenanceService,maintenancePlan,maintenanceOrder,maintenanceRepository,notificationPort,adapters component
 ```
 
 ```mermaid
 flowchart LR
-  rentalService["Rental Application Service"] --> rental["Rental Request Aggregate"]
-  rentalService --> rentalRepository["Rental Repository Port"]
-  rental -->|RentalConfirmed| operationService["Operation Application Service"]
-  operationService --> operation["Service Operation Aggregate"]
-  operation -->|ServiceOperationCompleted| billingService["Billing Application Service"]
-  billingService --> subscription["Subscription Aggregate"]
-  billingService --> paymentAdapter["Payment Gateway Adapter"]
-  billingService --> sunatAdapter["SUNAT Invoice Adapter"]
-  classDef component fill:#F3E5F5,stroke:#7B1FA2,color:#4A148C
+  rentalService["Rental Application Service<br/>(C#)"] --> rental["Rental Request Aggregate Root"]
+  rentalService --> rentalRepository["IRentalRepository<br/>(Domain Port)"]
+  rental -->|RentalConfirmedDomainEvent| operationService["Operation Application Service<br/>(C#)"]
+  operationService --> operation["Service Operation Aggregate Root"]
+  operation -->|ServiceOperationCompletedEvent| billingService["Billing Application Service<br/>(C#)"]
+  billingService --> subscription["Subscription Aggregate Root"]
+  billingService --> paymentAdapter["Payment Gateway Adapter<br/>(Infrastructure)"]
+  billingService --> sunatAdapter["SUNAT Invoice Adapter<br/>(Infrastructure)"]
+  classDef component fill:#4C1D95,stroke:#5B21B6,color:#FFFFFF
   class rentalService,rental,rentalRepository,operationService,operation,billingService,subscription,paymentAdapter,sunatAdapter component
 ```
 
