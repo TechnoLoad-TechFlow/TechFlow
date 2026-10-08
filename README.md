@@ -1506,37 +1506,37 @@ A partir del análisis realizado se identificaron los siguientes Bounded Context
 
 Este Bounded Context concentra las responsabilidades relacionadas con la gestión de la maquinaria, incluyendo su registro, actualización de información, cambio de estado, consulta de inventario y disponibilidad.
 
-![Fleet Management Event Storming](assets/architecture/event-storming/es-fleet-management.svg)
+![Fleet Management Event Storming](assets/architecture/event-storming-rendered/fleet-management-design-level.svg)
 
 #### Rental Management Bounded Context
 
 Este Bounded Context gestiona las solicitudes y reservas de maquinaria, incluyendo la creación de solicitudes, confirmación, cancelación y actualización de las fechas asociadas al alquiler.
 
-![Rental Management Event Storming](assets/architecture/event-storming/es-rental-management.svg)
+![Rental Management Event Storming](assets/architecture/event-storming-rendered/rental-management-design-level.svg)
 
 #### Maintenance Management Bounded Context
 
 Este Bounded Context agrupa las responsabilidades relacionadas con el mantenimiento de la maquinaria. Incluye la programación y finalización de mantenimientos, el reporte de averías y la actualización del estado de mantenimiento. Su agregado principal es Maintenance y permite además consultar el historial, los mantenimientos pendientes y el detalle de cada intervención realizada.
 
-![Maintenance Management Event Storming](assets/architecture/event-storming/es-maintenance-management.svg)
+![Maintenance Management Event Storming](assets/architecture/event-storming-rendered/maintenance-management-design-level.svg)
 
 #### Operations Management Bounded Context
 
 Este Bounded Context representa la ejecución operativa de los servicios realizados con la maquinaria. Incluye el inicio y finalización de un servicio, el registro de horas trabajadas y la validación de dichas horas. Su agregado principal es Service Operation y permite consultar el estado del servicio, el resumen de horas trabajadas y el historial de operaciones.
 
-![Operations Management Event Storming](assets/architecture/event-storming/es-operations-management.svg)
+![Operations Management Event Storming](assets/architecture/event-storming-rendered/operations-management-design-level.svg)
 
 #### Identity & Access Management Bounded Context
 
 Este Bounded Context se encarga de la gestión de identidad, autenticación y control de acceso de los usuarios de TechnoLoad. Incluye el registro de cuentas, la autenticación, la asignación de roles y el cambio de contraseñas. Su agregado principal es User Account y permite consultar los datos de la cuenta, los roles asignados y el estado de autenticación.
 
-![Identity & Access Management Event Storming](assets/architecture/event-storming/es-identity-access-management.svg)
+![Identity & Access Management Event Storming](assets/architecture/event-storming-rendered/identity-access-management-design-level.svg)
 
 #### Profiles Management Bounded Context
 
 Este Bounded Context gestiona la información asociada a los perfiles de los usuarios. Incluye la creación y actualización de perfiles, datos de contacto e información de la organización. Su agregado principal es Profile y permite consultar la información personal, de contacto y organizacional asociada a cada usuario.
 
-![Profiles Management Event Storming](assets/architecture/event-storming/es-profiles-management.svg)
+![Profiles Management Event Storming](assets/architecture/event-storming-rendered/profiles-management-design-level.svg)
 
 #### Policies and Business Rules
 
