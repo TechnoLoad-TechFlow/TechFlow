@@ -2925,6 +2925,18 @@ El Sprint 2 debe documentar el incremento siguiente al trabajo de definición y 
 | Productos incluidos | [Indicar los componentes realmente desarrollados en este sprint: interfaz, servicios, API, documentación u otros]. |
 | Productos planificados para siguientes Sprints | [Indicar funcionalidades pendientes según el backlog y la planificación real]. |
 
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+La matriz mantiene la estructura original. Los integrantes se tomaron del informe de TechnoLoad. Las responsabilidades y los usuarios de GitHub deben completarse a partir de las evidencias del sprint; no se trasladan los roles del equipo MaquiControl.
+
+Se utiliza `L` para líder y `C` para colaborador.
+
+| Team Member | GitHub Username / Git Author | Web Application | API / Services | UX/UI or Landing Page | Architecture & Diagrams | Sprint Report | SCM & Deployment |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| Tantalean Granda, Nicolas | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| Gutiérrez Lizarbe, Wilmer Sebastián | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| Castillo Guevara, Mathias Alejandro | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+
 ## 5.3. Validation Interviews
 ## 5.4. Video About-the-Product
 
