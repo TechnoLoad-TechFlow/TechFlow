@@ -945,7 +945,7 @@ Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [
 | 52 | **US-044** | Consultar estado de la suscripción | Como propietario, quiero consultar el estado y el historial de pagos de mi suscripción, para verificar mi situación con la plataforma. | 2 |
 | 53 | **US-045** | Bloquear registro de maquinaria al superar el límite del plan | Como sistema, quiero impedir que un propietario registre más maquinarias que las permitidas por su plan, para hacer cumplir los límites comerciales de la suscripción. | 2 |
 
-##Capítulo IV: Product Design
+## Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
 
@@ -2781,6 +2781,25 @@ La entrega visible de TechnoLoad se compone de una Landing Page pública y una W
 | Frontend Web Application (prototipo) | [index.html](index.html) | Disponible en el repositorio; se ejecuta directamente en un navegador |
 
 La URL pública proporcionada corresponde a la Landing Page. El prototipo de la Web Application está contenido en el mismo repositorio en `index.html`, junto con sus estilos, módulos JavaScript y datos simulados. Una URL de producción independiente para este prototipo podrá agregarse cuando se publique en GitHub Pages u otra plataforma.
+
+### 5.2.1. Sprint 1
+
+### 5.2.1.1. Sprint Planning 1
+
+El Sprint 1 comprendió el periodo del 8 al 19 de septiembre de 2026. Su objetivo principal fue implementar y publicar una primera versión funcional de la Landing Page de MaquiControl, además de consolidar los requisitos, artefactos UX/UI y decisiones de arquitectura requeridos para los siguientes incrementos del producto.
+
+| Campo | Detalle |
+|---|---|
+| Sprint | Sprint 1 |
+| Fecha de inicio | 08/09/2026 |
+| Fecha de finalización | 19/09/2026 |
+| Duración | 12 días |
+| Objetivo | Definir y documentar la solución para la gestión de maquinaria pesada y transporte/logística, consolidando los requerimientos, los segmentos objetivo y la propuesta de valor del producto.|
+| User Stories consideradas | US-013 Mostrar propuesta de valor y US-014 Mostrar información por segmento son referencias del documento de sprints original; confirmar si fueron las seleccionadas para TechFlow. El Product Backlog de TechnoLoad incluye también US-001 a US-045 y TS-001 a TS-008|
+| Productos incluidos | Landing Page e informe técnico del proyecto. |
+| Productos planificados para siguientes Sprints | Aplicación web, servicios/API y componentes de persistencia, según el alcance y la arquitectura finalmente aprobados. |
+
+
 
 ## 5.3. Validation Interviews
 ## 5.4. Video About-the-Product
