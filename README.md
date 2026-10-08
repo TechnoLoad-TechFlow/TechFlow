@@ -2889,6 +2889,7 @@ La página de presentación del proyecto aparece referenciada en el material de 
 
 La captura debe mostrar la URL y la versión efectivamente desplegada. Si la ruta de la imagen no existe en el repositorio de TechFlow, reemplazarla por una captura real o actualizar el nombre del archivo.
 
+## 5.2.1.8. Team Collaboration Insights during Sprint
 El informe de TechnoLoad identifica como integrantes a Nicolas Tantalean Granda, Wilmer Sebastián Gutiérrez Lizarbe, Mathias Alejandro Castillo Guevara y Edgard Daniel Díaz Caruzo. Para completar el análisis de colaboración del Sprint 1, se deben revisar los commits y normalizar las identidades que pertenezcan a una misma persona. No se deben trasladar al equipo TechFlow los nombres, usuarios ni conteos de commits que aparecían en el documento de MaquiControl.
 
 | Integrante / Identidad Git | Commits en el informe | Commits en la aplicación | Commits en otros repositorios | Total identificado |
@@ -2905,7 +2906,24 @@ Las cantidades deben obtenerse del historial real del repositorio y no constituy
 ![Project Report Collaboration Additional Commits](assets/project-report-collaboration-commits-2.png)
 
 ---
+### 5.2.2. Sprint 2
 
+#### 5.2.2.1. Sprint Planning 2
+
+El Sprint 2 debe documentar el incremento siguiente al trabajo de definición y planificación del proyecto TechFlow. De acuerdo con el Product Backlog del informe TechnoLoad, el producto considera funcionalidades de gestión de maquinaria, disponibilidad, reservas, catálogo, mantenimiento, registro de horas, perfiles, autenticación, suscripciones y servicios técnicos. El alcance exacto del Sprint 2 debe contrastarse con el tablero y los commits reales.
+
+| Campo | Detalle |
+|---|---|
+| Sprint | Sprint 2 |
+| Fecha de inicio | [Confirmar fecha real] |
+| Fecha de finalización | [Confirmar fecha real] |
+| Duración | [Calcular según fechas confirmadas] |
+| Sprint 1 Review Summary | [Resumir únicamente los resultados del Sprint 1 que hayan sido demostrados con evidencias]. |
+| Sprint 1 Retrospective Summary | [Registrar acuerdos y mejoras reales identificados por el equipo]. |
+| Objetivo | Desarrollar el incremento priorizado de TechFlow para la gestión de maquinaria pesada y/o transporte y logística, según las historias de usuario seleccionadas para este sprint. |
+| User Stories consideradas | El Product Backlog contiene US-001 a US-045 y TS-001 a TS-008. Seleccionar aquí únicamente las historias incluidas en el Sprint 2 real. |
+| Productos incluidos | [Indicar los componentes realmente desarrollados en este sprint: interfaz, servicios, API, documentación u otros]. |
+| Productos planificados para siguientes Sprints | [Indicar funcionalidades pendientes según el backlog y la planificación real]. |
 
 ## 5.3. Validation Interviews
 ## 5.4. Video About-the-Product
