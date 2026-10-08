@@ -2830,6 +2830,25 @@ Durante el Sprint 1, la trazabilidad debe documentarse con el tablero de trabajo
 - [Repositorio del proyecto](https://github.com/TechnoLoad-TechFlow/TechFlow)
 - [Página de presentación, si corresponde al despliegue actual](https://technoload-techflow.github.io/TechFlow/)
 
+#### 5.2.1.4. Development Evidence for Sprint Review
+
+La siguiente tabla conserva las columnas de la evidencia de desarrollo del documento original. El material compartido no contiene el historial de commits del repositorio de TechFlow por sprint, por lo que no se sustituyen los identificadores por commits inventados. Se dejan filas preparadas para registrar las evidencias reales.
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on |
+|---|---|---|---|---|---|
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Agregar commit real] | [Agregar mensaje real] | [Agregar body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Agregar commit real] | [Agregar mensaje real] | [Agregar body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Agregar commit real] | [Agregar mensaje real] | [Agregar body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Agregar commit real] | [Agregar mensaje real] | [Agregar body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Agregar commit real] | [Agregar mensaje real] | [Agregar body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Agregar commit real] | [Agregar mensaje real] | [Agregar body o indicar que no existe] | [Fecha real] |
+
+Las evidencias de desarrollo que conviene incluir son los cambios en la documentación de requerimientos, los artefactos UX/UI, la definición de arquitectura y los archivos de la aplicación que hayan sido efectivamente modificados en el sprint. Deben agregarse enlaces a los commits verificables y no únicamente descripciones generales.
+
+
+
+
+
 ## 5.3. Validation Interviews
 ## 5.4. Video About-the-Product
 
