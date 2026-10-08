@@ -753,12 +753,12 @@ A continuación se presenta el Empathy Map elaborado en UXPressia para el User P
 
 El Big Picture Event Storming permite visualizar de manera general los principales procesos del negocio de TechnoLoad, identificando actores, comandos, eventos del dominio, políticas y puntos críticos. En este proyecto se representan los flujos relacionados con la gestión de activos, el mantenimiento preventivo y la coordinación de transporte y logística, con el objetivo de comprender cómo se relacionan las principales actividades del dominio.
 
-![Big Picture Event Storming 1 - MaquiControl](assets/architecture/big-picture-event-storming/big-picture-event-storming-1.jpg)
-![Big Picture Event Storming 2 - MaquiControl](assets/architecture/big-picture-event-storming/big-picture-event-storming-2.jpg)
-![Big Picture Event Storming 3 - MaquiControl](assets/architecture/big-picture-event-storming/big-picture-event-storming-3.jpg)
-![Big Picture Event Storming 4 - MaquiControl](assets/architecture/big-picture-event-storming/big-picture-event-storming-4.jpg)
-![Big Picture Event Storming 5 - MaquiControl](assets/architecture/big-picture-event-storming/big-picture-event-storming-5.jpg)
-![Big Picture Event Storming 6 - MaquiControl](assets/architecture/big-picture-event-storming/big-picture-event-storming-6.jpg)
+![Big Picture Event Storming 1 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-1.jpg)
+![Big Picture Event Storming 2 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-2.jpg)
+![Big Picture Event Storming 3 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-3.jpg)
+![Big Picture Event Storming 4 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-4.jpg)
+![Big Picture Event Storming 5 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-5.jpg)
+![Big Picture Event Storming 6 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-6.jpg)
 A partir del mapa se reconocen áreas de dominio candidatas como Discovery and Availability, Rental and Reservation Management, Fleet and Maintenance Management, Service Execution and Hour Control, Subscription Management, Billing and SUNAT Compliance, Operational Notifications y Dashboard and Analytics. Estas áreas todavía no representan Bounded Contexts definitivos, ya que su refinamiento se realizará posteriormente mediante Design-Level Event Storming.
 
 Las políticas hacen explícita la reacción del negocio ante un evento de dominio. No son eventos ni comandos: son reglas que, al cumplirse una condición, ordenan la siguiente acción dentro del contexto responsable o mediante una integración controlada.
@@ -870,7 +870,7 @@ Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [
 
 ### 3.2. Impact Mapping
 
-![Impact Map - Maquicontrol](assets/research/impact-mapping/impact-mapping-maquicontrol.png)
+![Impact Map - TechFlow](assets/research/impact-mapping/impact-mapping-maquicontrol.png)
 
 ### 3.3. Product Backlog
 

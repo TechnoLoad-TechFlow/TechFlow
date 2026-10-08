@@ -1,0 +1,97 @@
+@startuml
+title TechFlow - Subscription Management Bounded Context\nDesign-Level Event Storming
+
+left to right direction
+skinparam shadowing false
+skinparam roundcorner 8
+skinparam defaultFontName Arial
+
+' =========================
+' Styles
+' =========================
+
+rectangle "COMMAND\nSelect Subscription Plan" as CMD_SELECT_PLAN #87CEFA
+rectangle "AGGREGATE\nSubscription" as AGG_SELECT_PLAN #FFF59D
+rectangle "ACTOR\nFleet Owner" as ACT_SELECT_PLAN #FFF9C4
+rectangle "COMMAND\nRegister Subscription Payment" as CMD_REGISTER_PAYMENT #87CEFA
+rectangle "AGGREGATE\nSubscription" as AGG_REGISTER_PAYMENT #FFF59D
+rectangle "ACTOR\nFleet Owner" as ACT_REGISTER_PAYMENT #FFF9C4
+rectangle "COMMAND\nActivate Subscription" as CMD_ACTIVATE #87CEFA
+rectangle "AGGREGATE\nSubscription" as AGG_ACTIVATE #FFF59D
+rectangle "COMMAND\nCancel Subscription" as CMD_CANCEL #87CEFA
+rectangle "AGGREGATE\nSubscription" as AGG_CANCEL #FFF59D
+rectangle "ACTOR\nFleet Owner" as ACT_CANCEL #FFF9C4
+
+rectangle "DOMAIN EVENT\nSubscription Plan Selected" as EVT_PLAN_SELECTED #FFB74D
+rectangle "DOMAIN EVENT\nSubscription Payment Registered" as EVT_PAYMENT_REGISTERED #FFB74D
+rectangle "DOMAIN EVENT\nSubscription Activated" as EVT_ACTIVATED #FFB74D
+rectangle "DOMAIN EVENT\nSubscription Cancelled" as EVT_CANCELLED #FFB74D
+
+rectangle "POLICY\nWhen a subscription payment is\napproved, activate or renew\nthe subscription" as POL_ACTIVATE_ON_PAYMENT #B39DDB
+rectangle "POLICY\nWhen registered machinery reaches\nthe plan limit, reject new\nmachinery registration" as POL_PLAN_LIMIT #B39DDB
+
+rectangle "READ MODEL\nSubscription Plan Catalog" as READ_PLANS #81C784
+rectangle "QUERY\nView Subscription Plans" as QUERY_PLANS #87CEFA
+rectangle "QUERY RESULT\nSubscription Plan Catalog" as RESULT_PLANS #C8E6C9
+
+rectangle "READ MODEL\nSubscription Status" as READ_STATUS #81C784
+rectangle "QUERY\nView Subscription Status" as QUERY_STATUS #87CEFA
+rectangle "QUERY RESULT\nSubscription Status" as RESULT_STATUS #C8E6C9
+
+rectangle "READ MODEL\nPayment History" as READ_HISTORY #81C784
+rectangle "QUERY\nView Payment History" as QUERY_HISTORY #87CEFA
+rectangle "QUERY RESULT\nPayment History" as RESULT_HISTORY #C8E6C9
+
+' =========================
+' Commands -> Aggregate -> Events
+' =========================
+
+CMD_SELECT_PLAN --> AGG_SELECT_PLAN
+AGG_SELECT_PLAN --> EVT_PLAN_SELECTED
+ACT_SELECT_PLAN -[hidden]up-> CMD_SELECT_PLAN
+
+CMD_REGISTER_PAYMENT --> AGG_REGISTER_PAYMENT
+AGG_REGISTER_PAYMENT --> EVT_PAYMENT_REGISTERED
+ACT_REGISTER_PAYMENT -[hidden]up-> CMD_REGISTER_PAYMENT
+
+CMD_ACTIVATE --> AGG_ACTIVATE
+AGG_ACTIVATE --> EVT_ACTIVATED
+
+CMD_CANCEL --> AGG_CANCEL
+AGG_CANCEL --> EVT_CANCELLED
+ACT_CANCEL -[hidden]up-> CMD_CANCEL
+
+EVT_PAYMENT_REGISTERED --> POL_ACTIVATE_ON_PAYMENT
+POL_ACTIVATE_ON_PAYMENT --> CMD_ACTIVATE
+
+note right of POL_PLAN_LIMIT
+  Cross-context policy: consumed by
+  Fleet Management when handling
+  Register Machinery, using the
+  active Subscription Plan Catalog
+  Read Model as an external reference.
+end note
+
+' =========================
+' Queries -> Read Models
+' =========================
+
+READ_PLANS --> QUERY_PLANS
+QUERY_PLANS --> RESULT_PLANS
+READ_STATUS --> QUERY_STATUS
+QUERY_STATUS --> RESULT_STATUS
+READ_HISTORY --> QUERY_HISTORY
+QUERY_HISTORY --> RESULT_HISTORY
+
+legend right
+|= Color |= Element |
+|<#87CEFA>| Command / Query |
+|<#FFF59D>| Aggregate |
+|<#FFB74D>| Domain Event |
+|<#FFF9C4>| Actor |
+|<#B39DDB>| Policy |
+|<#81C784>| Read Model |
+|<#C8E6C9>| Query Result |
+endlegend
+
+@enduml

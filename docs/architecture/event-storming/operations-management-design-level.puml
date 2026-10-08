@@ -1,5 +1,5 @@
 @startuml
-title TechFlow - Operations Management\nBig Picture Event Storming
+title TechFlow - Operations Management Bounded Context\nDesign-Level Event Storming
 
 left to right direction
 skinparam shadowing false
@@ -28,6 +28,9 @@ rectangle "DOMAIN EVENT\nWorked Hours Recorded" as EVT_HOURS_RECORDED #FFB74D
 rectangle "DOMAIN EVENT\nWorked Hours Validated" as EVT_HOURS_VALIDATED #FFB74D
 rectangle "DOMAIN EVENT\nService Completed" as EVT_COMPLETED #FFB74D
 
+rectangle "POLICY\nWhen worked hours are recorded,\nrequire validation before completion" as POL_VALIDATE_RECORDED_HOURS #B39DDB
+rectangle "POLICY\nWhen worked hours are validated,\nallow service completion" as POL_COMPLETE_VALIDATED_SERVICE #B39DDB
+
 rectangle "READ MODEL\nService Status" as READ_STATUS #81C784
 rectangle "QUERY\nView Service Status" as QUERY_STATUS #87CEFA
 rectangle "QUERY RESULT\nService Status" as RESULT_STATUS #C8E6C9
@@ -44,25 +47,38 @@ rectangle "QUERY RESULT\nOperation History" as RESULT_HISTORY #C8E6C9
 ' Commands -> Aggregate -> Events
 ' =========================
 
-CMD_START --> AGG_START --> EVT_STARTED
+CMD_START --> AGG_START
+AGG_START --> EVT_STARTED
 ACT_START -[hidden]up-> CMD_START
 
-CMD_RECORD_HOURS --> AGG_RECORD_HOURS --> EVT_HOURS_RECORDED
+CMD_RECORD_HOURS --> AGG_RECORD_HOURS
+AGG_RECORD_HOURS --> EVT_HOURS_RECORDED
 ACT_RECORD_HOURS -[hidden]up-> CMD_RECORD_HOURS
 
-CMD_VALIDATE_HOURS --> AGG_VALIDATE_HOURS --> EVT_HOURS_VALIDATED
+CMD_VALIDATE_HOURS --> AGG_VALIDATE_HOURS
+AGG_VALIDATE_HOURS --> EVT_HOURS_VALIDATED
 ACT_VALIDATE_HOURS -[hidden]up-> CMD_VALIDATE_HOURS
 
-CMD_COMPLETE --> AGG_COMPLETE --> EVT_COMPLETED
+CMD_COMPLETE --> AGG_COMPLETE
+AGG_COMPLETE --> EVT_COMPLETED
 ACT_COMPLETE -[hidden]up-> CMD_COMPLETE
+
+EVT_HOURS_RECORDED --> POL_VALIDATE_RECORDED_HOURS
+POL_VALIDATE_RECORDED_HOURS --> CMD_VALIDATE_HOURS
+
+EVT_HOURS_VALIDATED --> POL_COMPLETE_VALIDATED_SERVICE
+POL_COMPLETE_VALIDATED_SERVICE --> CMD_COMPLETE
 
 ' =========================
 ' Queries -> Read Models
 ' =========================
 
-READ_STATUS --> QUERY_STATUS --> RESULT_STATUS
-READ_HOURS --> QUERY_HOURS --> RESULT_HOURS
-READ_HISTORY --> QUERY_HISTORY --> RESULT_HISTORY
+READ_STATUS --> QUERY_STATUS
+QUERY_STATUS --> RESULT_STATUS
+READ_HOURS --> QUERY_HOURS
+QUERY_HOURS --> RESULT_HOURS
+READ_HISTORY --> QUERY_HISTORY
+QUERY_HISTORY --> RESULT_HISTORY
 
 legend right
 |= Color |= Element |
@@ -70,6 +86,7 @@ legend right
 |<#FFF59D>| Aggregate |
 |<#FFB74D>| Domain Event |
 |<#FFF9C4>| Actor |
+|<#B39DDB>| Policy |
 |<#81C784>| Read Model |
 |<#C8E6C9>| Query Result |
 endlegend

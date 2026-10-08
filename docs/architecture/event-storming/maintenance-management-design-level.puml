@@ -1,5 +1,5 @@
 @startuml
-title TechFlow - Maintenance Management\nBig Picture Event Storming
+title TechFlow - Maintenance Management Bounded Context\nDesign-Level Event Storming
 
 left to right direction
 skinparam shadowing false
@@ -28,6 +28,8 @@ rectangle "DOMAIN EVENT\nMaintenance Completed" as EVT_COMPLETED #FFB74D
 rectangle "DOMAIN EVENT\nBreakdown Reported" as EVT_BREAKDOWN #FFB74D
 rectangle "DOMAIN EVENT\nMaintenance Status Updated" as EVT_STATUS_UPDATED #FFB74D
 
+rectangle "POLICY\nWhen a breakdown is reported,\nschedule corrective maintenance" as POL_CORRECTIVE_MAINTENANCE #B39DDB
+
 rectangle "READ MODEL\nMaintenance History" as READ_HISTORY #81C784
 rectangle "QUERY\nView Maintenance History" as QUERY_HISTORY #87CEFA
 rectangle "QUERY RESULT\nMaintenance History" as RESULT_HISTORY #C8E6C9
@@ -44,25 +46,35 @@ rectangle "QUERY RESULT\nMaintenance Details" as RESULT_DETAILS #C8E6C9
 ' Commands -> Aggregate -> Events
 ' =========================
 
-CMD_SCHEDULE --> AGG_SCHEDULE --> EVT_SCHEDULED
+CMD_SCHEDULE --> AGG_SCHEDULE
+AGG_SCHEDULE --> EVT_SCHEDULED
 ACT_SCHEDULE -[hidden]up-> CMD_SCHEDULE
 
-CMD_COMPLETE --> AGG_COMPLETE --> EVT_COMPLETED
+CMD_COMPLETE --> AGG_COMPLETE
+AGG_COMPLETE --> EVT_COMPLETED
 ACT_COMPLETE -[hidden]up-> CMD_COMPLETE
 
-CMD_BREAKDOWN --> AGG_BREAKDOWN --> EVT_BREAKDOWN
+CMD_BREAKDOWN --> AGG_BREAKDOWN
+AGG_BREAKDOWN --> EVT_BREAKDOWN
 ACT_BREAKDOWN -[hidden]up-> CMD_BREAKDOWN
 
-CMD_UPDATE_STATUS --> AGG_UPDATE_STATUS --> EVT_STATUS_UPDATED
+CMD_UPDATE_STATUS --> AGG_UPDATE_STATUS
+AGG_UPDATE_STATUS --> EVT_STATUS_UPDATED
 ACT_UPDATE_STATUS -[hidden]up-> CMD_UPDATE_STATUS
+
+EVT_BREAKDOWN --> POL_CORRECTIVE_MAINTENANCE
+POL_CORRECTIVE_MAINTENANCE --> CMD_SCHEDULE
 
 ' =========================
 ' Queries -> Read Models
 ' =========================
 
-READ_HISTORY --> QUERY_HISTORY --> RESULT_HISTORY
-READ_PENDING --> QUERY_PENDING --> RESULT_PENDING
-READ_DETAILS --> QUERY_DETAILS --> RESULT_DETAILS
+READ_HISTORY --> QUERY_HISTORY
+QUERY_HISTORY --> RESULT_HISTORY
+READ_PENDING --> QUERY_PENDING
+QUERY_PENDING --> RESULT_PENDING
+READ_DETAILS --> QUERY_DETAILS
+QUERY_DETAILS --> RESULT_DETAILS
 
 legend right
 |= Color |= Element |
@@ -70,6 +82,7 @@ legend right
 |<#FFF59D>| Aggregate |
 |<#FFB74D>| Domain Event |
 |<#FFF9C4>| Actor |
+|<#B39DDB>| Policy |
 |<#81C784>| Read Model |
 |<#C8E6C9>| Query Result |
 endlegend
