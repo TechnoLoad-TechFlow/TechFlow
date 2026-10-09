@@ -1,58 +1,63 @@
-# GRUPO-3
-
 <p align="center">
   <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/2c3d0613-f51e-47d7-bd82-439b78384731" />
 </p>
 
 <div align="center">
 
-# UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
+# Universidad Peruana de Ciencias Aplicadas
 
-### FACULTAD DE INGENIERÍA
-### CARRERA DE INGENIERÍA DE SOFTWARE
-
-<br>
-
-# INFORME DE PROYECTO
-
-## Nombre del proyecto
-### TechnoLoad
+## Carrera de Ingeniería de Software
 
 <br>
 
-**Curso:**  
-Aplicaciones Web
+### 1ASI0729
+### Aplicaciones Web
 
-**Sección:**  
-8093
+<br>
+
+### NRC
+## 8093
+
+<br>
+
+## Informe del Trabajo Final
+
+<br>
+
+### Docente
+**Bautista Ubillús, Efraín Ricardo**
+
+<br>
+
+### Equipo
+**Technoload**
+
+### Proyecto
+**Techflow**
+
 <br>
 
 ### Integrantes
 
+</div>
 
-NICOLAS TANTALEAN GRANDA | U202410728 |
+| Código | Apellidos y Nombres |
+|---|---|
+| U202410728 | Edgar Daniel Diaz Caruzo |
+| U202412044 | Tantalean Granda, Nicolas |
+| U202410783 | Gutiérrez Lizarbe, Wilmer Sebastián |
+| U202323911 | Castillo Guevara, Mathias Alejandro |
 
-WILMER SEBASTIAN GUTIERREZ LIZARBE | U202412044 |
 
-MATHIAS ALEJANDRO CASTILLO GUEVARA | U202410783 |
-
-EDGARD DANIEL DIAZ CARUZO | U202323911 |
-
-
-<br>
-
-**Docente:**  
-Efrain Ricardo Bautista Ubillus
+<div align="center">
 
 <br>
 
-**Ciclo:**  
-2026-2
+### Período 202620
 
 <br>
 
-**Lima, Perú**  
-**2026**
+### Octubre 2026
 
 </div>
 
