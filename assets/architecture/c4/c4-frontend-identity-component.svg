@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 980" width="100%" height="100%" role="img" aria-labelledby="title description">
+  <title id="title">TechnoLoad - Identity &amp; Access Management Frontend Component Diagram (C4 Level 3)</title>
+  <desc id="description">Diagrama de componentes Frontend para el contexto de identidad y acceso en Vue 3 con nombres exactos de funciones y archivos de código.</desc>
+  <rect width="1300" height="980" fill="#F8FAFC"/>
+
+  <text x="650" y="38" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="bold" fill="#0F172A">TechnoLoad - Identity &amp; Access Management Frontend Component Diagram (C4 Level 3)</text>
+  <text x="650" y="60" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748B">Descomposición interna de la Single Page Application (Vue 3 + PrimeVue) con nomenclatura estricta de componentes y funciones de código</text>
+
+  <!-- CONTAINER BOUNDARY: SPA -->
+  <rect x="40" y="85" width="1220" height="760" rx="12" fill="none" stroke="#3B82F6" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="60" y="115" font-family="sans-serif" font-size="16" font-weight="bold" fill="#1E40AF">Single Page Application (SPA)</text>
+  <text x="320" y="115" font-family="sans-serif" font-size="12" font-weight="600" fill="#64748B">[Container: Vue 3 + PrimeVue]</text>
+
+  <!-- 1. PRESENTATION LAYER (Top Half) -->
+  <rect x="65" y="135" width="1170" height="230" rx="8" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <text x="85" y="160" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1D4ED8">Presentation Layer (Vue 3 Single File Components &amp; PrimeVue UI)</text>
+
+  <!-- Component 1: LogInView.vue -->
+  <g transform="translate(85, 175)">
+    <rect width="265" height="175" rx="6" fill="#2563EB"/>
+    <text x="14" y="22" font-family="sans-serif" font-size="10" fill="#BFDBFE">«view component»</text>
+    <text x="14" y="42" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">LogInView.vue</text>
+    <line x1="14" y1="52" x2="251" y2="52" stroke="#93C5FD" stroke-width="1"/>
+    <text x="14" y="70" font-family="sans-serif" font-size="11" fill="#E2E8F0">Responsabilidad: Vista de inicio de sesión</text>
+    <text x="14" y="90" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#BFDBFE">Funciones y métodos del componente:</text>
+    <text x="14" y="108" font-family="monospace" font-size="10" fill="#FFFFFF">+ logIn(credentials)</text>
+    <text x="14" y="124" font-family="monospace" font-size="10" fill="#FFFFFF">+ handleLogInSubmit(event)</text>
+    <text x="14" y="140" font-family="monospace" font-size="10" fill="#FFFFFF">+ validateCredentialsForm()</text>
+    <text x="14" y="156" font-family="monospace" font-size="10" fill="#FFFFFF">+ navigateToRegister()</text>
+  </g>
+
+  <!-- Component 2: LogInForm.vue -->
+  <g transform="translate(370, 175)">
+    <rect width="245" height="175" rx="6" fill="#3B82F6"/>
+    <text x="14" y="22" font-family="sans-serif" font-size="10" fill="#BFDBFE">«ui child component»</text>
+    <text x="14" y="42" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">LogInForm.vue</text>
+    <line x1="14" y1="52" x2="231" y2="52" stroke="#93C5FD" stroke-width="1"/>
+    <text x="14" y="70" font-family="sans-serif" font-size="11" fill="#E2E8F0">Props: isLoading, errorMessage</text>
+    <text x="14" y="86" font-family="sans-serif" font-size="11" fill="#E2E8F0">Emits: @submit(credentials)</text>
+    <text x="14" y="108" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#BFDBFE">Funciones:</text>
+    <text x="14" y="126" font-family="monospace" font-size="10" fill="#FFFFFF">+ onFormSubmit()</text>
+    <text x="14" y="142" font-family="monospace" font-size="10" fill="#FFFFFF">+ clearInputs()</text>
+    <text x="14" y="158" font-family="monospace" font-size="10" fill="#FFFFFF">+ onPasswordToggle()</text>
+  </g>
+
+  <!-- Component 3: RegisterView.vue -->
+  <g transform="translate(635, 175)">
+    <rect width="275" height="175" rx="6" fill="#2563EB"/>
+    <text x="14" y="22" font-family="sans-serif" font-size="10" fill="#BFDBFE">«view component»</text>
+    <text x="14" y="42" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">RegisterView.vue</text>
+    <line x1="14" y1="52" x2="261" y2="52" stroke="#93C5FD" stroke-width="1"/>
+    <text x="14" y="70" font-family="sans-serif" font-size="11" fill="#E2E8F0">Responsabilidad: Registro de usuarios</text>
+    <text x="14" y="90" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#BFDBFE">Funciones y métodos del componente:</text>
+    <text x="14" y="108" font-family="monospace" font-size="10" fill="#FFFFFF">+ registerUser(accountData)</text>
+    <text x="14" y="124" font-family="monospace" font-size="10" fill="#FFFFFF">+ handleRegisterSubmit(event)</text>
+    <text x="14" y="140" font-family="monospace" font-size="10" fill="#FFFFFF">+ validateAccountPayload()</text>
+    <text x="14" y="156" font-family="monospace" font-size="10" fill="#FFFFFF">+ navigateToLogIn()</text>
+  </g>
+
+  <!-- Component 4: PrimeVue Library Components -->
+  <g transform="translate(930, 175)">
+    <rect width="285" height="175" rx="6" fill="#1E3A8A"/>
+    <text x="14" y="22" font-family="sans-serif" font-size="10" fill="#93C5FD">«ui component suite»</text>
+    <text x="14" y="42" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF">PrimeVue UI Elements</text>
+    <line x1="14" y1="52" x2="271" y2="52" stroke="#60A5FA" stroke-width="1"/>
+    <text x="14" y="72" font-family="monospace" font-size="11" fill="#93C5FD">&lt;pv-input-text&gt;</text>
+    <text x="14" y="92" font-family="monospace" font-size="11" fill="#93C5FD">&lt;pv-password&gt;</text>
+    <text x="14" y="112" font-family="monospace" font-size="11" fill="#93C5FD">&lt;pv-button&gt;</text>
+    <text x="14" y="132" font-family="monospace" font-size="11" fill="#93C5FD">&lt;pv-message&gt; · &lt;pv-toast&gt;</text>
+    <text x="14" y="152" font-family="monospace" font-size="11" fill="#93C5FD">&lt;pv-card&gt; · &lt;pv-dialog&gt;</text>
+  </g>
+
+  <!-- 2. APPLICATION LAYER (State Store) -->
+  <rect x="65" y="390" width="550" height="210" rx="8" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.5"/>
+  <text x="85" y="415" font-family="sans-serif" font-size="13" font-weight="bold" fill="#15803D">Application Layer (State Store &amp; Orchestration)</text>
+
+  <g transform="translate(85, 430)">
+    <rect width="510" height="155" rx="6" fill="#16A34A"/>
+    <text x="14" y="22" font-family="sans-serif" font-size="10" fill="#DCFCE7">«application store»</text>
+    <text x="14" y="42" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">identity.store.js (authStore)</text>
+    <line x1="14" y1="50" x2="496" y2="50" stroke="#86EFAC" stroke-width="1"/>
+    <text x="14" y="68" font-family="monospace" font-size="10.5" fill="#DCFCE7">State: currentUser, token, isAuthenticated, roles, isLoading, errorMessage</text>
+    <text x="14" y="88" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#DCFCE7">Acciones y funciones reactivas:</text>
+    <text x="14" y="106" font-family="monospace" font-size="10" fill="#FFFFFF">+ async logIn(email, password)</text>
+    <text x="14" y="122" font-family="monospace" font-size="10" fill="#FFFFFF">+ async register(accountData) · + logOut() · + restoreSession()</text>
+    <text x="14" y="138" font-family="monospace" font-size="10" fill="#FFFFFF">+ hasRole(roleName): Boolean · + clearAuthError()</text>
+  </g>
+
+  <!-- 3. DOMAIN LAYER -->
+  <rect x="635" y="390" width="600" height="210" rx="8" fill="#FEFCE8" stroke="#FEF08A" stroke-width="1.5"/>
+  <text x="655" y="415" font-family="sans-serif" font-size="13" font-weight="bold" fill="#A16207">Domain Layer (Entities &amp; Value Objects)</text>
+
+  <g transform="translate(655, 430)">
+    <rect width="275" height="155" rx="6" fill="#CA8A04"/>
+    <text x="14" y="22" font-family="sans-serif" font-size="10" fill="#FEF9C3">«domain entity»</text>
+    <text x="14" y="42" font-family="monospace" font-size="13" font-weight="bold" fill="#FFFFFF">user-account.entity.js</text>
+    <line x1="14" y1="50" x2="261" y2="50" stroke="#FDE047" stroke-width="1"/>
+    <text x="14" y="68" font-family="monospace" font-size="10" fill="#FEF9C3">- id: string · - email: string</text>
+    <text x="14" y="84" font-family="monospace" font-size="10" fill="#FEF9C3">- roles: string[] · - status: string</text>
+    <text x="14" y="106" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#FEF9C3">Métodos de entidad:</text>
+    <text x="14" y="124" font-family="monospace" font-size="10" fill="#FFFFFF">+ hasRole(roleName): Boolean</text>
+    <text x="14" y="140" font-family="monospace" font-size="10" fill="#FFFFFF">+ isContractor() · + isFleetAdmin()</text>
+  </g>
+
+  <g transform="translate(950, 430)">
+    <rect width="265" height="155" rx="6" fill="#A16207"/>
+    <text x="14" y="22" font-family="sans-serif" font-size="10" fill="#FEF9C3">«value object»</text>
+    <text x="14" y="42" font-family="monospace" font-size="13" font-weight="bold" fill="#FFFFFF">credential.vo.js</text>
+    <line x1="14" y1="50" x2="251" y2="50" stroke="#FDE047" stroke-width="1"/>
+    <text x="14" y="70" font-family="monospace" font-size="10" fill="#FEF9C3">- email: string</text>
+    <text x="14" y="88" font-family="monospace" font-size="10" fill="#FEF9C3">- rawPassword: string</text>
+    <text x="14" y="112" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#FEF9C3">Métodos de validación:</text>
+    <text x="14" y="130" font-family="monospace" font-size="10" fill="#FFFFFF">+ isValidEmail(): Boolean</text>
+    <text x="14" y="146" font-family="monospace" font-size="10" fill="#FFFFFF">+ isStrongPassword(): Boolean</text>
+  </g>
+
+  <!-- 4. INFRASTRUCTURE LAYER (Bottom Half of SPA) -->
+  <rect x="65" y="625" width="1170" height="195" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="85" y="650" font-family="sans-serif" font-size="13" font-weight="bold" fill="#334155">Infrastructure Layer (API Clients, Assemblers &amp; HTTP Interceptors)</text>
+
+  <!-- Component: identity-api.js -->
+  <g transform="translate(85, 665)">
+    <rect width="360" height="140" rx="6" fill="#475569"/>
+    <text x="14" y="22" font-family="sans-serif" font-size="10" fill="#CBD5E1">«infrastructure api client»</text>
+    <text x="14" y="42" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">identity-api.js</text>
+    <line x1="14" y1="50" x2="346" y2="50" stroke="#94A3B8" stroke-width="1"/>
+    <text x="14" y="70" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#CBD5E1">Funciones cliente HTTP:</text>
+    <text x="14" y="88" font-family="monospace" font-size="10" fill="#FFFFFF">+ postSignIn(credentials): Promise&lt;AuthResponse&gt;</text>
+    <text x="14" y="106" font-family="monospace" font-size="10" fill="#FFFFFF">+ postSignUp(userData): Promise&lt;UserResponse&gt;</text>
+    <text x="14" y="124" font-family="monospace" font-size="10" fill="#FFFFFF">+ postRefreshToken(token): Promise&lt;TokenResponse&gt;</text>
+  </g>
+
+  <!-- Component: user-account.assembler.js -->
+  <g transform="translate(470, 665)">
+    <rect width="350" height="140" rx="6" fill="#475569"/>
+    <text x="14" y="22" font-family="sans-serif" font-size="10" fill="#CBD5E1">«infrastructure assembler»</text>
+    <text x="14" y="42" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">user-account.assembler.js</text>
+    <line x1="14" y1="50" x2="336" y2="50" stroke="#94A3B8" stroke-width="1"/>
+    <text x="14" y="70" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#CBD5E1">Métodos de transformación de datos:</text>
+    <text x="14" y="90" font-family="monospace" font-size="10" fill="#FFFFFF">+ toDomain(apiResource): UserAccount</text>
+    <text x="14" y="110" font-family="monospace" font-size="10" fill="#FFFFFF">+ toDomainCollection(resources): UserAccount[]</text>
+    <text x="14" y="130" font-family="monospace" font-size="10" fill="#FFFFFF">+ toDto(entity: UserAccount): object</text>
+  </g>
+
+  <!-- Component: auth.interceptor.js -->
+  <g transform="translate(845, 665)">
+    <rect width="370" height="140" rx="6" fill="#475569"/>
+    <text x="14" y="22" font-family="sans-serif" font-size="10" fill="#CBD5E1">«http interceptor»</text>
+    <text x="14" y="42" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">auth.interceptor.js</text>
+    <line x1="14" y1="50" x2="356" y2="50" stroke="#94A3B8" stroke-width="1"/>
+    <text x="14" y="70" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#CBD5E1">Funciones middleware:</text>
+    <text x="14" y="88" font-family="monospace" font-size="10" fill="#FFFFFF">+ onRequest(config): inyecta "Authorization: Bearer &lt;jwt&gt;"</text>
+    <text x="14" y="108" font-family="monospace" font-size="10" fill="#FFFFFF">+ onResponseError(error): captura 401 Unauthorized</text>
+    <text x="14" y="126" font-family="monospace" font-size="10" fill="#FFFFFF">+ redirectToLogIn(): redirige a LogInView.vue</text>
+  </g>
+
+  <!-- EXTERNAL BACKEND CONTAINER -->
+  <g transform="translate(420, 875)">
+    <rect width="480" height="85" rx="8" fill="#1D4ED8"/>
+    <text x="20" y="22" font-family="sans-serif" font-size="10" fill="#BFDBFE">«external container»</text>
+    <text x="240" y="46" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">Backend REST API [ASP.NET Core 8 / C#]</text>
+    <text x="240" y="68" text-anchor="middle" font-family="monospace" font-size="11.5" fill="#BFDBFE">POST /api/v1/authentication/sign-in  ·  POST /api/v1/authentication/sign-up</text>
+  </g>
+
+  <!-- INTERACTION CONNECTORS -->
+  <!-- LogInView -> LogInForm -->
+  <path d="M350 262 L370 262" stroke="#2563EB" stroke-width="2"/>
+  <polygon points="370,262 362,258 362,266" fill="#2563EB"/>
+
+  <!-- LogInView -> identity.store.js -->
+  <path d="M217 350 L260 430" stroke="#2563EB" stroke-width="2"/>
+  <polygon points="260,430 252,420 259,417" fill="#2563EB"/>
+  <text x="245" y="395" font-family="monospace" font-size="9" fill="#1D4ED8">invoca logIn()</text>
+
+  <!-- RegisterView -> identity.store.js -->
+  <path d="M772 350 L530 430" stroke="#2563EB" stroke-width="2"/>
+  <polygon points="530,430 538,421 544,427" fill="#2563EB"/>
+  <text x="630" y="385" font-family="monospace" font-size="9" fill="#1D4ED8">invoca register()</text>
+
+  <!-- identity.store.js -> identity-api.js -->
+  <path d="M260 585 L260 665" stroke="#16A34A" stroke-width="2"/>
+  <polygon points="260,665 255,655 265,655" fill="#16A34A"/>
+  <text x="268" y="628" font-family="monospace" font-size="9.5" fill="#15803D">postSignIn()</text>
+
+  <!-- identity.store.js -> user-account.assembler.js -->
+  <path d="M430 585 L560 665" stroke="#16A34A" stroke-width="2"/>
+  <polygon points="560,665 549,660 554,652" fill="#16A34A"/>
+  <text x="510" y="628" font-family="monospace" font-size="9" fill="#15803D">toDomain()</text>
+
+  <!-- user-account.assembler.js -> user-account.entity.js -->
+  <path d="M680 665 L730 585" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="730,585 722,593 730,597" fill="#475569"/>
+  <text x="710" y="630" font-family="monospace" font-size="9" fill="#475569">instancia</text>
+
+  <!-- identity-api.js -> Backend REST API -->
+  <path d="M265 805 L440 875" stroke="#2563EB" stroke-width="2"/>
+  <polygon points="440,875 428,873 432,866" fill="#2563EB"/>
+  <text x="270" y="845" font-family="sans-serif" font-size="10" fill="#1D4ED8" font-weight="bold">HTTPS / JSON Request</text>
+
+  <!-- auth.interceptor.js -> identity-api.js -->
+  <path d="M845 735 L445 735" stroke="#64748B" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="445,735 455,730 455,740" fill="#64748B"/>
+  <text x="610" y="725" font-family="monospace" font-size="9" fill="#475569">intercepta peticiones</text>
+</svg>

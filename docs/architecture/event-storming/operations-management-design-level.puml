@@ -1,0 +1,94 @@
+@startuml
+title TechFlow - Operations Management Bounded Context\nDesign-Level Event Storming
+
+left to right direction
+skinparam shadowing false
+skinparam roundcorner 8
+skinparam defaultFontName Arial
+
+' =========================
+' Styles
+' =========================
+
+rectangle "COMMAND\nStart Service" as CMD_START #87CEFA
+rectangle "AGGREGATE\nService Operation" as AGG_START #FFF59D
+rectangle "ACTOR\nOperator" as ACT_START #FFF9C4
+rectangle "COMMAND\nRecord Worked Hours" as CMD_RECORD_HOURS #87CEFA
+rectangle "AGGREGATE\nService Operation" as AGG_RECORD_HOURS #FFF59D
+rectangle "ACTOR\nOperator" as ACT_RECORD_HOURS #FFF9C4
+rectangle "COMMAND\nValidate Worked Hours" as CMD_VALIDATE_HOURS #87CEFA
+rectangle "AGGREGATE\nService Operation" as AGG_VALIDATE_HOURS #FFF59D
+rectangle "ACTOR\nFleet Administrator" as ACT_VALIDATE_HOURS #FFF9C4
+rectangle "COMMAND\nComplete Service" as CMD_COMPLETE #87CEFA
+rectangle "AGGREGATE\nService Operation" as AGG_COMPLETE #FFF59D
+rectangle "ACTOR\nFleet Administrator" as ACT_COMPLETE #FFF9C4
+
+rectangle "DOMAIN EVENT\nService Started" as EVT_STARTED #FFB74D
+rectangle "DOMAIN EVENT\nWorked Hours Recorded" as EVT_HOURS_RECORDED #FFB74D
+rectangle "DOMAIN EVENT\nWorked Hours Validated" as EVT_HOURS_VALIDATED #FFB74D
+rectangle "DOMAIN EVENT\nService Completed" as EVT_COMPLETED #FFB74D
+
+rectangle "POLICY\nWhen worked hours are recorded,\nrequire validation before completion" as POL_VALIDATE_RECORDED_HOURS #B39DDB
+rectangle "POLICY\nWhen worked hours are validated,\nallow service completion" as POL_COMPLETE_VALIDATED_SERVICE #B39DDB
+
+rectangle "READ MODEL\nService Status" as READ_STATUS #81C784
+rectangle "QUERY\nView Service Status" as QUERY_STATUS #87CEFA
+rectangle "QUERY RESULT\nService Status" as RESULT_STATUS #C8E6C9
+
+rectangle "READ MODEL\nWorked Hours Summary" as READ_HOURS #81C784
+rectangle "QUERY\nView Worked Hours" as QUERY_HOURS #87CEFA
+rectangle "QUERY RESULT\nWorked Hours Summary" as RESULT_HOURS #C8E6C9
+
+rectangle "READ MODEL\nOperation History" as READ_HISTORY #81C784
+rectangle "QUERY\nView Operation History" as QUERY_HISTORY #87CEFA
+rectangle "QUERY RESULT\nOperation History" as RESULT_HISTORY #C8E6C9
+
+' =========================
+' Commands -> Aggregate -> Events
+' =========================
+
+CMD_START --> AGG_START
+AGG_START --> EVT_STARTED
+ACT_START -[hidden]up-> CMD_START
+
+CMD_RECORD_HOURS --> AGG_RECORD_HOURS
+AGG_RECORD_HOURS --> EVT_HOURS_RECORDED
+ACT_RECORD_HOURS -[hidden]up-> CMD_RECORD_HOURS
+
+CMD_VALIDATE_HOURS --> AGG_VALIDATE_HOURS
+AGG_VALIDATE_HOURS --> EVT_HOURS_VALIDATED
+ACT_VALIDATE_HOURS -[hidden]up-> CMD_VALIDATE_HOURS
+
+CMD_COMPLETE --> AGG_COMPLETE
+AGG_COMPLETE --> EVT_COMPLETED
+ACT_COMPLETE -[hidden]up-> CMD_COMPLETE
+
+EVT_HOURS_RECORDED --> POL_VALIDATE_RECORDED_HOURS
+POL_VALIDATE_RECORDED_HOURS --> CMD_VALIDATE_HOURS
+
+EVT_HOURS_VALIDATED --> POL_COMPLETE_VALIDATED_SERVICE
+POL_COMPLETE_VALIDATED_SERVICE --> CMD_COMPLETE
+
+' =========================
+' Queries -> Read Models
+' =========================
+
+READ_STATUS --> QUERY_STATUS
+QUERY_STATUS --> RESULT_STATUS
+READ_HOURS --> QUERY_HOURS
+QUERY_HOURS --> RESULT_HOURS
+READ_HISTORY --> QUERY_HISTORY
+QUERY_HISTORY --> RESULT_HISTORY
+
+legend right
+|= Color |= Element |
+|<#87CEFA>| Command / Query |
+|<#FFF59D>| Aggregate |
+|<#FFB74D>| Domain Event |
+|<#FFF9C4>| Actor |
+|<#B39DDB>| Policy |
+|<#81C784>| Read Model |
+|<#C8E6C9>| Query Result |
+endlegend
+
+@enduml

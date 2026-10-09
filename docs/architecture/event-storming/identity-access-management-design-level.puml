@@ -1,0 +1,90 @@
+@startuml
+title TechFlow - Identity & Access Management Bounded Context\nDesign-Level Event Storming
+
+left to right direction
+skinparam shadowing false
+skinparam roundcorner 8
+skinparam defaultFontName Arial
+
+' =========================
+' Styles
+' =========================
+
+rectangle "COMMAND\nRegister User" as CMD_REGISTER #87CEFA
+rectangle "AGGREGATE\nUser Account" as AGG_REGISTER #FFF59D
+rectangle "ACTOR\nSystem Administrator" as ACT_REGISTER #FFF9C4
+rectangle "COMMAND\nAuthenticate User" as CMD_AUTHENTICATE #87CEFA
+rectangle "AGGREGATE\nUser Account" as AGG_AUTHENTICATE #FFF59D
+rectangle "ACTOR\nContractor" as ACT_AUTHENTICATE #FFF9C4
+rectangle "COMMAND\nAssign Role" as CMD_ASSIGN_ROLE #87CEFA
+rectangle "AGGREGATE\nUser Account" as AGG_ASSIGN_ROLE #FFF59D
+rectangle "ACTOR\nSystem Administrator" as ACT_ASSIGN_ROLE #FFF9C4
+rectangle "COMMAND\nChange Password" as CMD_CHANGE_PASSWORD #87CEFA
+rectangle "AGGREGATE\nUser Account" as AGG_CHANGE_PASSWORD #FFF59D
+rectangle "ACTOR\nContractor" as ACT_CHANGE_PASSWORD #FFF9C4
+
+rectangle "DOMAIN EVENT\nUser Registered" as EVT_REGISTERED #FFB74D
+rectangle "DOMAIN EVENT\nUser Authenticated" as EVT_AUTHENTICATED #FFB74D
+rectangle "DOMAIN EVENT\nRole Assigned" as EVT_ROLE_ASSIGNED #FFB74D
+rectangle "DOMAIN EVENT\nPassword Changed" as EVT_PASSWORD_CHANGED #FFB74D
+
+rectangle "POLICY\nWhen a user is registered,\nassign the default CONTRACTOR role" as POL_DEFAULT_ROLE #B39DDB
+
+rectangle "READ MODEL\nAccount Details" as READ_ACCOUNT #81C784
+rectangle "QUERY\nView Account Details" as QUERY_ACCOUNT #87CEFA
+rectangle "QUERY RESULT\nAccount Details" as RESULT_ACCOUNT #C8E6C9
+
+rectangle "READ MODEL\nUser Role List" as READ_ROLES #81C784
+rectangle "QUERY\nView User Roles" as QUERY_ROLES #87CEFA
+rectangle "QUERY RESULT\nUser Role List" as RESULT_ROLES #C8E6C9
+
+rectangle "READ MODEL\nAuthentication Status" as READ_AUTH_STATUS #81C784
+rectangle "QUERY\nCheck Authentication Status" as QUERY_AUTH_STATUS #87CEFA
+rectangle "QUERY RESULT\nAuthentication Status" as RESULT_AUTH_STATUS #C8E6C9
+
+' =========================
+' Commands -> Aggregate -> Events
+' =========================
+
+CMD_REGISTER --> AGG_REGISTER
+AGG_REGISTER --> EVT_REGISTERED
+ACT_REGISTER -[hidden]up-> CMD_REGISTER
+
+CMD_AUTHENTICATE --> AGG_AUTHENTICATE
+AGG_AUTHENTICATE --> EVT_AUTHENTICATED
+ACT_AUTHENTICATE -[hidden]up-> CMD_AUTHENTICATE
+
+CMD_ASSIGN_ROLE --> AGG_ASSIGN_ROLE
+AGG_ASSIGN_ROLE --> EVT_ROLE_ASSIGNED
+ACT_ASSIGN_ROLE -[hidden]up-> CMD_ASSIGN_ROLE
+
+CMD_CHANGE_PASSWORD --> AGG_CHANGE_PASSWORD
+AGG_CHANGE_PASSWORD --> EVT_PASSWORD_CHANGED
+ACT_CHANGE_PASSWORD -[hidden]up-> CMD_CHANGE_PASSWORD
+
+EVT_REGISTERED --> POL_DEFAULT_ROLE
+POL_DEFAULT_ROLE --> CMD_ASSIGN_ROLE
+
+' =========================
+' Queries -> Read Models
+' =========================
+
+READ_ACCOUNT --> QUERY_ACCOUNT
+QUERY_ACCOUNT --> RESULT_ACCOUNT
+READ_ROLES --> QUERY_ROLES
+QUERY_ROLES --> RESULT_ROLES
+READ_AUTH_STATUS --> QUERY_AUTH_STATUS
+QUERY_AUTH_STATUS --> RESULT_AUTH_STATUS
+
+legend right
+|= Color |= Element |
+|<#87CEFA>| Command / Query |
+|<#FFF59D>| Aggregate |
+|<#FFB74D>| Domain Event |
+|<#FFF9C4>| Actor |
+|<#B39DDB>| Policy |
+|<#81C784>| Read Model |
+|<#C8E6C9>| Query Result |
+endlegend
+
+@enduml

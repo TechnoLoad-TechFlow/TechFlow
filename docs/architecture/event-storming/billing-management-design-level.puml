@@ -1,0 +1,90 @@
+@startuml
+title TechFlow - Billing Management Bounded Context\nDesign-Level Event Storming
+
+left to right direction
+skinparam shadowing false
+skinparam roundcorner 8
+skinparam defaultFontName Arial
+
+' =========================
+' Styles
+' =========================
+
+rectangle "COMMAND\nCalculate Rental Amount" as CMD_CALCULATE #87CEFA
+rectangle "AGGREGATE\nInvoice" as AGG_CALCULATE #FFF59D
+rectangle "COMMAND\nIssue Electronic Invoice" as CMD_ISSUE_INVOICE #87CEFA
+rectangle "AGGREGATE\nInvoice" as AGG_ISSUE_INVOICE #FFF59D
+rectangle "ACTOR\nFleet Owner" as ACT_ISSUE_INVOICE #FFF9C4
+rectangle "COMMAND\nApply Late Penalty" as CMD_APPLY_PENALTY #87CEFA
+rectangle "AGGREGATE\nLate Penalty" as AGG_PENALTY #FFF59D
+
+rectangle "DOMAIN EVENT\nRental Amount Calculated" as EVT_AMOUNT_CALCULATED #FFB74D
+rectangle "DOMAIN EVENT\nElectronic Invoice Issued" as EVT_INVOICE_ISSUED #FFB74D
+rectangle "DOMAIN EVENT\nLate Penalty Applied" as EVT_PENALTY_APPLIED #FFB74D
+
+rectangle "POLICY\nWhen the rental amount is\ncalculated, enable issuing\nthe electronic invoice" as POL_ISSUE_INVOICE #B39DDB
+rectangle "POLICY\nWhen machinery is returned\nafter the agreed end date,\napply a late penalty" as POL_LATE_RETURN #B39DDB
+
+rectangle "EXTERNAL SYSTEM\nSUNAT" as EXT_SUNAT #E78AD9
+
+rectangle "READ MODEL\nInvoice Details" as READ_INVOICE #81C784
+rectangle "QUERY\nView Invoice" as QUERY_INVOICE #87CEFA
+rectangle "QUERY RESULT\nInvoice Details" as RESULT_INVOICE #C8E6C9
+
+rectangle "READ MODEL\nInvoice History" as READ_INVOICE_HISTORY #81C784
+rectangle "QUERY\nView Invoice History" as QUERY_INVOICE_HISTORY #87CEFA
+rectangle "QUERY RESULT\nInvoice History" as RESULT_INVOICE_HISTORY #C8E6C9
+
+rectangle "READ MODEL\nLate Penalty List" as READ_PENALTIES #81C784
+rectangle "QUERY\nView Late Penalties by Rental" as QUERY_PENALTIES #87CEFA
+rectangle "QUERY RESULT\nLate Penalty List" as RESULT_PENALTIES #C8E6C9
+
+' =========================
+' Commands -> Aggregate -> Events
+' =========================
+
+CMD_CALCULATE --> AGG_CALCULATE
+AGG_CALCULATE --> EVT_AMOUNT_CALCULATED
+
+CMD_ISSUE_INVOICE --> AGG_ISSUE_INVOICE
+AGG_ISSUE_INVOICE --> EVT_INVOICE_ISSUED
+ACT_ISSUE_INVOICE -[hidden]up-> CMD_ISSUE_INVOICE
+EXT_SUNAT .. EVT_INVOICE_ISSUED
+
+CMD_APPLY_PENALTY --> AGG_PENALTY
+AGG_PENALTY --> EVT_PENALTY_APPLIED
+
+EVT_AMOUNT_CALCULATED --> POL_ISSUE_INVOICE
+POL_ISSUE_INVOICE --> CMD_ISSUE_INVOICE
+
+note right of POL_LATE_RETURN
+  Cross-context policy: triggered by
+  Rental Management when a Rental
+  is closed after its agreed end date
+  (Rental Period, external reference).
+end note
+
+' =========================
+' Queries -> Read Models
+' =========================
+
+READ_INVOICE --> QUERY_INVOICE
+QUERY_INVOICE --> RESULT_INVOICE
+READ_INVOICE_HISTORY --> QUERY_INVOICE_HISTORY
+QUERY_INVOICE_HISTORY --> RESULT_INVOICE_HISTORY
+READ_PENALTIES --> QUERY_PENALTIES
+QUERY_PENALTIES --> RESULT_PENALTIES
+
+legend right
+|= Color |= Element |
+|<#87CEFA>| Command / Query |
+|<#FFF59D>| Aggregate |
+|<#FFB74D>| Domain Event |
+|<#FFF9C4>| Actor |
+|<#B39DDB>| Policy |
+|<#E78AD9>| External System |
+|<#81C784>| Read Model |
+|<#C8E6C9>| Query Result |
+endlegend
+
+@enduml

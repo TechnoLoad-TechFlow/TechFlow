@@ -1,0 +1,110 @@
+@startuml
+title TechFlow - Big Picture Event Storming
+
+top to bottom direction
+skinparam shadowing false
+skinparam roundcorner 8
+skinparam defaultFontName Arial
+skinparam linetype ortho
+
+rectangle "ACTOR / ROLE\nContractor / Site Manager" as ACT_CONTRACTOR #FFE66D
+rectangle "ACTOR / ROLE\nMachinery Owner / Fleet Administrator" as ACT_OWNER #FFE66D
+
+package "Candidate Area: Discovery & Rental Management" {
+  rectangle "DOMAIN EVENT\nMachinery Need Identified" as EVT_NEED #FFB74D
+  rectangle "DOMAIN EVENT\nMatching Machinery Displayed" as EVT_MATCHED #FFB74D
+  rectangle "DOMAIN EVENT\nAvailability Verified" as EVT_AVAILABLE #FFB74D
+  rectangle "DOMAIN EVENT\nQuotation Generated" as EVT_QUOTED #FFB74D
+  rectangle "DOMAIN EVENT\nRental Request Submitted" as EVT_REQUESTED #FFB74D
+  rectangle "DOMAIN EVENT\nReservation Confirmed" as EVT_RESERVED #FFB74D
+
+  rectangle "POLICY\nOnly operational and available\nmachinery can be offered" as POL_AVAILABLE #B39DDB
+  rectangle "POLICY\nOverlapping reservations\nmust be rejected" as POL_OVERLAP #B39DDB
+
+  rectangle "HOTSPOT\nAvailability may be outdated" as HOT_AVAILABILITY #EF9A9A
+  rectangle "HOTSPOT\nRisk of double booking" as HOT_DOUBLE #EF9A9A
+}
+
+package "Candidate Area: Service Execution & Maintenance" {
+  rectangle "DOMAIN EVENT\nMachinery Assigned" as EVT_ASSIGNED #FFB74D
+  rectangle "DOMAIN EVENT\nService Started" as EVT_STARTED #FFB74D
+  rectangle "DOMAIN EVENT\nWorked Hours Reported" as EVT_HOURS_REPORTED #FFB74D
+  rectangle "DOMAIN EVENT\nWorked Hours Validated" as EVT_HOURS_VALIDATED #FFB74D
+  rectangle "DOMAIN EVENT\nMaintenance Need Detected" as EVT_MAINTENANCE_NEED #FFB74D
+  rectangle "DOMAIN EVENT\nMaintenance Scheduled" as EVT_MAINTENANCE_SCHEDULED #FFB74D
+  rectangle "DOMAIN EVENT\nMaintenance Completed" as EVT_MAINTENANCE_COMPLETED #FFB74D
+
+  rectangle "POLICY\nWorked hours must be validated\nbefore settlement" as POL_VALIDATE_HOURS #B39DDB
+  rectangle "POLICY\nMaintenance blocks reservations\nand availability" as POL_MAINTENANCE #B39DDB
+
+  rectangle "HOTSPOT\nManual hour records may differ" as HOT_HOURS #EF9A9A
+  rectangle "HOTSPOT\nUnexpected failures may delay work" as HOT_FAILURE #EF9A9A
+}
+
+package "Candidate Area: Billing, Closure & Subscription" {
+  rectangle "DOMAIN EVENT\nRental Amount Calculated" as EVT_AMOUNT #FFB74D
+  rectangle "DOMAIN EVENT\nElectronic Invoice Issued" as EVT_INVOICE #FFB74D
+  rectangle "DOMAIN EVENT\nRental Closed" as EVT_CLOSED #FFB74D
+  rectangle "DOMAIN EVENT\nSubscription Plan Selected" as EVT_PLAN #FFB74D
+  rectangle "DOMAIN EVENT\nSubscription Payment Approved" as EVT_PAYMENT #FFB74D
+  rectangle "DOMAIN EVENT\nSubscription Activated / Renewed" as EVT_SUBSCRIPTION #FFB74D
+
+  rectangle "POLICY\nFinal amount uses validated hours\nand the agreed rental rate" as POL_AMOUNT #B39DDB
+  rectangle "POLICY\nPlan limits determine the maximum\nnumber of registered machines" as POL_PLAN #B39DDB
+
+  rectangle "EXTERNAL SYSTEM\nSUNAT" as EXT_SUNAT #E78AD9
+  rectangle "EXTERNAL SYSTEM\nPayment Provider" as EXT_PAYMENT #E78AD9
+
+  rectangle "HOTSPOT\nManual calculations and delayed invoicing" as HOT_INVOICE #EF9A9A
+  rectangle "HOTSPOT\nPayment or renewal may fail" as HOT_PAYMENT #EF9A9A
+}
+
+ACT_CONTRACTOR ..> EVT_NEED : originates
+ACT_OWNER ..> EVT_MATCHED : publishes fleet
+
+EVT_NEED --> EVT_MATCHED
+EVT_MATCHED --> POL_AVAILABLE
+POL_AVAILABLE --> EVT_AVAILABLE
+EVT_AVAILABLE --> EVT_QUOTED
+EVT_QUOTED --> EVT_REQUESTED
+EVT_REQUESTED --> POL_OVERLAP
+POL_OVERLAP --> EVT_RESERVED
+HOT_AVAILABILITY .. EVT_AVAILABLE
+HOT_DOUBLE .. EVT_RESERVED
+
+EVT_RESERVED --> EVT_ASSIGNED
+EVT_ASSIGNED --> EVT_STARTED
+EVT_STARTED --> EVT_HOURS_REPORTED
+EVT_HOURS_REPORTED --> POL_VALIDATE_HOURS
+POL_VALIDATE_HOURS --> EVT_HOURS_VALIDATED
+HOT_HOURS .. EVT_HOURS_REPORTED
+
+EVT_MAINTENANCE_NEED --> POL_MAINTENANCE
+POL_MAINTENANCE --> EVT_MAINTENANCE_SCHEDULED
+EVT_MAINTENANCE_SCHEDULED --> EVT_MAINTENANCE_COMPLETED
+HOT_FAILURE .. EVT_MAINTENANCE_NEED
+EVT_STARTED ..> EVT_MAINTENANCE_NEED : failure detected
+
+EVT_HOURS_VALIDATED --> POL_AMOUNT
+POL_AMOUNT --> EVT_AMOUNT
+EVT_AMOUNT --> EVT_INVOICE
+EXT_SUNAT .. EVT_INVOICE
+EVT_INVOICE --> EVT_CLOSED
+HOT_INVOICE .. EVT_INVOICE
+
+EVT_PLAN --> POL_PLAN
+POL_PLAN --> EVT_PAYMENT
+EXT_PAYMENT .. EVT_PAYMENT
+EVT_PAYMENT --> EVT_SUBSCRIPTION
+HOT_PAYMENT .. EVT_PAYMENT
+
+legend right
+|= Color |= Element |
+|<#FFE66D>| Actor / Role |
+|<#FFB74D>| Domain Event |
+|<#B39DDB>| Policy / Business Rule |
+|<#E78AD9>| External System |
+|<#EF9A9A>| Hotspot / Pain Point |
+endlegend
+
+@enduml

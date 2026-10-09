@@ -1,0 +1,90 @@
+@startuml
+title TechFlow - Profiles Management Bounded Context\nDesign-Level Event Storming
+
+left to right direction
+skinparam shadowing false
+skinparam roundcorner 8
+skinparam defaultFontName Arial
+
+' =========================
+' Styles
+' =========================
+
+rectangle "COMMAND\nCreate Profile" as CMD_CREATE_PROFILE #87CEFA
+rectangle "AGGREGATE\nProfile" as AGG_CREATE_PROFILE #FFF59D
+rectangle "ACTOR\nContractor" as ACT_CREATE_PROFILE #FFF9C4
+rectangle "COMMAND\nUpdate Profile Information" as CMD_UPDATE_PROFILE #87CEFA
+rectangle "AGGREGATE\nProfile" as AGG_UPDATE_PROFILE #FFF59D
+rectangle "ACTOR\nContractor" as ACT_UPDATE_PROFILE #FFF9C4
+rectangle "COMMAND\nUpdate Contact Information" as CMD_UPDATE_CONTACT #87CEFA
+rectangle "AGGREGATE\nProfile" as AGG_UPDATE_CONTACT #FFF59D
+rectangle "ACTOR\nContractor" as ACT_UPDATE_CONTACT #FFF9C4
+rectangle "COMMAND\nUpdate Organization Information" as CMD_UPDATE_ORG #87CEFA
+rectangle "AGGREGATE\nProfile" as AGG_UPDATE_ORG #FFF59D
+rectangle "ACTOR\nFleet Owner" as ACT_UPDATE_ORG #FFF9C4
+
+rectangle "DOMAIN EVENT\nProfile Created" as EVT_PROFILE_CREATED #FFB74D
+rectangle "DOMAIN EVENT\nProfile Information Updated" as EVT_PROFILE_UPDATED #FFB74D
+rectangle "DOMAIN EVENT\nContact Information Updated" as EVT_CONTACT_UPDATED #FFB74D
+rectangle "DOMAIN EVENT\nOrganization Information Updated" as EVT_ORG_UPDATED #FFB74D
+
+rectangle "POLICY\nWhen a profile is created,\nrequire valid contact information" as POL_REQUIRE_CONTACT #B39DDB
+
+rectangle "READ MODEL\nProfile Details" as READ_PROFILE #81C784
+rectangle "QUERY\nView Profile" as QUERY_PROFILE #87CEFA
+rectangle "QUERY RESULT\nProfile Details" as RESULT_PROFILE #C8E6C9
+
+rectangle "READ MODEL\nContact Information" as READ_CONTACT #81C784
+rectangle "QUERY\nView Contact Information" as QUERY_CONTACT #87CEFA
+rectangle "QUERY RESULT\nContact Information" as RESULT_CONTACT #C8E6C9
+
+rectangle "READ MODEL\nOrganization Information" as READ_ORG #81C784
+rectangle "QUERY\nView Organization Information" as QUERY_ORG #87CEFA
+rectangle "QUERY RESULT\nOrganization Information" as RESULT_ORG #C8E6C9
+
+' =========================
+' Commands -> Aggregate -> Events
+' =========================
+
+CMD_CREATE_PROFILE --> AGG_CREATE_PROFILE
+AGG_CREATE_PROFILE --> EVT_PROFILE_CREATED
+ACT_CREATE_PROFILE -[hidden]up-> CMD_CREATE_PROFILE
+
+CMD_UPDATE_PROFILE --> AGG_UPDATE_PROFILE
+AGG_UPDATE_PROFILE --> EVT_PROFILE_UPDATED
+ACT_UPDATE_PROFILE -[hidden]up-> CMD_UPDATE_PROFILE
+
+CMD_UPDATE_CONTACT --> AGG_UPDATE_CONTACT
+AGG_UPDATE_CONTACT --> EVT_CONTACT_UPDATED
+ACT_UPDATE_CONTACT -[hidden]up-> CMD_UPDATE_CONTACT
+
+CMD_UPDATE_ORG --> AGG_UPDATE_ORG
+AGG_UPDATE_ORG --> EVT_ORG_UPDATED
+ACT_UPDATE_ORG -[hidden]up-> CMD_UPDATE_ORG
+
+EVT_PROFILE_CREATED --> POL_REQUIRE_CONTACT
+POL_REQUIRE_CONTACT --> CMD_UPDATE_CONTACT
+
+' =========================
+' Queries -> Read Models
+' =========================
+
+READ_PROFILE --> QUERY_PROFILE
+QUERY_PROFILE --> RESULT_PROFILE
+READ_CONTACT --> QUERY_CONTACT
+QUERY_CONTACT --> RESULT_CONTACT
+READ_ORG --> QUERY_ORG
+QUERY_ORG --> RESULT_ORG
+
+legend right
+|= Color |= Element |
+|<#87CEFA>| Command / Query |
+|<#FFF59D>| Aggregate |
+|<#FFB74D>| Domain Event |
+|<#FFF9C4>| Actor |
+|<#B39DDB>| Policy |
+|<#81C784>| Read Model |
+|<#C8E6C9>| Query Result |
+endlegend
+
+@enduml
