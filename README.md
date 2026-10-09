@@ -338,18 +338,8 @@ Cada hipótesis sigue la estructura de *feature hypothesis*: **resultado de nego
 
 #### 1.2.2.4. Lean UX Canvas
 
-| Bloque | Definición para TechnoLoad |
-| :--- | :--- |
-| **Problema de negocio** | Las empresas de alquiler de maquinaria pesada y transporte de carga manejan información de activos, uso y mantenimiento en fuentes dispersas. Esto genera mantenimiento reactivo, paradas no programadas, datos poco confiables y asignaciones realizadas sin conocer la disponibilidad real de la unidad. |
-| **Usuarios y clientes** | Administradores de flota, responsables de mantenimiento, coordinadores logísticos y gerentes de operaciones de empresas de alquiler de maquinaria pesada y transporte de carga. |
-| **Necesidades y beneficios para el usuario** | Conocer el estado e historial de cada activo; registrar lecturas trazables; recibir alertas antes de una falla; planificar órdenes de mantenimiento; y asignar solamente unidades disponibles. |
-| **Resultados de negocio esperados** | Mayor adopción y retención de la plataforma, reducción de inoperatividad no planificada, disminución de mantenimiento correctivo, mejor uso de activos y crecimiento de suscripciones SaaS. |
-| **Ideas de solución del MVP** | Registro de activos; lecturas de horómetro y kilometraje; planes y órdenes de mantenimiento preventivo; alertas; dashboard de indicadores; consulta de disponibilidad; asignación básica de unidades; autenticación y roles. |
-| **Supuestos críticos** | Los usuarios registrarán lecturas manuales de forma constante; las alertas aportarán valor suficiente para modificar la planificación; y los coordinadores consultarán la disponibilidad digital antes de asignar una unidad. |
-| **Hipótesis prioritarias** | H2: el registro validado de lecturas mejorará la calidad de los datos. H3 y H4: los planes y alertas preventivas reducirán la inoperatividad. H5: la disponibilidad centralizada reducirá errores de asignación. |
-| **Riesgo más importante por validar** | La constancia con la que el personal operativo registrará lecturas manuales antes de que existan integraciones con telemetría IoT. |
-| **Experimento mínimo** | Probar un prototipo funcional de registro de lecturas y alertas con tres administradores de flota durante dos semanas; medir porcentaje de días con registro, completitud de datos, tiempo de registro y percepción de utilidad de las alertas. |
-| **Métricas de aprendizaje** | Tasa de registros completos, frecuencia de uso semanal, porcentaje de mantenimientos programados antes del vencimiento, número de asignaciones realizadas con consulta de disponibilidad y satisfacción de usuarios piloto. |
+![Lean UX Canvas de TechFlow](./assets/evidence/repository/lean-ux-canvas.png)
+![Lean UX Canvas de TechFlow](./assets/evidence/repository/lean-ux-canvas2.png)
 
 ### 1.3. Segmentos objetivo
 
