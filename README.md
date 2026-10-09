@@ -123,7 +123,7 @@ A continuación, se presentan los espacios para las capturas de pantalla de los 
 
 ## Capítulo II: Requirements Elicitation & Analysis
 - [2.1. Competidores](#21-competidores)
-  - [2.1.1. Análisis competitivo](#211-competitive-analysis-landscape)
+  - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
   - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
 - [2.2. Entrevistas](#22-entrevistas)
   - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
@@ -176,9 +176,9 @@ A continuación, se presentan los espacios para las capturas de pantalla de los 
 - [5.1. Software Configuration Management](#51-software-configuration-management)
   - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
   - [5.1.2. Source Code Management](#512-source-code-management)
-  - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--coding-conventions)
+  - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide-conventions)
   - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
-- [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
+- [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services-applications-implementation)
 
 ## Conclusiones
 - [Conclusiones y recomendaciones](#conclusiones)
@@ -353,7 +353,7 @@ Este capítulo documenta la obtención, análisis y validación de necesidades d
 
 ### 2.1 Competidores
 
-### 2.1.1. Competitive Analysis Landscape
+### 2.1.1. Análisis competitivo
 
 | *Competitive Analysis Landscape* | *Descripción* |
 |---|---|
@@ -2642,7 +2642,7 @@ La gestión de configuración de software de TechnoLoad establece las herramient
 
 Para ello, se utilizan herramientas de gestión de proyectos, diseño UX/UI, desarrollo de software, documentación, control de versiones y despliegue. Git y GitHub permiten registrar los cambios realizados por los integrantes del equipo, mientras que GitFlow, Conventional Commits y Semantic Versioning proporcionan un esquema organizado para la evolución del código fuente.
 
-  ### 5.1.1. Software Development Environment Configuration
+### 5.1.1. Software Development Environment Configuration
   
 El desarrollo de TechnoLoad requiere diferentes herramientas que permiten cubrir las actividades de gestión del proyecto, especificación de requisitos, diseño UX/UI, implementación, documentación, control de versiones y despliegue.
 
@@ -2671,10 +2671,9 @@ Las principales herramientas utilizadas o previstas para el proyecto son las sig
 
 La combinación de estas herramientas permite mantener un entorno común entre los integrantes del equipo. El frontend es desarrollado con Vue y PrimeVue, mientras que los servicios del lado servidor se implementan mediante ASP.NET Core, Entity Framework Core y C#. PostgreSQL proporciona la persistencia relacional de la información correspondiente a activos, lecturas, mantenimientos y operaciones.
 
-![ESTRUCTURA DEL PROYECTO](assets/Estructura TechnoLoad.png) ESTA MAL LLAMADOOO ACAAA ;)
+![Estructura del proyecto](assets/evidence/repository/repository-develop-structure.jpeg)
 
-
-  ### 5.1.2. Source Code Management
+### 5.1.2. Source Code Management
   
 El código fuente y la documentación de TechnoLoad se administran mediante Git y GitHub. El uso de control de versiones permite mantener la trazabilidad de cada modificación realizada por el equipo, identificar la participación de los integrantes y recuperar versiones anteriores cuando sea necesario.
 
@@ -2785,7 +2784,7 @@ Ejemplos aplicados al proyecto:
 Con estas convenciones se busca facilitar la comprensión del historial de cambios y mantener consistencia entre los diferentes repositorios del proyecto.
 
 
-  ### 5.1.3. Source Code Style Guide & Conventions
+### 5.1.3. Source Code Style Guide & Conventions
   
 TechnoLoad adopta convenciones de programación para mantener un código consistente, legible y mantenible entre todos los integrantes del equipo.
 
@@ -2934,7 +2933,7 @@ Asimismo, el Landing Page y la Frontend Web Application deberán considerar prá
 
 ---
 
-  ### 5.1.4. Software Deployment Configuration
+### 5.1.4. Software Deployment Configuration
   
 El proceso de despliegue de TechnoLoad comprende la publicación independiente de los tres productos principales que conforman la solución: Landing Page, Frontend Web Application y RESTful Web Services.
 
@@ -3120,9 +3119,9 @@ La página de presentación del proyecto aparece referenciada en el material de 
 | Estado verificado | [Comprobar antes de entregar] |
 | Última versión identificada | [Agregar etiqueta o versión real] |
 
-![Sprint 1 Deployment Evidence](assets/sprint-1-deployment-evidence.png)
+![Landing Page de TechnoLoad desplegado](assets/ux/landing/landing-page-technoload.jpeg)
 
-La captura debe mostrar la URL y la versión efectivamente desplegada. Si la ruta de la imagen no existe en el repositorio de TechFlow, reemplazarla por una captura real o actualizar el nombre del archivo.
+La captura debe mostrar la URL y la versión efectivamente desplegada.
 
 ## 5.2.1.8. Team Collaboration Insights during Sprint
 El informe de TechnoLoad identifica como integrantes a Nicolas Tantalean Granda, Wilmer Sebastián Gutiérrez Lizarbe, Mathias Alejandro Castillo Guevara y Edgard Daniel Díaz Caruzo. Para completar el análisis de colaboración del Sprint 1, se deben revisar los commits y normalizar las identidades que pertenezcan a una misma persona. No se deben trasladar al equipo TechFlow los nombres, usuarios ni conteos de commits que aparecían en el documento de MaquiControl.
@@ -3136,9 +3135,10 @@ El informe de TechnoLoad identifica como integrantes a Nicolas Tantalean Granda,
 
 Las cantidades deben obtenerse del historial real del repositorio y no constituyen por sí solas una medición completa de la calidad o complejidad de las contribuciones. También deben considerarse reuniones, coordinación, elaboración de artefactos visuales, revisión de contenidos y demás actividades realizadas fuera del repositorio.
 
-![Project Report Collaboration Commits](assets/project-report-collaboration-commits.png)
-
-![Project Report Collaboration Additional Commits](assets/project-report-collaboration-commits-2.png)
+![Commits Nicolas Tantalean](assets/evidence/commits/NIcolas-tantalean-commits.jpeg)
+![Commits Mathias Castillo](assets/evidence/commits/mathias-castillo-commits.jpeg)
+![Commits Sebastian Gutierrez](assets/evidence/commits/sebastian-commits.jpeg)
+![Commits Daniel Diaz](assets/evidence/commits/Dan-trax-commits.jpeg)
 
 ---
 ### 5.2.2. Sprint 2
