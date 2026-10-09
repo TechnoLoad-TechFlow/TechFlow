@@ -2867,10 +2867,10 @@ Se utiliza `L` para líder y `C` para colaborador.
 
 | Team Member | GitHub Username / Git Author | Landing Page / Interfaz | UX/UI Design | Requirements & Report | Architecture & Database | SCM & Deployment |
 |---|---|:---:|:---:|:---:|:---:|:---:|
-| Tantalean Granda, Nicolas | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Gutiérrez Lizarbe, Wilmer Sebastián | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Castillo Guevara, Mathias Alejandro | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Díaz Caruzo, Edgard Daniel | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| Tantalean Granda, Nicolas | [Confirmar usuario Git] |  C | C |  C | - | - |
+| Gutiérrez Lizarbe, Wilmer Sebastián | [Confirmar usuario Git] | C  | L | - | C | - |
+| Castillo Guevara, Mathias Alejandro | [Confirmar usuario Git] | - | C | L | C | - |
+| Díaz Caruzo, Edgard Daniel | [Confirmar usuario Git] | - | - | C | L | L |
 
 #### 5.2.1.3. Sprint Backlog 1
 
@@ -2910,9 +2910,9 @@ Las evidencias de desarrollo que conviene incluir son los cambios en la document
 
 La evidencia de ejecución debe mostrar el resultado que puede comprobarse al revisar el incremento del Sprint 1. El informe de TechnoLoad describe la problemática y las necesidades de los segmentos objetivo, así como historias de usuario para registrar maquinaria, consultar disponibilidad, gestionar mantenimiento y crear reservas. Estas definiciones no demuestran por sí solas que todas esas funcionalidades estén implementadas.
 
-- **URL de ejecución:** [Agregar la URL exacta del incremento de TechFlow, si existe].
+
 - **Tecnologías:** completar con las tecnologías efectivamente utilizadas en la versión ejecutable del sprint.
-- **Resultado de verificación:** [Registrar el resultado real de la prueba o revisión].
+
 
 ![Ejecución de la Landing Page de TechnoLoad](assets/ux/landing/landing-page-technoload.jpeg)
 
@@ -2941,8 +2941,8 @@ La página de presentación del proyecto aparece referenciada en el material de 
 | Repositorio | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) |
 | URL pública | [https://technoload-techflow.github.io/TechFlow/](https://technoload-techflow.github.io/TechFlow/) |
 | Protocolo | HTTPS |
-| Estado verificado | [Comprobar antes de entregar] |
-| Última versión identificada | [Agregar etiqueta o versión real] |
+| Estado verificado |DONE|
+| Última versión identificada | v1.0.0 |
 
 ![Landing Page de TechnoLoad desplegado](assets/ux/landing/landing-page-technoload.jpeg)
 
