@@ -1639,26 +1639,6 @@ Asimismo, TechnoLoad se integra con los siguientes sistemas externos:
 
 ![Software Architecture Context Diagram TechnoLoad](assets/architecture/c4/c4-context-diagram.svg)
 
-```mermaid
-flowchart LR
-  visitor["Public Visitor<br/>«person»"] -->|"explora catálogo y solicita info [HTTPS]"| technoLoad["TechnoLoad<br/>SaaS Platform<br/>«software system»"]
-  fleetAdmin["Fleet Administrator<br/>«person»"] -->|"administra flota y mantenimientos [HTTPS]"| technoLoad
-  contractor["Contractor / Site Manager<br/>«person»"] -->|"solicita y monitorea alquileres [HTTPS]"| technoLoad
-  technician["Maintenance Technician<br/>«person»"] -->|"registra lecturas y averías [HTTPS]"| technoLoad
-  coordinator["Operations Coordinator<br/>«person»"] -->|"supervisa operaciones y horas [HTTPS]"| technoLoad
-
-  technoLoad -->|"procesa cobros de alquiler [HTTPS / REST]"| paymentGateway["Payment Gateway<br/>«external system»"]
-  technoLoad -->|"emite comprobantes electrónicos [HTTPS / REST]"| sunat["Electronic Invoicing / SUNAT<br/>«external system»"]
-  technoLoad -->|"envía alertas y notificaciones [HTTPS / REST]"| notificationService["Notification Service<br/>«external system»"]
-  telemetryProvider["GPS / Telematics Provider<br/>«external system»"] -->|"suministra telemetría y horómetros [HTTPS Webhook]"| technoLoad
-
-  classDef person fill:#08427B,stroke:#0B4D8C,color:#FFFFFF
-  classDef system fill:#1168BD,stroke:#0B4D8C,color:#FFFFFF
-  classDef external fill:#8C8C8C,stroke:#475569,color:#FFFFFF
-  class visitor,fleetAdmin,contractor,technician,coordinator person
-  class technoLoad system
-  class paymentGateway,sunat,notificationService,telemetryProvider external
-```
 
 ### 4.6.3. Software Architecture Container Diagram
 
@@ -1685,63 +1665,6 @@ Asimismo, la Backend REST API se integra con los servicios externos:
 
 ![Software Architecture Container Diagram TechnoLoad](assets/architecture/c4/c4-container-diagram.svg)
 
-```mermaid
-flowchart LR
-  subgraph actors["Usuarios Clave"]
-    visitor["Public Visitor<br/>«person»"]
-    fleetAdmin["Fleet Administrator<br/>«person»"]
-    contractor["Contractor / Site Manager<br/>«person»"]
-    technician["Maintenance Technician<br/>«person»"]
-    coordinator["Operations Coordinator<br/>«person»"]
-  end
-
-  subgraph technoLoadSystem["TechnoLoad [Software System]"]
-    landing["Landing Web Application<br/>[Vue 3 + Vite]<br/>«container»"]
-    spa["Single Page Application (SPA)<br/>[Vue 3 + PrimeVue]<br/>«container»"]
-    api["Backend REST API<br/>[ASP.NET Core 8 / C#]<br/>«container»"]
-    database[("Database<br/>[PostgreSQL 16]<br/>«container»")]
-  end
-
-  subgraph externalSystems["Sistemas Externos"]
-    payments["Payment Gateway<br/>«external system»"]
-    sunat["Electronic Invoicing / SUNAT<br/>«external system»"]
-    notifications["Notification Service<br/>«external system»"]
-    telemetry["GPS / Telematics Provider<br/>«external system»"]
-  end
-
-  visitor -->|HTTPS| landing
-  landing -.->|Redirige CTA / Auth| spa
-
-  fleetAdmin -->|"HTTPS (Uso Operativo Directo)"| spa
-  contractor -->|"HTTPS (Uso Operativo Directo)"| spa
-  technician -->|"HTTPS (Registro de Horómetros)"| spa
-  coordinator -->|"HTTPS (Asignación Logística)"| spa
-
-  fleetAdmin -.->|"HTTPS (Exploración Comercial)"| landing
-  contractor -.->|"HTTPS (Consulta de Tarifas)"| landing
-
-  landing -->|"HTTPS / JSON (Catálogo Público)"| api
-  spa -->|"HTTPS / JSON (Peticiones Autenticadas JWT)"| api
-
-  api -->|EF Core / TCP Port 5432| database
-
-  api -->|HTTPS / REST| payments
-  api -->|HTTPS / REST| sunat
-  api -->|HTTPS / REST| notifications
-  telemetry -->|HTTPS Webhook| api
-
-  classDef person fill:#08427B,stroke:#0B4D8C,color:#FFFFFF
-  classDef webContainer fill:#2563EB,stroke:#1D4ED8,color:#FFFFFF
-  classDef apiContainer fill:#1D4ED8,stroke:#1E40AF,color:#FFFFFF
-  classDef dbContainer fill:#1E40AF,stroke:#172554,color:#FFFFFF
-  classDef external fill:#64748B,stroke:#475569,color:#FFFFFF
-
-  class visitor,fleetAdmin,contractor,technician,coordinator person
-  class landing,spa webContainer
-  class api apiContainer
-  class database dbContainer
-  class payments,sunat,notifications,telemetry external
-```
 
 ### 4.6.4. Software Architecture Components Diagrams
 
@@ -1781,69 +1704,6 @@ Este diagrama detalla la arquitectura interna del módulo frontend de autenticac
 
 ![Identity & Access Management Frontend Component Diagram](assets/architecture/c4/c4-frontend-identity-component.svg)
 
-```mermaid
-flowchart TD
-  subgraph spaContainer["Single Page Application (SPA) [Vue 3 + PrimeVue]"]
-    subgraph presentationLayer["Presentation Layer"]
-      loginView["LogInView.vue<br/><i>logIn() · handleLogInSubmit()<br/>validateCredentialsForm()</i>"]
-      loginForm["LogInForm.vue<br/><i>props: isLoading, errorMessage<br/>emits: @submit</i>"]
-      registerView["RegisterView.vue<br/><i>registerUser() · handleRegisterSubmit()<br/>validateAccountPayload()</i>"]
-      registerForm["RegisterForm.vue<br/><i>emits: @submit</i>"]
-      primeVueUI["PrimeVue UI Elements<br/><i>&lt;pv-input-text&gt; · &lt;pv-password&gt;<br/>&lt;pv-button&gt; · &lt;pv-toast&gt; · &lt;pv-message&gt;</i>"]
-    end
-
-    subgraph appLayer["Application Layer"]
-      authStore["identity.store.js (authStore)<br/><i>state: currentUser, token, isAuthenticated, roles<br/>actions: logIn(), register(), logOut(), restoreSession()</i>"]
-    end
-
-    subgraph domainLayer["Domain Layer"]
-      userEntity["user-account.entity.js<br/><i>hasRole() · isContractor() · isFleetAdmin()</i>"]
-      credentialVO["credential.vo.js<br/><i>isValidEmail() · isStrongPassword()</i>"]
-    end
-
-    subgraph infraLayer["Infrastructure Layer"]
-      identityApi["identity-api.js<br/><i>postSignIn() · postSignUp() · postRefreshToken()</i>"]
-      userAssembler["user-account.assembler.js<br/><i>toDomain() · toDomainCollection() · toDto()</i>"]
-      authInterceptor["auth.interceptor.js<br/><i>onRequest() [Bearer Token] · onResponseError() [401]</i>"]
-    end
-  end
-
-  subgraph backendContainer["Backend REST API [ASP.NET Core 8 / C#]"]
-    authEndpoints["POST /api/v1/authentication/sign-in<br/>POST /api/v1/authentication/sign-up"]
-  end
-
-  loginView -->|usa| loginForm
-  loginForm -->|"emite @submit"| loginView
-  registerView -->|usa| registerForm
-  registerForm -->|"emite @submit"| registerView
-  loginForm -.->|renderiza| primeVueUI
-  registerForm -.->|renderiza| primeVueUI
-
-  loginView -->|"invoca logIn()"| authStore
-  registerView -->|"invoca register()"| authStore
-
-  authStore -->|"invoca postSignIn()"| identityApi
-  authStore -->|"invoca postSignUp()"| identityApi
-  authStore -->|"usa toDomain()"| userAssembler
-
-  userAssembler -->|instancia| userEntity
-  userEntity -->|contiene| credentialVO
-
-  authInterceptor -.->|inyecta token / captura 401| identityApi
-  identityApi -->|HTTPS / JSON Request| authEndpoints
-
-  classDef pres fill:#2563EB,stroke:#1D4ED8,color:#FFFFFF
-  classDef app fill:#16A34A,stroke:#15803D,color:#FFFFFF
-  classDef dom fill:#CA8A04,stroke:#A16207,color:#FFFFFF
-  classDef inf fill:#475569,stroke:#334155,color:#FFFFFF
-  classDef ext fill:#1D4ED8,stroke:#1E40AF,color:#FFFFFF
-
-  class loginView,loginForm,registerView,registerForm,primeVueUI pres
-  class authStore app
-  class userEntity,credentialVO dom
-  class identityApi,userAssembler,authInterceptor inf
-  class authEndpoints ext
-```
 
 ##### Fleet Management Frontend Component Diagram
 
@@ -1866,63 +1726,6 @@ Este diagrama representa la estructura del módulo frontend de gestión de flota
 
 ![Fleet Management Frontend Component Diagram](assets/architecture/c4/c4-frontend-fleet-component.svg)
 
-```mermaid
-flowchart TD
-  subgraph spaContainer["Single Page Application (SPA) [Vue 3 + PrimeVue]"]
-    subgraph presentationLayer["Presentation Layer"]
-      assetList["asset-list.vue<br/><i>selectAsset() · onMounted() -> loadAssets()<br/>retryLoad() · emit('select')</i>"]
-      assetItem["asset-item.vue<br/><i>props: asset<br/>emits: @select · formatHourlyRate()</i>"]
-      assetSummary["asset-summary.vue<br/><i>calculateAvailableCount()<br/>calculateInMaintenance()</i>"]
-      fleetUI["PrimeVue UI Elements<br/><i>&lt;pv-button&gt; · &lt;pv-skeleton&gt;<br/>&lt;pv-message&gt; · &lt;pv-tag&gt;</i>"]
-    end
-
-    subgraph appLayer["Application Layer"]
-      fleetStore["fleet.store.js<br/><i>state: assets, maintenanceOrders, selectedAsset<br/>actions: loadAssets(), loadMaintenanceOrders(), selectAsset()</i>"]
-    end
-
-    subgraph domainLayer["Domain Layer"]
-      assetEntity["asset.entity.js (Asset)<br/><i>isAvailable() · requiresMaintenance()</i>"]
-      maintOrderEntity["maintenance-order.entity.js<br/><i>isPending() · complete()</i>"]
-    end
-
-    subgraph infraLayer["Infrastructure Layer"]
-      fleetApi["fleet-api.js<br/><i>getAssets() · getMaintenanceOrders() · postAsset()</i>"]
-      assetAssembler["asset.assembler.js<br/><i>toDomain() · toDomainCollection() · toDto()</i>"]
-      orderAssembler["maintenance-order.assembler.js<br/><i>toDomain() · toDomainCollection()</i>"]
-    end
-  end
-
-  subgraph backendContainer["Backend REST API [ASP.NET Core 8 / C#]"]
-    fleetEndpoints["GET /api/v1/machinery<br/>GET /api/v1/maintenance-orders"]
-  end
-
-  assetList -->|renderiza colección| assetItem
-  assetItem -->|"emite @select"| assetList
-  assetList -->|incluye| assetSummary
-  assetList -.->|usa| fleetUI
-
-  assetList -->|"invoca loadAssets() / selectAsset()"| fleetStore
-  fleetStore -->|"invoca getAssets()"| fleetApi
-  fleetStore -->|"usa toDomainCollection()"| assetAssembler
-  fleetStore -->|"usa toDomainCollection()"| orderAssembler
-
-  assetAssembler -->|instancia| assetEntity
-  orderAssembler -->|instancia| maintOrderEntity
-
-  fleetApi -->|HTTPS / JSON Request| fleetEndpoints
-
-  classDef pres fill:#2563EB,stroke:#1D4ED8,color:#FFFFFF
-  classDef app fill:#16A34A,stroke:#15803D,color:#FFFFFF
-  classDef dom fill:#CA8A04,stroke:#A16207,color:#FFFFFF
-  classDef inf fill:#475569,stroke:#334155,color:#FFFFFF
-  classDef ext fill:#1D4ED8,stroke:#1E40AF,color:#FFFFFF
-
-  class assetList,assetItem,assetSummary,fleetUI pres
-  class fleetStore app
-  class assetEntity,maintOrderEntity dom
-  class fleetApi,assetAssembler,orderAssembler inf
-  class fleetEndpoints ext
-```
 
 ---
 
