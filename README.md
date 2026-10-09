@@ -338,8 +338,9 @@ Cada hipótesis sigue la estructura de *feature hypothesis*: **resultado de nego
 
 #### 1.2.2.4. Lean UX Canvas
 
-![Lean UX Canvas de TechFlow](./assets/evidence/repository/lean-ux-canvas.png)
-![Lean UX Canvas de TechFlow](./assets/evidence/repository/lean-ux-canvas2.png)
+![Lean UX Canvas](./assets/evidence/ux/lean-ux-canva.png)
+
+![Lean UX Canvas](./assets/evidence/ux/lean-ux-canva2.png)
 
 ### 1.3. Segmentos objetivo
 
