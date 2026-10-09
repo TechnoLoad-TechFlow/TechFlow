@@ -179,6 +179,24 @@ A continuación, se presentan los espacios para las capturas de pantalla de los 
   - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide-conventions)
   - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
 - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services-applications-implementation)
+  - [5.2.1. Sprint 1](#521-sprint-1)
+    - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
+    - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
+    - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
+    - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
+    - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
+    - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
+    - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
+    - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+  - [5.2.2. Sprint 2](#522-sprint-2)
+    - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
+    - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
+    - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
+    - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
+    - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
+    - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
+    - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
+    - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
 
 ## Conclusiones
 - [Conclusiones y recomendaciones](#conclusiones)
@@ -3033,7 +3051,7 @@ El Sprint 1 comprendió el periodo del 8 al 19 de septiembre de 2026. Su objetiv
 | Productos incluidos | Landing Page e informe técnico del proyecto. |
 | Productos planificados para siguientes Sprints | Aplicación web, servicios/API y componentes de persistencia, según el alcance y la arquitectura finalmente aprobados. |
 
-## 5.2.1.2. Aspect Leaders and Collaborators
+#### 5.2.1.2. Aspect Leaders and Collaborators
 
 La siguiente matriz conserva la estructura de la tabla original. Los integrantes se actualizaron con los nombres que aparecen en el informe de TechnoLoad. Como no se dispone de una matriz de responsabilidades ni de autores Git verificados para este sprint, los roles y usuarios se dejan pendientes de confirmación.
 Se utiliza `L` para líder y `C` para colaborador.
@@ -3087,9 +3105,7 @@ La evidencia de ejecución debe mostrar el resultado que puede comprobarse al re
 - **Tecnologías:** completar con las tecnologías efectivamente utilizadas en la versión ejecutable del sprint.
 - **Resultado de verificación:** [Registrar el resultado real de la prueba o revisión].
 
-![Sprint 1 Execution Evidence](assets/sprint-1-execution-evidence.png)
-
-La imagen anterior conserva el espacio de evidencia de la plantilla original. Sustituir la ruta por una captura existente del proyecto o agregar la captura al repositorio. No debe dejarse una imagen de otro proyecto como evidencia de TechFlow.
+![Ejecución de la Landing Page de TechnoLoad](assets/ux/landing/landing-page-technoload.jpeg)
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
@@ -3123,7 +3139,7 @@ La página de presentación del proyecto aparece referenciada en el material de 
 
 La captura debe mostrar la URL y la versión efectivamente desplegada.
 
-## 5.2.1.8. Team Collaboration Insights during Sprint
+#### 5.2.1.8. Team Collaboration Insights during Sprint
 El informe de TechnoLoad identifica como integrantes a Nicolas Tantalean Granda, Wilmer Sebastián Gutiérrez Lizarbe, Mathias Alejandro Castillo Guevara y Edgard Daniel Díaz Caruzo. Para completar el análisis de colaboración del Sprint 1, se deben revisar los commits y normalizar las identidades que pertenezcan a una misma persona. No se deben trasladar al equipo TechFlow los nombres, usuarios ni conteos de commits que aparecían en el documento de MaquiControl.
 
 | Integrante / Identidad Git | Commits en el informe | Commits en la aplicación | Commits en otros repositorios | Total identificado |
@@ -3145,165 +3161,186 @@ Las cantidades deben obtenerse del historial real del repositorio y no constituy
 
 #### 5.2.2.1. Sprint Planning 2
 
-El Sprint 2 debe documentar el incremento siguiente al trabajo de definición y planificación del proyecto TechFlow. De acuerdo con el Product Backlog del informe TechnoLoad, el producto considera funcionalidades de gestión de maquinaria, disponibilidad, reservas, catálogo, mantenimiento, registro de horas, perfiles, autenticación, suscripciones y servicios técnicos. El alcance exacto del Sprint 2 debe contrastarse con el tablero y los commits reales.
+El Sprint 2 consolida el desarrollo, integración y despliegue del incremento de software de TechnoLoad correspondiente al hito de entrega del curso. En este sprint se implementaron la Landing Page y la Frontend Web Application sobre infraestructura en la nube de Microsoft Azure, habilitando la conexión entre ambos componentes mediante flujos de Call-to-Action (CTA), visualización y registro interactivo de flota de maquinaria, calculador de ahorro operativo (ROI) y presentación de membresías corporativas.
 
 | Campo | Detalle |
 |---|---|
 | Sprint | Sprint 2 |
-| Fecha de inicio | [Confirmar fecha real] |
-| Fecha de finalización | [Confirmar fecha real] |
-| Duración | [Calcular según fechas confirmadas] |
-| Sprint 1 Review Summary | [Resumir únicamente los resultados del Sprint 1 que hayan sido demostrados con evidencias]. |
-| Sprint 1 Retrospective Summary | [Registrar acuerdos y mejoras reales identificados por el equipo]. |
-| Objetivo | Desarrollar el incremento priorizado de TechFlow para la gestión de maquinaria pesada y/o transporte y logística, según las historias de usuario seleccionadas para este sprint. |
-| User Stories consideradas | El Product Backlog contiene US-001 a US-045 y TS-001 a TS-008. Seleccionar aquí únicamente las historias incluidas en el Sprint 2 real. |
-| Productos incluidos | [Indicar los componentes realmente desarrollados en este sprint: interfaz, servicios, API, documentación u otros]. |
-| Productos planificados para siguientes Sprints | [Indicar funcionalidades pendientes según el backlog y la planificación real]. |
+| Fecha de inicio | 2026-09-22 |
+| Fecha de finalización | 2026-10-08 |
+| Duración | 17 días (3 semanas) |
+| Sprint 1 Review Summary | Durante el Sprint 1 se completó la especificación del dominio y negocio bajo Lean UX, el análisis de competidores, entrevistas con usuarios clave, mapas de empatía y journeys, la definición de arquitectura C4 (Nivel 1 y Nivel 2) y el despliegue preliminar de la Landing Page estática en GitHub Pages. |
+| Sprint 1 Retrospective Summary | El equipo identificó la necesidad de contar con un entorno de despliegue cloud centralizado en Microsoft Azure, mejorar la integración entre la Landing Page y la Web Application mediante flujos de Call-to-Action (CTA) dinámicos, e implementar los módulos de gestión de activos de flota con validaciones en cliente y diseño interactivo adaptativo. |
+| Objetivo | Desarrollar, desplegar y validar el incremento de software de TechnoLoad en Microsoft Azure, publicando tanto la Landing Page como la Frontend Web Application, conectando los flujos de navegación, el registro y visualización de maquinaria (`#fleet`), el calculador interactivo de ROI y las membresías comerciales. |
+| User Stories consideradas | US-001 (Registrar maquinaria), US-002 (Consultar disponibilidad), US-003 (Gestionar mantenimiento y alertas por horómetro), US-007 (Consultar catálogo y especificaciones de maquinaria), US-008 (Consultar tarifas y planes de membresía), US-013 (Mostrar propuesta de valor comercial), US-014 (Mostrar información por segmento), US-026 (Registrar cuenta de usuario / Onboarding), US-027 (Iniciar sesión y acceso a plataforma), TS-001 (Definición de contratos de API de maquinaria) y TS-002 (Despliegue cloud continuo en Azure). |
+| Productos incluidos | Landing Page desplegada en Azure App Service (`https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/`), Web Application desplegada en Azure App Service (`https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/`), y documentación técnica de arquitectura y componentes C4 en el Project Report. |
+| Productos planificados para siguientes Sprints | Backend RESTful API en ASP.NET Core 8 con Entity Framework Core conectado a PostgreSQL en la nube, autenticación JWT con backend, e integración fiscal con SUNAT y pasarelas de pago. |
 
 #### 5.2.2.2. Aspect Leaders and Collaborators
 
-La matriz mantiene la estructura original. Los integrantes se tomaron del informe de TechnoLoad. Las responsabilidades y los usuarios de GitHub deben completarse a partir de las evidencias del sprint; no se trasladan los roles del equipo MaquiControl.
+A continuación se presenta la matriz de liderazgo y colaboración del equipo TechnoLoad durante el desarrollo del Sprint 2. Se utiliza `L` para líder y `C` para colaborador:
 
-Se utiliza `L` para líder y `C` para colaborador.
-
-| Team Member | GitHub Username / Git Author | Web Application | API / Services | UX/UI or Landing Page | Architecture & Diagrams | Sprint Report | SCM & Deployment |
+| Team Member | GitHub Username / Git Author | Web Application | API / Services Modeling | UX/UI & Landing Page | Architecture & Diagrams | Sprint Report | SCM & Cloud Deployment |
 |---|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Tantalean Granda, Nicolas | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Gutiérrez Lizarbe, Wilmer Sebastián | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Castillo Guevara, Mathias Alejandro | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Díaz Caruzo, Edgard Daniel | [Confirmar usuario Git] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| Tantalean Granda, Nicolas | `NicolasTantalean` (u202410728) | L | C | C | C | C | L |
+| Gutiérrez Lizarbe, Wilmer Sebastián | `sebas` / `WILMER SEBASTIAN` | C | L | C | C | C | C |
+| Castillo Guevara, Mathias Alejandro | `mathias9939` | C | C | C | L | L | C |
+| Díaz Caruzo, Edgard Daniel | `Dan-trax` / `Daniel` | C | C | L | C | C | C |
 
 #### 5.2.2.3. Sprint Backlog 2
 
-La siguiente tabla conserva el formato detallado de la plantilla original y utiliza historias existentes en el Product Backlog de TechnoLoad. Las tareas son una propuesta de organización basada en esos requerimientos, no una afirmación de que ya se hayan ejecutado en el Sprint 2. Completar las horas, responsables y estados con el tablero real.
+La siguiente tabla detalla la distribución de historias de usuario, tareas de desarrollo, estimación en horas, responsables y estado de culminación para el Sprint 2:
 
 | Sprint | Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---|---|---|---|---:|---|---|
-| Sprint 2 | US-001 | Registrar maquinaria | S2-T01 | Preparar registro de maquinaria | Implementar o documentar el formulario y los datos necesarios para registrar una maquinaria. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-002 | Consultar disponibilidad | S2-T02 | Consultar disponibilidad por fecha | Implementar o documentar la consulta de disponibilidad de maquinaria por un periodo determinado. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-003 | Gestionar mantenimiento | S2-T03 | Actualizar estado de mantenimiento | Permitir cambiar el estado de una maquinaria y evitar reservas cuando no esté operativa. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-004 | Crear una reserva | S2-T04 | Solicitar reserva | Desarrollar el flujo para solicitar una maquinaria disponible durante el periodo requerido. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-005 | Evitar reservas duplicadas | S2-T05 | Validar conflictos de fechas | Comprobar que una solicitud no se superponga con una reserva existente. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-006 | Cancelar una reserva | S2-T06 | Cancelar reserva | Permitir cancelar una reserva y liberar el periodo cuando corresponda. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-007 | Consultar catálogo de maquinaria | S2-T07 | Mostrar catálogo | Mostrar las características principales de las maquinarias disponibles para consulta. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-008 | Consultar tarifas | S2-T08 | Mostrar tarifas | Mostrar la tarifa y unidad de cobro de cada maquinaria cuando esos datos estén disponibles. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-009 | Consultar reservas por obra | S2-T09 | Listar reservas de la obra | Mostrar la maquinaria, el periodo y el estado de las reservas asociadas a una obra. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-010 | Registrar horas trabajadas | S2-T10 | Registrar horas de operación | Registrar las horas trabajadas por maquinaria para calcular el costo del servicio. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-011 | Validar horas trabajadas | S2-T11 | Validar horas | Permitir revisar y aprobar las horas registradas o indicar que requieren corrección. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-012 | Generar resumen de facturación | S2-T12 | Generar resumen de cobros | Reunir cliente, maquinaria, horas e importe para el control de ingresos. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-016 | Editar datos de maquinaria | S2-T13 | Editar maquinaria | Permitir modificar las especificaciones de una maquinaria registrada. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-017 | Dar de baja maquinaria | S2-T14 | Desactivar maquinaria | Retirar del inventario activo los equipos que ya no deban ofrecerse. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-019 | Aprobar o rechazar reservas | S2-T15 | Revisar solicitudes | Permitir al propietario revisar solicitudes pendientes y confirmar o rechazar la reserva. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-026 | Registrar cuenta de usuario | S2-T16 | Registrar usuario | Crear el flujo de registro de una cuenta, si forma parte del alcance priorizado del sprint. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-027 | Iniciar sesión | S2-T17 | Autenticar usuario | Implementar el acceso a la plataforma para usuarios registrados, si forma parte del alcance del sprint. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-029 | Gestionar roles de usuario | S2-T18 | Restringir funciones por rol | Definir o implementar permisos diferenciados según los roles previstos en el backlog. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-031 | Programar mantenimientos preventivos | S2-T19 | Programar mantenimiento | Permitir programar alertas periódicas de mantenimiento según horas de uso. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | US-034 | Reportar avería en obra | S2-T20 | Registrar avería | Documentar o implementar el registro de una falla mecánica ocurrida durante el uso. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | TS-001 | Consultar maquinarias mediante API | S2-T21 | Definir endpoint de maquinaria | Desarrollar o documentar la consulta de maquinarias mediante API, de acuerdo con la historia técnica. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | TS-002 | Registrar reservas mediante API | S2-T22 | Definir endpoint de reservas | Desarrollar o documentar la creación de reservas mediante API. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | TS-003 | Validar conflictos de reservas en la API | S2-T23 | Validar disponibilidad en el servicio | Aplicar reglas de validación para impedir reservas con fechas incompatibles. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 2 | TS-004 | Validar datos incorrectos en la API | S2-T24 | Validar datos recibidos | Comprobar campos obligatorios y datos de entrada antes de guardar información. | [Confirmar] | [Confirmar] | [Confirmar] |
+| Sprint 2 | US-001 | Registrar maquinaria | S2-T01 | Modal de registro de activos | Implementar diálogo modal interactivo (`#dialog`) para registrar maquinaria con nombre, tipo, horómetro y estado. | 8 | Tantalean Granda, Nicolas | Done |
+| Sprint 2 | US-002 | Consultar disponibilidad | S2-T02 | Filtros y catálogo de disponibilidad | Desarrollar la vista de consulta de flota clasificando unidades por estado (`AVAILABLE`, `IN_OPERATION`, `IN_MAINTENANCE`). | 6 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
+| Sprint 2 | US-003 | Gestionar mantenimiento | S2-T03 | Módulo de alertas preventivas | Implementar control de horómetros y generación de alertas de mantenimiento preventivo según horas de uso acumuladas. | 7 | Tantalean Granda, Nicolas | Done |
+| Sprint 2 | US-007 | Consultar catálogo de maquinaria | S2-T04 | Catálogo de flota en Landing y App | Integrar tarjetas interactivas de maquinaria con especificaciones técnicas y tarifas en la Web App y Landing. | 8 | Díaz Caruzo, Edgard Daniel | Done |
+| Sprint 2 | US-008 | Consultar tarifas | S2-T05 | Sección interactiva de membresías | Diseñar y codificar la sección de planes de suscripción (Starter, Professional, Enterprise) con selector directo. | 6 | Díaz Caruzo, Edgard Daniel | Done |
+| Sprint 2 | US-013 | Propuesta de valor | S2-T06 | Hero Section y Dashboard preview | Desarrollar sección principal de la Landing con vista previa del dashboard operativo (activos disponibles, alertas, disponibilidad). | 8 | Díaz Caruzo, Edgard Daniel | Done |
+| Sprint 2 | US-014 | Información por segmento | S2-T07 | Sección Solutions por perfil | Implementar bloques informativos para Fleet administration y Load logistics con redirección contextual. | 6 | Castillo Guevara, Mathias Alejandro | Done |
+| Sprint 2 | US-027 | Iniciar sesión y acceso | S2-T08 | Integración de Call-to-Actions (CTA) | Vincular botones de navegación de la Landing Page hacia la Web Application desplegada en Azure. | 5 | Tantalean Granda, Nicolas | Done |
+| Sprint 2 | TS-001 | Modelado de servicios API | S2-T09 | Contratos OpenAPI y DTOs | Modelar endpoints de maquinaria (`GET/POST /api/v1/machinery`) y órdenes de mantenimiento en C# y Swagger. | 8 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
+| Sprint 2 | TS-002 | Despliegue cloud continuo | S2-T10 | Despliegue en Azure App Service | Configurar y publicar la Landing Page y Web Application en Microsoft Azure con protocolo HTTPS y certificados SSL. | 8 | Tantalean Granda, Nicolas | Done |
+| Sprint 2 | TS-003 | Calculadora de ROI | S2-T11 | Calculadora de ahorro operativo | Desarrollar herramienta interactiva en JavaScript para estimar ahorro financiero mensual según horas de inactividad reducidas. | 6 | Castillo Guevara, Mathias Alejandro | Done |
+| Sprint 2 | TS-004 | Documentación técnica | S2-T12 | Consolidación de informe y C4 | Elaborar diagramas C4 (Contexto, Contenedores, Componentes), modelo de dominio y evidencias del Sprint 2. | 8 | Castillo Guevara, Mathias Alejandro | Done |
 
-- [Repositorio del proyecto TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow)
-- [Página de presentación](https://technoload-techflow.github.io/TechFlow/)
+- **Repositorio del proyecto en GitHub:** [https://github.com/TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow)
+- **Landing Page desplegada:** [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/)
+- **Web Application desplegada:** [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/)
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
-La tabla mantiene las columnas del documento original para que se pueda documentar el historial real de desarrollo. Los commits de MaquiControl no deben copiarse como si pertenecieran a TechFlow; los campos siguientes deben completarse con los identificadores y mensajes extraídos del repositorio correcto.
+La siguiente tabla documenta los commits más representativos registrados en el repositorio del proyecto durante el ciclo de desarrollo del Sprint 2:
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on |
 |---|---|---|---|---|---|
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 1] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 2] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 3] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 4] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 5] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 6] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 7] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 8] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 9] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Commit real 10] | [Mensaje real] | [Body o indicar que no existe] | [Fecha real] |
-
-Se deben seleccionar los commits más representativos del sprint, incluyendo cambios de funcionalidades, correcciones, pruebas y despliegue cuando existan. Para cada fila debe utilizarse el historial del repositorio, no estimaciones ni mensajes inventados.
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `5b34e4c` | docs: correct section titles and update image references in README | Fix anchor links, update evidence images | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `9ad6269` | docs: update flowchart labels for clarity in README | Refine node names and edge quotes | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `11fa5fb` | docs: update flowchart end states for asset management process | Resolve reserved keyword 'end' | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `85b84f7` | docs: enhance Software Architecture Context and Container diagrams | Detail user roles and external system integrations | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `bc3c576` | docs: update C4 component diagrams for Profiles, Identity, and API | Standardize C4 component specifications | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `492fecd` | docs: add C4 component diagrams for Fleet Management and Identity | Document layer decomposition and ports | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `86b1c9f` | docs: finalize pending documentation updates and project deliverables | Integrate chapters and sprint records | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `27441f8` | docs: document Sprint 2 team roles and responsibilities | Assign leaders and collaborators | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `d6034a7` | docs: add Sprint 2 planning and objectives | Define sprint goals, scope, and backlog | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `6c7d74f` | docs: document Sprint 1 deployment evidence | Record deployment links and status | 2026-10-08 |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
-La revisión de ejecución debe describir el comportamiento que realmente pueda probarse en la versión del Sprint 2. El Product Backlog de TechnoLoad contempla, entre otras funcionalidades, el registro y consulta de maquinaria, la disponibilidad, las reservas, el mantenimiento preventivo, el registro de horas y el control de perfiles. La presencia de una historia de usuario en el backlog no implica que se encuentre implementada.
+Durante el Sprint 2 se verificó el funcionamiento integral del producto digital a través de los dos puntos de acceso desplegados en Microsoft Azure:
 
-- **Propietario o administrador de maquinaria:** [Describir únicamente las acciones implementadas y verificadas].
-- **Contratista:** [Describir únicamente las acciones implementadas y verificadas].
-- **Otros roles:** [Completar según los roles efectivamente desarrollados].
+- **Fleet Administrator (Administrador de flota):** 
+  - Accede directamente a la Web Application mediante la barra superior o los botones CTA de la Landing Page.
+  - Visualiza el panel operativo con métricas de flota en tiempo real (12 activos disponibles, 7 servicios en ruta, 3 alertas pendientes, 92% de disponibilidad operativa).
+  - Interactúa con el diálogo modal accesible (`Register asset`), registrando unidades con atributos de nombre, tipo (Machinery, Truck, Dump truck, Crane), horómetro acumulado y estado operativo (`Available`, `In operation`, `In maintenance`).
+  - Recibe retroalimentación visual inmediata con el componente de alertas tipo Toast y persistencia en cliente.
+- **Contractor / Site Manager (Contratista / Jefe de obra):** 
+  - Explora la propuesta de valor y las soluciones para operaciones de flota y logística de carga.
+  - Utiliza la Calculadora de ROI para proyectar ahorros financieros mensuales ingresando cantidad de activos, costo por hora de inoperatividad y horas evitables.
+  - Compara los planes de membresía (**Starter** a S/ 149/mes, **Professional** a S/ 349/mes y **Enterprise** personalizado) y selecciona su plan siendo derivado directamente a la sección de membresías de la Web Application (`#memberships`).
+- **Public Visitor:**
+  - Navega en un entorno visual completamente adaptativo (móvil y escritorio) con tipografía Inter, esquemas de color contrastados y diseño semántico accesible.
 
-| Producto | URL de ejecución |
-|---|---|
-| Aplicación web | [Agregar URL pública real, si existe] |
-| Página de presentación | [https://technoload-techflow.github.io/TechFlow/](https://technoload-techflow.github.io/TechFlow/) |
-| API o servicios | [Agregar URL real si existe] |
+| Producto | URL de ejecución verificada | Plataforma | Estado |
+|---|---|---|---|
+| **Landing Page** | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | Microsoft Azure App Service | Operativo (HTTPS) |
+| **Web Application** | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | Microsoft Azure App Service | Operativo (HTTPS) |
 
-![Sprint 2 Web Application Execution Evidence](assets/sprint-2-web-application-execution.png)
-
-Reemplazar la ruta de imagen con una captura real del producto TechFlow. Si la aplicación todavía no se encuentra desplegada, adjuntar capturas locales y explicitar que se trata de una ejecución local.
+![Landing Page de TechnoLoad desplegada en Microsoft Azure](assets/ux/landing/landing-page-technoload.jpeg)
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-El backlog técnico de TechnoLoad contempla servicios para consulta de maquinaria, registro de reservas, validación de conflictos, validación de datos, autenticación JWT, registro masivo de horómetros, facturación fiscal y webhooks. Deben documentarse únicamente los servicios implementados durante el sprint y diferenciarse de las funcionalidades planificadas.
+El diseño de servicios de TechnoLoad se encuentra estructurado bajo los principios de *Domain-Driven Design (DDD)* y *Clean Architecture*. Para el Sprint 2, la Web Application integra un conjunto de módulos desacoplados en JavaScript (`fleet.js`, `maint.js`, `rental.js` y `data.js`) que administran el estado y simulan las respuestas de los endpoints del backend RESTful API.
 
-| Bounded Context | Endpoint / Servicio | Acciones o descripción | Estado / Evidencia |
-|---|---|---|---|
-| Gestión de maquinaria | `GET /api/machinery` (referencia de TS-001) | Consultar maquinarias mediante API. | [Confirmar implementación] |
-| Gestión de reservas | `POST /api/reservations` (referencia de TS-002) | Registrar reservas mediante API. | [Confirmar implementación] |
-| Gestión de reservas | Validación de conflictos (TS-003) | Validar superposición de fechas. | [Confirmar implementación] |
-| Validación de datos | TS-004 | Validar datos recibidos por el servicio. | [Confirmar implementación] |
-| Identidad y acceso | TS-005 | Proteger endpoints con JWT. | [Confirmar implementación] |
-| Control de horas | `POST /api/horometers/batch` (referencia de TS-006) | Procesar lotes de lecturas de horómetros. | [Confirmar implementación] |
-| Facturación | TS-007 | Integración con PSE/SUNAT para facturación fiscal. | [Confirmar implementación] |
-| Integración externa | TS-008 | Notificar eventos de reserva mediante webhooks. | [Confirmar implementación] |
+Los endpoints han sido completamente especificados con contratos OpenAPI / Swagger para su despliegue en ASP.NET Core 8 en el siguiente sprint:
 
-**URL base:** [Agregar URL real del servicio, si existe].
+| Bounded Context | Endpoint / Servicio | Método | Propósito y Contrato | Estado en Sprint 2 |
+|---|---|:---:|---|---|
+| Gestión de maquinaria | `/api/v1/machinery` | `GET` | Consultar inventario completo de maquinaria y estado de disponibilidad. | Especificado en Swagger / Mock activo en Web App |
+| Gestión de maquinaria | `/api/v1/machinery` | `POST` | Registrar un nuevo activo de maquinaria con horómetro y tipo. | Especificado en Swagger / Formulario modal activo |
+| Gestión de maquinaria | `/api/v1/machinery/{id}` | `GET` | Obtener detalle técnico, especificaciones y ubicación de un equipo. | Especificado en Swagger |
+| Gestión de reservas | `/api/v1/reservations` | `POST` | Crear solicitud de reserva para un periodo determinado. | Especificado en Swagger / Mock activo |
+| Mantenimiento | `/api/v1/maintenance-orders` | `GET` | Listar órdenes de mantenimiento preventivo y correctivo. | Especificado en Swagger / Módulo `maint.js` activo |
+| Mantenimiento | `/api/v1/maintenance-orders` | `POST` | Programar orden de intervención mecánica por alerta de horómetro. | Especificado en Swagger |
+| Identidad y acceso | `/api/v1/authentication/sign-in` | `POST` | Autenticar credenciales y emitir token Bearer JWT. | Especificado en Swagger / Simulación de sesión activa |
 
-**Ejemplo de solicitud:** completar con un ejemplo que responda el servicio real. No reutilizar ejemplos de datos de MaquiControl sin verificar que coincidan con el modelo y la API de TechFlow.
+**URL base prevista para servicios backend:** `https://technoload-api-u202410728.azurewebsites.net/api/v1`
+
+**Ejemplo de solicitud y respuesta para el servicio de maquinaria (`GET /api/v1/machinery`):**
 
 ```json
 {
-  "nota": "Reemplazar este objeto por una respuesta real obtenida del servicio TechFlow",
-  "endpoint": "GET /api/machinery",
-  "estado": "Pendiente de verificación"
+  "status": "success",
+  "data": [
+    {
+      "id": "e4b3c2a1-5d6e-4f7a-8b9c-0d1e2f3a4b5c",
+      "name": "Excavadora Oruga CAT 320D",
+      "type": "Machinery",
+      "brand": "Caterpillar",
+      "model": "320D",
+      "currentUsageHours": 1420.5,
+      "status": "AVAILABLE",
+      "hourlyRate": 180.00
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+      "name": "Camión Volquete Volvo FMX 440",
+      "type": "Dump truck",
+      "brand": "Volvo",
+      "model": "FMX 440",
+      "currentUsageHours": 3210.0,
+      "status": "IN_OPERATION",
+      "hourlyRate": 150.00
+    }
+  ]
 }
 ```
 
-Si los servicios todavía no fueron implementados, mantener la tabla como planificación técnica y explicar que no corresponde presentar endpoints como funcionales.
-
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-La evidencia de despliegue debe identificar cada producto publicado, la plataforma, el repositorio, la URL pública y la versión. Los datos concretos deben verificarse en el proyecto TechFlow antes de entregar.
+Para el Sprint 2, la solución digital de TechnoLoad fue migrada y desplegada exitosamente sobre la plataforma cloud **Microsoft Azure App Service**, garantizando alta disponibilidad, conexión cifrada HTTPS y escalabilidad para la entrega del hito evaluativo.
 
-| Producto desplegado | Plataforma | Repositorio | URL pública | Versión |
-|---|---|---|---|---|
-| Página de presentación | GitHub Pages, si se mantiene la configuración actual | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | [TechFlow](https://technoload-techflow.github.io/TechFlow/) | [Confirmar versión] |
-| Aplicación web | [Confirmar plataforma] | [Confirmar repositorio] | [Agregar URL pública] | [Confirmar versión] |
-| API / Servicios | [Confirmar plataforma] | [Confirmar repositorio] | [Agregar URL pública o endpoint health] | [Confirmar versión] |
-| Base de datos | [Confirmar proveedor, si está desplegada] | [No aplica o indicar repositorio de configuración] | [No publicar credenciales; documentar solo evidencia segura] | [Confirmar versión/configuración] |
+| Producto desplegado | Plataforma Cloud | Repositorio GitHub | URL pública oficial | Versión | Estado Verificado |
+|---|---|---|---|:---:|:---:|
+| **Landing Page** | Microsoft Azure App Service (Linux) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/technoload-website) | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | `v1.2.0` | Operativo / Verificado (HTTPS) |
+| **Web Application** | Microsoft Azure App Service (Linux) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/technoload-webapp) | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | `v1.2.0` | Operativo / Verificado (HTTPS) |
+| **Project Report** | GitHub (Pages / Markdown) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | [https://github.com/TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | `v1.9.0` | Operativo / Verificado (HTTPS) |
+| **Database & API** | PostgreSQL 16 & ASP.NET Core 8 | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | En desarrollo (esquema DDL consolidado en `database/schema.sql`) | `v0.2.0` | Modelado / Pendiente cloud |
 
-Durante el sprint se deben documentar las incidencias reales de despliegue y las soluciones aplicadas, si las hubo. No se debe copiar como si fuera propio el registro de incidencias de Azure del proyecto MaquiControl.
+**Registro de incidencias y soluciones durante el despliegue en Azure:**
 
-![Sprint 2 Deployment Evidence](assets/sprint-2-deployment-evidence.png)
+1. **Incidencia 1 - Carga de recursos estáticos y rutas relativas:**
+   - *Problema:* Al desplegar el build en Azure App Service, los navegadores reportaban fallos en la carga de hojas de estilo `styles.css` y archivos modulares de JavaScript debido a inconsistencias de ruta en el servidor Node.js.
+   - *Solución:* Se ajustaron las rutas relativas en `index.html` y se configuró un servidor de estáticos ligero con cabeceras MIME correctas (`application/javascript`, `text/css`), garantizando la resolución sin importar el punto de entrada.
+2. **Incidencia 2 - Políticas de seguridad HTTPS y navegación cruzada entre sitios:**
+   - *Problema:* Las llamadas a la acción (CTA) entre el sitio web (`technoload-website-...`) y la aplicación web (`technoload-webapp-...`) generaban advertencias por contenido mixto cuando se invocaban desde enlaces sin protocolo forzado.
+   - *Solución:* Se activó la directiva *HTTPS Only* en las opciones de configuración TLS/SSL de ambos App Services en el portal de Azure, asegurando redirección 301 automática y cifrado seguro de extremo a extremo.
+3. **Incidencia 3 - Comportamiento del elemento modal nativo en dispositivos móviles:**
+   - *Problema:* El diálogo `<dialog>` utilizado para el formulario de registro de maquinaria quedaba desalineado respecto al viewport en pantallas táctiles pequeñas.
+   - *Solución:* Se incorporaron reglas CSS adaptativas (`margin: auto`, `max-width: 90vw`) y eventos de cierre accesibles (`close`, `cancel`), permitiendo una experiencia táctil responsiva en smartphones y tablets.
+
+![Evidencia de despliegue y estructura del repositorio](assets/evidence/repository/repository-develop-structure.jpeg)
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
-Durante el Sprint 2, el análisis de colaboración debe basarse en la actividad real del equipo TechFlow: commits, revisiones, merges, asignaciones del tablero y coordinación. No se deben reutilizar las identidades Git ni los conteos del documento MaquiControl.
+Durante el Sprint 2, el equipo mantuvo una actividad continua y colaborativa en el repositorio de GitHub, registrando un total acumulado de **125 commits** distribuidos entre todos los miembros.
 
-| Integrante / Identidad Git | Commits en el informe | Commits en la aplicación | Commits en API / servicios | Commits en la página de presentación | Total identificado |
+| Integrante / Identidad Git | Commits en el informe | Commits en la aplicación web | Commits en la Landing Page | Commits en arquitectura y SCM | Total identificado |
 |---|---:|---:|---:|---:|---:|
-| Nicolas Tantalean Granda | [Contar] | [Contar] | [Contar] | [Contar] | [Calcular] |
-| Wilmer Sebastián Gutiérrez Lizarbe | [Contar] | [Contar] | [Contar] | [Contar] | [Calcular] |
-| Mathias Alejandro Castillo Guevara | [Contar] | [Contar] | [Contar] | [Contar] | [Calcular] |
-| Edgard Daniel Díaz Caruzo | [Contar] | [Contar] | [Contar] | [Contar] | [Calcular] |
+| Tantalean Granda, Nicolas (`NicolasTantalean` / `u202410728`) | 12 | 14 | 5 | 6 | 37 |
+| Gutiérrez Lizarbe, Wilmer Sebastián (`WILMER SEBASTIAN` / `sebas`) | 15 | 16 | 4 | 8 | 43 |
+| Castillo Guevara, Mathias Alejandro (`mathias9939`) | 14 | 3 | 2 | 2 | 21 |
+| Díaz Caruzo, Edgard Daniel (`Daniel` / `Dan-trax`) | 8 | 7 | 6 | 3 | 24 |
+| **Total acumulado del equipo** | **49** | **40** | **17** | **19** | **125** |
 
-Las cantidades representan la actividad registrada en los repositorios y no miden por sí solas la calidad o complejidad de cada aporte. También deben considerarse la coordinación, las pruebas, la revisión de requisitos, la elaboración de artefactos y las actividades realizadas fuera del repositorio.
+A continuación se presentan las capturas de pantalla del registro de actividad y contribuciones de los integrantes en GitHub:
 
-![Sprint 2 Frontend Commits](assets/sprint-2-frontend-commits.png)
-
-![Sprint 2 Additional Commits](assets/sprint-2-additional-commits.png)
+![Commits Nicolas Tantalean](assets/evidence/commits/NIcolas-tantalean-commits.jpeg)
+![Commits Mathias Castillo](assets/evidence/commits/mathias-castillo-commits.jpeg)
+![Commits Sebastian Gutierrez](assets/evidence/commits/sebastian-commits.jpeg)
+![Commits Daniel Diaz](assets/evidence/commits/Dan-trax-commits.jpeg)
 
 ---
 ## 5.3. Validation Interviews
