@@ -60,7 +60,7 @@ Efrain Ricardo Bautista Ubillus
 
 # Registro de Versiones del Informe
 
-El presente registro resume las modificaciones relevantes realizadas al informe durante el ciclo de vida del proyecto para la entrega de la Semana 4 (AV1).
+El presente registro resume las modificaciones relevantes realizadas al informe durante el ciclo de vida del proyecto para las entregas de los hitos AV1 (Semana 4) y AV2 (Sprint 2).
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :---: | :---: | :--- | :--- |
@@ -74,6 +74,7 @@ El presente registro resume las modificaciones relevantes realizadas al informe 
 | **1.7.0** | 2026-09-17 | Nicolas Tantalean, Mathias Castillo | Diseño de Wireframes, Mock-ups de alta fidelidad y prototipos en Figma; elaboración de diagramas de arquitectura C4 (Contexto, Contenedor y Componentes) y modelo relacional de base de datos. |
 | **1.8.0** | 2026-09-18 | Wilmer Gutierrez, Edgard Diaz | Redacción del Capítulo V: Software Configuration Management, registro del Sprint 1 y despliegue del Landing Page en GitHub Pages. |
 | **1.9.0** | 2026-09-19 | Todos los integrantes | Revisión general, incorporación de Conclusiones, Bibliografía según formato APA 7 y consolidación final del informe para la entrega AV1 (Semana 4). |
+| **2.0.0** | 2026-10-08 | Todos los integrantes | Documentación completa del Sprint 2: planificación, backlog, evidencias de desarrollo y ejecución; registro del despliegue en Microsoft Azure App Service (Landing Page y Web App); corrección sintáctica de diagramas Mermaid (palabra reservada 'end' y etiquetas C4); reestructuración y validación integral de anclas del Índice (TOC) y depuración de referencias. |
 
 ---
 
@@ -3301,11 +3302,11 @@ Los endpoints han sido completamente especificados con contratos OpenAPI / Swagg
 
 Para el Sprint 2, la solución digital de TechnoLoad fue migrada y desplegada exitosamente sobre la plataforma cloud **Microsoft Azure App Service**, garantizando alta disponibilidad, conexión cifrada HTTPS y escalabilidad para la entrega del hito evaluativo.
 
-| Producto desplegado | Plataforma Cloud | Repositorio GitHub | URL pública oficial | Versión | Estado Verificado |
-|---|---|---|---|:---:|:---:|
-| **Landing Page** | Microsoft Azure App Service (Linux) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/technoload-website) | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | `v1.2.0` | Operativo / Verificado (HTTPS) |
-| **Web Application** | Microsoft Azure App Service (Linux) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/technoload-webapp) | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | `v1.2.0` | Operativo / Verificado (HTTPS) |
-| **Project Report** | GitHub (Pages / Markdown) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | [https://github.com/TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | `v1.9.0` | Operativo / Verificado (HTTPS) |
+| Producto desplegado | Plataforma Cloud | Repositorio GitHub | URL pública oficial | Versión  | Estado Verificado |
+|---|---|---|---|:--------:|:---:|
+| **Landing Page** | Microsoft Azure App Service (Linux) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/technoload-website) | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | `v2.0.0` | Operativo / Verificado (HTTPS) |
+| **Web Application** | Microsoft Azure App Service (Linux) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/technoload-webapp) | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | `v2.0.0` | Operativo / Verificado (HTTPS) |
+| **Project Report** | GitHub (Pages / Markdown) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | [https://github.com/TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | `v2.0.0` | Operativo / Verificado (HTTPS) |
 
 <!-- | **Database & API** | PostgreSQL 16 & ASP.NET Core 8 | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | En desarrollo (esquema DDL consolidado en `database/schema.sql`) | `v0.2.0` | Modelado / Pendiente cloud |  -->
 **Registro de incidencias y soluciones durante el despliegue en Azure:**
