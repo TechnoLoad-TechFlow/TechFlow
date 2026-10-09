@@ -1,35 +1,9 @@
-<<<<<<< HEAD
-# GRUPO-3
-
-=======
->>>>>>> develop
 <p align="center">
   <img width="180"  alt="image" src="https://github.com/user-attachments/assets/2c3d0613-f51e-47d7-bd82-439b78384731" />
 </p>
 
 <div align="center">
 
-<<<<<<< HEAD
-# UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
-
-### FACULTAD DE INGENIERÍA
-### CARRERA DE INGENIERÍA DE SOFTWARE
-
-<br>
-
-# INFORME DE PROYECTO
-
-## Nombre del proyecto
-### TechnoLoad
-
-<br>
-
-**Curso:**  
-Aplicaciones Web
-
-**Sección:**  
-8093
-=======
 # Universidad Peruana de Ciencias Aplicadas
 
 ## Carrera de Ingeniería de Software
@@ -61,37 +35,10 @@ Aplicaciones Web
 ### Proyecto
 **Techflow**
 
->>>>>>> develop
 <br>
 
 ### Integrantes
 
-<<<<<<< HEAD
-
-NICOLAS TANTALEAN GRANDA | U202410728 |
-
-WILMER SEBASTIAN GUTIERREZ LIZARBE | U202412044 |
-
-MATHIAS ALEJANDRO CASTILLO GUEVARA | U202410783 |
-
-EDGARD DANIEL DIAZ CARUZO | U202323911 |
-
-
-<br>
-
-**Docente:**  
-Efrain Ricardo Bautista Ubillus
-
-<br>
-
-**Ciclo:**  
-2026-2
-
-<br>
-
-**Lima, Perú**  
-**2026**
-=======
 </div>
 
 | Código | Apellidos y Nombres |
@@ -111,7 +58,6 @@ Efrain Ricardo Bautista Ubillus
 <br>
 
 ### Octubre 2026
->>>>>>> develop
 
 </div>
 
@@ -119,11 +65,7 @@ Efrain Ricardo Bautista Ubillus
 
 # Registro de Versiones del Informe
 
-<<<<<<< HEAD
-El presente registro resume las modificaciones relevantes realizadas al informe durante el ciclo de vida del proyecto para la entrega de la Semana 4 (AV1).
-=======
 El presente registro resume las modificaciones relevantes realizadas al informe durante el ciclo de vida del proyecto para las entregas de los hitos AV1 (Semana 4) y AV2 (Sprint 2).
->>>>>>> develop
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :---: | :---: | :--- | :--- |
@@ -137,10 +79,7 @@ El presente registro resume las modificaciones relevantes realizadas al informe 
 | **1.7.0** | 2026-09-17 | Nicolas Tantalean, Mathias Castillo | Diseño de Wireframes, Mock-ups de alta fidelidad y prototipos en Figma; elaboración de diagramas de arquitectura C4 (Contexto, Contenedor y Componentes) y modelo relacional de base de datos. |
 | **1.8.0** | 2026-09-18 | Wilmer Gutierrez, Edgard Diaz | Redacción del Capítulo V: Software Configuration Management, registro del Sprint 1 y despliegue del Landing Page en GitHub Pages. |
 | **1.9.0** | 2026-09-19 | Todos los integrantes | Revisión general, incorporación de Conclusiones, Bibliografía según formato APA 7 y consolidación final del informe para la entrega AV1 (Semana 4). |
-<<<<<<< HEAD
-=======
 | **2.0.0** | 2026-10-08 | Todos los integrantes | Documentación completa del Sprint 2: planificación, backlog, evidencias de desarrollo y ejecución; registro del despliegue en Microsoft Azure App Service (Landing Page y Web App); corrección sintáctica de diagramas Mermaid (palabra reservada 'end' y etiquetas C4); reestructuración y validación integral de anclas del Índice (TOC) y depuración de referencias. |
->>>>>>> develop
 
 ---
 
@@ -163,17 +102,10 @@ A continuación, se presentan los espacios para las capturas de pantalla de los 
 
 #### Historial de Commits y Registro de Actividad (GitHub Network / Commits Graph)
 
-<<<<<<< HEAD
-![Foto commits tanta](assets/NIcolas-tantalean-commits.jpeg)
-![Foto commits mathias](assets/mathias-castillo-commits.jpeg)
-![Foto commits sebas](assets/sebastian-commits.jpeg)
-![Foto commits d](assets/Dan-trax-commits.jpeg)
-=======
 ![Foto commits tanta](assets/evidence/commits/NIcolas-tantalean-commits.jpeg)
 ![Foto commits mathias](assets/evidence/commits/mathias-castillo-commits.jpeg)
 ![Foto commits sebas](assets/evidence/commits/sebastian-commits.jpeg)
 ![Foto commits d](assets/evidence/commits/Dan-trax-commits.jpeg)
->>>>>>> develop
 
 ---
 
@@ -197,11 +129,7 @@ A continuación, se presentan los espacios para las capturas de pantalla de los 
 
 ## Capítulo II: Requirements Elicitation & Analysis
 - [2.1. Competidores](#21-competidores)
-<<<<<<< HEAD
-  - [2.1.1. Análisis competitivo](#211-competitive-analysis-landscape)
-=======
   - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
->>>>>>> develop
   - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
 - [2.2. Entrevistas](#22-entrevistas)
   - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
@@ -254,11 +182,6 @@ A continuación, se presentan los espacios para las capturas de pantalla de los 
 - [5.1. Software Configuration Management](#51-software-configuration-management)
   - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
   - [5.1.2. Source Code Management](#512-source-code-management)
-<<<<<<< HEAD
-  - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--coding-conventions)
-  - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
-- [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
-=======
   - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide-conventions)
   - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
 - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services-applications-implementation)
@@ -280,7 +203,6 @@ A continuación, se presentan los espacios para las capturas de pantalla de los 
     - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
     - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
     - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
->>>>>>> develop
 
 ## Conclusiones
 - [Conclusiones y recomendaciones](#conclusiones)
@@ -304,17 +226,10 @@ Por esta razón, nos reunimos y trabajamos con cooperación, eficiencia y respon
 
 |                                         Foto                                         | Descripción del Integrante |
 |:------------------------------------------------------------------------------------:| :--- |
-<<<<<<< HEAD
-| <img src="./assets/Foto_SebastianGutierrez.jpeg" width="150" alt="Wilmer Gutierrez"> | Mi nombre es Wilmer Sebastian Gutierrez Lizarbe con el código de estudiante u202412044, estoy cursando el quinto ciclo en la carrera de Ingeniería de Software. Tengo conocimientos que pueden aportar al proyecto, tales como: codificación en Python, JavaScript, C++, gestión de bases de datos relacionales y no relacionales como SQL Server, MongoDB y Firebase, así como el diseño de arquitectura web. Las habilidades que puedo aportar a mi equipo son responsabilidad, liderazgo técnico y compromiso para entregar un producto de software funcional y de alta calidad. |
-|            <img src="./assets/Foto_Daniel.jpeg" width="150" alt="Daniel">            | Mi nombre es Edgard Daniel Diaz Caruzo con código de estudiante u202323911 estoy en la carrera de Ingeniería de Software y voy en mi 5to ciclo de la carrera, una de mis cualidades es la responsabilidad y la puntualidad. Mi objetivo es apoyar en cualquier cosa a mis compañeros. |
-|      <img src="./assets/Foto_NicolasTantalean.jpeg" width="150" alt="Nicolas">       | Mi nombre es NICOLAS TANTALEAN GRANDA con código de estudiante U202410728, soy estudiante de la carrera de Ingeniería de Software. Entre mis conocimientos se encuentran desarrollo web y algoritmos. Como miembro del equipo, aportaré dedicación y colaboración constante para lograr un proyecto sólido. |
-|       <img src="./assets/Foto_MathiasCastillo.jpeg" width="150" alt="Mathias">       | Mi nombre es MATHIAS ALEJANDRO CASTILLO GUEVARA con código de estudiante U202410783, soy estudiante de la carrera de Ingeniería de Software. Entre mis conocimientos se encuentran bases de datos y desarrollo de software. Como miembro del equipo, aportaré dedicación y colaboración constante. |te. |
-=======
 | <img src="./assets/team/profiles/Foto_SebastianGutierrez.jpeg" width="150" alt="Wilmer Gutierrez"> | Mi nombre es Wilmer Sebastian Gutierrez Lizarbe con el código de estudiante u202412044, estoy cursando el quinto ciclo en la carrera de Ingeniería de Software. Tengo conocimientos que pueden aportar al proyecto, tales como: codificación en Python, JavaScript, C++, gestión de bases de datos relacionales y no relacionales como SQL Server, MongoDB y Firebase, así como el diseño de arquitectura web. Las habilidades que puedo aportar a mi equipo son responsabilidad, liderazgo técnico y compromiso para entregar un producto de software funcional y de alta calidad. |
 |            <img src="./assets/team/profiles/Foto_Daniel.jpeg" width="150" alt="Daniel">            | Mi nombre es Edgard Daniel Diaz Caruzo con código de estudiante u202323911 estoy en la carrera de Ingeniería de Software y voy en mi 5to ciclo de la carrera, una de mis cualidades es la responsabilidad y la puntualidad. Mi objetivo es apoyar en cualquier cosa a mis compañeros. |
 |      <img src="./assets/team/profiles/Foto_NicolasTantalean.jpeg" width="150" alt="Nicolas">       | Mi nombre es NICOLAS TANTALEAN GRANDA con código de estudiante U202410728, soy estudiante de la carrera de Ingeniería de Software. Entre mis conocimientos se encuentran desarrollo web y algoritmos. Como miembro del equipo, aportaré dedicación y colaboración constante para lograr un proyecto sólido. |
 |       <img src="./assets/team/profiles/Foto_MathiasCastillo.jpeg" width="150" alt="Mathias">       | Mi nombre es MATHIAS ALEJANDRO CASTILLO GUEVARA con código de estudiante U202410783, soy estudiante de la carrera de Ingeniería de Software. Entre mis conocimientos se encuentran bases de datos y desarrollo de software. Como miembro del equipo, aportaré dedicación y colaboración constante. |te. |
->>>>>>> develop
 
 
 ## 1.2. Solution Profile
@@ -360,11 +275,6 @@ Presentación del modelo de las preguntas 5Ws y 2Hs con la que se analizaron los
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-<<<<<<< HEAD
-"En un contexto de creciente exigencia por la eficiencia operativa y reducción de costos en los sectores de construcción, minería y transporte, se hace evidente la necesidad de una aplicación web de gestión de flotas que facilite la supervisión en tiempo real, el control preventivo de mantenimientos y la asignación optimizada de rutas. Dicha aplicación web debe proporcionar una experiencia clara y centralizada para cada empresa, adaptándose a la diversidad de activos de su flota."
-
-Como grupo, nos comprometeremos a resolver este desafío mediante una colaboración estrecha con los administradores de flota y coordinadores logísticos. Nos enfocaremos en comprender profundamente las necesidades y expectativas de nuestros usuarios, utilizando esta información para diseñar y desarrollar una solución innovadora que satisfaga sus requerimientos de manera integral.
-=======
 TechnoLoad busca que los administradores de flota, coordinadores logísticos y gerentes de operaciones de empresas peruanas de alquiler de maquinaria pesada y transporte de carga gestionen sus activos con información centralizada, actualizada y trazable. El propósito de la plataforma es prevenir paradas no programadas, controlar costos de mantenimiento y permitir que las operaciones asignen únicamente unidades disponibles.
 
 El problema se presenta de manera continua durante la operación diaria: las organizaciones registran horas de uso, kilometraje, mantenimientos y disponibilidad en hojas de cálculo, formatos físicos, llamadas o mensajería. Esta información fragmentada dificulta conocer el estado real de cada activo, programar intervenciones preventivas y coordinar despachos. Como consecuencia, las averías se atienden de forma reactiva, se incrementan los costos correctivos y se producen periodos de inoperatividad que afectan la continuidad del servicio.
@@ -382,7 +292,6 @@ La solución debe ser intuitiva para personal administrativo y operativo, proteg
 | **¿Por qué?** | La información se encuentra dispersa en herramientas manuales y no existen alertas oportunas ni una fuente única del estado operativo de la flota. |
 | **¿Cómo?** | Mediante una plataforma SaaS que centralice activos y lecturas, programe mantenimiento preventivo, genere alertas y muestre la disponibilidad de cada unidad. |
 | **¿Cuánto?** | Se busca reducir el tiempo de consolidación de información, las paradas no planificadas y los costos asociados al mantenimiento correctivo; las métricas exactas se validarán con usuarios piloto. |
->>>>>>> develop
 
 #### 1.2.2.2. Lean UX Assumptions
 
@@ -399,52 +308,6 @@ La solución debe ser intuitiva para personal administrativo y operativo, proteg
 
 **User Assumptions**
 
-<<<<<<< HEAD
-* Los usuarios están buscando una solución integral que no solo les permita controlar mantenimientos, sino también gestionar despachos y rutas desde un mismo lugar.
-* Los usuarios valoran altamente la conveniencia y accesibilidad de una plataforma en línea, prefiriendo la flexibilidad de acceder a los datos de la flota desde cualquier dispositivo con conexión a internet.
-* Los usuarios están dispuestos a invertir en una plataforma SaaS que les proporcione información en tiempo real para tomar decisiones rápidas que eviten pérdidas económicas en obra.
-* Los usuarios esperan que las alertas de mantenimiento sean altamente configurables según los límites de horómetros o kilometraje específicos de cada tipo de máquina o vehículo.
-* Los usuarios valoran la seguridad y confiabilidad en una plataforma de gestión, buscando garantías de que la información operativa y financiera de sus flotas se trate de manera segura y confidencial.
-
-#### 1.2.2.3. Lean UX Hypothesis Statements
-
-Siguiendo el template exigido por el enunciado, cada Hypothesis Statement se redacta en inglés a partir de una Feature Assumption, indicando el business outcome que se busca lograr, las personas involucradas, el beneficio esperado y la funcionalidad o solución que lo habilita.
-
-* **Hypothesis 1**
-  We believe we will achieve *higher long-term platform retention among fleet operators*
-  If *heavy machinery fleet managers and logistics coordinators*
-  Attain *convenient, flexible online access to preventive maintenance control and route assignment*
-  With *a centralized SaaS fleet management platform*.
-
-* **Hypothesis 2**
-  We believe we will achieve *a reduction in unplanned equipment downtime and increased customer satisfaction*
-  If *fleet managers*
-  Attain *configurable preventive maintenance alerts based on horometer and mileage readings*
-  With *an automated maintenance alerting module*.
-
-* **Hypothesis 3**
-  We believe we will achieve *greater user trust and a lower subscription cancellation rate*
-  If *fleet managers and logistics coordinators*
-  Attain *confidence that their operational and telemetry data is secure and confidential*
-  With *data security and privacy safeguards built into the platform*.
-
-* **Hypothesis 4**
-  We believe we will achieve *higher usage frequency, more accurate data entry, and better system adoption*
-  If *fleet administrators*
-  Attain *a clear, intuitive dashboard that shows the status of their equipment at a glance*
-  With *an intuitive, easy-to-use TechnoLoad user interface*.
-
-#### 1.2.2.4. Lean UX Canvas
-
-| Business problem | Solution ideas | Business outcomes |
-| :--- | :--- | :--- |
-| Muchas empresas de alquiler de maquinaria pesada y transporte de carga están experimentando pérdidas económicas y baja rentabilidad debido a paradas no programadas por falta de mantenimiento preventivo y sobrecostos por ineficiencias en la asignación de rutas logísticas. | -Aplicación web SaaS para gestión centralizada de flotas.<br>-Módulo de alertas automáticas de mantenimiento preventivo según lecturas de horómetros y kilometraje.<br>-Plataforma de asignación y seguimiento de rutas de carga en tiempo real.<br>-Dashboard interactivo con reportes de costos operativos y rentabilidad por unidad. | -Reducción en los tiempos de inoperatividad no planificada de la flota.<br>-Disminución en los costos de mantenimiento correctivo de emergencia.<br>-Aumento en la eficiencia de despachos y tiempos de entrega de carga.<br>-Mayor retención de clientes y adopción continua de la plataforma a largo plazo. |
-| **Users and customers** | **User benefits** | **Hypotheses** |
-| -Administradores de flota de maquinaria pesada que buscan evitar averías graves en obra.<br>-Coordinadores logísticos de transporte de carga que necesitan optimizar rutas y uso de unidades.<br>-Gerentes de operaciones de empresas de alquiler y transporte que requieren reducir sobrecostos operativos. | -Los usuarios buscan un control total y en tiempo real del estado operativo de sus activos.<br>-Quieren prevenir fallas mecánicas antes de que ocurran mediante alertas oportunas.<br>-Desean una experiencia de gestión más rápida, centralizada y conveniente desde cualquier dispositivo. | -"We believe that a 20% reduction in unplanned fleet downtime will be achieved if heavy machinery fleet managers attain automated preventive maintenance alerts with our horometer tracking module."<br><br>-"We believe that a 15% reduction in operational routing costs will be achieved if logistics coordinators attain real-time unit availability and dispatch tracking with our route assignment module." |
-| **What's the most important thing we need to learn first?** | | **What's the least amount of work we need to do to learn the next most important thing?** |
-| -Riskiest Assumption for Hypothesis 1: Fleet managers will consistently log horometer and mileage readings manually before automated IoT sensors are integrated. | | -Experiment 1: Deploy a functional web prototype with manual horometer logging to a test group of 3 fleet managers and track daily data entry frequency and user engagement over 2 weeks. |
-| -Riskiest Assumption for Hypothesis 2: Logistics coordinators will actively use an online platform to assign routes instead of traditional spreadsheets or phone calls. | | -Experiment 2: Launch an interactive prototype for route assignment with 2 transport companies and measure order processing time and system adoption rate compared to their traditional methods. |
-=======
 * Los administradores de flota necesitan consultar en un solo lugar el inventario, estado operativo, lecturas de uso e historial de mantenimiento de maquinaria y vehículos.
 * Los responsables operativos están dispuestos a registrar lecturas de horómetro o kilometraje cuando el flujo sea rápido, accesible desde dispositivos conectados y deje trazabilidad de quién realizó el registro.
 * Los coordinadores logísticos necesitan identificar con certeza si una unidad está disponible, en operación o en mantenimiento antes de asignarla a un despacho.
@@ -487,7 +350,6 @@ Cada hipótesis sigue la estructura de *feature hypothesis*: **resultado de nego
 | **Riesgo más importante por validar** | La constancia con la que el personal operativo registrará lecturas manuales antes de que existan integraciones con telemetría IoT. |
 | **Experimento mínimo** | Probar un prototipo funcional de registro de lecturas y alertas con tres administradores de flota durante dos semanas; medir porcentaje de días con registro, completitud de datos, tiempo de registro y percepción de utilidad de las alertas. |
 | **Métricas de aprendizaje** | Tasa de registros completos, frecuencia de uso semanal, porcentaje de mantenimientos programados antes del vencimiento, número de asignaciones realizadas con consulta de disponibilidad y satisfacción de usuarios piloto. |
->>>>>>> develop
 
 ### 1.3. Segmentos objetivo
 
@@ -515,11 +377,7 @@ Este capítulo documenta la obtención, análisis y validación de necesidades d
 
 ### 2.1 Competidores
 
-<<<<<<< HEAD
-### 2.1.1. Competitive Analysis Landscape
-=======
 ### 2.1.1. Análisis competitivo
->>>>>>> develop
 
 | *Competitive Analysis Landscape* | *Descripción* |
 |---|---|
@@ -638,11 +496,7 @@ En esta sección se presentan las entrevistas realizadas a representantes de los
 
 **Captura de la entrevista:**
 
-<<<<<<< HEAD
-![Captura de la entrevista a Jose Ramirez](assets/interview-jose-ramirez.png)
-=======
 ![Captura de la entrevista a Jose Ramirez](assets/research/interviews/interview-jose-ramirez.png)
->>>>>>> develop
 
 **Resumen de la entrevista:**
 
@@ -668,11 +522,7 @@ Sus principales prioridades son garantizar la disponibilidad de la maquinaria, r
 
 **Captura de la entrevista:**
 
-<<<<<<< HEAD
-![Captura de la entrevista a Carlos Mendoza](assets/interview-carlos-stephano-mendoza.png)
-=======
 ![Captura de la entrevista a Carlos Mendoza](assets/research/interviews/interview-carlos-stephano-mendoza.png)
->>>>>>> develop
 
 **Resumen de la entrevista:**
 
@@ -702,11 +552,7 @@ Entrevista 1
 
 **Captura de la entrevista:**
 
-<<<<<<< HEAD
-![Captura de la entrevista a Andrea Lopez](assets/interview-andrea-lopez.png)
-=======
 ![Captura de la entrevista a Andrea Lopez](assets/research/interviews/interview-andrea-lopez.png)
->>>>>>> develop
 
 **Resumen de la entrevista:**
 
@@ -727,11 +573,7 @@ La entrevistada considera indispensable disponer de un calendario de disponibili
 - **Dispositivos y navegador:** iPhone en obra; laptop con Google Chrome en oficina.
 
 **Captura de la entrevista:**
-<<<<<<< HEAD
-![Captura de la entrevista a Harold Angello](assets/interview-harold-angello.png)
-=======
 ![Captura de la entrevista a Harold Angello](assets/research/interviews/interview-harold-angello.png)
->>>>>>> develop
 
 **Resumen de la entrevista:**
 
@@ -755,11 +597,7 @@ Sus principales prioridades son evitar que las obras se detengan por falta de ma
 
 **Captura de la entrevista:**
 
-<<<<<<< HEAD
-![Captura de la entrevista a Renzo Huaman](assets/interview-renzo-huaman.png)
-=======
 ![Captura de la entrevista a Renzo Huaman](assets/research/interviews/interview-renzo-huaman.png)
->>>>>>> develop
 
 **Resumen de la entrevista:**
 
@@ -778,11 +616,7 @@ Para solucionar estos problemas y reemplazar el control manual que lleva en su c
 - **Timing en el video:** 20:01-25:42
 
 **Captura de la entrevista:**
-<<<<<<< HEAD
-![Captura de la entrevista a Piero Reaño](assets/interview-piero-reano.png)
-=======
 ![Captura de la entrevista a Piero Reaño](assets/research/interviews/interview-piero-reano.png)
->>>>>>> develop
 
 **Resumen de la entrevista:**
 
@@ -845,11 +679,7 @@ A continuación se presentan las fichas elaboradas en UXPressia.
 
 Luis Herrera representa al administrador de una pequeña empresa dedicada al alquiler de maquinaria. Su perfil refleja las principales características, necesidades, objetivos y frustraciones identificadas en las entrevistas realizadas al segmento.
 
-<<<<<<< HEAD
-![User Persona - Luis Herrera](assets/user-persona-luis-herrera.png)
-=======
 ![User Persona - Luis Herrera](assets/research/personas/user-persona-luis-herrera.png)
->>>>>>> develop
 
 ##### User Persona - Coordinador Logístico
 ##### Harold Angello
@@ -862,11 +692,7 @@ Harold Angello representa al contratista responsable de pequeñas obras que nece
 
 Renzo Huamán representa al contratista independiente que supervisa varias obras y requiere información confiable sobre disponibilidad de maquinaria, tarifas transparentes y registro digital de horas trabajadas.
 
-<<<<<<< HEAD
-![User Persona - Renzo Huamán](assets/user-persona-renzo-huaman.png)
-=======
 ![User Persona - Renzo Huamán](assets/research/personas/user-persona-renzo-huaman.png)
->>>>>>> develop
 
 #### 2.3.2. User Task Matrix
 
@@ -901,11 +727,7 @@ De manera general, el proceso actual considera las siguientes etapas:
 
 Durante este proceso pueden presentarse dificultades relacionadas con registros manuales, información desactualizada, falta de alertas preventivas y poca visibilidad del estado real de los equipos.
 
-<<<<<<< HEAD
-![User Journey Map - Luis Herrera](assets/user-journey-luis-herrera.png)
-=======
 ![User Journey Map - Luis Herrera](assets/research/journeys/user-journey-luis-herrera.png)
->>>>>>> develop
 
 
 ##### User Journey Map - Coordinador Logístico
@@ -922,11 +744,7 @@ Los principales puntos de fricción se relacionan con la necesidad de consultar 
 
 El siguiente User Journey Map fue elaborado en la plataforma UXPressia para el User Persona Renzo Huamán. El recorrido documenta la experiencia completa en el escenario actual (*As-Is*) cuando Renzo necesita contratar una retroexcavadora para una obra de zanjado y habilitación urbana, enfrentando la falta de transparencia en costos, la informalidad en las reservas y las averías no previstas.
 
-<<<<<<< HEAD
-![User Journey Map - Renzo Huamán](assets/user-journey-renzo-huaman.png)
-=======
 ![User Journey Map - Renzo Huamán](assets/research/journeys/user-journey-renzo-huaman.png)
->>>>>>> develop
 
 #### 2.3.4. Empathy Mapping
 
@@ -936,11 +754,7 @@ A continuación se presentan los Empathy Mapping de los segmentos objetivos de T
 
 El siguiente Empathy Map representa a Luis Herrera, User Persona del Segmento 1. El artefacto sintetiza los principales comportamientos, necesidades, frustraciones, pensamientos y expectativas identificados a partir de las entrevistas realizadas a usuarios pertenecientes a este segmento.
 
-<<<<<<< HEAD
-![Empathy Map - Luis Herrera](assets/empathy-map-luis-herrera.png)
-=======
 ![Empathy Map - Luis Herrera](assets/research/empathy-maps/empathy-map-luis-herrera.png)
->>>>>>> develop
 
 #### Segmento 2: Contratistas independientes y responsables de obras de construcción
 
@@ -957,26 +771,12 @@ El siguiente Empathy Map representa a Luis Herrera, User Persona del Segmento 1.
 
 A continuación se presenta el Empathy Map elaborado en UXPressia para el User Persona Renzo Huamán, contratista independiente del Segmento 2. Este artefacto sintetiza sus observaciones, sentimientos, influencias, dolores y metas en el contexto de sus actividades diarias en obra.
 
-<<<<<<< HEAD
-![Empathy Map - Renzo Huamán](assets/empathy-map-renzo-huaman.png)
-=======
 ![Empathy Map - Renzo Huamán](assets/research/empathy-maps/empathy-map-renzo-huaman.png)
->>>>>>> develop
 
 #### 2.3.5. Big Picture Event Storming
 
 El Big Picture Event Storming permite visualizar de manera general los principales procesos del negocio de TechnoLoad, identificando actores, comandos, eventos del dominio, políticas y puntos críticos. En este proyecto se representan los flujos relacionados con la gestión de activos, el mantenimiento preventivo y la coordinación de transporte y logística, con el objetivo de comprender cómo se relacionan las principales actividades del dominio.
 
-<<<<<<< HEAD
-![Big Picture Event Storming 1 - MaquiControl](assets/big-picture-event-storming-1.jpg)
-![Big Picture Event Storming 2 - MaquiControl](assets/big-picture-event-storming-2.jpg)
-![Big Picture Event Storming 3 - MaquiControl](assets/big-picture-event-storming-3.jpg)
-![Big Picture Event Storming 4 - MaquiControl](assets/big-picture-event-storming-4.jpg)
-![Big Picture Event Storming 5 - MaquiControl](assets/big-picture-event-storming-5.jpg)
-![Big Picture Event Storming 6 - MaquiControl](assets/big-picture-event-storming-6.jpg)
-A partir del mapa se reconocen áreas de dominio candidatas como Discovery and Availability, Rental and Reservation Management, Fleet and Maintenance Management, Service Execution and Hour Control, Subscription Management, Billing and SUNAT Compliance, Operational Notifications y Dashboard and Analytics. Estas áreas todavía no representan Bounded Contexts definitivos, ya que su refinamiento se realizará posteriormente mediante Design-Level Event Storming.
-
-=======
 ![Big Picture Event Storming 1 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-1.jpg)
 ![Big Picture Event Storming 2 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-2.jpg)
 ![Big Picture Event Storming 3 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-3.jpg)
@@ -997,7 +797,6 @@ Las políticas hacen explícita la reacción del negocio ante un evento de domin
 | `SubscriptionPaymentConfirmed` | Cuando un pago de suscripción es confirmado, se habilita o renueva el acceso de la organización. | `ActivateSubscription` |
 | `ElectronicInvoiceRequested` | Toda factura aprobada debe enviarse al proveedor de facturación electrónica y conservar su estado de respuesta. | `SubmitElectronicInvoice` |
 
->>>>>>> develop
 ### 2.4. Ubiquitous Language
 
 En esta sección se presenta el Ubiquitous Language de TechnoLoad, compuesto por términos propios del dominio de gestión de flotas, mantenimiento de maquinaria pesada y transporte de carga. El objetivo es mantener un lenguaje común y sin ambigüedades entre los integrantes del equipo y los stakeholders involucrados en el proyecto.
@@ -1041,116 +840,6 @@ A partir del análisis de las entrevistas y de los artefactos de Needfinding, se
 
 Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [funcionalidad] para [beneficio esperado]**.
 
-<<<<<<< HEAD
-| Orden | Epic | User Story ID | Título | Descripción | Story Points |
-|---:|---|---|---|---|---:|
-| 1 | EP-01 Gestión de maquinaria y disponibilidad | US-001 | Registrar maquinaria | Como administrador de flota, deseo registrar una maquinaria con sus datos técnicos para mantener actualizada la información de mis activos. | 3 |
-| 2 | EP-01 Gestión de maquinaria y disponibilidad | US-002 | Consultar disponibilidad | Como administrador de flota, deseo consultar la disponibilidad de una maquinaria para conocer si está disponible, en obra o en mantenimiento antes de asignarla. | 2 |
-| 3 | EP-01 Gestión de maquinaria y disponibilidad | US-003 | Gestionar mantenimiento | Como administrador de flota, deseo gestionar el mantenimiento de una maquinaria para mantenerla en condiciones operativas. | 3 |
-| 4 | EP-01 Gestión de maquinaria y disponibilidad | US-016 | Editar datos | Como administrador de flota, deseo editar los datos de una maquinaria para mantener actualizada su información. | 2 |
-| 5 | EP-01 Gestión de maquinaria y disponibilidad | US-017 | Dar de baja | Como administrador de flota, deseo dar de baja una maquinaria para evitar que aparezca como disponible cuando ya no forma parte de la flota. | 2 |
-| 6 | EP-02 Gestión de reservas | US-004 | Crear reserva | Como cliente, deseo crear una reserva de maquinaria o vehículo para asegurar su disponibilidad durante el periodo requerido. | 3 |
-| 7 | EP-02 Gestión de reservas | US-005 | Evitar reservas duplicadas | Como administrador de flota, deseo evitar reservas duplicadas para impedir conflictos de disponibilidad. | 3 |
-| 8 | EP-02 Gestión de reservas | US-006 | Cancelar reserva | Como usuario, deseo cancelar una reserva para liberar el activo cuando ya no sea necesario. | 2 |
-| 9 | EP-02 Gestión de reservas | US-018 | Modificar fechas | Como usuario, deseo modificar las fechas de una reserva para adaptar la contratación a cambios en mi proyecto. | 2 |
-| 10 | EP-02 Gestión de reservas | US-019 | Aprobar/rechazar | Como administrador, deseo aprobar o rechazar solicitudes de reserva para controlar la asignación de los activos. | 3 |
-| 11 | EP-03 Consulta y contratación | US-007 | Catálogo | Como cliente, deseo consultar un catálogo de maquinaria y vehículos para conocer las opciones disponibles. | 1 |
-| 12 | EP-03 Consulta y contratación | US-008 | Tarifas | Como cliente, deseo consultar las tarifas de alquiler para conocer los costos antes de solicitar una reserva. | 1 |
-| 13 | EP-03 Consulta y contratación | US-009 | Reservas por obra | Como cliente, deseo gestionar las reservas asociadas a una obra para organizar los recursos necesarios para cada proyecto. | 2 |
-| 14 | EP-03 Consulta y contratación | US-020 | Filtrar por categoría | Como cliente, deseo filtrar las máquinas por categoría para encontrar rápidamente el tipo de equipo que necesito. | 2 |
-| 15 | EP-03 Consulta y contratación | US-021 | Buscar por ubicación | Como cliente, deseo buscar maquinaria por ubicación para encontrar activos disponibles cercanos a mi proyecto. | 2 |
-| 16 | EP-04 Horas y facturación | US-010 | Registrar horas | Como operador, deseo registrar las horas de uso o kilometraje de una unidad para mantener actualizado su nivel de utilización. | 3 |
-| 17 | EP-04 Horas y facturación | US-011 | Validar horas | Como administrador, deseo validar las horas registradas para asegurar que la información utilizada para la facturación sea correcta. | 3 |
-| 18 | EP-04 Horas y facturación | US-012 | Resumen de facturación | Como administrador, deseo consultar un resumen de facturación para conocer los ingresos generados por los activos. | 2 |
-| 19 | EP-04 Horas y facturación | US-022 | Comprobante | Como administrador, deseo generar un comprobante de pago por el servicio realizado para formalizar la operación. | 3 |
-| 20 | EP-04 Horas y facturación | US-023 | Penalización por mora | Como administrador, deseo registrar o calcular penalizaciones por mora para controlar los pagos pendientes de los clientes. | 2 |
-| 21 | EP-05 Landing Page | US-013 | Propuesta de valor | Como visitante, deseo conocer el valor que ofrece TechnoLoad para entender cómo puede solucionar los problemas de gestión de mi empresa. | 1 |
-| 22 | EP-05 Landing Page | US-014 | Segmentos | Como visitante, deseo conocer los segmentos a los que está dirigida la plataforma para identificar si TechnoLoad se adapta a mi empresa. | 1 |
-| 23 | EP-05 Landing Page | US-015 | Contacto/demo | Como visitante, deseo solicitar una demostración o establecer contacto para conocer más sobre la plataforma. | 2 |
-| 24 | EP-05 Landing Page | US-024 | ROI Calculator | Como visitante, deseo utilizar una calculadora de ROI para estimar los posibles beneficios económicos de utilizar TechnoLoad. | 3 |
-| 25 | EP-05 Landing Page | US-025 | Sales Chat | Como visitante, deseo utilizar un chat comercial para resolver dudas sobre la plataforma y sus servicios. | 2 |
-| 26 | EP-06 Acceso | US-026 | Registrar usuario | Como nuevo usuario, deseo registrarme en la plataforma para crear una cuenta y utilizar TechnoLoad. | 2 |
-| 27 | EP-06 Acceso | US-027 | Iniciar sesión | Como usuario registrado, deseo iniciar sesión para acceder de forma segura a las funcionalidades de la plataforma. | 2 |
-| 28 | EP-06 Acceso | US-028 | Recuperar contraseña | Como usuario, deseo recuperar mi contraseña para volver a acceder a mi cuenta cuando la haya olvidado. | 2 |
-| 29 | EP-06 Acceso | US-029 | Gestionar roles | Como administrador, deseo asignar roles de propietario, contratista u operador para controlar el acceso a las funcionalidades. | 3 |
-| 30 | EP-06 Acceso | US-030 | Gestionar perfil | Como usuario, deseo gestionar mi perfil para mantener actualizada mi información personal y empresarial. | 2 |
-| 31 | EP-07 Mantenimiento | US-031 | Alertas preventivas | Como administrador de flota, deseo recibir alertas de mantenimiento preventivo basadas en las horas de uso o kilometraje para anticiparme a posibles fallas. | 3 |
-| 32 | EP-07 Mantenimiento | US-032 | Orden de reparación | Como responsable de mantenimiento, deseo registrar órdenes de reparación para llevar un control de las intervenciones realizadas. | 3 |
-| 33 | EP-07 Mantenimiento | US-033 | Historial de mantenimiento | Como administrador, deseo consultar el historial de mantenimiento para conocer las intervenciones realizadas sobre cada activo. | 2 |
-| 34 | EP-07 Mantenimiento | US-034 | Reportar falla | Como operador, deseo reportar una falla para informar rápidamente al responsable de mantenimiento sobre un problema detectado. | 2 |
-| 35 | EP-08 Operaciones en campo | US-035 | Delivery check-in | Como operador, deseo registrar el check-in de entrega de una unidad incluyendo horómetro y fotografías para dejar evidencia del estado inicial del activo. | 3 |
-| 36 | EP-08 Operaciones en campo | US-036 | Return check-out | Como operador, deseo registrar el check-out de una unidad para documentar su devolución y estado final. | 3 |
-| 37 | EP-08 Operaciones en campo | US-037 | Equipo de reemplazo | Como administrador, deseo asignar un equipo de reemplazo cuando una unidad presente una falla para reducir el impacto de la inoperatividad. | 3 |
-| 38 | EP-09 Analytics | US-038 | Utilización | Como gerente de operaciones, deseo consultar el nivel de utilización de cada activo para evaluar su rendimiento. | 3 |
-| 39 | EP-09 Analytics | US-039 | Reportes | Como administrador, deseo generar reportes en Excel o PDF para analizar y compartir información operativa. | 3 |
-| 40 | EP-09 Analytics | US-040 | Calificación | Como cliente, deseo calificar el servicio recibido para proporcionar retroalimentación sobre la experiencia de alquiler. | 2 |
-| 41 | EP-10 Technical Story API | US-041 | API de maquinaria | Como sistema externo, deseo consultar el catálogo de maquinaria mediante una API para integrar la información de activos con otros servicios. | 3 |
-| 42 | EP-10 Technical Story API | US-042 | API de reservas | Como sistema externo, deseo registrar reservas mediante una API para automatizar la creación de solicitudes. | 3 |
-| 43 | EP-10 Technical Story API | US-043 | Conflicto de reserva | Como sistema, deseo recibir una respuesta de conflicto cuando exista una reserva incompatible para evitar duplicidades. | 2 |
-| 44 | EP-10 Technical Story API | US-044 | Validación API | Como sistema, deseo validar los datos enviados mediante la API para evitar registros incorrectos. | 2 |
-| 45 | EP-10 Technical Story API | US-045 | Autenticación JWT | Como sistema, deseo utilizar autenticación mediante JWT para proteger las operaciones de la API. | 3 |
-| 46 | EP-10 Technical Story API | US-046 | Horómetros batch | Como sistema, deseo registrar lecturas de horómetros mediante cargas masivas para facilitar la actualización de datos. | 3 |
-| 47 | EP-10 Technical Story API | US-047 | Facturación PSE/SUNAT | Como administrador, deseo emitir comprobantes electrónicos mediante la integración con PSE/SUNAT para automatizar la facturación. | 5 |
-| 48 | EP-10 Technical Story API | US-048 | Webhooks | Como sistema externo, deseo recibir webhooks sobre cambios importantes para mantener sincronizada la información. | 3 |
-
-
-### 3.2. Impact Mapping
-
-![Impact Map - Maquicontrol](assets/impact-mapping-maquicontrol.png)
-
-### 3.3. Product Backlog
-
-| Orden | ID | Epic | Título | Story Points |
-| :---: | :---: | :---: | :--- | :---: |
-| 1 | US-002 | EP-01 | Consultar disponibilidad | 2 |
-| 2 | US-004 | EP-02 | Crear reserva | 3 |
-| 3 | US-005 | EP-02 | Evitar reservas duplicadas | 3 |
-| 4 | US-001 | EP-01 | Registrar maquinaria | 3 |
-| 5 | US-003 | EP-01 | Gestionar mantenimiento | 3 |
-| 6 | US-031 | EP-07 | Alertas preventivas | 3 |
-| 7 | US-010 | EP-04 | Registrar horas/kilometraje | 3 |
-| 8 | US-007 | EP-03 | Catálogo | 1 |
-| 9 | US-008 | EP-03 | Consultar tarifas | 1 |
-| 10 | US-009 | EP-03 | Reservas por obra | 2 |
-| 11 | US-019 | EP-02 | Aprobar/rechazar reserva | 3 |
-| 12 | US-006 | EP-02 | Cancelar reserva | 2 |
-| 13 | US-018 | EP-02 | Modificar reserva | 2 |
-| 14 | US-033 | EP-07 | Historial de mantenimiento | 2 |
-| 15 | US-032 | EP-07 | Orden de reparación | 3 |
-| 16 | US-034 | EP-07 | Reportar falla | 2 |
-| 17 | US-037 | EP-08 | Equipo de reemplazo | 3 |
-| 18 | US-011 | EP-04 | Validar horas | 3 |
-| 19 | US-012 | EP-04 | Resumen de facturación | 2 |
-| 20 | US-022 | EP-04 | Comprobante | 3 |
-| 21 | US-038 | EP-09 | Utilización de activos | 3 |
-| 22 | US-039 | EP-09 | Reportes | 3 |
-| 23 | US-035 | EP-08 | Delivery check-in | 3 |
-| 24 | US-036 | EP-08 | Return check-out | 3 |
-| 25 | US-020 | EP-03 | Filtrar por categoría | 2 |
-| 26 | US-021 | EP-03 | Buscar por ubicación | 2 |
-| 27 | US-026 | EP-06 | Registrar usuario | 2 |
-| 28 | US-027 | EP-06 | Iniciar sesión | 2 |
-| 29 | US-029 | EP-06 | Gestionar roles | 3 |
-| 30 | US-030 | EP-06 | Gestionar perfil | 2 |
-| 31 | US-028 | EP-06 | Recuperar contraseña | 2 |
-| 32 | US-016 | EP-01 | Editar maquinaria | 2 |
-| 33 | US-017 | EP-01 | Dar de baja maquinaria | 2 |
-| 34 | US-013 | EP-05 | Propuesta de valor | 1 |
-| 35 | US-014 | EP-05 | Segmentos | 1 |
-| 36 | US-015 | EP-05 | Contacto/demo | 2 |
-| 37 | US-024 | EP-05 | ROI Calculator | 3 |
-| 38 | US-025 | EP-05 | Sales Chat | 2 |
-| 39 | US-041 | EP-10 | API de maquinaria | 3 |
-| 40 | US-042 | EP-10 | API de reservas | 3 |
-| 41 | US-043 | EP-10 | Conflicto de reserva | 2 |
-| 42 | US-044 | EP-10 | Validación API | 2 |
-| 43 | US-045 | EP-10 | Autenticación JWT | 3 |
-| 44 | US-046 | EP-10 | Horómetros batch | 3 |
-| 45 | US-047 | EP-10 | Facturación PSE/SUNAT | 5 |
-| 46 | US-048 | EP-10 | Webhooks | 3 |
-
-# Capítulo IV: Product Design
-=======
 | Epic / Story ID | Tipo | Título | User Story | Criterios de aceptación | Relacionado con |
 |---|---|---|---|---|---|
 | EP-01 | Epic | Gestión de maquinaria y disponibilidad | Permitir la administración del inventario, estado y disponibilidad de las maquinarias de alquiler. | El sistema debe permitir registrar, consultar y actualizar la información de las maquinarias. | — |
@@ -1281,7 +970,6 @@ Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [
 | 53 | **US-045** | Bloquear registro de maquinaria al superar el límite del plan | Como sistema, quiero impedir que un propietario registre más maquinarias que las permitidas por su plan, para hacer cumplir los límites comerciales de la suscripción. | 2 |
 
 ## Capítulo IV: Product Design
->>>>>>> develop
 
 ## 4.1. Style Guidelines
 
@@ -1550,9 +1238,6 @@ La Landing Page aplica Primary `#0F3D5E`, Secondary `#FF8F00` e Inter para comun
 
 El wireframe de baja fidelidad define Navbar, Hero de dos columnas, beneficios, módulos, proceso, CTA y Footer. Las estructuras se validan antes de aplicar estilo visual y responden a desktop y móvil.
 
-<<<<<<< HEAD
-![Wireframe de la landing page de TechnoLoad](assets/landing-wireframes.svg)
-=======
 La arquitectura de información prioriza una secuencia de conversión clara: propuesta de valor, evidencia de beneficio, módulos, segmentos, planes y llamada a la acción. Esta jerarquía reduce la carga cognitiva y permite que el visitante identifique rápidamente el propósito de la plataforma y el siguiente paso.
 
 | Breakpoint | Composición | Decisión de Responsive Web Design |
@@ -1562,7 +1247,6 @@ La arquitectura de información prioriza una secuencia de conversión clara: pro
 | **Mobile (< 768 px)** | Una columna, menú compacto, CTAs apilados y tarjetas secuenciales. | Prioriza legibilidad, objetivos táctiles de al menos 44 px y contenido esencial. |
 
 ![Wireframe de la landing page de TechnoLoad](assets/ux/landing/landing-wireframes.svg)
->>>>>>> develop
 
 ### 4.3.2. Landing Page Mock-ups
 
@@ -1588,11 +1272,7 @@ El mock-up de alta fidelidad aplica la jerarquía Inter, superficies claras, car
 
 #### **Vista Desktop**
 
-<<<<<<< HEAD
-![Mock-up de alta fidelidad de la Landing Page de TechnoLoad en vista Desktop](assets/landing-mockup-desktop.svg)
-=======
 ![Mock-up de alta fidelidad de la Landing Page de TechnoLoad en vista Desktop](assets/ux/landing/landing-mockup-desktop.svg)
->>>>>>> develop
 
 <!-- SVG embebido anterior conservado solo como referencia de diseño; la imagen local anterior es la representación visible.
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" style="background:#0F1115; border-radius:8px; font-family:'Inter', sans-serif;">
@@ -1656,11 +1336,7 @@ El mock-up de alta fidelidad aplica la jerarquía Inter, superficies claras, car
 
 #### **Vista Mobile**
 
-<<<<<<< HEAD
-![Mock-up responsive de la Landing Page de TechnoLoad en vista Mobile](assets/landing-mockup-mobile.svg)
-=======
 ![Mock-up responsive de la Landing Page de TechnoLoad en vista Mobile](assets/ux/landing/landing-mockup-mobile.svg)
->>>>>>> develop
 
 ### 4.4. Web Applications UX/UI Design
 
@@ -1674,22 +1350,15 @@ Estos diseños de baja fidelidad permiten establecer la distribución de los com
 
 Los wireframes fueron elaborados considerando los principales procesos de la plataforma, permitiendo validar la organización de las vistas antes de desarrollar los mock-ups de alta fidelidad.
 
-<<<<<<< HEAD
-=======
 La estructura responde a una arquitectura de información por tareas: el Dashboard resume alertas y métricas; los módulos Assets, Maintenance, Rentals, Operations y Billing agrupan acciones relacionadas; y el detalle de cada entidad concentra historial, estado y acciones contextuales. En desktop se usa sidebar persistente y tablas con filtros; en tablet el sidebar se contrae; y en móvil se convierte en drawer, las tablas se muestran como tarjetas y los formularios se presentan en una columna.
 
->>>>>>> develop
 A continuación, se presentan los wireframes correspondientes a las principales interfaces de la Web Application de TechnoLoad.
 
 ---
 
 #### **14 Vistas Prioritarias del MVP**
 
-<<<<<<< HEAD
-![Wireframes de las 14 vistas prioritarias de la Web Application de TechnoLoad](assets/web-app-wireframes.svg)
-=======
 ![Wireframes de las 14 vistas prioritarias de la Web Application de TechnoLoad](assets/ux/web-app/web-app-wireframes.svg)
->>>>>>> develop
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
@@ -1705,11 +1374,7 @@ A continuación, se presentan los principales Wireflow Diagrams de TechnoLoad.
 
 #### **Seis Wireflows Priorizados**
 
-<<<<<<< HEAD
-![Web Applications Wireflow Diagrams TechnoLoad](assets/web-app-wireflows.svg)
-=======
 ![Web Applications Wireflow Diagrams TechnoLoad](assets/ux/web-app/web-app-wireflows.svg)
->>>>>>> develop
 
 ### 4.4.3. Web Applications Mock-ups
 
@@ -1719,22 +1384,15 @@ A diferencia de los wireframes, estas interfaces incorporan la identidad visual 
 
 Los mock-ups permiten representar de manera más cercana la apariencia final de la aplicación y sirven como referencia visual para la etapa de implementación.
 
-<<<<<<< HEAD
-=======
 La propuesta visual aplica contraste suficiente entre texto y superficies, color semántico para estados operativos, jerarquía tipográfica para distinguir indicadores y acciones, y retroalimentación visible para carga, éxito, error y ausencia de datos. Los componentes mantienen tamaños táctiles adecuados en móvil y no dependen exclusivamente del color para comunicar un estado.
 
->>>>>>> develop
 A continuación, se presentan los mock-ups correspondientes a las principales vistas de la Web Application de TechnoLoad.
 
 ---
 
 #### **Mock-ups de Alta Fidelidad**
 
-<<<<<<< HEAD
-![Web Applications Mock-ups TechnoLoad](assets/web-app-mockups.svg)
-=======
 ![Web Applications Mock-ups TechnoLoad](assets/ux/web-app/web-app-mockups.svg)
->>>>>>> develop
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
@@ -1750,9 +1408,6 @@ A continuación, se presentan los principales User Flow Diagrams de la aplicaci�
 
 #### **Seis User Flows**
 
-<<<<<<< HEAD
-![Web Applications User Flow Diagrams TechnoLoad](assets/web-app-userflows.svg)
-=======
 ![Web Applications User Flow Diagrams TechnoLoad](assets/ux/web-app/web-app-userflows.svg)
 
 Los siguientes diagramas complementan el artefacto visual existente. Cada flujo documenta el recorrido principal y alternativas que el sistema debe resolver sin perder el trabajo del usuario.
@@ -1856,7 +1511,6 @@ flowchart TD
   class permission,valid,confirm,connection,accepted decision
   class denied,correction,offline,rejected error
 ```
->>>>>>> develop
 
 ### 4.5 Web Applications Prototyping
 
@@ -1864,11 +1518,8 @@ En esta sección se presenta el prototipo interactivo de la Web Application de T
 
 El prototipo permite simular la navegación entre las principales vistas de la aplicación y validar la secuencia de interacción que siguen los usuarios para completar sus tareas principales. Las conexiones entre pantallas fueron definidas considerando los recorridos planteados en los User Flows y el sistema de navegación establecido para la aplicación.
 
-<<<<<<< HEAD
-=======
 Las imágenes del prototipo y de los mock-ups utilizan rutas relativas verificadas dentro de `assets/`, por lo que se renderizan tanto en GitHub como en WebStorm. El repositorio no incluye una URL pública de Figma; por ello, se conserva la evidencia visual versionada y no se declara un enlace externo no verificable.
 
->>>>>>> develop
 Se consideraron las principales funcionalidades de TechnoLoad, como el acceso a la plataforma, visualización del dashboard, consulta y gestión de maquinaria, reservas, mantenimiento, disponibilidad y seguimiento de servicios.
 
 A continuación, se presenta una captura del prototipo en funcionamiento y el enlace al video de demostración, donde se muestran los principales flujos de navegación e interacción de la aplicación.
@@ -1877,11 +1528,7 @@ A continuación, se presenta una captura del prototipo en funcionamiento y el en
 
 #### **Prototipo Interactivo en Figma**
 
-<<<<<<< HEAD
-![Web Applications Prototyping TechnoLoad](assets/web-app-prototype.svg)
-=======
 ![Web Applications Prototyping TechnoLoad](assets/ux/web-app/web-app-prototype.svg)
->>>>>>> develop
 
 ## 4.6. Domain-Driven Software Architecture
 
@@ -1905,67 +1552,36 @@ A partir del análisis realizado se identificaron los siguientes Bounded Context
 
 Este Bounded Context concentra las responsabilidades relacionadas con la gestión de la maquinaria, incluyendo su registro, actualización de información, cambio de estado, consulta de inventario y disponibilidad.
 
-<<<<<<< HEAD
-![Fleet Management Event Storming](assets/es-fleet-management.svg)
-=======
 ![Fleet Management Event Storming](assets/architecture/event-storming-rendered/fleet-management-design-level.svg)
->>>>>>> develop
 
 #### Rental Management Bounded Context
 
 Este Bounded Context gestiona las solicitudes y reservas de maquinaria, incluyendo la creación de solicitudes, confirmación, cancelación y actualización de las fechas asociadas al alquiler.
 
-<<<<<<< HEAD
-![Rental Management Event Storming](assets/es-rental-management.svg)
-=======
 ![Rental Management Event Storming](assets/architecture/event-storming-rendered/rental-management-design-level.svg)
->>>>>>> develop
 
 #### Maintenance Management Bounded Context
 
 Este Bounded Context agrupa las responsabilidades relacionadas con el mantenimiento de la maquinaria. Incluye la programación y finalización de mantenimientos, el reporte de averías y la actualización del estado de mantenimiento. Su agregado principal es Maintenance y permite además consultar el historial, los mantenimientos pendientes y el detalle de cada intervención realizada.
 
-<<<<<<< HEAD
-![Maintenance Management Event Storming](assets/es-maintenance-management.svg)
-=======
 ![Maintenance Management Event Storming](assets/architecture/event-storming-rendered/maintenance-management-design-level.svg)
->>>>>>> develop
 
 #### Operations Management Bounded Context
 
 Este Bounded Context representa la ejecución operativa de los servicios realizados con la maquinaria. Incluye el inicio y finalización de un servicio, el registro de horas trabajadas y la validación de dichas horas. Su agregado principal es Service Operation y permite consultar el estado del servicio, el resumen de horas trabajadas y el historial de operaciones.
 
-<<<<<<< HEAD
-![Operations Management Event Storming](assets/es-operations-management.svg)
-=======
 ![Operations Management Event Storming](assets/architecture/event-storming-rendered/operations-management-design-level.svg)
->>>>>>> develop
 
 #### Identity & Access Management Bounded Context
 
 Este Bounded Context se encarga de la gestión de identidad, autenticación y control de acceso de los usuarios de TechnoLoad. Incluye el registro de cuentas, la autenticación, la asignación de roles y el cambio de contraseñas. Su agregado principal es User Account y permite consultar los datos de la cuenta, los roles asignados y el estado de autenticación.
 
-<<<<<<< HEAD
-![Identity & Access Management Event Storming](assets/es-identity-access-management.svg)
-=======
 ![Identity & Access Management Event Storming](assets/architecture/event-storming-rendered/identity-access-management-design-level.svg)
->>>>>>> develop
 
 #### Profiles Management Bounded Context
 
 Este Bounded Context gestiona la información asociada a los perfiles de los usuarios. Incluye la creación y actualización de perfiles, datos de contacto e información de la organización. Su agregado principal es Profile y permite consultar la información personal, de contacto y organizacional asociada a cada usuario.
 
-<<<<<<< HEAD
-![Profiles Management Event Storming](assets/es-profiles-management.svg)
-
-### 4.6.2. Software Architecture Context Diagram
-
-El Software Architecture Context Diagram presenta a TechnoLoad como el sistema principal y muestra su relación con los principales tipos de usuario identificados en el proyecto.
-
-El Fleet Administrator utiliza TechnoLoad para gestionar la maquinaria, reservas, mantenimiento y operaciones asociadas al servicio. Por otro lado, el Contractor o Site Manager utiliza la plataforma para consultar maquinaria disponible, solicitar alquileres y realizar seguimiento de los servicios contratados.
-
-Este nivel del modelo C4 permite visualizar el alcance general de TechnoLoad y las principales interacciones entre el sistema y sus usuarios.
-=======
 ![Profiles Management Event Storming](assets/architecture/event-storming-rendered/profiles-management-design-level.svg)
 
 #### Policies and Business Rules
@@ -2016,30 +1632,18 @@ Asimismo, TechnoLoad se integra con los siguientes sistemas externos:
 - **Electronic Invoicing / SUNAT**: Emisión y validación tributaria de comprobantes de pago electrónicos conforme a la normativa fiscal.
 - **Notification Service**: Envío automatizado de alertas operativas, avisos de mantenimiento preventivo y notificaciones de estado por correo electrónico y mensajería push.
 - **GPS / Telematics Provider**: Suministra datos telemétricos en tiempo real (posicionamiento satelital, lecturas de horómetro y alertas de motor) mediante enlaces de telemetría e IoT.
->>>>>>> develop
 
 ---
 
 #### **Diagrama de Contexto (Modelo C4 - Nivel 1)**
 
-<<<<<<< HEAD
-![Software Architecture Context Diagram TechnoLoad](assets/c4-context-diagram.svg)
-=======
 ![Software Architecture Context Diagram TechnoLoad](assets/architecture/c4/c4-context-diagram.svg)
 
->>>>>>> develop
 
 ### 4.6.3. Software Architecture Container Diagram
 
 El Software Architecture Container Diagram muestra la estructura de alto nivel de TechnoLoad y la distribución de responsabilidades entre los principales elementos de la solución.
 
-<<<<<<< HEAD
-La aplicación está compuesta por una Single Page Application desarrollada con Angular, una REST API desarrollada con Spring Boot y Java, y una base de datos relacional encargada de la persistencia de la información.
-
-Los usuarios interactúan con la aplicación web mediante un navegador. La Single Page Application consume los servicios proporcionados por la REST API utilizando HTTPS y JSON. A su vez, la API gestiona el acceso a la información persistida mediante Spring Data JPA.
-
-Este nivel del modelo C4 permite visualizar las principales decisiones tecnológicas de la solución y la comunicación entre los containers que conforman TechnoLoad.
-=======
 La solución arquitectónica se descompone en los siguientes contenedores de despliegue:
 1. **Landing Web Application (Vue 3 + Vite)**: Aplicación web orientada al público general y potenciales clientes. Presenta la propuesta de valor comercial de TechnoLoad, catálogo referencial de maquinaria, planes de suscripción y formularios de contacto. Desde sus llamadas a la acción (*Call to Action* - CTA), redirige al usuario a la vista correspondiente dentro de la Single Page Application (SPA). Consume endpoints públicos de la API para consultar catálogos y registrar prospectos.
 2. **Single Page Application (SPA) (Vue 3 + PrimeVue)**: Aplicación web enriquecida para usuarios autenticados. Proporciona la interfaz interactiva para el **Fleet Administrator**, el **Contractor / Site Manager**, el **Maintenance Technician** y el **Operations Coordinator**. Permite la administración integral de inventario de maquinaria, solicitud y aprobación de alquileres, calendario de mantenimientos preventivos, reporte de fallas mecánicas, registro de horas de servicio y configuración de cuentas y perfiles. Se comunica con la Backend REST API mediante HTTPS consumiendo recursos en formato JSON con autenticación basada en tokens JWT.
@@ -2054,49 +1658,11 @@ Asimismo, la Backend REST API se integra con los servicios externos:
 
 > [!NOTE]
 > **Interacción de Actores y Contenedores:** Los usuarios operativos (**Fleet Administrator** y **Contractor / Site Manager**) interactúan directamente con la **Single Page Application (SPA)** para ejecutar sus flujos de trabajo especializados. De igual manera, ambos actores pueden visitar inicialmente la **Landing Web Application** para consultar novedades, tarifas y enlaces públicos, desde donde son derivados a la SPA al iniciar sesión o registrarse.
->>>>>>> develop
 
 ---
 
 #### **Diagrama de Contenedores (Modelo C4 - Nivel 2)**
 
-<<<<<<< HEAD
-![Software Architecture Container Diagram TechnoLoad](assets/c4-container-diagram.svg)
-
-### 4.6.4. Software Architecture Components Diagrams
-
-En esta sección se presentan los Component Diagrams de TechnoLoad, los cuales permiten visualizar la descomposición interna del container correspondiente a la REST API.
-
-En primer lugar, se muestra la organización general de los principales Bounded Contexts identificados durante el proceso de Domain-Driven Design. Posteriormente, se presenta el detalle interno de cada Bounded Context, mostrando sus principales capas y responsabilidades.
-
-La estructura interna sigue una separación entre Interfaces Layer, Application Layer, Domain Layer e Infrastructure Layer, permitiendo mantener separadas las responsabilidades del dominio y los aspectos técnicos de la implementación.
-
----
-
-#### **API Application Component Diagram**
-
-El siguiente diagrama muestra la organización general de la REST API de TechnoLoad y los principales Bounded Contexts que forman parte de la solución: Identity & Access Management, Profiles Management, Fleet Management, Rental Management, Maintenance Management y Operations Management.
-
-También se representan las principales relaciones entre los contextos, la Single Page Application y la base de datos.
-
-![API Application Component Diagram TechnoLoad](assets/c4-api-component-diagram.svg)
-
-#### **Identity & Access Management Bounded Context Component Diagram**
-
-Este diagrama representa la estructura interna del Identity & Access Management Bounded Context. Este contexto se encarga de la autenticación, autorización, gestión de cuentas, roles y credenciales de los usuarios de TechnoLoad.
-
-La Domain Layer contiene el aggregate User Account y las reglas asociadas al control de identidad y acceso.
-
-![Identity & Access Management Component Diagram](assets/c4-identity-component.svg)
-
-#### **Profiles Management Bounded Context Component Diagram**
-
-Este diagrama muestra la estructura interna del Profiles Management Bounded Context, encargado de gestionar la información del perfil, datos de contacto e información de las organizaciones asociadas a los usuarios.
-
-La Domain Layer contiene el aggregate Profile y sus reglas de negocio correspondientes.
-
-![Profiles Management Component Diagram](assets/c4-profiles-component.svg)  
-=======
 ![Software Architecture Container Diagram TechnoLoad](assets/architecture/c4/c4-container-diagram.svg)
 
 
@@ -2233,7 +1799,6 @@ flowchart LR
   classDef component fill:#4C1D95,stroke:#5B21B6,color:#FFFFFF
   class rentalService,rental,rentalRepository,operationService,operation,billingService,subscription,paymentAdapter,sunatAdapter component
 ```
->>>>>>> develop
 
 ## 4.7 Software Object-Oriented Design
 
@@ -2241,8 +1806,6 @@ El diseño orientado a objetos de TechnoLoad representa las principales clases, 
 
 ### 4.7.1 Class Diagrams
 
-<<<<<<< HEAD
-=======
 #### Canonical Domain Class Diagram
 
 Este diagrama consolida las clases del alcance actual. Todos los nombres de tipos se expresan en inglés con `PascalCase`; atributos y operaciones utilizan `camelCase`. Los límites entre agregados se mantienen con identificadores (`UUID`) en lugar de referencias de objetos entre contextos.
@@ -2317,7 +1880,6 @@ classDiagram
   Subscription "1" --> "many" Payment : receives
 ```
 
->>>>>>> develop
 #### Fleet Management Bounded Context Class Diagram
 
 El diagrama de Fleet Management representa el agregado Machinery, responsable del registro, actualización, clasificación, ubicación, estado y disponibilidad de la maquinaria. También incluye el objeto de valor MachineryLocation, las enumeraciones correspondientes y los servicios e interfaces necesarios para coordinar y persistir las operaciones del contexto.
@@ -2774,46 +2336,6 @@ classDiagram
 
 ### 4.8.1. Database Diagrams
 
-<<<<<<< HEAD
-El modelo relacional conserva la trazabilidad entre los activos, sus lecturas, las órdenes de mantenimiento y las asignaciones operativas. Las relaciones garantizan que una orden o lectura pertenezca a un activo existente y que el historial pueda consultarse sin modificar datos pasados.
-
-```mermaid
-erDiagram
-  ASSET ||--o{ METER_READING : records
-  ASSET ||--o{ MAINTENANCE_ORDER : receives
-  ASSET ||--o{ UNIT_ASSIGNMENT : is_assigned
-  OPERATION ||--o{ UNIT_ASSIGNMENT : groups
-  ASSET {
-    uuid id PK
-    varchar code UK
-    varchar name
-    varchar status
-  }
-  METER_READING {
-    uuid id PK
-    uuid asset_id FK
-    numeric value
-    timestamptz recorded_at
-  }
-  MAINTENANCE_ORDER {
-    uuid id PK
-    uuid asset_id FK
-    varchar priority
-    varchar status
-    timestamptz scheduled_at
-  }
-  OPERATION {
-    uuid id PK
-    varchar name
-    varchar status
-  }
-  UNIT_ASSIGNMENT {
-    uuid id PK
-    uuid operation_id FK
-    uuid asset_id FK
-    timestamptz assigned_at
-  }
-=======
 El modelo relacional usa nombres plurales en `snake_case`, atributos en `snake_case` y claves foráneas con el sufijo `_id`. Las relaciones preservan la trazabilidad de activos, lecturas, mantenimiento, alquileres, operaciones, suscripciones, pagos y facturación electrónica.
 
 ```mermaid
@@ -2933,68 +2455,11 @@ erDiagram
     uuid service_operation_id FK
     varchar status
   }
->>>>>>> develop
 ```
 
 ### 4.8.2. Script DDL
 
-<<<<<<< HEAD
-```sql
-CREATE EXTENSION IF NOT EXISTS pgcrypto;
-
-CREATE TABLE asset (
-                     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-                     code VARCHAR(40) NOT NULL UNIQUE,
-                     name VARCHAR(160) NOT NULL,
-                     status VARCHAR(30) NOT NULL CHECK (status IN ('AVAILABLE', 'IN_MAINTENANCE', 'ASSIGNED', 'INACTIVE')),
-                     image_url TEXT,
-                     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-                     updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
-);
-
-CREATE TABLE meter_reading (
-                             id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-                             asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
-                             value NUMERIC(14,2) NOT NULL CHECK (value >= 0),
-                             unit VARCHAR(12) NOT NULL CHECK (unit IN ('KM', 'HOURS')),
-                             recorded_at TIMESTAMPTZ NOT NULL DEFAULT now()
-);
-
-CREATE TABLE maintenance_order (
-                                 id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-                                 asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
-                                 maintenance_type VARCHAR(60) NOT NULL,
-                                 priority VARCHAR(20) NOT NULL CHECK (priority IN ('LOW', 'MEDIUM', 'HIGH', 'CRITICAL')),
-                                 status VARCHAR(25) NOT NULL CHECK (status IN ('SCHEDULED', 'IN_PROGRESS', 'COMPLETED', 'CANCELLED')),
-                                 scheduled_at TIMESTAMPTZ NOT NULL,
-                                 completed_at TIMESTAMPTZ,
-                                 CHECK (completed_at IS NULL OR completed_at >= scheduled_at)
-);
-
-CREATE TABLE operation (
-                         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-                         name VARCHAR(160) NOT NULL,
-                         status VARCHAR(25) NOT NULL CHECK (status IN ('PLANNED', 'ACTIVE', 'CLOSED')),
-                         created_at TIMESTAMPTZ NOT NULL DEFAULT now()
-);
-
-CREATE TABLE unit_assignment (
-                               id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-                               operation_id UUID NOT NULL REFERENCES operation(id) ON DELETE RESTRICT,
-                               asset_id UUID NOT NULL REFERENCES asset(id) ON DELETE RESTRICT,
-                               assigned_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-                               released_at TIMESTAMPTZ,
-                               CHECK (released_at IS NULL OR released_at >= assigned_at)
-);
-
-CREATE INDEX idx_meter_reading_asset_recorded_at ON meter_reading(asset_id, recorded_at DESC);
-CREATE INDEX idx_maintenance_order_asset_status ON maintenance_order(asset_id, status);
-CREATE INDEX idx_unit_assignment_operation ON unit_assignment(operation_id);
-CREATE INDEX idx_asset_status ON asset(status);
-```
-=======
 El script de creación completo, con restricciones e índices, se encuentra en [database/schema.sql](database/schema.sql).
->>>>>>> develop
 
 # Capítulo V: Product Implementation, Validation & Deployment
 
@@ -3004,11 +2469,7 @@ La gestión de configuración de software de TechnoLoad establece las herramient
 
 Para ello, se utilizan herramientas de gestión de proyectos, diseño UX/UI, desarrollo de software, documentación, control de versiones y despliegue. Git y GitHub permiten registrar los cambios realizados por los integrantes del equipo, mientras que GitFlow, Conventional Commits y Semantic Versioning proporcionan un esquema organizado para la evolución del código fuente.
 
-<<<<<<< HEAD
-  ### 5.1.1. Software Development Environment Configuration
-=======
 ### 5.1.1. Software Development Environment Configuration
->>>>>>> develop
   
 El desarrollo de TechnoLoad requiere diferentes herramientas que permiten cubrir las actividades de gestión del proyecto, especificación de requisitos, diseño UX/UI, implementación, documentación, control de versiones y despliegue.
 
@@ -3037,16 +2498,9 @@ Las principales herramientas utilizadas o previstas para el proyecto son las sig
 
 La combinación de estas herramientas permite mantener un entorno común entre los integrantes del equipo. El frontend es desarrollado con Vue y PrimeVue, mientras que los servicios del lado servidor se implementan mediante ASP.NET Core, Entity Framework Core y C#. PostgreSQL proporciona la persistencia relacional de la información correspondiente a activos, lecturas, mantenimientos y operaciones.
 
-<<<<<<< HEAD
-![ESTRUCTURA DEL PROYECTO](assets/Estructura TechnoLoad.png)
-
-
-  ### 5.1.2. Source Code Management
-=======
 ![Estructura del proyecto](assets/evidence/repository/repository-develop-structure.jpeg)
 
 ### 5.1.2. Source Code Management
->>>>>>> develop
   
 El código fuente y la documentación de TechnoLoad se administran mediante Git y GitHub. El uso de control de versiones permite mantener la trazabilidad de cada modificación realizada por el equipo, identificar la participación de los integrantes y recuperar versiones anteriores cuando sea necesario.
 
@@ -3060,11 +2514,7 @@ Los repositorios correspondientes a los productos de TechnoLoad son:
 
 El repositorio correspondiente a los RESTful Web Services deberá incluir tanto el código fuente de la solución como los archivos correspondientes a las pruebas unitarias y de integración.
 
-<<<<<<< HEAD
-![Landing Page de TechnoLoad](assets/landing-page-technoload.jpeg)
-=======
 ![Landing Page de TechnoLoad](assets/ux/landing/landing-page-technoload.jpeg)
->>>>>>> develop
 
 #### GitFlow Workflow
 
@@ -3104,15 +2554,9 @@ Las correcciones urgentes seguirán el mismo esquema:
 
 `hotfix/v1.0.1`
 
-<<<<<<< HEAD
-![Estructura del repositorio en la rama develop](assets/repository-develop-structure.jpeg)
-
-![Contenido de la carpeta assets](assets/repository-assets-folder.jpeg)
-=======
 ![Estructura del repositorio en la rama develop](assets/evidence/repository/repository-develop-structure.jpeg)
 
 ![Contenido de la carpeta assets](assets/evidence/repository/repository-assets-folder.jpeg)
->>>>>>> develop
 
 #### Semantic Versioning
 
@@ -3167,11 +2611,7 @@ Ejemplos aplicados al proyecto:
 Con estas convenciones se busca facilitar la comprensión del historial de cambios y mantener consistencia entre los diferentes repositorios del proyecto.
 
 
-<<<<<<< HEAD
-  ### 5.1.3. Source Code Style Guide & Conventions
-=======
 ### 5.1.3. Source Code Style Guide & Conventions
->>>>>>> develop
   
 TechnoLoad adopta convenciones de programación para mantener un código consistente, legible y mantenible entre todos los integrantes del equipo.
 
@@ -3320,11 +2760,7 @@ Asimismo, el Landing Page y la Frontend Web Application deberán considerar prá
 
 ---
 
-<<<<<<< HEAD
-  ### 5.1.4. Software Deployment Configuration
-=======
 ### 5.1.4. Software Deployment Configuration
->>>>>>> develop
   
 El proceso de despliegue de TechnoLoad comprende la publicación independiente de los tres productos principales que conforman la solución: Landing Page, Frontend Web Application y RESTful Web Services.
 
@@ -3407,8 +2843,6 @@ La entrega visible de TechnoLoad se compone de una Landing Page pública y una W
 
 La URL pública proporcionada corresponde a la Landing Page. El prototipo de la Web Application está contenido en el mismo repositorio en `index.html`, junto con sus estilos, módulos JavaScript y datos simulados. Una URL de producción independiente para este prototipo podrá agregarse cuando se publique en GitHub Pages u otra plataforma.
 
-<<<<<<< HEAD
-=======
 ### 5.2.1. Sprint 1
 
 ### 5.2.1.1. Sprint Planning 1
@@ -3717,7 +3151,6 @@ A continuación se presentan las capturas de pantalla del registro de actividad 
 ![Commits Daniel Diaz](assets/evidence/commits/Dan-trax-commits.jpeg)
 
 ---
->>>>>>> develop
 ## 5.3. Validation Interviews
 ## 5.4. Video About-the-Product
 
