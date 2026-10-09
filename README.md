@@ -2878,13 +2878,15 @@ El Product Backlog del informe TechnoLoad define historias de usuario relacionad
 
 | Sprint | Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---|---|---|---|---:|---|---|
-| Sprint 1 | US-013 | Mostrar propuesta de valor | S1-T01 | Definir propuesta de valor del producto | Documentar la propuesta de valor para empresas de alquiler de maquinaria pesada y empresas de transporte y logística. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 1 | US-014 | Mostrar información por segmento | S1-T02 | Organizar contenido por segmento | Estructurar la información para los segmentos objetivo identificados en el informe: empresas de alquiler de maquinaria pesada y empresas de transporte y logística. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 1 | US-001 | Registrar maquinaria | S1-T03 | Definir datos de maquinaria | Especificar los datos necesarios para registrar una maquinaria y mantener actualizado el inventario. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 1 | US-002 | Consultar disponibilidad | S1-T04 | Definir reglas de disponibilidad | Documentar cómo se consultará la disponibilidad por fecha y cómo se distinguirán los estados de disponibilidad, reserva y mantenimiento. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 1 | US-003 | Gestionar mantenimiento | S1-T05 | Definir estados de mantenimiento | Establecer reglas para impedir nuevas reservas cuando una maquinaria no se encuentre operativa. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 1 | US-004 | Crear una reserva | S1-T06 | Documentar el flujo de reserva | Definir el flujo para que un contratista solicite una maquinaria disponible durante un periodo determinado. | [Confirmar] | [Confirmar] | [Confirmar] |
-| Sprint 1 | — | Documentación técnica | S1-T07 | Consolidar documentación del proyecto | Organizar investigación, requerimientos, UX/UI, arquitectura, diseño orientado a objetos y diseño de datos que figuran en el informe del proyecto. | [Confirmar] | Equipo TechFlow | [Confirmar] |
+| Sprint 1 | US-013 | Mostrar propuesta de valor | S1-T01 | Definir propuesta de valor del producto | Documentar la propuesta de valor para empresas de alquiler de maquinaria pesada y empresas de transporte y logística. | 4 | Tantalean Granda, Nicolas | Completed |
+| Sprint 1 | US-014 | Mostrar información por segmento | S1-T02 | Organizar contenido por segmento | Estructurar la información para los segmentos objetivo: empresas de alquiler de maquinaria pesada y empresas de transporte y logística. | 4 | Gutiérrez Lizarbe, Wilmer Sebastián | Completed |
+| Sprint 1 | US-001 | Registrar maquinaria | S1-T03 | Definir datos de maquinaria | Especificar los datos necesarios para registrar maquinaria y mantener actualizado el inventario. | 6 | Castillo Guevara, Mathias Alejandro | In Progress |
+| Sprint 1 | US-002 | Consultar disponibilidad | S1-T04 | Definir reglas de disponibilidad | Documentar cómo consultar la disponibilidad por fecha y distinguir los estados de disponibilidad, reserva y mantenimiento. | 6 | Díaz Caruzo, Edgard Daniel | In Progress |
+| Sprint 1 | US-003 | Gestionar mantenimiento | S1-T05 | Definir estados de mantenimiento | Establecer reglas para impedir nuevas reservas cuando una maquinaria no se encuentre operativa. | 5 | Díaz Caruzo, Edgard Daniel | To Do |
+| Sprint 1 | US-004 | Crear una reserva | S1-T06 | Documentar el flujo de reserva | Definir el flujo para que un contratista solicite una maquinaria disponible durante un periodo determinado. | 6 | Castillo Guevara, Mathias Alejandro | To Do |
+| Sprint 1 | — | Documentación técnica | S1-T07 | Consolidar la documentación del proyecto | Organizar la investigación, los requerimientos, el diseño UX/UI, la arquitectura, el diseño orientado a objetos y el diseño de datos incluidos en el informe del proyecto. | 8 | Equipo TechFlow | In Progress |
+
+
 
 Durante el Sprint 1, la trazabilidad debe documentarse con el tablero de trabajo, las ramas, los commits y las revisiones que realmente se hayan utilizado. No se cuenta con evidencia suficiente para afirmar que existió o no un tablero público de GitHub Projects durante este sprint.
 
@@ -2897,12 +2899,12 @@ La siguiente tabla conserva las columnas de la evidencia de desarrollo del docum
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on |
 |---|---|---|---|---|---|
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Agregar commit real] | [Agregar mensaje real] | [Agregar body o indicar que no existe] | [Fecha real] |
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Agregar commit real] | [Agregar mensaje real] | [Agregar body o indicar que no existe] | [Fecha real] |
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Agregar commit real] | [Agregar mensaje real] | [Agregar body o indicar que no existe] | [Fecha real] |
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Agregar commit real] | [Agregar mensaje real] | [Agregar body o indicar que no existe] | [Fecha real] |
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Agregar commit real] | [Agregar mensaje real] | [Agregar body o indicar que no existe] | [Fecha real] |
-| `TechnoLoad-TechFlow/TechFlow` | [Confirmar] | [Agregar commit real] | [Agregar mensaje real] | [Agregar body o indicar que no existe] | [Fecha real] |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `b28717f` | `docs: sincronizar README.md con la versión final de develop` | — | 2026-10-09 |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `5775020` | `Merge develop into main permitiendo historiales no relacionados` | — | 2026-10-09 |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `a8b8c76` | `Change image width in README` | Updated image size in README.md | 2026-10-09 |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `3c12c85` | `docs(readme): remove outdated commit evidence` | Removed images of commits from the README. | 2026-09-19 |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `edff2ae` | `docs(readme): update Source Code Management` | — | 2026-09-19 |
+| `TechnoLoad-TechFlow/TechFlow` | `develop` | `3104670` | `docs(readme): correct capitalization in contributor image filename` | — | 2026-09-19 |
 
 Las evidencias de desarrollo que conviene incluir son los cambios en la documentación de requerimientos, los artefactos UX/UI, la definición de arquitectura y los archivos de la aplicación que hayan sido efectivamente modificados en el sprint. Deben agregarse enlaces a los commits verificables y no únicamente descripciones generales.
 
@@ -2920,13 +2922,13 @@ La evidencia de ejecución debe mostrar el resultado que puede comprobarse al re
 
 En el informe de TechnoLoad se incluyen historias técnicas para consultar maquinarias mediante API (`TS-001`), registrar reservas mediante API (`TS-002`), validar conflictos de reservas (`TS-003`), validar datos (`TS-004`), autenticar endpoints con JWT (`TS-005`), registrar horómetros por lotes (`TS-006`), integrar facturación fiscal (`TS-007`) y notificar eventos de reserva mediante webhooks (`TS-008`). Estas historias forman parte del backlog y no prueban que los endpoints ya estén implementados.
 
-| Elemento | Evidencia para completar |
+| Elemento | Evidencia |
 |---|---|
-| API o servicio disponible | [Indicar servicio y estado real] |
-| URL base | [Agregar URL si el servicio está desplegado] |
-| Documentación OpenAPI/Swagger | [Agregar enlace o indicar que todavía no aplica] |
-| Endpoints implementados | [Listar únicamente los endpoints comprobados] |
-| Pruebas de servicios | [Agregar resultados o capturas] |
+| API o servicio disponible | Servicios de la aplicación TechFlow; estado de implementación pendiente de verificación. |
+| URL base | No confirmada; agregar la URL si el servicio está desplegado. |
+| Documentación OpenAPI/Swagger | Pendiente de verificación; agregar el enlace si está disponible. |
+| Endpoints implementados | Pendiente de verificación con el código fuente y las rutas disponibles de la API. |
+| Pruebas de servicios | Pendiente de verificación; adjuntar resultados, registros de ejecución o capturas de pantalla. |
 
 Si durante el Sprint 1 solo se definieron los requerimientos y la arquitectura, debe indicarse que la documentación de servicios no aplica todavía al incremento, sin afirmar que existen servicios desplegados.
 
@@ -2951,12 +2953,13 @@ La captura debe mostrar la URL y la versión efectivamente desplegada.
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 El informe de TechnoLoad identifica como integrantes a Nicolas Tantalean Granda, Wilmer Sebastián Gutiérrez Lizarbe, Mathias Alejandro Castillo Guevara y Edgard Daniel Díaz Caruzo. Para completar el análisis de colaboración del Sprint 1, se deben revisar los commits y normalizar las identidades que pertenezcan a una misma persona. No se deben trasladar al equipo TechFlow los nombres, usuarios ni conteos de commits que aparecían en el documento de MaquiControl.
 
-| Integrante / Identidad Git | Commits en el informe | Commits en la aplicación | Commits en otros repositorios | Total identificado |
+| Integrante / Identidad Git | Commits en la documentación | Commits en la aplicación | Commits en otros repositorios | Total identificado |
 |---|---:|---:|---:|---:|
-| Nicolas Tantalean Granda | [Contar] | [Contar] | [Contar] | [Calcular] |
-| Wilmer Sebastián Gutiérrez Lizarbe | [Contar] | [Contar] | [Contar] | [Calcular] |
-| Mathias Alejandro Castillo Guevara | [Contar] | [Contar] | [Contar] | [Calcular] |
-| Edgard Daniel Díaz Caruzo | [Contar] | [Contar] | [Contar] | [Calcular] |
+| Nicolas Tantalean Granda (`NicolasTantalean`) | Pendiente de clasificar | Pendiente de clasificar | Pendiente de verificar | 13 |
+| Wilmer Sebastián Gutiérrez Lizarbe (`WILMER SEBASTIAN`) | Pendiente de clasificar | Pendiente de clasificar | Pendiente de verificar | 6 |
+| Mathias Alejandro Castillo Guevara (`mathias9939`) | Pendiente de clasificar | Pendiente de clasificar | Pendiente de verificar | 15 |
+| Edgard Daniel Díaz Caruzo | 0 identificados en esta consulta | 0 identificados en esta consulta | Pendiente de verificar | 0 identificados |
+| **Total** | **Pendiente de clasificar** | **Pendiente de clasificar** | **Pendiente de verificar** | **34** |
 
 Las cantidades deben obtenerse del historial real del repositorio y no constituyen por sí solas una medición completa de la calidad o complejidad de las contribuciones. También deben considerarse reuniones, coordinación, elaboración de artefactos visuales, revisión de contenidos y demás actividades realizadas fuera del repositorio.
 
