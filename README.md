@@ -3313,7 +3313,7 @@ Para el Sprint 2, la solución digital de TechnoLoad fue migrada y desplegada ex
 
 1. **Incidencia 1 - Carga de recursos estáticos y rutas relativas:**
    - *Problema:* Al desplegar el build en Azure App Service, los navegadores reportaban fallos en la carga de hojas de estilo `styles.css` y archivos modulares de JavaScript debido a inconsistencias de ruta en el servidor Node.js.
-   - *Solución:* Se ajustaron las rutas relativas en `index.html` y se configuró un servidor de estáticos ligero con cabeceras MIME correctas (`application/javascript`, `text/css`), garantizando la resolución sin importar el punto de entrada.
+   - *Solucion:* Se ajustaron las rutas relativas en `index.html` y se configuró un servidor de estáticos ligero con cabeceras MIME correctas (`application/javascript`, `text/css`), garantizando la resolución sin importar el punto de entrada.
 2. **Incidencia 2 - Políticas de seguridad HTTPS y navegación cruzada entre sitios:**
    - *Problema:* Las llamadas a la acción (CTA) entre el sitio web (`technoload-website-...`) y la aplicación web (`technoload-webapp-...`) generaban advertencias por contenido mixto cuando se invocaban desde enlaces sin protocolo forzado.
    - *Solución:* Se activó la directiva *HTTPS Only* en las opciones de configuración TLS/SSL de ambos App Services en el portal de Azure, asegurando redirección 301 automática y cifrado seguro de extremo a extremo.
