@@ -3266,7 +3266,6 @@ Los endpoints han sido completamente especificados con contratos OpenAPI / Swagg
 | Mantenimiento | `/api/v1/maintenance-orders` | `POST` | Programar orden de intervención mecánica por alerta de horómetro. | Especificado en Swagger |
 | Identidad y acceso | `/api/v1/authentication/sign-in` | `POST` | Autenticar credenciales y emitir token Bearer JWT. | Especificado en Swagger / Simulación de sesión activa |
 
-**URL base prevista para servicios backend:** `https://technoload-api-u202410728.azurewebsites.net/api/v1`
 
 **Ejemplo de solicitud y respuesta para el servicio de maquinaria (`GET /api/v1/machinery`):**
 
