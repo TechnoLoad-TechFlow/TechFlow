@@ -3307,8 +3307,8 @@ Para el Sprint 2, la solución digital de TechnoLoad fue migrada y desplegada ex
 | **Landing Page** | Microsoft Azure App Service (Linux) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/technoload-website) | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | `v1.2.0` | Operativo / Verificado (HTTPS) |
 | **Web Application** | Microsoft Azure App Service (Linux) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/technoload-webapp) | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | `v1.2.0` | Operativo / Verificado (HTTPS) |
 | **Project Report** | GitHub (Pages / Markdown) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | [https://github.com/TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | `v1.9.0` | Operativo / Verificado (HTTPS) |
-| **Database & API** | PostgreSQL 16 & ASP.NET Core 8 | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | En desarrollo (esquema DDL consolidado en `database/schema.sql`) | `v0.2.0` | Modelado / Pendiente cloud |
 
+<!-- | **Database & API** | PostgreSQL 16 & ASP.NET Core 8 | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | En desarrollo (esquema DDL consolidado en `database/schema.sql`) | `v0.2.0` | Modelado / Pendiente cloud |  -->
 **Registro de incidencias y soluciones durante el despliegue en Azure:**
 
 1. **Incidencia 1 - Carga de recursos estáticos y rutas relativas:**
