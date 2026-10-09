@@ -3337,9 +3337,9 @@ Durante el Sprint 2, el equipo mantuvo una actividad continua y colaborativa en 
 
 A continuación se presentan las capturas de pantalla del registro de actividad y contribuciones de los integrantes en GitHub:
 
-![Commits Nicolas Tantalean](assets/evidence/commits/NIcolas-tantalean-commits.jpeg)
-![Commits Mathias Castillo](assets/evidence/commits/mathias-castillo-commits.jpeg)
-![Commits Sebastian Gutierrez](assets/evidence/commits/sebastian-commits.jpeg)
+![Commits Nicolas Tantalean](assets/evidence/commits/Sprint2/NIcolas-tantalean-commits-2.jpeg)
+![Commits Mathias Castillo](assets/evidence/commits/Sprint2/Mathias-Castillo-commits-2.jpeg)
+![Commits Sebastian Gutierrez](assets/evidence/commits/Sprint2/Sebastian-Gutierrez-commits-2.jpeg)
 ![Commits Daniel Diaz](assets/evidence/commits/Dan-trax-commits.jpeg)
 
 ---
